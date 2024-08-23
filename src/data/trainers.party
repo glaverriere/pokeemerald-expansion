@@ -5950,15 +5950,15 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Poochyena
-Level: 10
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Zigzagoon
-Level: 10
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Taillow
-Level: 10
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BILLY ===
@@ -11082,18 +11082,18 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Ralts
-Level: 10
+Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Teleport
 - Confusion
 - Growl
 
 Shroomish
-Level: 10
+Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Illumise
-Level: 10
+Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Covet
 - Play Nice
@@ -11101,7 +11101,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Sweet Scent
 
 Slakoth
-Level: 10
+Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HALEY_1 ===
@@ -11301,32 +11301,32 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Wurmple
-Level: 8
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Cascoon
-Level: 8
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Poison Powder
 - Poison Sting
 - Struggle Bug
 
 Silcoon
-Level: 8
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Poison Powder
 - Poison Sting
 - Struggle Bug
 
 Surskit
-Level: 8
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - String Shot
 - Bubble
 - Struggle Bug
 
 Nincada
-Level: 8
+Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Mud Slap
 - Poison Sting
