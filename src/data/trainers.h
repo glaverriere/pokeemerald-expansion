@@ -14740,13 +14740,24 @@ F_TRAINER_FEMALE |
 #line 5949
         .doubleBattle = FALSE,
 #line 5950
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .partySize = 1,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY, 
+        .partySize = 2,
         .party = (const struct TrainerMon[])
         {
             {
 #line 5952
             .species = SPECIES_POOCHYENA,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 5954
+            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+#line 5953
+            .lvl = 5,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 5952
+            .species = SPECIES_ZIGZAGOON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5954
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
