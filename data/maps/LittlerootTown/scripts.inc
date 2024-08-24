@@ -904,6 +904,13 @@ LittlerootTown_EventScript_GiveRunningShoes::
 	waitfanfare
 	setflag FLAG_RECEIVED_RUNNING_SHOES
 	msgbox LittlerootTown_Text_ExplainRunningShoes, MSGBOX_DEFAULT
+	msgbox LittlerootTown_Text_GiveDadsRod, MSGBOX_DEFAULT
+	giveitem ITEM_OLD_ROD
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_RECEIVED_OLD_ROD
+	setflag FLAG_RECEIVED_GOOD_ROD
+	setflag FLAG_RECEIVED_SUPER_ROD
+	msgbox LittlerootTown_Text_ThrowInFishingAdvice, MSGBOX_DEFAULT
 	msgbox LittlerootTown_Text_ComeHomeIfAnythingHappens, MSGBOX_DEFAULT
 	closemessage
 	delay 30
@@ -1019,3 +1026,19 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "I have something to show you.\n"
 	.string "Let's go to my LAB.$"
 
+LittlerootTown_Text_GiveDadsRod:
+	.string "I found Dad's old fishing rod\n"
+	.string "in our moving boxes.\p"
+	.string "I don't think he would mind\n"
+	.string "me giving it to you.$"
+
+LittlerootTown_Text_ThrowInFishingAdvice:
+	.string "Here's how it works.\p"
+	.string "First, you want to face the water,\n"
+	.string "then use the ROD.\p"
+	.string "Focus your mind…\n"
+	.string "If you get a bite, pull on the Rod.\p"
+	.string "Sometimes you can snag something\n"
+	.string "immediately, but with bigger catches,\l"
+	.string "you need to time the pulls on your Rod\l"
+	.string "to haul them in.$"
