@@ -4876,33 +4876,68 @@ Class: Leader
 Pic: Leader Roxanne
 Gender: Female
 Music: Female
-Items: Potion / Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Geodude
-Level: 12
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
-- Defense Curl
-- Rock Throw
-- Rock Tomb
-
-Geodude
-Level: 12
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
-- Defense Curl
-- Rock Throw
-- Rock Tomb
-
-Nosepass @ Oran Berry
+Geodude @ Rocky Helmet
 Level: 15
+Impish Nature
+Ability: Sturdy
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Bulldoze
+- Rock Polish
+- Rock Throw
+- Rock Tomb
+
+Geodude-Alola @ Luminous Moss
+Level: 15
+Impish Nature
+Ability: Sturdy
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Spark
+- Flail
+- Rock Throw
+- Rollout
+
+Nosepass @ Sitrus Berry
+Level: 15
+Relaxed Nature
+Ability: Sturdy
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Block
-- Harden
-- Tackle
+- Thunder Wave
+- Sand Tomb
 - Rock Tomb
+
+Rhyhorn @ Oran Berry
+Level: 15
+Impish Nature
+Ability: Rock Head
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Horn Attack
+- Bulldoze
+- Smack Down
+- Curse
+
+Anorith @ Muscle Band
+Level: 15
+Adamant Nature
+Ability: Battle Armor
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Fury Cutter
+- Smack Down
+- Metal Claw
+- Aqua Jet
+
+Lileep @ Tanga Berry
+Level: 15
+Calm Nature
+Ability: Storm Drain
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Ancient Power
+- Ingrain
+- Acid
+- Absorb
 
 === TRAINER_BRAWLY_1 ===
 Name: BRAWLY
@@ -6079,12 +6114,35 @@ Pic: Youngster
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability
 
 Geodude
-Level: 10
+Level: 15
+Ability: Sturdy
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
+- Flail
+- Rock Polish
+
+Aron
+Level: 15
+Ability: Rock Head
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Geodude
+Level: 15
+Ability: Rock Head
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Take down
+- Defense Curl
+- Rock Throw
+
+Rhyhorn
+Level: 15
+Ability: Rock Head
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Take Down
+- Bulldoze
+- Rock Throw
 
 === TRAINER_TOMMY ===
 Name: TOMMY
@@ -6093,15 +6151,16 @@ Pic: Youngster
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability
 
 Geodude
-Level: 8
+Level: 15
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
-Geodude
-Level: 8
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+Aron
+Level: 15
+Ability: Heavy Metal
+IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
 === TRAINER_JOEY ===
 Name: JOEY
@@ -10692,15 +10751,16 @@ Pic: Hiker
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability
 
 Geodude
-Level: 8
+Level: 15
+Ability: Rock Head
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-Geodude
-Level: 8
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Rhyhorn
+Level: 15
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_BRENDEN ===
 Name: BRENDEN
