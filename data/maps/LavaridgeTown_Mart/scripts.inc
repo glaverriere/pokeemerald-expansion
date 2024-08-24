@@ -14,6 +14,8 @@ LavaridgeTown_Mart_EventScript_Clerk::
 	.align 2
 LavaridgeTown_Mart_Pokemart:
 	.2byte ITEM_GREAT_BALL
+	.2byte ITEM_QUICK_BALL
+	.2byte ITEM_RARE_CANDY
 	.2byte ITEM_SUPER_POTION
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_PARALYZE_HEAL
@@ -21,7 +23,6 @@ LavaridgeTown_Mart_Pokemart:
 	.2byte ITEM_BURN_HEAL
 	.2byte ITEM_REVIVE
 	.2byte ITEM_SUPER_REPEL
-	.2byte ITEM_X_SPEED
 	.2byte ITEM_NONE
 	release
 	end
