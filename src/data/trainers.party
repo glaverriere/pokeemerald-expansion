@@ -229,11 +229,60 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability
 
 Poochyena
-Level: 9
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 15
+Adamant Nature
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Howl
+- Sand Attack
+- Thief
+- Poison Fang
+
+Carvanha
+Level: 15
+Adamant Nature
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Aqua Jet
+- Focus Energy
+- Thief
+- Scary Face
+
+Zubat @ Weakness Policy
+Level: 15
+Jolly Nature
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Mean Look
+- Supersonic
+- Astonish
+- Bite
+
+Barboach @ Expert Belt
+Level: 15
+Ability: Oblivious
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Water Pulse
+- Mud Slap
+- Flail
+- Protect
+
+Koffing @ Poison Barb
+Level: 15
+Modest Nature
+Ability: Levitate
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Clear Smog
+- Poison Gas
+- Pain Split
+- Taunt
+
+Whismur @ Metronome
+Level: 15
+Modest Nature
+Ability: Rattled
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Echoed Voice
 
 === TRAINER_MARCEL ===
 Name: MARCEL
@@ -11425,23 +11474,35 @@ Pic: Bug Catcher
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Sequence Switching
 
 Wurmple
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 15
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
-Wurmple
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Silcoon
+Level: 15
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Tackle
+- Poison Sting
+- String Shot
+- Harden
 
-Wurmple
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Cascoon
+Level: 15
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Tackle
+- Poison Sting
+- String Shot
+- Harden
 
-Wurmple
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Beautifly
+Level: 15
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Dustox
+Level: 15
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_JOSE ===
 Name: JOSE
@@ -11514,15 +11575,47 @@ Pic: Bug Catcher
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Check Viability
 
 Nincada
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 15
+Impish Nature
+Ability: Compound Eyes
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Bug Bite
+- Flail
+- Sand Attack
+- Mud Slap
 
-Nincada
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Surskit @ Lum Berry
+Level: 15
+Timid Nature
+Ability: Swift Swim
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Water Gun
+- Quick Attack
+- Bug Bite
+- Haze
+
+Trapinch @ Oran Berry
+Level: 15
+Brave Nature
+Ability: Arena Trap
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Bite
+- Mud Slap
+- Bug Bite
+- Quick Attack
+
+Beautifly
+Level: 15
+Timid Nature
+Ability: Swarm
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Gust
+- Absorb
+- Bug Bite
+- Stun Spore
 
 === TRAINER_JAMES_2 ===
 Name: JAMES
