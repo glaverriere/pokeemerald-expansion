@@ -13063,6 +13063,21 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Tackle
 - Water Gun
 
+Tentacool
+Level: 15
+Ability : Liquid Ooze
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Horsea
+Level: 15
+Ability : Sniper
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Staryu
+Level: 15
+Ability : Analytic
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
 === TRAINER_HAILEY ===
 Name: HAILEY
 Class: Tuber F

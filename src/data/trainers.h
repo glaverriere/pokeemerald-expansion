@@ -32699,18 +32699,47 @@ F_TRAINER_FEMALE |
 #line 13044
         .doubleBattle = FALSE,
 #line 13045
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .partySize = 1,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .partySize = 4,
         .party = (const struct TrainerMon[])
         {
             {
-#line 13047
             .species = SPECIES_MAGIKARP,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 13049
-            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-#line 13048
-            .lvl = 9,
+            .iv = TRAINER_PARTY_IVS(10, 10, 10, 10, 10, 10),
+            .lvl = 15,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+                MOVE_SPLASH,
+                MOVE_WATER_GUN,
+                MOVE_TACKLE,
+            },
+            },
+            {
+            .species = SPECIES_TENTACOOL,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+            .iv = TRAINER_PARTY_IVS(10, 10, 10, 10, 10, 10),
+            .lvl = 15,
+            .ability = ABILITY_LIQUID_OOZE,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+            .species = SPECIES_HORSEA,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+            .iv = TRAINER_PARTY_IVS(10, 10, 10, 10, 10, 10),
+            .lvl = 15,
+            .ability = ABILITY_SNIPER,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+            .species = SPECIES_STARYU,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+            .iv = TRAINER_PARTY_IVS(10, 10, 10, 10, 10, 10),
+            .lvl = 15,
+            .ability = ABILITY_ANALYTIC,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
