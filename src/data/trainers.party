@@ -232,56 +232,56 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Poochyena
-Level: 15
+Level: 14
 Adamant Nature
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Howl
 - Sand Attack
 - Thief
 - Poison Fang
 
 Carvanha
-Level: 15
+Level: 14
 Adamant Nature
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Aqua Jet
 - Focus Energy
 - Thief
 - Scary Face
 
 Zubat @ Weakness Policy
-Level: 15
+Level: 14
 Jolly Nature
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Mean Look
 - Supersonic
 - Astonish
 - Bite
 
 Barboach @ Expert Belt
-Level: 15
+Level: 14
 Ability: Oblivious
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Water Pulse
 - Mud Slap
 - Flail
 - Protect
 
 Koffing @ Poison Barb
-Level: 15
+Level: 14
 Modest Nature
 Ability: Levitate
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Clear Smog
 - Poison Gas
 - Pain Split
 - Taunt
 
 Whismur @ Metronome
-Level: 15
+Level: 14
 Modest Nature
 Ability: Rattled
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Echoed Voice
 
 === TRAINER_MARCEL ===
@@ -2172,18 +2172,18 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Zigzagoon @ Oran Berry
-Level: 15
+Level: 13
 Jolly Nature
 Ability: Quick Feet
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Skitty @ Oran Berry
-Level: 15
+Level: 13
 Ability: Normalize
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Whismur @ Oran Berry
-Level: 15
+Level: 13
 Ability: Rattled
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
@@ -2588,7 +2588,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Zigzagoon @ Oran Berry
-Level: 15
+Level: 13
 Jolly Nature
 Ability: Gluttony
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
@@ -2598,7 +2598,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Facade
 
 Taillow @ Oran Berry
-Level: 15
+Level: 13
 Jolly Nature
 Ability: Guts
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
@@ -2608,7 +2608,7 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Facade
 
 Oddish @ Oran Berry
-Level: 15
+Level: 13
 Modest Nature
 Ability: Chlorophyll
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
@@ -4919,7 +4919,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Smack Down
 - Curse
 
-Anorith @ Muscle Band
+Anorith @ ITEM_KINGS_ROCK
 Level: 15
 Adamant Nature
 Ability: Battle Armor
@@ -6162,6 +6162,16 @@ Level: 15
 Ability: Heavy Metal
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
+Onix
+Level: 15
+Ability: Weak Armor
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+Larvitar
+Level: 15
+Ability: Guts
+IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+
 === TRAINER_JOEY ===
 Name: JOEY
 Class: Youngster
@@ -6377,19 +6387,19 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Zigzagoon
-Level: 10
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Taillow
-Level: 10
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Wingull
-Level: 10
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Seedot
-Level: 10
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TIMMY ===
@@ -6503,19 +6513,19 @@ Level: 15
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Azurill
-Level: 15
+Level: 13
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Tentacool
-Level: 15
+Level: 13
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Luvdisc
-Level: 15
+Level: 13
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Wingull
-Level: 15
+Level: 13
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_CLAUDE ===
@@ -8985,15 +8995,15 @@ AI: Check Bad Move / Try To Faint / Check Viability
 
 Seedot
 Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Lotad
 Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Poochyena
 Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_MIU_AND_YUKI ===
 Name: MIU & YUKI
@@ -10753,7 +10763,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Geodude
+Geodude-Alola
 Level: 15
 Ability: Rock Head
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
@@ -10761,6 +10771,18 @@ IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 Rhyhorn
 Level: 15
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Shuckle
+Level: 15
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Solrock
+Level: 12
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Rock Throw
+- Hypnosis
+- Confusion
+- Tackle
 
 === TRAINER_BRENDEN ===
 Name: BRENDEN
@@ -11248,18 +11270,18 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Ralts
-Level: 12
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Teleport
 - Confusion
 - Growl
 
 Shroomish
-Level: 12
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Illumise
-Level: 12
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Covet
 - Play Nice
@@ -11267,7 +11289,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Sweet Scent
 
 Slakoth
-Level: 12
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HALEY_1 ===
@@ -11280,7 +11302,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Lotad
-Level: 15
+Level: 13
 Ability: Own Tempo
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Mega Drain
@@ -11289,16 +11311,16 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Astonish
 
 Shroomish
-Level: 15
+Level: 13
 Ability: Effect Spore
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Oddish
-Level: 15
+Level: 13
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Dustox
-Level: 15
+Level: 13
 Ability: Compound Eyes
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Confusion
@@ -11307,7 +11329,7 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Bug Bite
 
 Seedot
-Level: 15
+Level: 13
 Ability: Early Bird
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Confusion
@@ -11495,32 +11517,32 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Wurmple
-Level: 10
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Cascoon
-Level: 10
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Poison Powder
 - Poison Sting
 - Struggle Bug
 
 Silcoon
-Level: 10
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Poison Powder
 - Poison Sting
 - Struggle Bug
 
 Surskit
-Level: 10
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - String Shot
 - Bubble
 - Struggle Bug
 
 Nincada
-Level: 10
+Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Mud Slap
 - Poison Sting
@@ -11537,11 +11559,11 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Sequence Switching
 
 Wurmple
-Level: 15
+Level: 13
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Silcoon
-Level: 15
+Level: 13
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Tackle
 - Poison Sting
@@ -11549,7 +11571,7 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Harden
 
 Cascoon
-Level: 15
+Level: 13
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Tackle
 - Poison Sting
@@ -11557,11 +11579,11 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Harden
 
 Beautifly
-Level: 15
+Level: 13
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Dustox
-Level: 15
+Level: 13
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_JOSE ===
@@ -11638,7 +11660,7 @@ Double Battle: No
 AI: Check Bad Move / Check Viability
 
 Nincada
-Level: 15
+Level: 13
 Impish Nature
 Ability: Compound Eyes
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
@@ -11648,7 +11670,7 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Mud Slap
 
 Surskit @ Lum Berry
-Level: 15
+Level: 13
 Timid Nature
 Ability: Swift Swim
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
@@ -11658,7 +11680,7 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Haze
 
 Trapinch @ Oran Berry
-Level: 15
+Level: 13
 Brave Nature
 Ability: Arena Trap
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
@@ -11668,7 +11690,7 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Quick Attack
 
 Beautifly
-Level: 15
+Level: 13
 Timid Nature
 Ability: Swarm
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
@@ -13283,24 +13305,24 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Magikarp
-Level: 15
+Level: 13
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Splash
 - Tackle
 - Water Gun
 
 Tentacool
-Level: 15
+Level: 13
 Ability : Liquid Ooze
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Horsea
-Level: 15
+Level: 13
 Ability : Sniper
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Staryu
-Level: 15
+Level: 13
 Ability : Analytic
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
