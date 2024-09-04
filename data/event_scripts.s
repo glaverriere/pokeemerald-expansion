@@ -1074,3 +1074,21 @@ EventScript_VsSeekerChargingDone::
 	.include "data/text/frontier_brain.inc"
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
+
+	.include "data/maps/TestTown/scripts.inc"
+
+	.include "data/maps/TestTown_BrendansHouse_1F/scripts.inc"
+
+	.include "data/maps/TestTown_BrendansHouse_Bedroom1/scripts.inc"
+
+	.include "data/maps/TestTown_BrendansHouse_Bedroom2/scripts.inc"
+
+	.include "data/maps/TestTown_BrendansHouse_2F/scripts.inc"
+
+	.include "data/maps/TestTown_MaysHouse_1F/scripts.inc"
+
+	.include "data/maps/TestTown_MaysHouse_2F/scripts.inc"
+
+	.include "data/maps/TestTown_MaysHouse_Bedroom1/scripts.inc"
+
+	.include "data/maps/TestTown_MaysHouse_Bedroom2/scripts.inc"

@@ -92,14 +92,23 @@
     "Underwater_Route128",
     "Underwater_Route129",
     "Underwater_Route105",
-    "Underwater_Route125"
+    "Underwater_Route125",
+    "TestTown"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
     "LittlerootTown_BrendansHouse_2F",
     "LittlerootTown_MaysHouse_1F",
     "LittlerootTown_MaysHouse_2F",
-    "LittlerootTown_ProfessorBirchsLab"
+    "LittlerootTown_ProfessorBirchsLab",
+    "TestTown_BrendansHouse_1F",
+    "TestTown_BrendansHouse_Bedroom1",
+    "TestTown_BrendansHouse_Bedroom2",
+    "TestTown_BrendansHouse_2F",
+    "TestTown_MaysHouse_1F",
+    "TestTown_MaysHouse_2F",
+    "TestTown_MaysHouse_Bedroom1",
+    "TestTown_MaysHouse_Bedroom2"
   ],
   "gMapGroup_IndoorOldale": [
     "OldaleTown_House1",

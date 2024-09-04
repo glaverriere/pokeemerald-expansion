@@ -63,6 +63,7 @@
 #define MAP_UNDERWATER_ROUTE129 (54 | (0 << 8))
 #define MAP_UNDERWATER_ROUTE105 (55 | (0 << 8))
 #define MAP_UNDERWATER_ROUTE125 (56 | (0 << 8))
+#define MAP_TEST_TOWN           (57 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -70,6 +71,14 @@
 #define MAP_LITTLEROOT_TOWN_MAYS_HOUSE_1F        (2 | (1 << 8))
 #define MAP_LITTLEROOT_TOWN_MAYS_HOUSE_2F        (3 | (1 << 8))
 #define MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB (4 | (1 << 8))
+#define MAP_TEST_TOWN_BRENDANS_HOUSE_1F          (5 | (1 << 8))
+#define MAP_TEST_TOWN_BRENDANS_HOUSE_BEDROOM1    (6 | (1 << 8))
+#define MAP_TEST_TOWN_BRENDANS_HOUSE_BEDROOM2    (7 | (1 << 8))
+#define MAP_TEST_TOWN_BRENDANS_HOUSE_2F          (8 | (1 << 8))
+#define MAP_TEST_TOWN_MAYS_HOUSE_1F              (9 | (1 << 8))
+#define MAP_TEST_TOWN_MAYS_HOUSE_2F              (10 | (1 << 8))
+#define MAP_TEST_TOWN_MAYS_HOUSE_BEDROOM1        (11 | (1 << 8))
+#define MAP_TEST_TOWN_MAYS_HOUSE_BEDROOM2        (12 | (1 << 8))
 
 // gMapGroup_IndoorOldale
 #define MAP_OLDALE_TOWN_HOUSE1            (0 | (2 << 8))

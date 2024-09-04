@@ -1,0 +1,2 @@
+TestTown_MaysHouse_Bedroom2_MapScripts::
+	.byte 0

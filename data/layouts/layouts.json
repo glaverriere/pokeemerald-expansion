@@ -4410,6 +4410,96 @@
       "secondary_tileset": "gTileset_MysteryEventsHouse",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEST_TOWN",
+      "name": "TestTown_Layout",
+      "width": 30,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/TestTown/border.bin",
+      "blockdata_filepath": "data/layouts/TestTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEST_TOWN_BRENDANS_HOUSE_1F",
+      "name": "TestTown_BrendansHouse_1F_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/TestTown_BrendansHouse_1F/border.bin",
+      "blockdata_filepath": "data/layouts/TestTown_BrendansHouse_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEST_TOWN_BRENDANS_HOUSE_BEDROOM1",
+      "name": "TestTown_BrendansHouse_Bedroom1_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/TestTown_BrendansHouse_Bedroom1/border.bin",
+      "blockdata_filepath": "data/layouts/TestTown_BrendansHouse_Bedroom1/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEST_TOWN_BRENDANS_HOUSE_BEDROOM2",
+      "name": "TestTown_BrendansHouse_Bedroom2_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/TestTown_BrendansHouse_Bedroom2/border.bin",
+      "blockdata_filepath": "data/layouts/TestTown_BrendansHouse_Bedroom2/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEST_TOWN_BRENDANS_HOUSE_2F",
+      "name": "TestTown_BrendansHouse_2F_Layout",
+      "width": 9,
+      "height": 4,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/TestTown_BrendansHouse_2F/border.bin",
+      "blockdata_filepath": "data/layouts/TestTown_BrendansHouse_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEST_TOWN_MAYS_HOUSE_1F",
+      "name": "TestTown_MaysHouse_1F_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/TestTown_MaysHouse_1F/border.bin",
+      "blockdata_filepath": "data/layouts/TestTown_MaysHouse_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEST_TOWN_MAYS_HOUSE_2F",
+      "name": "TestTown_MaysHouse_2F_Layout",
+      "width": 9,
+      "height": 4,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/TestTown_MaysHouse_2F/border.bin",
+      "blockdata_filepath": "data/layouts/TestTown_MaysHouse_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEST_TOWN_MAYS_HOUSE_BEDROOM1",
+      "name": "TestTown_MaysHouse_Bedroom1_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/TestTown_MaysHouse_Bedroom1/border.bin",
+      "blockdata_filepath": "data/layouts/TestTown_MaysHouse_Bedroom1/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEST_TOWN_MAYS_HOUSE_BEDROOM2",
+      "name": "TestTown_MaysHouse_Bedroom2_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/TestTown_MaysHouse_Bedroom2/border.bin",
+      "blockdata_filepath": "data/layouts/TestTown_MaysHouse_Bedroom2/map.bin"
     }
   ]
 }
