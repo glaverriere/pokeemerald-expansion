@@ -3,7 +3,7 @@
   "name": "TestTown_MaysHouse_Bedroom1",
   "layout": "LAYOUT_TEST_TOWN_MAYS_HOUSE_BEDROOM1",
   "music": "MUS_DEWFORD",
-  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "region_map_section": "MAPSEC_TEST_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",
