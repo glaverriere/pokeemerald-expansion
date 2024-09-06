@@ -17,6 +17,11 @@
       "map": "MAP_ROUTE101",
       "offset": 0,
       "direction": "up"
+    },
+    {
+      "map": "MAP_TEST_TOWN",
+      "offset": -4,
+      "direction": "down"
     }
   ],
   "object_events": [
@@ -145,13 +150,6 @@
       "y": 16,
       "elevation": 0,
       "dest_map": "MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB",
-      "dest_warp_id": "0"
-    },
-    {
-      "x": 18,
-      "y": 13,
-      "elevation": 0,
-      "dest_map": "MAP_TEST_TOWN",
       "dest_warp_id": "0"
     }
   ],

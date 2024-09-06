@@ -12,18 +12,17 @@
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": [
+    {
+      "map": "MAP_LITTLEROOT_TOWN",
+      "offset": 4,
+      "direction": "up"
+    }
+  ],
   "object_events": [
 
   ],
   "warp_events": [
-    {
-      "x": 18,
-      "y": 9,
-      "elevation": 0,
-      "dest_map": "MAP_LITTLEROOT_TOWN",
-      "dest_warp_id": "3"
-    },
     {
       "x": 5,
       "y": 8,
