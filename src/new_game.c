@@ -126,7 +126,10 @@ static void ClearFrontierRecord(void)
 
 static void WarpToTruck(void)
 {
-    SetWarpDestination(MAP_GROUP(INSIDE_OF_TRUCK), MAP_NUM(INSIDE_OF_TRUCK), WARP_ID_NONE, -1, -1);
+    if (gSaveBlock2Ptr->playerGender != MALE)
+        SetWarpDestination(MAP_GROUP(TEST_TOWN_MAYS_HOUSE_BEDROOM1), MAP_NUM(TEST_TOWN_MAYS_HOUSE_BEDROOM1), WARP_ID_NONE, -1, -1);
+    else
+        SetWarpDestination(MAP_GROUP(TEST_TOWN_BRENDANS_HOUSE_BEDROOM1), MAP_NUM(TEST_TOWN_BRENDANS_HOUSE_BEDROOM1), WARP_ID_NONE, -1, -1);
     WarpIntoMap();
 }
 

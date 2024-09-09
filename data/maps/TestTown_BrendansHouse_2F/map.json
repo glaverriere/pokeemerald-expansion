@@ -28,14 +28,14 @@
       "x": 4,
       "y": 1,
       "elevation": 0,
-      "dest_map": "MAP_TEST_TOWN_BRENDANS_HOUSE_BEDROOM1",
+      "dest_map": "MAP_TEST_TOWN_BRENDANS_HOUSE_BEDROOM2",
       "dest_warp_id": "0"
     },
     {
       "x": 1,
       "y": 1,
       "elevation": 0,
-      "dest_map": "MAP_TEST_TOWN_BRENDANS_HOUSE_BEDROOM2",
+      "dest_map": "MAP_TEST_TOWN_BRENDANS_HOUSE_BEDROOM1",
       "dest_warp_id": "0"
     }
   ],
