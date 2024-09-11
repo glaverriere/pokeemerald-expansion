@@ -1,4 +1,45 @@
-raw `
-TestTown_BrendansHouse_1F_MapScripts::
-	.byte 0
-`
+mapscripts TestTown_BrendansHouse_1F_MapScripts{
+	MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TESTTOWN_INTRO_STATE, 2: TestTown_BrendansHouse_1F_OnFrame
+    ]
+}
+
+script TestTown_BrendansHouse_1F_OnFrame{
+	lockall
+	playse(SE_PIN)
+	applymovement(1, Common_Movement_ExclamationMark)
+	waitmovement(0)
+	applymovement(1, Common_Movement_Delay48)
+	waitmovement(0)
+	applymovement(1, Movement_MomGetsUp)
+	waitmovement(0)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft)
+	applymovement(1, Movement_MomGetToPlayer)
+	waitmovement(0)
+	msgbox(Mom_GoGetMay)
+	closemessage
+	applymovement(1, Movement_MomGoesToSink)
+	waitmovement(0)
+	setvar(VAR_TESTTOWN_INTRO_STATE, 3)
+	releaseall
+}
+
+movement Movement_MomGetsUp {
+    walk_in_place_faster_up
+	walk_up * 3
+}
+
+movement Movement_MomGetToPlayer {
+	walk_in_place_faster_right
+	walk_right * 2
+}
+
+movement Movement_MomGoesToSink {
+    walk_in_place_faster_left
+	walk_left * 6
+	walk_in_place_faster_up
+}
+
+text Mom_GoGetMay {
+    format("Mom: Hi Sweetie! I am so excited for you, I can barely stay in place!\p May is also getting here first Pokémon from Dad today.\p You should fetch her so you can all go together to Dad's gym.\p Also, don't forget to come see me before your big adventure begins.\p Have fun!")
+}

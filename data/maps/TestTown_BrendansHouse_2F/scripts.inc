@@ -5,11 +5,11 @@ TestTown_BrendansHouse_2F_MapScripts::
 
 TestTown_BrendansHouse_2F_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 # 3 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
-	map_script_2 VAR_TESTTOWN_INTRO_STATE, 1, TestTown_OnFrame
+	map_script_2 VAR_TESTTOWN_INTRO_STATE, 1, TestTown_BrendansHouse_2F_OnFrame
 	.2byte 0
 
 
-TestTown_OnFrame::
+TestTown_BrendansHouse_2F_OnFrame::
 # 8 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
 	lockall
 # 9 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
@@ -25,65 +25,72 @@ TestTown_OnFrame::
 # 14 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
 	delay 10
 # 15 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
-	applymovement 1, Movement_DadToPlayer
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 # 16 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
-	waitmovement 0
+	applymovement 1, Movement_DadToPlayer
 # 17 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
-	msgbox Dad_MeetMeAtGym
-# 18 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
-	closemessage
-# 19 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
-	applymovement 1, Movement_DadExits2F
-# 20 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
 	waitmovement 0
+# 18 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
+	msgbox Dad_MeetMeAtGym
+# 19 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
+	closemessage
+# 20 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
+	applymovement 1, Movement_DadExits2F
 # 21 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
-	playse SE_EXIT
+	waitmovement 0
 # 22 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
-	removeobject 1
+	playse SE_EXIT
 # 23 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
-	setvar VAR_TESTTOWN_INTRO_STATE, 3
+	removeobject 1
 # 24 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
+	setvar VAR_TESTTOWN_INTRO_STATE, 2
+# 25 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
 	releaseall
 	return
 
 
-# 27 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
-Movement_DadEnters2F:
 # 28 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
-	walk_down
+Movement_DadEnters2F:
 # 29 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
+	walk_down
+# 30 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
 	walk_in_place_faster_left
 	step_end
 
-# 32 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
-Movement_DadExits2F:
 # 33 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
+Movement_DadExits2F:
+# 34 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
 	walk_in_place_faster_right
-# 34 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
-	walk_right
-# 34 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
-	walk_right
-# 34 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
-	walk_right
-# 34 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
-	walk_right
-# 34 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
+# 35 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
 	walk_right
 # 35 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
-	walk_in_place_faster_up
+	walk_right
+# 35 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
+	walk_right
+# 35 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
+	walk_right
+# 35 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
+	walk_right
 # 36 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
+	walk_in_place_faster_up
+# 37 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
 	walk_up
 	step_end
 
-# 39 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
+# 40 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
 Movement_DadToPlayer:
-# 40 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
+# 41 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
 	walk_left
-# 40 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
+# 41 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
 	walk_left
 	step_end
 
 Dad_MeetMeAtGym::
-# 43 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
-	.string "Good morning, {PLAYER}. Meet me at my\n"
-	.string "gym later.$"
+# 44 "data/maps/TestTown_BrendansHouse_2F/scripts.pory"
+	.string "Dad: Good morning, {PLAYER}. Today is\n"
+	.string "your big day, isn't it? That's right!\p"
+	.string "Today is the day that you're gonna get\n"
+	.string "your very first Pokémon.\p"
+	.string "Meet me at the Pokémon gym. We will do\n"
+	.string "this the official way.\p"
+	.string "See you later!$"

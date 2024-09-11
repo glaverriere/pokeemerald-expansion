@@ -1,10 +1,10 @@
 mapscripts TestTown_BrendansHouse_2F_MapScripts{
 	MAP_SCRIPT_ON_FRAME_TABLE [
-        VAR_TESTTOWN_INTRO_STATE, 1: TestTown_OnFrame
+        VAR_TESTTOWN_INTRO_STATE, 1: TestTown_BrendansHouse_2F_OnFrame
     ]
 }
 
-script TestTown_OnFrame{
+script TestTown_BrendansHouse_2F_OnFrame{
 	lockall
 	playse(SE_EXIT)
 	delay(10)
@@ -12,6 +12,7 @@ script TestTown_OnFrame{
 	applymovement(1, Movement_DadEnters2F)
 	waitmovement(0)
 	delay(10)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight)
 	applymovement(1, Movement_DadToPlayer)
 	waitmovement(0)
 	msgbox(Dad_MeetMeAtGym)
@@ -20,7 +21,7 @@ script TestTown_OnFrame{
 	waitmovement(0)
 	playse(SE_EXIT)
 	removeobject(1)
-	setvar(VAR_TESTTOWN_INTRO_STATE, 3)
+	setvar(VAR_TESTTOWN_INTRO_STATE, 2)
 	releaseall
 }
 
@@ -41,5 +42,5 @@ movement Movement_DadToPlayer {
 }
 
 text Dad_MeetMeAtGym {
-    format("Good morning, {PLAYER}. Meet me at my gym later.")
+    format("Dad: Good morning, {PLAYER}. Today is your big day, isn't it? That's right!\p Today is the day that you're gonna get your very first Pokémon.\p Meet me at the Pokémon gym. We will do this the official way.\p See you later!")
 }

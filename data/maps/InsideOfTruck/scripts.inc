@@ -79,7 +79,7 @@ InsideOfTruck_EventScript_SetIntroFlagsFemale::
 # 40 "data/maps/InsideOfTruck/scripts.pory"
 	setvar VAR_LITTLEROOT_INTRO_STATE, 2
 # 41 "data/maps/InsideOfTruck/scripts.pory"
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_MOM
+	setflag FLAG_HIDE_TEST_TOWN_BRENDANS_HOUSE_MOM
 # 42 "data/maps/InsideOfTruck/scripts.pory"
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_TRUCK
 # 43 "data/maps/InsideOfTruck/scripts.pory"

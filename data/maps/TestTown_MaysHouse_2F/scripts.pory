@@ -1,4 +1,46 @@
-raw `
-TestTown_MaysHouse_2F_MapScripts::
-	.byte 0
-`
+mapscripts TestTown_MaysHouse_2F_MapScripts{
+	MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TESTTOWN_INTRO_STATE, 1: TestTown_MaysHouse_2F_OnFrame
+    ]
+}
+
+script TestTown_MaysHouse_2F_OnFrame{
+	lockall
+	playse(SE_EXIT)
+	delay(10)
+	addobject(1)
+	applymovement(1, Movement_DadEnters2F_May)
+	waitmovement(0)
+	delay(10)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft)
+	applymovement(1, Movement_DadToPlayer_May)
+	waitmovement(0)
+	msgbox(Dad_MeetMeAtGym_May)
+	closemessage
+	applymovement(1, Movement_DadExits2F_May)
+	waitmovement(0)
+	playse(SE_EXIT)
+	removeobject(1)
+	setvar(VAR_TESTTOWN_INTRO_STATE, 2)
+	releaseall
+}
+
+movement Movement_DadEnters2F_May {
+    walk_down
+    walk_in_place_faster_right
+}
+
+movement Movement_DadExits2F_May {
+    walk_in_place_faster_left
+	walk_left * 5
+	walk_in_place_faster_up
+	walk_up
+}
+
+movement Movement_DadToPlayer_May {
+    walk_right * 2
+}
+
+text Dad_MeetMeAtGym_May {
+    format("Dad: Good morning, {PLAYER}. Today is your big day, isn't it? That's right!\p Today is the day that you're gonna get your very first Pokémon.\p Meet me at the Pokémon gym. We will do this the official way.\p See you later!")
+}

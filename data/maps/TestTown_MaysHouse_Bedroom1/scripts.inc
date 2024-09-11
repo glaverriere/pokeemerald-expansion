@@ -1,6 +1,33 @@
-# 1 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
-
-# 2 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
 TestTown_MaysHouse_Bedroom1_MapScripts::
-# 3 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
 	.byte 0
+
+
+Bedroom_May_EventScript_SetIntroFlags::
+# 4 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
+	lockall
+	checkplayergender
+# 0 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
+	compare VAR_RESULT, FEMALE
+	goto_if_eq Bedroom_May_EventScript_SetIntroFlags_2
+Bedroom_May_EventScript_SetIntroFlags_1:
+# 14 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
+	releaseall
+	end
+
+Bedroom_May_EventScript_SetIntroFlags_2:
+# 6 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
+	setvar VAR_TESTTOWN_INTRO_STATE, 1
+# 7 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
+	setflag FLAG_HIDE_TEST_TOWN_BRENDANS_HOUSE_MOM
+# 8 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_TRUCK
+# 9 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_MOM
+# 10 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_SIBLING
+# 11 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_POKE_BALL
+# 12 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
+	setvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 1
+	goto Bedroom_May_EventScript_SetIntroFlags_1
+
