@@ -617,7 +617,7 @@ RustboroCity_EventScript_StolenGoodsScene::
 # 309 "data/maps/RustboroCity/scripts.pory"
 	setobjectxyperm LOCALID_DEVON_EMPLOYEE, 30, 10
 # 310 "data/maps/RustboroCity/scripts.pory"
-	clearflag FLAG_HIDE_RUSTBORO_CITY_DEVON_EMPLOYEE_1
+	clearflag FLAG_HIDE_TEST_TOWN_MAYS_HOUSE_MOM
 # 311 "data/maps/RustboroCity/scripts.pory"
 	setflag FLAG_DEVON_GOODS_STOLEN
 # 312 "data/maps/RustboroCity/scripts.pory"
@@ -1215,7 +1215,7 @@ RustboroCity_EventScript_ReturnGoods::
 # 608 "data/maps/RustboroCity/scripts.pory"
 	setflag FLAG_RETURNED_DEVON_GOODS
 # 609 "data/maps/RustboroCity/scripts.pory"
-	setflag FLAG_HIDE_RUSTBORO_CITY_DEVON_EMPLOYEE_1
+	setflag FLAG_HIDE_TEST_TOWN_MAYS_HOUSE_MOM
 # 610 "data/maps/RustboroCity/scripts.pory"
 	setvar VAR_RUSTBORO_CITY_STATE, 5
 # 611 "data/maps/RustboroCity/scripts.pory"

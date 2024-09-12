@@ -776,7 +776,7 @@
 
 #define FLAG_HIDE_DAD_BRENDANS_2F                                   0x2DA
 #define FLAG_HIDE_DAD_MAYS_2F                                       0x2DB
-#define FLAG_HIDE_RUSTBORO_CITY_DEVON_EMPLOYEE_1                    0x2DC
+#define FLAG_HIDE_TEST_TOWN_MAYS_HOUSE_MOM                          0x2DC
 #define FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_KYOGRE_ASLEEP              0x2DD
 #define FLAG_HIDE_PLAYERS_HOUSE_DAD                                 0x2DE
 #define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_SIBLING      0x2DF

@@ -1,16 +1,17 @@
-mapscripts TestTown_MaysHouse_Bedroom1_MapScripts {}
+mapscripts TestTown_MaysHouse_Bedroom1_MapScripts {
+	MAP_SCRIPT_ON_LOAD: May_AllowRunning
+}
 
-script Bedroom_May_EventScript_SetIntroFlags {
-	lockall
-	if (checkplayergender == FEMALE) {
+script May_AllowRunning {
+	if (var(VAR_TESTTOWN_INTRO_STATE) == 0) {
+		setflag(FLAG_SYS_B_DASH)
 		setvar(VAR_TESTTOWN_INTRO_STATE, 1)
 		setflag(FLAG_HIDE_TEST_TOWN_BRENDANS_HOUSE_MOM)
+		clearflag(FLAG_HIDE_TEST_TOWN_MAYS_HOUSE_MOM)
 		setflag(FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_TRUCK)
 		setflag(FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_MOM)
 		setflag(FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_SIBLING)
 		setflag(FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_POKE_BALL)
 		setvar(VAR_LITTLEROOT_HOUSES_STATE_MAY, 1)
 	}
-	releaseall
-	end
 }

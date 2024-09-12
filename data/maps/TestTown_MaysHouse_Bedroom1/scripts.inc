@@ -1,33 +1,33 @@
 TestTown_MaysHouse_Bedroom1_MapScripts::
+# 2 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
+	map_script MAP_SCRIPT_ON_LOAD, May_AllowRunning
 	.byte 0
 
 
-Bedroom_May_EventScript_SetIntroFlags::
-# 4 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
-	lockall
-	checkplayergender
-# 0 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
-	compare VAR_RESULT, FEMALE
-	goto_if_eq Bedroom_May_EventScript_SetIntroFlags_2
-Bedroom_May_EventScript_SetIntroFlags_1:
-# 14 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
-	releaseall
-	end
-
-Bedroom_May_EventScript_SetIntroFlags_2:
+May_AllowRunning::
 # 6 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
-	setvar VAR_TESTTOWN_INTRO_STATE, 1
+	compare VAR_TESTTOWN_INTRO_STATE, 0
+	goto_if_eq May_AllowRunning_1
+	return
+
+May_AllowRunning_1:
 # 7 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
-	setflag FLAG_HIDE_TEST_TOWN_BRENDANS_HOUSE_MOM
+	setflag FLAG_SYS_B_DASH
 # 8 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_TRUCK
+	setvar VAR_TESTTOWN_INTRO_STATE, 1
 # 9 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_MOM
+	setflag FLAG_HIDE_TEST_TOWN_BRENDANS_HOUSE_MOM
 # 10 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_SIBLING
+	clearflag FLAG_HIDE_TEST_TOWN_MAYS_HOUSE_MOM
 # 11 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_POKE_BALL
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_TRUCK
 # 12 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_MOM
+# 13 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_SIBLING
+# 14 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_POKE_BALL
+# 15 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
 	setvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 1
-	goto Bedroom_May_EventScript_SetIntroFlags_1
+	return
 

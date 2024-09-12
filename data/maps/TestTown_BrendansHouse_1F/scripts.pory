@@ -18,9 +18,28 @@ script TestTown_BrendansHouse_1F_OnFrame{
 	waitmovement(0)
 	msgbox(Mom_GoGetMay)
 	closemessage
+	delay(20)
 	applymovement(1, Movement_MomGoesToSink)
 	waitmovement(0)
 	setvar(VAR_TESTTOWN_INTRO_STATE, 3)
+	releaseall
+}
+
+script TestTown_BrendansHouse_Mom {
+	lockall
+	if (var(VAR_TESTTOWN_INTRO_STATE) == 3) {
+		faceplayer
+		msgbox(Mom_MayIsNextDoor)
+	}
+	releaseall
+}
+
+script TestTown_MaysHouse_Azurill {
+	lockall
+	faceplayer
+	waitse
+	playmoncry(SPECIES_AZURILL, CRY_MODE_NORMAL)
+	waitmoncry
 	releaseall
 }
 
@@ -42,4 +61,8 @@ movement Movement_MomGoesToSink {
 
 text Mom_GoGetMay {
     format("Mom: Hi Sweetie! I am so excited for you, I can barely stay in place!\p May is also getting here first Pokémon from Dad today.\p You should fetch her so you can all go together to Dad's gym.\p Also, don't forget to come see me before your big adventure begins.\p Have fun!")
+}
+
+text Mom_MayIsNextDoor {
+	format("You should go next door to see May.\p Tell her mom I said hello!")
 }

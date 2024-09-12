@@ -23,7 +23,7 @@ TestTown_MaysHouse_2F_OnFrame::
 # 13 "data/maps/TestTown_MaysHouse_2F/scripts.pory"
 	waitmovement 0
 # 14 "data/maps/TestTown_MaysHouse_2F/scripts.pory"
-	delay 10
+	delay 20
 # 15 "data/maps/TestTown_MaysHouse_2F/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 # 16 "data/maps/TestTown_MaysHouse_2F/scripts.pory"
@@ -35,26 +35,26 @@ TestTown_MaysHouse_2F_OnFrame::
 # 19 "data/maps/TestTown_MaysHouse_2F/scripts.pory"
 	closemessage
 # 20 "data/maps/TestTown_MaysHouse_2F/scripts.pory"
-	applymovement 1, Movement_DadExits2F_May
+	delay 20
 # 21 "data/maps/TestTown_MaysHouse_2F/scripts.pory"
-	waitmovement 0
+	applymovement 1, Movement_DadExits2F_May
 # 22 "data/maps/TestTown_MaysHouse_2F/scripts.pory"
-	playse SE_EXIT
+	waitmovement 0
 # 23 "data/maps/TestTown_MaysHouse_2F/scripts.pory"
-	removeobject 1
+	playse SE_EXIT
 # 24 "data/maps/TestTown_MaysHouse_2F/scripts.pory"
-	setvar VAR_TESTTOWN_INTRO_STATE, 2
+	removeobject 1
 # 25 "data/maps/TestTown_MaysHouse_2F/scripts.pory"
+	setvar VAR_TESTTOWN_INTRO_STATE, 2
+# 26 "data/maps/TestTown_MaysHouse_2F/scripts.pory"
 	releaseall
 	return
 
 
-# 28 "data/maps/TestTown_MaysHouse_2F/scripts.pory"
-Movement_DadEnters2F_May:
 # 29 "data/maps/TestTown_MaysHouse_2F/scripts.pory"
-	walk_down
+Movement_DadEnters2F_May:
 # 30 "data/maps/TestTown_MaysHouse_2F/scripts.pory"
-	walk_in_place_faster_right
+	walk_down
 	step_end
 
 # 33 "data/maps/TestTown_MaysHouse_2F/scripts.pory"
@@ -80,13 +80,15 @@ Movement_DadExits2F_May:
 # 40 "data/maps/TestTown_MaysHouse_2F/scripts.pory"
 Movement_DadToPlayer_May:
 # 41 "data/maps/TestTown_MaysHouse_2F/scripts.pory"
+	walk_in_place_faster_right
+# 42 "data/maps/TestTown_MaysHouse_2F/scripts.pory"
 	walk_right
-# 41 "data/maps/TestTown_MaysHouse_2F/scripts.pory"
+# 42 "data/maps/TestTown_MaysHouse_2F/scripts.pory"
 	walk_right
 	step_end
 
 Dad_MeetMeAtGym_May::
-# 44 "data/maps/TestTown_MaysHouse_2F/scripts.pory"
+# 45 "data/maps/TestTown_MaysHouse_2F/scripts.pory"
 	.string "Dad: Good morning, {PLAYER}. Today is\n"
 	.string "your big day, isn't it? That's right!\p"
 	.string "Today is the day that you're gonna get\n"
