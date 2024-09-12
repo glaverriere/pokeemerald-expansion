@@ -1,4 +1,5 @@
 mapscripts TestTown_MaysHouse_1F_MapScripts {
+	MAP_SCRIPT_ON_LOAD: TestTown_MaysHouse_1F_MeetRival
 	MAP_SCRIPT_ON_FRAME_TABLE [
         VAR_TESTTOWN_INTRO_STATE, 2: TestTown_MaysHouse_1F_OnFrame
 		VAR_TESTTOWN_INTRO_STATE, 3: TestTown_MaysHouse_1F_OnFrame2
@@ -68,8 +69,55 @@ text Mom_BrendanIsNextDoor {
 	format("You should go next door to see Brendan.\p Tell his mom I said hello!")
 }
 
+script TestTown_MaysHouse_1F_MeetRival {
+	setobjectxyperm(3, 1, 5)
+	setobjectmovementtype(3, MOVEMENT_TYPE_FACE_RIGHT)
+}
+
 script TestTown_MaysHouse_1F_OnFrame2 {
 	lockall
+	delay(10)
+	msgbox(RivalMomToMay_BeSafe)
+	closemessage
+	delay(10)
+	playse(SE_PIN)
+	applymovement(4, Common_Movement_ExclamationMark)
+	waitmovement(0)
+	applymovement(4, Common_Movement_Delay48)
+	waitmovement(0)
+	applymovement(3, Common_Movement_WalkInPlaceFasterDown)
+	applymovement(4, Common_Movement_WalkInPlaceFasterDown)
+	waitmovement(0)
+	delay(10)
+	applymovement(4,Rival_ApproachesPlayer)
+	waitmovement(0)
+	msgbox(RivalToPlayer_CantWaitLetsGo)
+	closemessage
+	delay(10)
+	setflag(FLAG_DONT_TRANSITION_MUSIC)
+	playbgm(MUS_FOLLOW_ME, FALSE)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown)
+	applymovement(4, Rival_ExitsMaysHouse)
+	waitmovement(0)
 	setvar(VAR_TESTTOWN_INTRO_STATE, 4)
 	releaseall
+}
+
+movement Rival_ApproachesPlayer {
+	walk_down * 2
+}
+
+movement Rival_ExitsMaysHouse {
+	walk_in_place_faster_left
+	walk_left
+	walk_in_place_faster_down
+	walk_down
+}
+
+text RivalMomToMay_BeSafe {
+	format("May's mom: Please, be safe out there.")
+}
+
+text RivalToPlayer_CantWaitLetsGo {
+	format("May: Hi {PLAYER}!\p I can't wait anymore to meet my first Pokémon!\p I've been waiting for this day for so long!\p Let's not waste another second and head straight to the gym!")
 }
