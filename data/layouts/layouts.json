@@ -4500,6 +4500,16 @@
       "secondary_tileset": "gTileset_BrendansMaysHouse",
       "border_filepath": "data/layouts/TestTown_MaysHouse_Bedroom2/border.bin",
       "blockdata_filepath": "data/layouts/TestTown_MaysHouse_Bedroom2/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEST_TOWN_GYM",
+      "name": "TestTown_Gym_Layout",
+      "width": 9,
+      "height": 112,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PetalburgGym",
+      "border_filepath": "data/layouts/TestTown_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/TestTown_Gym/map.bin"
     }
   ]
 }

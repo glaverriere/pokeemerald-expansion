@@ -79,6 +79,7 @@
 #define MAP_TEST_TOWN_MAYS_HOUSE_2F              (10 | (1 << 8))
 #define MAP_TEST_TOWN_MAYS_HOUSE_BEDROOM1        (11 | (1 << 8))
 #define MAP_TEST_TOWN_MAYS_HOUSE_BEDROOM2        (12 | (1 << 8))
+#define MAP_TEST_TOWN_GYM                        (13 | (1 << 8))
 
 // gMapGroup_IndoorOldale
 #define MAP_OLDALE_TOWN_HOUSE1            (0 | (2 << 8))

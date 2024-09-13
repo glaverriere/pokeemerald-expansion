@@ -1092,3 +1092,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/TestTown_MaysHouse_Bedroom1/scripts.inc"
 
 	.include "data/maps/TestTown_MaysHouse_Bedroom2/scripts.inc"
+
+	.include "data/maps/TestTown_Gym/scripts.inc"

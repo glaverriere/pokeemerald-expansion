@@ -20,7 +20,7 @@ Brendan_AllowRunning_1:
 # 10 "data/maps/TestTown_BrendansHouse_Bedroom1/scripts.pory"
 	clearflag FLAG_HIDE_TEST_TOWN_BRENDANS_HOUSE_MOM
 # 11 "data/maps/TestTown_BrendansHouse_Bedroom1/scripts.pory"
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_TRUCK
+	setflag FLAG_HIDE_RIVAL_MAY_TESTTOWN
 # 12 "data/maps/TestTown_BrendansHouse_Bedroom1/scripts.pory"
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_MOM
 # 13 "data/maps/TestTown_BrendansHouse_Bedroom1/scripts.pory"

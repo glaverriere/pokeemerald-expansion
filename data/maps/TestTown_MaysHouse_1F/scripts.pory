@@ -1,5 +1,5 @@
 mapscripts TestTown_MaysHouse_1F_MapScripts {
-	MAP_SCRIPT_ON_LOAD: TestTown_MaysHouse_1F_MeetRival
+	MAP_SCRIPT_ON_LOAD: TestTown_MaysHouse_1F_OnLoad
 	MAP_SCRIPT_ON_FRAME_TABLE [
         VAR_TESTTOWN_INTRO_STATE, 2: TestTown_MaysHouse_1F_OnFrame
 		VAR_TESTTOWN_INTRO_STATE, 3: TestTown_MaysHouse_1F_OnFrame2
@@ -69,9 +69,15 @@ text Mom_BrendanIsNextDoor {
 	format("You should go next door to see Brendan.\p Tell his mom I said hello!")
 }
 
-script TestTown_MaysHouse_1F_MeetRival {
-	setobjectxyperm(3, 1, 5)
-	setobjectmovementtype(3, MOVEMENT_TYPE_FACE_RIGHT)
+script TestTown_MaysHouse_1F_OnLoad {
+	if (var(VAR_TESTTOWN_INTRO_STATE) == 3) {
+		setobjectxyperm(3, 1, 5)
+		setobjectmovementtype(3, MOVEMENT_TYPE_FACE_RIGHT)
+	}
+	else {
+		setobjectxyperm(3, 8, 7)
+		setobjectmovementtype(3, MOVEMENT_TYPE_FACE_LEFT)
+	}
 }
 
 script TestTown_MaysHouse_1F_OnFrame2 {
@@ -99,7 +105,11 @@ script TestTown_MaysHouse_1F_OnFrame2 {
 	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown)
 	applymovement(4, Rival_ExitsMaysHouse)
 	waitmovement(0)
+	removeobject(4)
 	setvar(VAR_TESTTOWN_INTRO_STATE, 4)
+	setflag(FLAG_HIDE_RIVAL_MAYS_HOUSE)
+	warp(MAP_TEST_TOWN, 10, 8)
+	waitstate
 	releaseall
 }
 

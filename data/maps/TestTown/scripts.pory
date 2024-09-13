@@ -1,4 +1,46 @@
-raw `
-TestTown_MapScripts::
-	.byte 0
-`
+mapscripts TestTown_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION: TestTown_OnTransition
+	MAP_SCRIPT_ON_LOAD: TestTown_MaysHouse_1F_OnLoad
+	MAP_SCRIPT_ON_FRAME_TABLE [
+		VAR_TESTTOWN_INTRO_STATE, 4: TestTown_OnFrame
+    ]
+}
+
+script TestTown_OnTransition {
+	if (var(VAR_TESTTOWN_INTRO_STATE) == 4) {
+		clearflag(FLAG_HIDE_RIVAL_MAY_TESTTOWN)
+		setflag(FLAG_HIDE_MAP_NAME_POPUP)
+		savebgm(MUS_FOLLOW_ME)
+	}
+}
+
+script TestTown_OnFrame {
+	lockall
+	applymovement(1, Common_Movement_WalkInPlaceFasterDown)
+	waitmovement(0)
+	applymovement(1, RivalMay_GoesToGymWithPlayer)
+	applymovement(OBJ_EVENT_ID_PLAYER, PlayerBrendan_GoesToGymWithMay)
+	waitmovement(0)
+	clearflag(FLAG_HIDE_MAP_NAME_POPUP)
+	fadedefaultbgm
+	clearflag(FLAG_DONT_TRANSITION_MUSIC)
+	setvar(VAR_TESTTOWN_INTRO_STATE, 5)
+	releaseall
+}
+
+movement RivalMay_GoesToGymWithPlayer {
+	delay_8
+	walk_down
+	walk_right * 2
+	walk_down * 6
+	walk_left * 7
+	walk_in_place_faster_up
+}
+
+movement PlayerBrendan_GoesToGymWithMay {
+	delay_8
+	walk_down * 2
+	walk_right * 2
+	walk_down * 6
+	walk_left * 6
+}

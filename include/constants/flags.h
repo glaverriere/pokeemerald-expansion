@@ -777,8 +777,8 @@
 #define FLAG_HIDE_DAD_BRENDANS_2F                                   0x2DA
 #define FLAG_HIDE_DAD_MAYS_2F                                       0x2DB
 #define FLAG_HIDE_TEST_TOWN_MAYS_HOUSE_MOM                          0x2DC
-#define FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_KYOGRE_ASLEEP              0x2DD
-#define FLAG_HIDE_PLAYERS_HOUSE_DAD                                 0x2DE
+#define FLAG_HIDE_RIVAL_MAYS_HOUSE                                  0x2DD
+#define FLAG_HIDE_RIVAL_MAY_TESTTOWN                                 0x2DE
 #define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_SIBLING      0x2DF
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_SIBLING          0x2E0
 #define FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_MAGMA_NOTE             0x2E1

@@ -20,7 +20,19 @@
     }
   ],
   "object_events": [
-
+    {
+      "graphics_id": "OBJ_EVENT_GFX_RIVAL_MAY_NORMAL",
+      "x": 10,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_RIVAL_MAY_TESTTOWN"
+    }
   ],
   "warp_events": [
     {
@@ -35,6 +47,13 @@
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_TEST_TOWN_MAYS_HOUSE_1F",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 5,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_TEST_TOWN_GYM",
       "dest_warp_id": "1"
     }
   ],
