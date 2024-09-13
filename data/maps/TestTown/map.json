@@ -55,6 +55,27 @@
       "elevation": 0,
       "dest_map": "MAP_TEST_TOWN_GYM",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 16,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_TEST_TOWN_HOUSE1",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 21,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_TEST_TOWN_MART",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 25,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_TEST_TOWN_POKE_CENTER",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

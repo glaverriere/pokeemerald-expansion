@@ -4510,6 +4510,36 @@
       "secondary_tileset": "gTileset_PetalburgGym",
       "border_filepath": "data/layouts/TestTown_Gym/border.bin",
       "blockdata_filepath": "data/layouts/TestTown_Gym/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEST_TOWN_HOUSE1",
+      "name": "TestTown_House1_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/TestTown_House1/border.bin",
+      "blockdata_filepath": "data/layouts/TestTown_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEST_TOWN_MART",
+      "name": "TestTown_Mart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/TestTown_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/TestTown_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_TEST_TOWN_POKE_CENTER",
+      "name": "TestTown_PokeCenter_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/TestTown_PokeCenter/border.bin",
+      "blockdata_filepath": "data/layouts/TestTown_PokeCenter/map.bin"
     }
   ]
 }
