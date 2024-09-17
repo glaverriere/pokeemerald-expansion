@@ -1,0 +1,85 @@
+mapscripts TestTown_Gym_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION: TestTown_Gym_OnTransition
+    MAP_SCRIPT_ON_FRAME_TABLE [
+		VAR_TESTTOWN_INTRO_STATE, 5: TestTown_Gym_OnFrame1
+    ]
+}
+
+script TestTown_Gym_OnTransition {
+    if (var(VAR_TESTTOWN_INTRO_STATE) == 5) {
+        setflag(FLAG_HIDE_TEST_TOWN_GYM_ASSISTANT)
+        setflag(FLAG_HIDE_TEST_TOWN_GYM_RIVAL_BRENDAN)
+        setflag(FLAG_HIDE_TEST_TOWN_GYM_WALLY)
+    }
+}
+
+script TestTown_Gym_OnFrame1 {
+    lockall
+    delay(10)
+    applymovement(OBJ_EVENT_ID_PLAYER, TestTown_Gym_GoToDad)
+    applymovement(2, TestTown_Gym_GoToDad)
+    waitmovement(0)
+    msgbox(TestTown_Gym_WelcomeToMyGym)
+    closemessage
+    applymovement(2, TestTown_Gym_RivalToBag)
+    waitmovement(0)
+    delay(20)
+    msgbox(TestTown_Gym_ICantDecide)
+    closemessage
+    setvar(VAR_TESTTOWN_INTRO_STATE, 6)
+    releaseall
+}
+
+movement TestTown_Gym_GoToDad {
+    walk_up * 2
+}
+
+movement TestTown_Gym_RivalToBag {
+    walk_left
+    walk_up * 3
+    walk_in_place_faster_right
+}
+
+text TestTown_Gym_WelcomeToMyGym {
+	format("Dad: Welcome to my gym.\p I hope you are ready, you have a very difficult decision to make.\p Behind me, there's a bag with three Poké balls in it.\p Each one containing a different Pokémon.\p You must choose your first partner for your journey.\p May, would you do us the honor of choosing first?\p May: Yes! Thank you so much for this opportunity, Norman!")
+}
+
+text TestTown_Gym_ICantDecide {
+    format("...\p May: They're all so cool and unique.\p I really don't know which one to choose...\p {PLAYER}! You should choose first.\p I can't make up my mind.\p Dad: Alright {PLAYER}, go ahead.")
+}
+
+script TestTown_Gym_Rival {
+    lockall
+    faceplayer
+    msgbox(TestTown_Gym_RivalCantDecide)
+    closemessage
+    applymovement(2, Common_Movement_WalkInPlaceFasterRight)
+    waitmovement(0)
+    releaseall
+}
+
+script TestTown_Gym_NormanWaitsForPokemon {
+    lockall
+    faceplayer
+    msgbox(TestTown_Gym_DadTakeYourTime)
+    closemessage
+    releaseall
+}
+
+text TestTown_Gym_RivalCantDecide {
+    format("Pick first.\p It will be easier for me to choose if there is only two Pokémon left.")
+}
+
+text TestTown_Gym_DadTakeYourTime {
+    format("The bag is right behind me.\p Take your time, it's a very important decision to make.")
+}
+
+script TestTown_Gym_EventScript_NormansBag {
+	lock
+	faceplayer
+	setflag(FLAG_SYS_POKEMON_GET)
+	fadescreen(FADE_TO_BLACK)
+	special(ChooseStarter)
+	waitstate
+    releaseall
+    }

@@ -43,92 +43,128 @@ TestTown_OnFrame::
 # 23 "data/maps/TestTown/scripts.pory"
 	waitmovement 0
 # 24 "data/maps/TestTown/scripts.pory"
-	clearflag FLAG_HIDE_MAP_NAME_POPUP
+	opendoor 5, 16
 # 25 "data/maps/TestTown/scripts.pory"
-	fadedefaultbgm
+	waitdooranim
 # 26 "data/maps/TestTown/scripts.pory"
-	clearflag FLAG_DONT_TRANSITION_MUSIC
+	applymovement 1, RivalMay_EntersGym
 # 27 "data/maps/TestTown/scripts.pory"
-	setvar VAR_TESTTOWN_INTRO_STATE, 5
+	applymovement OBJ_EVENT_ID_PLAYER, PlayerApprochesGym
 # 28 "data/maps/TestTown/scripts.pory"
+	waitmovement 0
+# 29 "data/maps/TestTown/scripts.pory"
+	hideobjectat 1, MAP_TEST_TOWN
+# 30 "data/maps/TestTown/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, RivalMay_EntersGym
+# 31 "data/maps/TestTown/scripts.pory"
+	waitmovement 0
+# 32 "data/maps/TestTown/scripts.pory"
+	clearflag FLAG_HIDE_MAP_NAME_POPUP
+# 33 "data/maps/TestTown/scripts.pory"
+	fadedefaultbgm
+# 34 "data/maps/TestTown/scripts.pory"
+	clearflag FLAG_DONT_TRANSITION_MUSIC
+# 35 "data/maps/TestTown/scripts.pory"
+	setflag FLAG_HIDE_RIVAL_MAY_TESTTOWN
+# 36 "data/maps/TestTown/scripts.pory"
+	setvar VAR_TESTTOWN_INTRO_STATE, 5
+# 37 "data/maps/TestTown/scripts.pory"
+	warp MAP_TEST_TOWN_GYM, 5, 111
+# 38 "data/maps/TestTown/scripts.pory"
+	waitstate
+# 39 "data/maps/TestTown/scripts.pory"
 	releaseall
 	return
 
 
-# 31 "data/maps/TestTown/scripts.pory"
+# 42 "data/maps/TestTown/scripts.pory"
 RivalMay_GoesToGymWithPlayer:
-# 32 "data/maps/TestTown/scripts.pory"
+# 43 "data/maps/TestTown/scripts.pory"
 	delay_8
-# 33 "data/maps/TestTown/scripts.pory"
+# 44 "data/maps/TestTown/scripts.pory"
 	walk_down
-# 34 "data/maps/TestTown/scripts.pory"
+# 45 "data/maps/TestTown/scripts.pory"
 	walk_right
-# 34 "data/maps/TestTown/scripts.pory"
+# 45 "data/maps/TestTown/scripts.pory"
 	walk_right
-# 35 "data/maps/TestTown/scripts.pory"
+# 46 "data/maps/TestTown/scripts.pory"
 	walk_down
-# 35 "data/maps/TestTown/scripts.pory"
+# 46 "data/maps/TestTown/scripts.pory"
 	walk_down
-# 35 "data/maps/TestTown/scripts.pory"
+# 46 "data/maps/TestTown/scripts.pory"
 	walk_down
-# 35 "data/maps/TestTown/scripts.pory"
+# 46 "data/maps/TestTown/scripts.pory"
 	walk_down
-# 35 "data/maps/TestTown/scripts.pory"
+# 46 "data/maps/TestTown/scripts.pory"
 	walk_down
-# 35 "data/maps/TestTown/scripts.pory"
+# 46 "data/maps/TestTown/scripts.pory"
 	walk_down
-# 36 "data/maps/TestTown/scripts.pory"
+# 47 "data/maps/TestTown/scripts.pory"
 	walk_left
-# 36 "data/maps/TestTown/scripts.pory"
+# 47 "data/maps/TestTown/scripts.pory"
 	walk_left
-# 36 "data/maps/TestTown/scripts.pory"
+# 47 "data/maps/TestTown/scripts.pory"
 	walk_left
-# 36 "data/maps/TestTown/scripts.pory"
+# 47 "data/maps/TestTown/scripts.pory"
 	walk_left
-# 36 "data/maps/TestTown/scripts.pory"
+# 47 "data/maps/TestTown/scripts.pory"
 	walk_left
-# 36 "data/maps/TestTown/scripts.pory"
+# 47 "data/maps/TestTown/scripts.pory"
 	walk_left
-# 36 "data/maps/TestTown/scripts.pory"
+# 47 "data/maps/TestTown/scripts.pory"
 	walk_left
-# 37 "data/maps/TestTown/scripts.pory"
+# 48 "data/maps/TestTown/scripts.pory"
 	walk_in_place_faster_up
 	step_end
 
-# 40 "data/maps/TestTown/scripts.pory"
+# 51 "data/maps/TestTown/scripts.pory"
 PlayerBrendan_GoesToGymWithMay:
-# 41 "data/maps/TestTown/scripts.pory"
+# 52 "data/maps/TestTown/scripts.pory"
 	delay_8
-# 42 "data/maps/TestTown/scripts.pory"
+# 53 "data/maps/TestTown/scripts.pory"
 	walk_down
-# 42 "data/maps/TestTown/scripts.pory"
+# 53 "data/maps/TestTown/scripts.pory"
 	walk_down
-# 43 "data/maps/TestTown/scripts.pory"
+# 54 "data/maps/TestTown/scripts.pory"
 	walk_right
-# 43 "data/maps/TestTown/scripts.pory"
+# 54 "data/maps/TestTown/scripts.pory"
 	walk_right
-# 44 "data/maps/TestTown/scripts.pory"
+# 55 "data/maps/TestTown/scripts.pory"
 	walk_down
-# 44 "data/maps/TestTown/scripts.pory"
+# 55 "data/maps/TestTown/scripts.pory"
 	walk_down
-# 44 "data/maps/TestTown/scripts.pory"
+# 55 "data/maps/TestTown/scripts.pory"
 	walk_down
-# 44 "data/maps/TestTown/scripts.pory"
+# 55 "data/maps/TestTown/scripts.pory"
 	walk_down
-# 44 "data/maps/TestTown/scripts.pory"
+# 55 "data/maps/TestTown/scripts.pory"
 	walk_down
-# 44 "data/maps/TestTown/scripts.pory"
+# 55 "data/maps/TestTown/scripts.pory"
 	walk_down
-# 45 "data/maps/TestTown/scripts.pory"
+# 56 "data/maps/TestTown/scripts.pory"
 	walk_left
-# 45 "data/maps/TestTown/scripts.pory"
+# 56 "data/maps/TestTown/scripts.pory"
 	walk_left
-# 45 "data/maps/TestTown/scripts.pory"
+# 56 "data/maps/TestTown/scripts.pory"
 	walk_left
-# 45 "data/maps/TestTown/scripts.pory"
+# 56 "data/maps/TestTown/scripts.pory"
 	walk_left
-# 45 "data/maps/TestTown/scripts.pory"
+# 56 "data/maps/TestTown/scripts.pory"
 	walk_left
-# 45 "data/maps/TestTown/scripts.pory"
+# 56 "data/maps/TestTown/scripts.pory"
 	walk_left
+	step_end
+
+# 59 "data/maps/TestTown/scripts.pory"
+RivalMay_EntersGym:
+# 60 "data/maps/TestTown/scripts.pory"
+	walk_up
+	step_end
+
+# 63 "data/maps/TestTown/scripts.pory"
+PlayerApprochesGym:
+# 64 "data/maps/TestTown/scripts.pory"
+	walk_left
+# 65 "data/maps/TestTown/scripts.pory"
+	walk_in_place_faster_up
 	step_end

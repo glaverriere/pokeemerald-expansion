@@ -291,7 +291,7 @@ DewfordTown_EventScript_SailToPetalburg::
 # 146 "data/maps/DewfordTown/scripts.pory"
 	clearflag FLAG_HIDE_BRINEYS_HOUSE_PEEKO
 # 147 "data/maps/DewfordTown/scripts.pory"
-	clearflag FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT
+	clearflag FLAG_HIDE_TEST_TOWN_GYM_WALLY_BOAT
 # 148 "data/maps/DewfordTown/scripts.pory"
 	setflag FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN
 # 149 "data/maps/DewfordTown/scripts.pory"

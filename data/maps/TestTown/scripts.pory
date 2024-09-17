@@ -21,10 +21,21 @@ script TestTown_OnFrame {
 	applymovement(1, RivalMay_GoesToGymWithPlayer)
 	applymovement(OBJ_EVENT_ID_PLAYER, PlayerBrendan_GoesToGymWithMay)
 	waitmovement(0)
+	opendoor(5, 16)
+	waitdooranim
+	applymovement(1, RivalMay_EntersGym)
+	applymovement(OBJ_EVENT_ID_PLAYER, PlayerApprochesGym)
+	waitmovement(0)
+	hideobjectat(1, MAP_TEST_TOWN)
+	applymovement(OBJ_EVENT_ID_PLAYER, RivalMay_EntersGym)
+	waitmovement(0)
 	clearflag(FLAG_HIDE_MAP_NAME_POPUP)
 	fadedefaultbgm
 	clearflag(FLAG_DONT_TRANSITION_MUSIC)
+	setflag(FLAG_HIDE_RIVAL_MAY_TESTTOWN)
 	setvar(VAR_TESTTOWN_INTRO_STATE, 5)
+	warp(MAP_TEST_TOWN_GYM, 5, 111)
+	waitstate
 	releaseall
 }
 
@@ -43,4 +54,13 @@ movement PlayerBrendan_GoesToGymWithMay {
 	walk_right * 2
 	walk_down * 6
 	walk_left * 6
+}
+
+movement RivalMay_EntersGym {
+	walk_up
+}
+
+movement PlayerApprochesGym {
+	walk_left
+	walk_in_place_faster_up
 }

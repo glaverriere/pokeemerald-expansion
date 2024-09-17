@@ -24,7 +24,7 @@ May_AllowRunning_1:
 # 12 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_MOM
 # 13 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_SIBLING
+	setflag FLAG_HIDE_TEST_TOWN_GYM_RIVAL_BRENDAN
 # 14 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_POKE_BALL
 # 15 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"

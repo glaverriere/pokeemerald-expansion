@@ -809,7 +809,7 @@ Route104_EventScript_ArriveInDewford::
 # 405 "data/maps/Route104/scripts.pory"
 	call Common_EventScript_StopBrineysBoatMusic
 # 406 "data/maps/Route104/scripts.pory"
-	setflag FLAG_HIDE_ROUTE_104_MR_BRINEY_BOAT
+	setflag FLAG_HIDE_TEST_TOWN_GYM_WALLY_BOAT
 # 407 "data/maps/Route104/scripts.pory"
 	hideobjectat LOCALID_BOAT_R104, MAP_ROUTE104
 # 408 "data/maps/Route104/scripts.pory"
