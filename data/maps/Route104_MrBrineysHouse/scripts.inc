@@ -157,7 +157,7 @@ Route104_MrBrineysHouse_EventScript_SailToDewford::
 # 79 "data/maps/Route104_MrBrineysHouse/scripts.pory"
 	clearflag FLAG_HIDE_TEST_TOWN_GYM_WALLY
 # 80 "data/maps/Route104_MrBrineysHouse/scripts.pory"
-	setflag FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY
+	setflag FLAG_HIDE_TEST_TOWN_TREECKOBALL
 # 81 "data/maps/Route104_MrBrineysHouse/scripts.pory"
 	setflag FLAG_HIDE_BRINEYS_HOUSE_PEEKO
 # 82 "data/maps/Route104_MrBrineysHouse/scripts.pory"

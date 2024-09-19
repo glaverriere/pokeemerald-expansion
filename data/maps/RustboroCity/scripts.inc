@@ -633,7 +633,7 @@ RustboroCity_EventScript_StolenGoodsScene::
 # 317 "data/maps/RustboroCity/scripts.pory"
 	clearflag FLAG_HIDE_RUSTURF_TUNNEL_AQUA_GRUNT
 # 318 "data/maps/RustboroCity/scripts.pory"
-	setflag FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY
+	setflag FLAG_HIDE_TEST_TOWN_TREECKOBALL
 # 319 "data/maps/RustboroCity/scripts.pory"
 	setflag FLAG_HIDE_BRINEYS_HOUSE_PEEKO
 # 320 "data/maps/RustboroCity/scripts.pory"

@@ -36,16 +36,26 @@ movement TestTown_Gym_GoToDad {
 
 movement TestTown_Gym_RivalToBag {
     walk_left
-    walk_up * 3
-    walk_in_place_faster_right
+    walk_up * 2
+    delay_16 * 2
+    walk_right
+    walk_in_place_faster_up
+    delay_16 * 2
+    walk_right
+    walk_in_place_faster_up
+    delay_16 * 2
+    walk_left * 2
+    walk_down * 2
+    walk_right
+    walk_in_place_faster_up
 }
 
 text TestTown_Gym_WelcomeToMyGym {
-	format("Dad: Welcome to my gym.\p I hope you are ready, you have a very difficult decision to make.\p Behind me, there's a bag with three Poké balls in it.\p Each one containing a different Pokémon.\p You must choose your first partner for your journey.\p May, would you do us the honor of choosing first?\p May: Yes! Thank you so much for this opportunity, Norman!")
+	format("Dad: Welcome to my gym.\p I hope you are ready, you have a very difficult decision to make.\p Behind me, there's three Poké balls.\p Each one containing a different Pokémon.\p You must choose your first partner for your journey.\p May, would you do us the honor of choosing first?\p May: Yes! Thank you so much for this opportunity, Norman!")
 }
 
 text TestTown_Gym_ICantDecide {
-    format("...\p May: They're all so cool and unique.\p I really don't know which one to choose...\p {PLAYER}! You should choose first.\p I can't make up my mind.\p Dad: Alright {PLAYER}, go ahead.")
+    format("May: They're all so cool and unique.\p I really don't know which one to choose...\p {PLAYER}! You should choose first.\p I can't make up my mind.\p Dad: Alright {PLAYER}, go ahead.")
 }
 
 script TestTown_Gym_Rival {
@@ -53,8 +63,6 @@ script TestTown_Gym_Rival {
     faceplayer
     msgbox(TestTown_Gym_RivalCantDecide)
     closemessage
-    applymovement(2, Common_Movement_WalkInPlaceFasterRight)
-    waitmovement(0)
     releaseall
 }
 
@@ -63,6 +71,8 @@ script TestTown_Gym_NormanWaitsForPokemon {
     faceplayer
     msgbox(TestTown_Gym_DadTakeYourTime)
     closemessage
+    applymovement(1, Common_Movement_WalkInPlaceFasterDown)
+    waitmovement(0)
     releaseall
 }
 
@@ -74,12 +84,180 @@ text TestTown_Gym_DadTakeYourTime {
     format("The bag is right behind me.\p Take your time, it's a very important decision to make.")
 }
 
-script TestTown_Gym_EventScript_NormansBag {
-	lock
-	faceplayer
-	setflag(FLAG_SYS_POKEMON_GET)
-	fadescreen(FADE_TO_BLACK)
-	special(ChooseStarter)
-	waitstate
-    releaseall
+script TestTown_Gym_Eventscript_TreeckoBall {
+    lockall
+    showmonpic(SPECIES_TREECKO, 10, 3)
+    msgbox("Do you want to choose Treecko?", MSGBOX_YESNO)
+    if (var(VAR_RESULT) == YES) {
+        givemon(SPECIES_TREECKO, 5 , ITEM_ORAN_BERRY)
+        playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("You received Treecko!")
+        removeobject(6)
+        setflag(FLAG_SYS_POKEMON_GET)
+        setflag(FLAG_HIDE_TEST_TOWN_TREECKOBALL)
+        setvar(VAR_STARTER_MON, 0)
+        call(NicknamePartyMon)
+        call(StarterReceived)
     }
+    else {
+        hidemonpic
+        closemessage
+    }
+    waitmessage
+    releaseall
+}
+
+script TestTown_Gym_Eventscript_TorchicBall {
+    lockall
+    showmonpic(SPECIES_TORCHIC, 10, 3)
+    msgbox("Do you want to choose Torchic?", MSGBOX_YESNO)
+    if (var(VAR_RESULT) == YES) {
+        givemon(SPECIES_TORCHIC, 5 , ITEM_ORAN_BERRY)
+        playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("You received Torchic!")
+        removeobject(7)
+        setflag(FLAG_SYS_POKEMON_GET)
+        setflag(FLAG_HIDE_TEST_TOWN_TORCHICBALL)
+        setvar(VAR_STARTER_MON, 1)
+        call(NicknamePartyMon)
+        call(StarterReceived)
+    }
+    else {
+        hidemonpic
+        closemessage
+    }
+    waitmessage
+    releaseall
+}
+
+script TestTown_Gym_Eventscript_MudkipBall {
+    lockall
+    showmonpic(SPECIES_MUDKIP, 10, 3)
+    msgbox("Do you want to choose Mudkip?", MSGBOX_YESNO)
+    if (var(VAR_RESULT) == YES) {
+        givemon(SPECIES_MUDKIP, 5 , ITEM_ORAN_BERRY)
+        playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("You received Mudkip!")
+        removeobject(8)
+        setflag(FLAG_SYS_POKEMON_GET)
+        setflag(FLAG_HIDE_TEST_TOWN_MUDKIPBALL)
+        setvar(VAR_STARTER_MON, 2)
+        call(NicknamePartyMon)
+        call(StarterReceived)
+    }
+    else {
+        hidemonpic
+        closemessage
+    }
+    waitmessage
+    releaseall
+}
+
+
+script NicknamePartyMon {
+    msgbox("Give it a nickname?", MSGBOX_YESNO)
+    hidemonpic
+    if (var(VAR_RESULT) == YES) {
+        call(Common_EventScript_GetGiftMonPartySlot)
+        call(Common_EventScript_NameReceivedPartyMon)
+    }
+    waitmessage
+    closemessage
+}
+
+script StarterReceived {
+    delay(16)
+    if (var(VAR_STARTER_MON) == 0) {
+        applymovement(2, Movement_RivalChoosesTorchic)
+        waitmovement(0)
+        delay(20)
+        msgbox("I choose this one!")
+        closemessage
+        removeobject(7)
+        setflag(FLAG_HIDE_TEST_TOWN_TORCHICBALL)
+        delay(20)
+        applymovement(2, Movement_RivalTorchicToDad)
+        applymovement(OBJ_EVENT_ID_PLAYER, Movement_PlayerTreeckoToDad)
+        waitmovement(0)
+    }
+    elif (var(VAR_STARTER_MON) == 1) {
+        applymovement(2, Movement_RivalChoosesMudkip)
+        waitmovement(0)
+        delay(20)
+        msgbox("I choose this one!")
+        closemessage
+        removeobject(8)
+        setflag(FLAG_HIDE_TEST_TOWN_MUDKIPBALL)
+        delay(20)
+        applymovement(2, Movement_RivalMudkipToDad)
+        applymovement(OBJ_EVENT_ID_PLAYER, Movement_PlayerTorchicToDad)
+        waitmovement(0)
+    }
+    else {
+        applymovement(2, Movement_RivalChoosesTreecko)
+        waitmovement(0)
+        delay(20)
+        msgbox("I choose this one!")
+        closemessage
+        removeobject(6)
+        setflag(FLAG_HIDE_TEST_TOWN_TREECKOBALL)
+        delay(20)
+        applymovement(2, Movement_RivalTreeckoToDad)
+        applymovement(OBJ_EVENT_ID_PLAYER, Movement_PlayerMudkipToDad)
+        waitmovement(0)
+    }
+}
+
+movement Movement_RivalChoosesTorchic {
+    walk_right
+    walk_up * 2
+    walk_left
+    walk_in_place_faster_up
+}
+
+movement Movement_RivalTorchicToDad {
+    walk_right
+    walk_down * 2
+    walk_left
+    walk_in_place_faster_up
+}
+
+movement Movement_PlayerTreeckoToDad {
+    walk_right * 2
+    walk_down * 2
+    walk_in_place_faster_up
+}
+
+movement Movement_RivalChoosesMudkip {
+    walk_right
+    walk_up * 2
+}
+
+movement Movement_RivalMudkipToDad {
+    walk_down * 2
+    walk_left
+    walk_in_place_faster_up
+}
+
+movement Movement_PlayerTorchicToDad {
+    walk_right
+    walk_down * 2
+    walk_in_place_faster_up
+}
+
+movement Movement_RivalChoosesTreecko {
+    walk_left
+    walk_up * 2
+}
+
+movement Movement_RivalTreeckoToDad {
+    walk_down * 2
+    walk_right
+    walk_in_place_faster_up
+}
+
+movement Movement_PlayerMudkipToDad {
+    walk_down * 2
+    walk_in_place_faster_up
+    delay_16
+}

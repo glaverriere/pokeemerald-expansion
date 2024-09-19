@@ -783,12 +783,12 @@
 #define FLAG_HIDE_TEST_TOWN_GYM_RIVAL_BRENDAN                       0x2E0
 #define FLAG_HIDE_TEST_TOWN_GYM_RIVAL_MAY                           0x2E1
 #define FLAG_HIDE_TEST_TOWN_GYM_WALLY                               0x2E2
-#define FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY                           0x2E3
-#define FLAG_HIDE_MR_BRINEY_DEWFORD_TOWN                            0x2E4
-#define FLAG_HIDE_ROUTE_109_MR_BRINEY                               0x2E5
+#define FLAG_HIDE_TEST_TOWN_TREECKOBALL                             0x2E3
+#define FLAG_HIDE_TEST_TOWN_TORCHICBALL                             0x2E4
+#define FLAG_HIDE_TEST_TOWN_MUDKIPBALL                               0x2E5
 #define FLAG_HIDE_TEST_TOWN_GYM_WALLY_BOAT                          0x2E6
 #define FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN                       0x2E7
-#define FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT                          0x2E8
+#define FLAG_HIDE_TEST_TOWN_MUDKIPBALL_BOAT                          0x2E8
 #define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_BRENDAN            0x2E9
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_MAY                    0x2EA
 #define FLAG_HIDE_SAFARI_ZONE_SOUTH_EAST_EXPANSION                  0x2EB

@@ -797,7 +797,7 @@ Route104_EventScript_ArriveInDewford::
 # 399 "data/maps/Route104/scripts.pory"
 	setobjectsubpriority LOCALID_BRINEY_DEWFORD, MAP_DEWFORD_TOWN, 0
 # 400 "data/maps/Route104/scripts.pory"
-	clearflag FLAG_HIDE_MR_BRINEY_DEWFORD_TOWN
+	clearflag FLAG_HIDE_TEST_TOWN_TORCHICBALL
 # 401 "data/maps/Route104/scripts.pory"
 	applymovement LOCALID_BRINEY_DEWFORD, Route104_Movement_BrineyExitBoat
 # 402 "data/maps/Route104/scripts.pory"

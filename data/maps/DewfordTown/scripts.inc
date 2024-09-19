@@ -287,7 +287,7 @@ DewfordTown_EventScript_SailToPetalburg::
 # 144 "data/maps/DewfordTown/scripts.pory"
 	showobjectat OBJ_EVENT_ID_PLAYER, MAP_ROUTE104
 # 145 "data/maps/DewfordTown/scripts.pory"
-	clearflag FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY
+	clearflag FLAG_HIDE_TEST_TOWN_TREECKOBALL
 # 146 "data/maps/DewfordTown/scripts.pory"
 	clearflag FLAG_HIDE_BRINEYS_HOUSE_PEEKO
 # 147 "data/maps/DewfordTown/scripts.pory"
@@ -359,11 +359,11 @@ DewfordTown_EventScript_SailToSlateport::
 # 180 "data/maps/DewfordTown/scripts.pory"
 	waitmovement 0
 # 181 "data/maps/DewfordTown/scripts.pory"
-	clearflag FLAG_HIDE_ROUTE_109_MR_BRINEY
+	clearflag FLAG_HIDE_TEST_TOWN_MUDKIPBALL
 # 182 "data/maps/DewfordTown/scripts.pory"
 	addobject LOCALID_BOAT_R109
 # 183 "data/maps/DewfordTown/scripts.pory"
-	clearflag FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT
+	clearflag FLAG_HIDE_TEST_TOWN_MUDKIPBALL_BOAT
 # 184 "data/maps/DewfordTown/scripts.pory"
 	setflag FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN
 # 185 "data/maps/DewfordTown/scripts.pory"

@@ -111,9 +111,9 @@ Route109_EventScript_DoSailToDewford::
 # 56 "data/maps/Route109/scripts.pory"
 	waitmovement 0
 # 57 "data/maps/Route109/scripts.pory"
-	clearflag FLAG_HIDE_MR_BRINEY_DEWFORD_TOWN
+	clearflag FLAG_HIDE_TEST_TOWN_TORCHICBALL
 # 58 "data/maps/Route109/scripts.pory"
-	setflag FLAG_HIDE_ROUTE_109_MR_BRINEY_BOAT
+	setflag FLAG_HIDE_TEST_TOWN_MUDKIPBALL_BOAT
 # 59 "data/maps/Route109/scripts.pory"
 	hideobjectat LOCALID_BOAT_R109, MAP_ROUTE109
 # 60 "data/maps/Route109/scripts.pory"
