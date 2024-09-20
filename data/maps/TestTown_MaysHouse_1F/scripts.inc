@@ -84,154 +84,156 @@ TestTown_MaysHouse_Skitty::
 # 44 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
 	waitmoncry
 # 45 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+	applymovement 2, Common_Movement_FaceOriginalDirection
+# 46 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
 	releaseall
 	return
 
 
-# 48 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-Movement_MomGetsUp_May:
 # 49 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+Movement_MomGetsUp_May:
+# 50 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
 	walk_in_place_faster_up
-# 50 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+# 51 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
 	walk_up
-# 50 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+# 51 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
 	walk_up
-# 50 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+# 51 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
 	walk_up
 	step_end
 
-# 53 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-Movement_MomGetToPlayer_May:
 # 54 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+Movement_MomGetToPlayer_May:
+# 55 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
 	walk_in_place_faster_left
-# 55 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+# 56 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
 	walk_left
-# 55 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+# 56 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
 	walk_left
 	step_end
 
-# 58 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-Movement_MomGoesToSink_May:
 # 59 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+Movement_MomGoesToSink_May:
+# 60 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
 	walk_in_place_faster_right
-# 60 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	walk_right
-# 60 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	walk_right
-# 60 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	walk_right
-# 60 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	walk_right
-# 60 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+# 61 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
 	walk_right
 # 61 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+	walk_right
+# 61 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+	walk_right
+# 61 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+	walk_right
+# 61 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+	walk_right
+# 62 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
 	walk_in_place_faster_up
 	step_end
 
 TestTown_MaysHouse_1F_OnLoad::
-# 73 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+# 74 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
 	compare VAR_TESTTOWN_INTRO_STATE, 3
 	goto_if_eq TestTown_MaysHouse_1F_OnLoad_1
-# 78 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	setobjectxyperm 3, 8, 7
 # 79 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+	setobjectxyperm 3, 8, 7
+# 80 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
 	setobjectmovementtype 3, MOVEMENT_TYPE_FACE_LEFT
 	return
 
 TestTown_MaysHouse_1F_OnLoad_1:
-# 74 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	setobjectxyperm 3, 1, 5
 # 75 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+	setobjectxyperm 3, 1, 5
+# 76 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
 	setobjectmovementtype 3, MOVEMENT_TYPE_FACE_RIGHT
 	return
 
 
 TestTown_MaysHouse_1F_OnFrame2::
-# 84 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	lockall
 # 85 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	delay 10
+	lockall
 # 86 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	msgbox RivalMomToMay_BeSafe
+	delay 10
 # 87 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	closemessage
+	msgbox RivalMomToMay_BeSafe
 # 88 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	delay 10
-# 89 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	playse SE_PIN
-# 90 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	applymovement 4, Common_Movement_ExclamationMark
-# 91 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	waitmovement 0
-# 92 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	applymovement 4, Common_Movement_Delay48
-# 93 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	waitmovement 0
-# 94 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	applymovement 3, Common_Movement_WalkInPlaceFasterDown
-# 95 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	applymovement 4, Common_Movement_WalkInPlaceFasterDown
-# 96 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	waitmovement 0
-# 97 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	delay 10
-# 98 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	applymovement 4, Rival_ApproachesPlayer
-# 99 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	waitmovement 0
-# 100 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	msgbox RivalToPlayer_CantWaitLetsGo
-# 101 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
 	closemessage
-# 102 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+# 89 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
 	delay 10
-# 103 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	setflag FLAG_DONT_TRANSITION_MUSIC
-# 104 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	playbgm MUS_FOLLOW_ME, FALSE
-# 105 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
-# 106 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	applymovement 4, Rival_ExitsMaysHouse
-# 107 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+# 90 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+	playse SE_PIN
+# 91 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+	applymovement 4, Common_Movement_ExclamationMark
+# 92 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
 	waitmovement 0
+# 93 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+	applymovement 4, Common_Movement_Delay48
+# 94 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+	waitmovement 0
+# 95 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+	applymovement 3, Common_Movement_WalkInPlaceFasterDown
+# 96 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+	applymovement 4, Common_Movement_WalkInPlaceFasterDown
+# 97 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+	waitmovement 0
+# 98 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+	delay 10
+# 99 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+	applymovement 4, Rival_ApproachesPlayer
+# 100 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+	waitmovement 0
+# 101 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+	msgbox RivalToPlayer_CantWaitLetsGo
+# 102 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+	closemessage
+# 103 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+	delay 10
+# 104 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+	setflag FLAG_DONT_TRANSITION_MUSIC
+# 105 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+	playbgm MUS_FOLLOW_ME, FALSE
+# 106 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
+# 107 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+	applymovement 4, Rival_ExitsMaysHouse
 # 108 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	removeobject 4
+	waitmovement 0
 # 109 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	setvar VAR_TESTTOWN_INTRO_STATE, 4
+	removeobject 4
 # 110 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	setflag FLAG_HIDE_RIVAL_MAYS_HOUSE
+	setvar VAR_TESTTOWN_INTRO_STATE, 4
 # 111 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	warp MAP_TEST_TOWN, 10, 8
+	setflag FLAG_HIDE_RIVAL_MAYS_HOUSE
 # 112 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	waitstate
+	warp MAP_TEST_TOWN, 10, 8
 # 113 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+	waitstate
+# 114 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
 	releaseall
 	return
 
 
-# 116 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+# 117 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
 Rival_ApproachesPlayer:
-# 117 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+# 118 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
 	walk_down
-# 117 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+# 118 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
 	walk_down
 	step_end
 
-# 120 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-Rival_ExitsMaysHouse:
 # 121 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	walk_in_place_faster_left
+Rival_ExitsMaysHouse:
 # 122 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	walk_left
+	walk_in_place_faster_left
 # 123 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	walk_in_place_faster_down
+	walk_left
 # 124 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+	walk_in_place_faster_down
+# 125 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
 	walk_down
 	step_end
 
 Mom_GoGetBrendan::
-# 64 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+# 65 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
 	.string "Mom: Hi Sweetie! I am so excited for\n"
 	.string "you, I can barely stay in place!\p"
 	.string "Brendan is also getting his first\n"
@@ -243,16 +245,16 @@ Mom_GoGetBrendan::
 	.string "Have fun!$"
 
 Mom_BrendanIsNextDoor::
-# 68 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+# 69 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
 	.string "You should go next door to see Brendan.\p"
 	.string "Tell his mom I said hello!$"
 
 RivalMomToMay_BeSafe::
-# 127 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+# 128 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
 	.string "May's mom: Please, be safe out there.$"
 
 RivalToPlayer_CantWaitLetsGo::
-# 131 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+# 132 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
 	.string "May: Hi {PLAYER}!\p"
 	.string "I can't wait anymore to meet my first\n"
 	.string "Pokémon!\p"

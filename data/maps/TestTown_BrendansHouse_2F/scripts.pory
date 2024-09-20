@@ -11,13 +11,12 @@ script TestTown_BrendansHouse_2F_OnFrame{
 	addobject(1)
 	applymovement(1, Movement_DadEnters2F)
 	waitmovement(0)
-	delay(20)
+	delay(32)
 	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight)
 	applymovement(1, Movement_DadToPlayer)
 	waitmovement(0)
 	msgbox(Dad_MeetMeAtGym)
 	closemessage
-	delay(20)
 	applymovement(1, Movement_DadExits2F)
 	waitmovement(0)
 	playse(SE_EXIT)
@@ -31,14 +30,11 @@ movement Movement_DadEnters2F {
 }
 
 movement Movement_DadExits2F {
-    walk_in_place_faster_right
 	walk_right * 5
-	walk_in_place_faster_up
 	walk_up
 }
 
 movement Movement_DadToPlayer {
-    walk_in_place_faster_left
 	walk_left * 2
 }
 

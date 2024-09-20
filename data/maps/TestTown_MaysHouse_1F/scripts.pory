@@ -42,6 +42,7 @@ script TestTown_MaysHouse_Skitty {
 	waitse
 	playmoncry(SPECIES_SKITTY, CRY_MODE_NORMAL)
 	waitmoncry
+	applymovement(2, Common_Movement_FaceOriginalDirection)
 	releaseall
 }
 

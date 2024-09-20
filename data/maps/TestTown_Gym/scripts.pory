@@ -25,6 +25,14 @@ script TestTown_Gym_OnFrame1 {
     waitmovement(0)
     delay(20)
     msgbox(TestTown_Gym_ICantDecide)
+    applymovement(2, Common_Movement_WalkInPlaceFasterRight)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft)
+    waitmovement(0)
+    msgbox(TestTown_Gym_PlayerYouChooseFirst)
+    applymovement(2, Common_Movement_WalkInPlaceFasterUp)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp)
+    waitmovement(0)
+    msgbox(TestTown_Gym_DadGoAhead)
     closemessage
     setvar(VAR_TESTTOWN_INTRO_STATE, 6)
     releaseall
@@ -55,24 +63,36 @@ text TestTown_Gym_WelcomeToMyGym {
 }
 
 text TestTown_Gym_ICantDecide {
-    format("May: They're all so cool and unique.\p I really don't know which one to choose...\p {PLAYER}! You should choose first.\p I can't make up my mind.\p Dad: Alright {PLAYER}, go ahead.")
+    format("May: They're all so cool and unique.\p I really don't know which one to choose...")
+}
+
+text TestTown_Gym_PlayerYouChooseFirst {
+    format("{PLAYER}! You should choose first.\p I can't make up my mind.")
+}
+
+text TestTown_Gym_DadGoAhead {
+    format("Dad: Alright {PLAYER}, go ahead.")
 }
 
 script TestTown_Gym_Rival {
-    lockall
-    faceplayer
-    msgbox(TestTown_Gym_RivalCantDecide)
-    closemessage
-    releaseall
+    msgbox(TestTown_Gym_RivalCantDecide, MSGBOX_NPC)
 }
 
 script TestTown_Gym_NormanWaitsForPokemon {
     lockall
     faceplayer
-    msgbox(TestTown_Gym_DadTakeYourTime)
-    closemessage
-    applymovement(1, Common_Movement_WalkInPlaceFasterDown)
-    waitmovement(0)
+    if (var(VAR_TESTTOWN_INTRO_STATE) == 6) {
+        msgbox(TestTown_Gym_DadTakeYourTime)
+        closemessage
+        applymovement(1, Common_Movement_WalkInPlaceFasterDown)
+        waitmovement(0)
+    }
+    elif (var(VAR_TESTTOWN_INTRO_STATE) == 7) {
+        msgbox(TestTown_Gym_DadGoToBirch)
+        closemessage
+        applymovement(1, Common_Movement_WalkInPlaceFasterDown)
+        waitmovement(0)
+    }
     releaseall
 }
 
@@ -81,7 +101,11 @@ text TestTown_Gym_RivalCantDecide {
 }
 
 text TestTown_Gym_DadTakeYourTime {
-    format("The bag is right behind me.\p Take your time, it's a very important decision to make.")
+    format("The Poké balls are right behind me.\p Take your time, it's a very important decision to make.")
+}
+
+text TestTown_Gym_DadGoToBirch {
+    format("Once you get stronger as a trainer, I'll gladly challenge you.\p For now, go meet your friends at Professor Birch's lab.\p It's north of our town.")
 }
 
 script TestTown_Gym_Eventscript_TreeckoBall {
@@ -179,6 +203,7 @@ script StarterReceived {
         applymovement(2, Movement_RivalTorchicToDad)
         applymovement(OBJ_EVENT_ID_PLAYER, Movement_PlayerTreeckoToDad)
         waitmovement(0)
+        call(TestTown_Gym_WallyEnters)
     }
     elif (var(VAR_STARTER_MON) == 1) {
         applymovement(2, Movement_RivalChoosesMudkip)
@@ -192,6 +217,7 @@ script StarterReceived {
         applymovement(2, Movement_RivalMudkipToDad)
         applymovement(OBJ_EVENT_ID_PLAYER, Movement_PlayerTorchicToDad)
         waitmovement(0)
+        call(TestTown_Gym_WallyEnters)
     }
     else {
         applymovement(2, Movement_RivalChoosesTreecko)
@@ -205,6 +231,7 @@ script StarterReceived {
         applymovement(2, Movement_RivalTreeckoToDad)
         applymovement(OBJ_EVENT_ID_PLAYER, Movement_PlayerMudkipToDad)
         waitmovement(0)
+        call(TestTown_Gym_WallyEnters)
     }
 }
 
@@ -260,4 +287,151 @@ movement Movement_PlayerMudkipToDad {
     walk_down * 2
     walk_in_place_faster_up
     delay_16
+}
+
+script TestTown_Gym_WallyEnters {
+    delay(32)
+    msgbox("Dad: So...")
+    closemessage
+    playse(SE_EXIT)
+	delay(10)
+	addobject(4)
+    delay(32)
+    applymovement(4, TestTown_Gym_WallyApproachesDad)
+    waitmovement(0)
+    msgbox(TestTown_Gym_IAmWally)
+    applymovement(2, Common_Movement_WalkInPlaceFasterLeft)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft)
+    applymovement(4, Common_Movement_WalkInPlaceFasterRight)
+    waitmovement(0)
+    msgbox(TestTown_Gym_MayWouldLoveToTeachYou)
+    applymovement(2, Common_Movement_WalkInPlaceFasterUp)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp)
+    applymovement(4, Common_Movement_WalkInPlaceFasterUp)
+    waitmovement(0)
+    msgbox(TestTown_Gym_DadGivesWallyAPokemon)
+    closemessage
+    if (var(VAR_STARTER_MON) == 0) {
+        applymovement(4, TestTown_Gym_WallyGoesToMudkip)
+        waitmovement(0)
+        delay(20)
+        removeobject(8)
+        setflag(FLAG_HIDE_TEST_TOWN_MUDKIPBALL)
+        delay(20)
+        applymovement(4, TestTown_Gym_WallyMudkipBackToDad)
+    }
+    elif (var(VAR_STARTER_MON) == 1) {
+        applymovement(4, TestTown_Gym_WallyGoesToTreecko)
+        waitmovement(0)
+        delay(20)
+        removeobject(6)
+        setflag(FLAG_HIDE_TEST_TOWN_TREECKOBALL)
+        delay(20)
+        applymovement(4, TestTown_Gym_WallyTreeckoBackToDad)
+    }
+    else {
+        applymovement(4, TestTown_Gym_WallyGoesToTorchic)
+        waitmovement(0)
+        delay(20)
+        removeobject(7)
+        setflag(FLAG_HIDE_TEST_TOWN_TORCHICBALL)
+        delay(20)
+        applymovement(4, TestTown_Gym_WallyTorchicBackToDad)
+    }
+    waitmovement(0)
+    msgbox(TestTown_Gym_WallyCantBelieveIt)
+    applymovement(2, Common_Movement_WalkInPlaceFasterRight)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft)
+    applymovement(4, Common_Movement_WalkInPlaceFasterRight)
+    waitmovement(0)
+    msgbox(TestTown_Gym_IllRaceYouToTheLab)
+    closemessage
+    applymovement(2, TestTown_Gym_RivalRunsOutOfGym)
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown)
+    applymovement(4, Common_Movement_WalkInPlaceFasterDown)
+    waitmovement(0)
+    playse(SE_EXIT)
+    delay(10)
+    removeobject(2)
+    msgbox("Wally: Wait for me!")
+    closemessage
+    applymovement(4, TestTown_Gym_WallyOutOfGym)
+    waitmovement(0)
+    playse(SE_EXIT)
+    delay(10)
+    removeobject(4)
+    setflag(FLAG_HIDE_TEST_TOWN_GYM_RIVAL_MAY)
+    setflag(FLAG_HIDE_TEST_TOWN_GYM_RIVAL_BRENDAN)
+    setflag(FLAG_HIDE_TEST_TOWN_GYM_WALLY)
+    setvar(VAR_TESTTOWN_INTRO_STATE, 7)
+    releaseall
+}
+
+movement TestTown_Gym_WallyApproachesDad {
+    walk_up
+    walk_left
+    walk_up
+}
+
+text TestTown_Gym_IAmWally {
+    format("Wally: Um, hi, my name is Wally and I'm new in Hoenn.\p I'd like to learn how to catch a Pokémon of my own, but I don't know how.\p Professor Birch told me someone here could help me with that.")
+}
+
+text TestTown_Gym_MayWouldLoveToTeachYou {
+    format("May: Hi, Wally! I'm May and this is {PLAYER}.\p Professor Birch is my dad, so I've seen him catch Pokémon plenty of times.\p I would love to teach you how to catch one!")
+}
+
+text TestTown_Gym_DadGivesWallyAPokemon {
+    format("Dad: How nice of you to offer!\p Listen Wally, you come just at the right moment.\p May and {PLAYER} just chose their first Pokémon and there's one more left behind me.\p Would you like to have it?\p Wally: Really?\p You would give me a Pokémon just like that?\p Dad: Yes, take it-It's yours!\p Wally: I don't know what to say...\p Thank you so much!\p It's so nice of you!")
+}
+
+movement TestTown_Gym_WallyGoesToMudkip {
+    walk_up * 2
+    walk_right * 2
+    walk_in_place_faster_up
+}
+
+movement TestTown_Gym_WallyMudkipBackToDad {
+    walk_left * 2
+    walk_down * 2
+    walk_in_place_faster_up
+}
+
+movement TestTown_Gym_WallyGoesToTreecko {
+    walk_up * 2
+}
+
+movement TestTown_Gym_WallyTreeckoBackToDad {
+    walk_down * 2
+    walk_in_place_faster_up
+}
+
+movement TestTown_Gym_WallyGoesToTorchic {
+    walk_up * 2
+    walk_right
+    walk_in_place_faster_up
+}
+
+movement TestTown_Gym_WallyTorchicBackToDad {
+    walk_left
+    walk_down * 2
+    walk_in_place_faster_up
+}
+
+text TestTown_Gym_WallyCantBelieveIt {
+    format("Wally: Thank you again-I can't believe it!\p Dad: You're welcome.\p I'm just happy I could help you.\p Now, your adventure begins.\p Go see Professor Birch, he has something to give to you.\p Don't forget to bring your new friend, Wally, with you!")
+}
+
+text TestTown_Gym_IllRaceYouToTheLab {
+    format("May: My Dad's lab is in the town north of here.\p I'll race both of you to it!")
+}
+
+movement TestTown_Gym_RivalRunsOutOfGym {
+    walk_faster_down * 2
+}
+
+movement TestTown_Gym_WallyOutOfGym {
+    walk_down
+    walk_right
+    walk_down
 }

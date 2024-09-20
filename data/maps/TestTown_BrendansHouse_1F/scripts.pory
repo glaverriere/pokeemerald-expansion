@@ -18,7 +18,6 @@ script TestTown_BrendansHouse_1F_OnFrame{
 	waitmovement(0)
 	msgbox(Mom_GoGetMay)
 	closemessage
-	delay(20)
 	applymovement(1, Movement_MomGoesToSink)
 	waitmovement(0)
 	setvar(VAR_TESTTOWN_INTRO_STATE, 3)
@@ -27,8 +26,8 @@ script TestTown_BrendansHouse_1F_OnFrame{
 
 script TestTown_BrendansHouse_Mom {
 	lockall
+	faceplayer
 	if (var(VAR_TESTTOWN_INTRO_STATE) == 3) {
-		faceplayer
 		msgbox(Mom_MayIsNextDoor)
 	}
 	releaseall
@@ -40,21 +39,19 @@ script TestTown_MaysHouse_Azurill {
 	waitse
 	playmoncry(SPECIES_AZURILL, CRY_MODE_NORMAL)
 	waitmoncry
+	applymovement(2, Common_Movement_FaceOriginalDirection)
 	releaseall
 }
 
 movement Movement_MomGetsUp {
-    walk_in_place_faster_up
 	walk_up * 3
 }
 
 movement Movement_MomGetToPlayer {
-	walk_in_place_faster_right
 	walk_right * 2
 }
 
 movement Movement_MomGoesToSink {
-    walk_in_place_faster_left
 	walk_left * 6
 	walk_in_place_faster_up
 }

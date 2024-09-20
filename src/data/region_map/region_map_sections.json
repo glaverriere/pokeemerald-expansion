@@ -1706,9 +1706,9 @@
     },
     {
       "map_section": "MAPSEC_TEST_TOWN",
-      "name": "TEST TOWN",
-      "x": 4,
-      "y": 12,
+      "name": "Test Town",
+      "x": 12,
+      "y": 8,
       "width": 1,
       "height": 1
     }
