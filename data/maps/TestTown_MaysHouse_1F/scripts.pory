@@ -20,20 +20,41 @@ script TestTown_MaysHouse_1F_OnFrame {
 	waitmovement(0)
 	msgbox(Mom_GoGetBrendan)
 	closemessage
-	delay(20)
 	applymovement(1, Movement_MomGoesToSink_May)
 	waitmovement(0)
-	setvar(VAR_TESTTOWN_INTRO_STATE, 3)
+	setvar(VAR_TESTTOWN_INTRO_STATE, 5)
 	releaseall
 }
 
 script TestTown_MaysHouse_Mom {
 	lockall
-	if (var(VAR_TESTTOWN_INTRO_STATE) == 3) {
-		faceplayer
+	faceplayer
+	if (var(VAR_TESTTOWN_INTRO_STATE) == 5) {
 		msgbox(Mom_BrendanIsNextDoor)
 	}
+	elif (!checkitem(ITEM_OLD_ROD)) {
+		msgbox(TestTown_Text_GiveDadsRod_May)
+		giveitem(ITEM_OLD_ROD)
+		setflag(FLAG_RECEIVED_OLD_ROD)
+		msgbox(TestTown_Text_ThrowInFishingAdvice_May)
+	}
+	else {
+		msgbox(TestTown_Mom_IhopeYoureWell_May)
+	}
+	closemessage
 	releaseall
+}
+
+text TestTown_Text_GiveDadsRod_May {
+	format("Hi {PLAYER}!\p I love your new companion-It looks full of energy!\p I found Dad's old fishing rod in a box upstairs.\p I don't think he would mind me giving it to you.")
+}
+
+text TestTown_Text_ThrowInFishingAdvice_May {
+	format("Here's how it works.\p First, you want to face the water, then use the rod.\p If you get a bite, pull on the rod.\p Sometimes you can snag something immediately, but with bigger catches, you need to time the pulls on your rod to haul them in.\p Please be careful.\p If anything happens, you can come home.\p Go on, go get them, honey!")
+}
+
+text TestTown_Mom_IhopeYoureWell_May {
+	format("Hi {PLAYER}!\p I hope your adventure is everything you had hoped it would be.")
 }
 
 script TestTown_MaysHouse_Skitty {
@@ -47,17 +68,14 @@ script TestTown_MaysHouse_Skitty {
 }
 
 movement Movement_MomGetsUp_May {
-    walk_in_place_faster_up
 	walk_up * 3
 }
 
 movement Movement_MomGetToPlayer_May {
-	walk_in_place_faster_left
 	walk_left * 2
 }
 
 movement Movement_MomGoesToSink_May {
-    walk_in_place_faster_right
 	walk_right * 5
 	walk_in_place_faster_up
 }
@@ -96,7 +114,7 @@ script TestTown_MaysHouse_1F_OnFrame2 {
 	applymovement(4, Common_Movement_WalkInPlaceFasterDown)
 	waitmovement(0)
 	delay(10)
-	applymovement(4,Rival_ApproachesPlayer)
+	applymovement(4, Rival_ApproachesPlayer)
 	waitmovement(0)
 	msgbox(RivalToPlayer_CantWaitLetsGo)
 	closemessage
@@ -119,9 +137,7 @@ movement Rival_ApproachesPlayer {
 }
 
 movement Rival_ExitsMaysHouse {
-	walk_in_place_faster_left
 	walk_left
-	walk_in_place_faster_down
 	walk_down
 }
 

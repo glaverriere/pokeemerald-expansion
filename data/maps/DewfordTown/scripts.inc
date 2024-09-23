@@ -291,9 +291,9 @@ DewfordTown_EventScript_SailToPetalburg::
 # 146 "data/maps/DewfordTown/scripts.pory"
 	clearflag FLAG_HIDE_BRINEYS_HOUSE_PEEKO
 # 147 "data/maps/DewfordTown/scripts.pory"
-	clearflag FLAG_HIDE_TEST_TOWN_GYM_WALLY_BOAT
+	clearflag FLAG_HIDE_RIVAL_BRENDAN_TESTTOWN
 # 148 "data/maps/DewfordTown/scripts.pory"
-	setflag FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN
+	setflag FLAG_HIDE_RIVAL_BRENDAN_TESTTOWN
 # 149 "data/maps/DewfordTown/scripts.pory"
 	hideobjectat LOCALID_BOAT_DEWFORD, MAP_DEWFORD_TOWN
 # 150 "data/maps/DewfordTown/scripts.pory"
@@ -365,7 +365,7 @@ DewfordTown_EventScript_SailToSlateport::
 # 183 "data/maps/DewfordTown/scripts.pory"
 	clearflag FLAG_HIDE_TEST_TOWN_MUDKIPBALL_BOAT
 # 184 "data/maps/DewfordTown/scripts.pory"
-	setflag FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN
+	setflag FLAG_HIDE_RIVAL_BRENDAN_TESTTOWN
 # 185 "data/maps/DewfordTown/scripts.pory"
 	hideobjectat LOCALID_BOAT_DEWFORD, MAP_DEWFORD_TOWN
 # 186 "data/maps/DewfordTown/scripts.pory"

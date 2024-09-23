@@ -99,7 +99,7 @@ Route109_EventScript_DoSailToDewford::
 # 50 "data/maps/Route109/scripts.pory"
 	addobject LOCALID_BOAT_DEWFORD
 # 51 "data/maps/Route109/scripts.pory"
-	clearflag FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN
+	clearflag FLAG_HIDE_RIVAL_BRENDAN_TESTTOWN
 # 52 "data/maps/Route109/scripts.pory"
 	setobjectxyperm LOCALID_BRINEY_DEWFORD, 12, 8
 # 53 "data/maps/Route109/scripts.pory"

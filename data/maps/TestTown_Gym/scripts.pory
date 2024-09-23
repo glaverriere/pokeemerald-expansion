@@ -7,29 +7,66 @@ mapscripts TestTown_Gym_MapScripts {
 
 script TestTown_Gym_OnTransition {
     if (var(VAR_TESTTOWN_INTRO_STATE) == 5) {
+        checkplayergender
         setflag(FLAG_HIDE_TEST_TOWN_GYM_ASSISTANT)
-        setflag(FLAG_HIDE_TEST_TOWN_GYM_RIVAL_BRENDAN)
         setflag(FLAG_HIDE_TEST_TOWN_GYM_WALLY)
+        if (var(VAR_RESULT) == MALE) {
+            setflag(FLAG_HIDE_TEST_TOWN_GYM_RIVAL_BRENDAN)
+        }
+        else {
+            setflag(FLAG_HIDE_TEST_TOWN_GYM_RIVAL_MAY)
+        }
     }
 }
 
 script TestTown_Gym_OnFrame1 {
     lockall
+    checkplayergender
     delay(10)
     applymovement(OBJ_EVENT_ID_PLAYER, TestTown_Gym_GoToDad)
-    applymovement(2, TestTown_Gym_GoToDad)
+    if (var(VAR_RESULT) == MALE) {
+        applymovement(2, TestTown_Gym_GoToDad)
+    }
+    else {
+        applymovement(3, TestTown_Gym_GoToDad)
+    }
     waitmovement(0)
-    msgbox(TestTown_Gym_WelcomeToMyGym)
+    if (var(VAR_RESULT) == MALE) {
+        msgbox(TestTown_Gym_WelcomeToMyGym_Male)
+    }
+    else {
+        msgbox(TestTown_Gym_WelcomeToMyGym_Female)
+    }
     closemessage
-    applymovement(2, TestTown_Gym_RivalToBag)
+    if (var(VAR_RESULT) == MALE) {
+        applymovement(2, TestTown_Gym_RivalToBag)
+    }
+    else {
+        applymovement(3, TestTown_Gym_RivalToBag)
+    }
     waitmovement(0)
     delay(20)
-    msgbox(TestTown_Gym_ICantDecide)
-    applymovement(2, Common_Movement_WalkInPlaceFasterRight)
+    if (var(VAR_RESULT) == MALE) {
+        msgbox(TestTown_Gym_ICantDecide_May)
+    }
+    else {
+        msgbox(TestTown_Gym_ICantDecide_Brendan)
+    }
+    if (var(VAR_RESULT) == MALE) {
+        applymovement(2, Common_Movement_WalkInPlaceFasterRight)
+    }
+    else {
+        applymovement(3, Common_Movement_WalkInPlaceFasterRight)
+    }
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft)
     waitmovement(0)
     msgbox(TestTown_Gym_PlayerYouChooseFirst)
-    applymovement(2, Common_Movement_WalkInPlaceFasterUp)
+    if (var(VAR_RESULT) == MALE) {
+        applymovement(2, Common_Movement_WalkInPlaceFasterUp)
+    }
+    else {
+        applymovement(3, Common_Movement_WalkInPlaceFasterUp)
+    }
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp)
     waitmovement(0)
     msgbox(TestTown_Gym_DadGoAhead)
@@ -58,12 +95,20 @@ movement TestTown_Gym_RivalToBag {
     walk_in_place_faster_up
 }
 
-text TestTown_Gym_WelcomeToMyGym {
+text TestTown_Gym_WelcomeToMyGym_Male {
 	format("Dad: Welcome to my gym.\p I hope you are ready, you have a very difficult decision to make.\p Behind me, there's three Poké balls.\p Each one containing a different Pokémon.\p You must choose your first partner for your journey.\p May, would you do us the honor of choosing first?\p May: Yes! Thank you so much for this opportunity, Norman!")
 }
 
-text TestTown_Gym_ICantDecide {
+text TestTown_Gym_WelcomeToMyGym_Female {
+	format("Dad: Welcome to my gym.\p I hope you are ready, you have a very difficult decision to make.\p Behind me, there's three Poké balls.\p Each one containing a different Pokémon.\p You must choose your first partner for your journey.\p Brendan, would you do us the honor of choosing first?\p Brendan: Yes! Thank you so much for this opportunity, Norman!")
+}
+
+text TestTown_Gym_ICantDecide_May {
     format("May: They're all so cool and unique.\p I really don't know which one to choose...")
+}
+
+text TestTown_Gym_ICantDecide_Brendan {
+    format("Brendan: They're all so cool and unique.\p I really don't know which one to choose...")
 }
 
 text TestTown_Gym_PlayerYouChooseFirst {
@@ -116,6 +161,7 @@ script TestTown_Gym_Eventscript_TreeckoBall {
         setflag(FLAG_SYS_POKEMON_GET)
         setflag(FLAG_HIDE_TEST_TOWN_TREECKOBALL)
         setvar(VAR_STARTER_MON, 0)
+        waitfanfare
         call(NicknamePartyMon)
         call(StarterReceived)
     }
@@ -139,6 +185,7 @@ script TestTown_Gym_Eventscript_TorchicBall {
         setflag(FLAG_SYS_POKEMON_GET)
         setflag(FLAG_HIDE_TEST_TOWN_TORCHICBALL)
         setvar(VAR_STARTER_MON, 1)
+        waitfanfare
         call(NicknamePartyMon)
         call(StarterReceived)
     }
@@ -162,6 +209,7 @@ script TestTown_Gym_Eventscript_MudkipBall {
         setflag(FLAG_SYS_POKEMON_GET)
         setflag(FLAG_HIDE_TEST_TOWN_MUDKIPBALL)
         setvar(VAR_STARTER_MON, 2)
+        waitfanfare
         call(NicknamePartyMon)
         call(StarterReceived)
     }
@@ -186,9 +234,16 @@ script NicknamePartyMon {
 }
 
 script StarterReceived {
+    checkplayergender
     delay(16)
     if (var(VAR_STARTER_MON) == 0) {
-        applymovement(2, Movement_RivalChoosesTorchic)
+        getplayerxy(VAR_TEMP_0, VAR_TEMP_1)
+        if (var(VAR_RESULT) == MALE) {
+            applymovement(2, Movement_RivalChoosesTorchic)
+        }
+        else {
+            applymovement(3, Movement_RivalChoosesTorchic)
+        }
         waitmovement(0)
         delay(20)
         msgbox("I choose this one!")
@@ -196,13 +251,28 @@ script StarterReceived {
         removeobject(7)
         setflag(FLAG_HIDE_TEST_TOWN_TORCHICBALL)
         delay(20)
-        applymovement(2, Movement_RivalTorchicToDad)
-        applymovement(OBJ_EVENT_ID_PLAYER, Movement_PlayerTreeckoToDad)
+        if (var(VAR_RESULT) == MALE) {
+            applymovement(2, Movement_RivalTorchicToDad)
+        }
+        else {
+            applymovement(3, Movement_RivalTorchicToDad)
+        }
+        if (var(VAR_TEMP_0) == 3) {
+            applymovement(OBJ_EVENT_ID_PLAYER, Movement_PlayerTreeckoToDad1)
+        }
+        else {
+            applymovement(OBJ_EVENT_ID_PLAYER, Movement_PlayerTreeckoToDad2)
+        }
         waitmovement(0)
         call(TestTown_Gym_WallyEnters)
     }
     elif (var(VAR_STARTER_MON) == 1) {
-        applymovement(2, Movement_RivalChoosesMudkip)
+        if (var(VAR_RESULT) == MALE) {
+            applymovement(2, Movement_RivalChoosesMudkip)
+        }
+        else {
+            applymovement(3, Movement_RivalChoosesMudkip)
+        }
         waitmovement(0)
         delay(20)
         msgbox("I choose this one!")
@@ -210,13 +280,24 @@ script StarterReceived {
         removeobject(8)
         setflag(FLAG_HIDE_TEST_TOWN_MUDKIPBALL)
         delay(20)
-        applymovement(2, Movement_RivalMudkipToDad)
+        if (var(VAR_RESULT) == MALE) {
+            applymovement(2, Movement_RivalMudkipToDad)
+        }
+        else {
+            applymovement(3, Movement_RivalMudkipToDad)
+        }
         applymovement(OBJ_EVENT_ID_PLAYER, Movement_PlayerTorchicToDad)
         waitmovement(0)
         call(TestTown_Gym_WallyEnters)
     }
     else {
-        applymovement(2, Movement_RivalChoosesTreecko)
+        getplayerxy(VAR_TEMP_0, VAR_TEMP_1)
+        if (var(VAR_RESULT) == MALE) {
+            applymovement(2, Movement_RivalChoosesTreecko)
+        }
+        else {
+            applymovement(3, Movement_RivalChoosesTreecko)
+        }
         waitmovement(0)
         delay(20)
         msgbox("I choose this one!")
@@ -224,8 +305,18 @@ script StarterReceived {
         removeobject(6)
         setflag(FLAG_HIDE_TEST_TOWN_TREECKOBALL)
         delay(20)
-        applymovement(2, Movement_RivalTreeckoToDad)
-        applymovement(OBJ_EVENT_ID_PLAYER, Movement_PlayerMudkipToDad)
+        if (var(VAR_RESULT) == MALE) {
+            applymovement(2, Movement_RivalTreeckoToDad)
+        }
+        else {
+            applymovement(3, Movement_RivalTreeckoToDad)
+        }
+        if (var(VAR_TEMP_0) == 5) {
+            applymovement(OBJ_EVENT_ID_PLAYER, Movement_PlayerMudkipToDad1)
+        }
+        else {
+            applymovement(OBJ_EVENT_ID_PLAYER, Movement_PlayerMudkipToDad2)
+        }
         waitmovement(0)
         call(TestTown_Gym_WallyEnters)
     }
@@ -245,8 +336,15 @@ movement Movement_RivalTorchicToDad {
     walk_in_place_faster_up
 }
 
-movement Movement_PlayerTreeckoToDad {
+movement Movement_PlayerTreeckoToDad1 {
     walk_right * 2
+    walk_down * 2
+    walk_in_place_faster_up
+}
+
+movement Movement_PlayerTreeckoToDad2 {
+    walk_down
+    walk_right * 3
     walk_down * 2
     walk_in_place_faster_up
 }
@@ -279,10 +377,16 @@ movement Movement_RivalTreeckoToDad {
     walk_in_place_faster_up
 }
 
-movement Movement_PlayerMudkipToDad {
+movement Movement_PlayerMudkipToDad1 {
     walk_down * 2
     walk_in_place_faster_up
     delay_16
+}
+
+movement Movement_PlayerMudkipToDad2 {
+    walk_down * 3
+    walk_left
+    walk_in_place_faster_up
 }
 
 script TestTown_Gym_WallyEnters {
@@ -296,12 +400,27 @@ script TestTown_Gym_WallyEnters {
     applymovement(4, TestTown_Gym_WallyApproachesDad)
     waitmovement(0)
     msgbox(TestTown_Gym_IAmWally)
-    applymovement(2, Common_Movement_WalkInPlaceFasterLeft)
+    if (var(VAR_RESULT) == MALE) {
+        applymovement(2, Common_Movement_WalkInPlaceFasterLeft)
+    }
+    else {
+        applymovement(3, Common_Movement_WalkInPlaceFasterLeft)
+    }
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft)
     applymovement(4, Common_Movement_WalkInPlaceFasterRight)
     waitmovement(0)
-    msgbox(TestTown_Gym_MayWouldLoveToTeachYou)
-    applymovement(2, Common_Movement_WalkInPlaceFasterUp)
+    if (var(VAR_RESULT) == MALE) {
+        msgbox(TestTown_Gym_MayWouldLoveToTeachYou)
+    }
+    else {
+        msgbox(TestTown_Gym_BrendanWouldLoveToTeachYou)
+    }
+    if (var(VAR_RESULT) == MALE) {
+        applymovement(2, Common_Movement_WalkInPlaceFasterUp)
+    }
+    else {
+        applymovement(3, Common_Movement_WalkInPlaceFasterUp)
+    }
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp)
     applymovement(4, Common_Movement_WalkInPlaceFasterUp)
     waitmovement(0)
@@ -336,19 +455,39 @@ script TestTown_Gym_WallyEnters {
     }
     waitmovement(0)
     msgbox(TestTown_Gym_WallyCantBelieveIt)
-    applymovement(2, Common_Movement_WalkInPlaceFasterRight)
+    if (var(VAR_RESULT) == MALE) {
+        applymovement(2, Common_Movement_WalkInPlaceFasterRight)
+    }
+    else {
+        applymovement(3, Common_Movement_WalkInPlaceFasterRight)
+    }
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft)
     applymovement(4, Common_Movement_WalkInPlaceFasterRight)
     waitmovement(0)
-    msgbox(TestTown_Gym_IllRaceYouToTheLab)
+    if (var(VAR_RESULT) == MALE) {
+        msgbox(TestTown_Gym_IllRaceYouToTheLab_May)
+    }
+    else {
+        msgbox(TestTown_Gym_IllRaceYouToTheLab_Brendan)
+    }
     closemessage
-    applymovement(2, TestTown_Gym_RivalRunsOutOfGym)
+    if (var(VAR_RESULT) == MALE) {
+        applymovement(2, TestTown_Gym_RivalRunsOutOfGym)
+    }
+    else {
+        applymovement(3, TestTown_Gym_RivalRunsOutOfGym)
+    }
     applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown)
     applymovement(4, Common_Movement_WalkInPlaceFasterDown)
     waitmovement(0)
     playse(SE_EXIT)
     delay(10)
-    removeobject(2)
+    if (var(VAR_RESULT) == MALE) {
+        removeobject(2)
+    }
+    else {
+        removeobject(3)
+    }
     msgbox("Wally: Wait for me!")
     closemessage
     applymovement(4, TestTown_Gym_WallyOutOfGym)
@@ -357,6 +496,8 @@ script TestTown_Gym_WallyEnters {
     delay(10)
     removeobject(4)
     setflag(FLAG_HIDE_TEST_TOWN_GYM_RIVAL_MAY)
+    setflag(FLAG_HIDE_RIVAL_MAYS_HOUSE)
+    setflag(FLAG_HIDE_RIVAL_BRENDANS_HOUSE)
     setflag(FLAG_HIDE_TEST_TOWN_GYM_RIVAL_BRENDAN)
     setflag(FLAG_HIDE_TEST_TOWN_GYM_WALLY)
     setvar(VAR_TESTTOWN_INTRO_STATE, 7)
@@ -375,6 +516,10 @@ text TestTown_Gym_IAmWally {
 
 text TestTown_Gym_MayWouldLoveToTeachYou {
     format("May: Hi, Wally! I'm May and this is {PLAYER}.\p Professor Birch is my dad, so I've seen him catch Pokémon plenty of times.\p I would love to teach you how to catch one!")
+}
+
+text TestTown_Gym_BrendanWouldLoveToTeachYou {
+    format("Brendan: Hi, Wally! I'm Brendan and this is {PLAYER}.\p Professor Birch is my dad, so I've seen him catch Pokémon plenty of times.\p I would love to teach you how to catch one!")
 }
 
 text TestTown_Gym_DadGivesWallyAPokemon {
@@ -418,8 +563,12 @@ text TestTown_Gym_WallyCantBelieveIt {
     format("Wally: Thank you again-I can't believe it!\p Dad: You're welcome.\p I'm just happy I could help you.\p Now, your adventure begins.\p Go see Professor Birch, he has something to give to you.\p Don't forget to bring your new friend, Wally, with you!")
 }
 
-text TestTown_Gym_IllRaceYouToTheLab {
+text TestTown_Gym_IllRaceYouToTheLab_May {
     format("May: My Dad's lab is in the town north of here.\p I'll race both of you to it!")
+}
+
+text TestTown_Gym_IllRaceYouToTheLab_Brendan {
+    format("Brendan: My Dad's lab is in the town north of here.\p I'll race both of you to it!")
 }
 
 movement TestTown_Gym_RivalRunsOutOfGym {

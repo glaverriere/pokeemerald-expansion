@@ -22,11 +22,11 @@ Brendan_AllowRunning_1:
 # 11 "data/maps/TestTown_BrendansHouse_Bedroom1/scripts.pory"
 	setflag FLAG_HIDE_RIVAL_MAY_TESTTOWN
 # 12 "data/maps/TestTown_BrendansHouse_Bedroom1/scripts.pory"
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_MOM
+	setflag FLAG_HIDE_RIVAL_BRENDAN_TESTTOWN
 # 13 "data/maps/TestTown_BrendansHouse_Bedroom1/scripts.pory"
 	setflag FLAG_HIDE_TEST_TOWN_GYM_ASSISTANT
 # 14 "data/maps/TestTown_BrendansHouse_Bedroom1/scripts.pory"
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_POKE_BALL
+	setflag FLAG_HIDE_RIVAL_BRENDANS_HOUSE
 # 15 "data/maps/TestTown_BrendansHouse_Bedroom1/scripts.pory"
 	setvar VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 1
 	return

@@ -20,14 +20,16 @@ May_AllowRunning_1:
 # 10 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
 	clearflag FLAG_HIDE_TEST_TOWN_MAYS_HOUSE_MOM
 # 11 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_TRUCK
+	setflag FLAG_HIDE_RIVAL_BRENDAN_TESTTOWN
 # 12 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_MOM
+	clearflag FLAG_HIDE_RIVAL_BRENDANS_HOUSE
 # 13 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
-	setflag FLAG_HIDE_TEST_TOWN_GYM_RIVAL_BRENDAN
+	clearflag FLAG_HIDE_TEST_TOWN_GYM_RIVAL_BRENDAN
 # 14 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_POKE_BALL
+	setflag FLAG_HIDE_RIVAL_MAYS_HOUSE
 # 15 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_POKE_BALL
+# 16 "data/maps/TestTown_MaysHouse_Bedroom1/scripts.pory"
 	setvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 1
 	return
 

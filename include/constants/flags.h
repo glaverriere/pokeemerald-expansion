@@ -786,8 +786,8 @@
 #define FLAG_HIDE_TEST_TOWN_TREECKOBALL                             0x2E3
 #define FLAG_HIDE_TEST_TOWN_TORCHICBALL                             0x2E4
 #define FLAG_HIDE_TEST_TOWN_MUDKIPBALL                               0x2E5
-#define FLAG_HIDE_TEST_TOWN_GYM_WALLY_BOAT                          0x2E6
-#define FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN                       0x2E7
+#define FLAG_HIDE_RIVAL_BRENDANS_HOUSE                          0x2E6
+#define FLAG_HIDE_RIVAL_BRENDAN_TESTTOWN                       0x2E7
 #define FLAG_HIDE_TEST_TOWN_MUDKIPBALL_BOAT                          0x2E8
 #define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_BRENDAN            0x2E9
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_MAY                    0x2EA

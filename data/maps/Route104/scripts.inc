@@ -805,11 +805,11 @@ Route104_EventScript_ArriveInDewford::
 # 403 "data/maps/Route104/scripts.pory"
 	addobject LOCALID_BOAT_DEWFORD
 # 404 "data/maps/Route104/scripts.pory"
-	clearflag FLAG_HIDE_MR_BRINEY_BOAT_DEWFORD_TOWN
+	clearflag FLAG_HIDE_RIVAL_BRENDAN_TESTTOWN
 # 405 "data/maps/Route104/scripts.pory"
 	call Common_EventScript_StopBrineysBoatMusic
 # 406 "data/maps/Route104/scripts.pory"
-	setflag FLAG_HIDE_TEST_TOWN_GYM_WALLY_BOAT
+	setflag FLAG_HIDE_RIVAL_BRENDAN_TESTTOWN
 # 407 "data/maps/Route104/scripts.pory"
 	hideobjectat LOCALID_BOAT_R104, MAP_ROUTE104
 # 408 "data/maps/Route104/scripts.pory"
