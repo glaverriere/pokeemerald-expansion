@@ -55,8 +55,10 @@ TestTown_BrendansHouse_Mom::
 # 30 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
 	compare VAR_TESTTOWN_INTRO_STATE, 3
 	goto_if_eq TestTown_BrendansHouse_Mom_2
+# 34 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
+	msgbox TestTown_BrendansHouse_Mom_Text_0
 TestTown_BrendansHouse_Mom_1:
-# 33 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
+# 36 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
 	releaseall
 	return
 
@@ -67,61 +69,65 @@ TestTown_BrendansHouse_Mom_2:
 
 
 TestTown_MaysHouse_Azurill::
-# 37 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
-	lockall
-# 38 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
-	faceplayer
-# 39 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
-	waitse
 # 40 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
-	playmoncry SPECIES_AZURILL, CRY_MODE_NORMAL
+	lockall
 # 41 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
-	waitmoncry
+	faceplayer
 # 42 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
-	applymovement 2, Common_Movement_FaceOriginalDirection
+	waitse
 # 43 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
+	playmoncry SPECIES_AZURILL, CRY_MODE_NORMAL
+# 44 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
+	waitmoncry
+# 45 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
+	applymovement 2, Common_Movement_FaceOriginalDirection
+# 46 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
 	releaseall
 	return
 
 
-# 46 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
+# 49 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
 Movement_MomGetsUp:
-# 47 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
-	walk_up
-# 47 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
-	walk_up
-# 47 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
-	walk_up
-	step_end
-
 # 50 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
+	walk_up
+# 50 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
+	walk_up
+# 50 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
+	walk_up
+	step_end
+
+# 53 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
 Movement_MomGetToPlayer:
-# 51 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
+# 54 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
 	walk_right
-# 51 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
+# 54 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
 	walk_right
 	step_end
 
-# 54 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
+# 57 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
 Movement_MomGoesToSink:
-# 55 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
+# 58 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
 	walk_left
-# 55 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
+# 58 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
 	walk_left
-# 55 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
+# 58 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
 	walk_left
-# 55 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
+# 58 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
 	walk_left
-# 55 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
+# 58 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
 	walk_left
-# 55 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
+# 58 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
 	walk_left
-# 56 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
+# 59 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
 	walk_in_place_faster_up
 	step_end
 
+TestTown_BrendansHouse_Mom_Text_0:
+# 34 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
+	.string "Yo!$"
+
 Mom_GoGetMay::
-# 59 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
+# 62 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
 	.string "Mom: Hi Sweetie! I am so excited for\n"
 	.string "you, I can barely stay in place!\p"
 	.string "May is also getting here first Pokémon\n"
@@ -133,6 +139,6 @@ Mom_GoGetMay::
 	.string "Have fun!$"
 
 Mom_MayIsNextDoor::
-# 63 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
+# 66 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
 	.string "You should go next door to see May.\p"
 	.string "Tell her mom I said hello!$"

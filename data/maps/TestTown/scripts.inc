@@ -168,3 +168,292 @@ PlayerApprochesGym:
 # 65 "data/maps/TestTown/scripts.pory"
 	walk_in_place_faster_up
 	step_end
+
+TestTown_Trigger_Gym::
+# 69 "data/maps/TestTown/scripts.pory"
+	lockall
+# 70 "data/maps/TestTown/scripts.pory"
+	msgbox TestTown_Trigger_Gym_Text_0
+# 71 "data/maps/TestTown/scripts.pory"
+	closemessage
+# 72 "data/maps/TestTown/scripts.pory"
+	addobject 1
+# 73 "data/maps/TestTown/scripts.pory"
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_EAST
+# 74 "data/maps/TestTown/scripts.pory"
+	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+# 75 "data/maps/TestTown/scripts.pory"
+	compare VAR_TEMP_0, 6
+	goto_if_eq TestTown_Trigger_Gym_8
+TestTown_Trigger_Gym_6:
+# 78 "data/maps/TestTown/scripts.pory"
+	compare VAR_TEMP_0, 5
+	goto_if_eq TestTown_Trigger_Gym_5
+TestTown_Trigger_Gym_4:
+# 82 "data/maps/TestTown/scripts.pory"
+	applymovement 1, TestTown_Rival_GoesToGym3
+TestTown_Trigger_Gym_1:
+# 84 "data/maps/TestTown/scripts.pory"
+	waitmovement 0
+# 85 "data/maps/TestTown/scripts.pory"
+	msgbox TestTown_Rival_LetsGoTogether
+# 86 "data/maps/TestTown/scripts.pory"
+	closemessage
+# 87 "data/maps/TestTown/scripts.pory"
+	compare VAR_TEMP_0, 6
+	goto_if_eq TestTown_Trigger_Gym_17
+TestTown_Trigger_Gym_15:
+# 90 "data/maps/TestTown/scripts.pory"
+	compare VAR_TEMP_0, 5
+	goto_if_eq TestTown_Trigger_Gym_14
+TestTown_Trigger_Gym_11:
+# 93 "data/maps/TestTown/scripts.pory"
+	waitmovement 0
+# 94 "data/maps/TestTown/scripts.pory"
+	opendoor 5, 16
+# 95 "data/maps/TestTown/scripts.pory"
+	waitdooranim
+# 96 "data/maps/TestTown/scripts.pory"
+	applymovement 1, RivalMay_EntersGym
+# 97 "data/maps/TestTown/scripts.pory"
+	compare VAR_TEMP_0, 6
+	goto_if_eq TestTown_Trigger_Gym_27
+TestTown_Trigger_Gym_25:
+# 100 "data/maps/TestTown/scripts.pory"
+	compare VAR_TEMP_0, 5
+	goto_if_eq TestTown_Trigger_Gym_24
+TestTown_Trigger_Gym_23:
+# 104 "data/maps/TestTown/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, PlayerApprochesGym3
+TestTown_Trigger_Gym_20:
+# 106 "data/maps/TestTown/scripts.pory"
+	waitmovement 0
+# 107 "data/maps/TestTown/scripts.pory"
+	hideobjectat 1, MAP_TEST_TOWN
+# 108 "data/maps/TestTown/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, RivalMay_EntersGym
+# 109 "data/maps/TestTown/scripts.pory"
+	waitmovement 0
+# 110 "data/maps/TestTown/scripts.pory"
+	clearflag FLAG_HIDE_MAP_NAME_POPUP
+# 111 "data/maps/TestTown/scripts.pory"
+	setflag FLAG_HIDE_RIVAL_MAY_TESTTOWN
+# 112 "data/maps/TestTown/scripts.pory"
+	setvar VAR_TESTTOWN_INTRO_STATE, 5
+# 113 "data/maps/TestTown/scripts.pory"
+	warp MAP_TEST_TOWN_GYM, 5, 111
+# 114 "data/maps/TestTown/scripts.pory"
+	waitstate
+# 115 "data/maps/TestTown/scripts.pory"
+	releaseall
+	return
+
+TestTown_Trigger_Gym_2:
+# 76 "data/maps/TestTown/scripts.pory"
+	applymovement 1, TestTown_Rival_GoesToGym1
+	goto TestTown_Trigger_Gym_1
+
+TestTown_Trigger_Gym_3:
+# 79 "data/maps/TestTown/scripts.pory"
+	applymovement 1, TestTown_Rival_GoesToGym2
+	goto TestTown_Trigger_Gym_1
+
+TestTown_Trigger_Gym_5:
+# 78 "data/maps/TestTown/scripts.pory"
+	compare VAR_TEMP_1, 18
+	goto_if_eq TestTown_Trigger_Gym_3
+	goto TestTown_Trigger_Gym_4
+
+TestTown_Trigger_Gym_8:
+# 75 "data/maps/TestTown/scripts.pory"
+	compare VAR_TEMP_1, 17
+	goto_if_eq TestTown_Trigger_Gym_2
+	goto TestTown_Trigger_Gym_6
+
+TestTown_Trigger_Gym_12:
+# 88 "data/maps/TestTown/scripts.pory"
+	applymovement 1, TestTown_Rival_EntersGym1
+	goto TestTown_Trigger_Gym_11
+
+TestTown_Trigger_Gym_13:
+# 91 "data/maps/TestTown/scripts.pory"
+	applymovement 1, TestTown_Rival_EntersGym2
+	goto TestTown_Trigger_Gym_11
+
+TestTown_Trigger_Gym_14:
+# 90 "data/maps/TestTown/scripts.pory"
+	compare VAR_TEMP_1, 18
+	goto_if_eq TestTown_Trigger_Gym_13
+	goto TestTown_Trigger_Gym_11
+
+TestTown_Trigger_Gym_17:
+# 87 "data/maps/TestTown/scripts.pory"
+	compare VAR_TEMP_1, 17
+	goto_if_eq TestTown_Trigger_Gym_12
+	goto TestTown_Trigger_Gym_15
+
+TestTown_Trigger_Gym_21:
+# 98 "data/maps/TestTown/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, PlayerApprochesGym
+	goto TestTown_Trigger_Gym_20
+
+TestTown_Trigger_Gym_22:
+# 101 "data/maps/TestTown/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, RivalMay_EntersGym
+	goto TestTown_Trigger_Gym_20
+
+TestTown_Trigger_Gym_24:
+# 100 "data/maps/TestTown/scripts.pory"
+	compare VAR_TEMP_1, 18
+	goto_if_eq TestTown_Trigger_Gym_22
+	goto TestTown_Trigger_Gym_23
+
+TestTown_Trigger_Gym_27:
+# 97 "data/maps/TestTown/scripts.pory"
+	compare VAR_TEMP_1, 17
+	goto_if_eq TestTown_Trigger_Gym_21
+	goto TestTown_Trigger_Gym_25
+
+
+# 118 "data/maps/TestTown/scripts.pory"
+TestTown_Rival_GoesToGym1:
+# 119 "data/maps/TestTown/scripts.pory"
+	walk_fast_right
+# 119 "data/maps/TestTown/scripts.pory"
+	walk_fast_right
+# 120 "data/maps/TestTown/scripts.pory"
+	walk_fast_down
+# 121 "data/maps/TestTown/scripts.pory"
+	walk_down
+# 121 "data/maps/TestTown/scripts.pory"
+	walk_down
+# 121 "data/maps/TestTown/scripts.pory"
+	walk_down
+# 121 "data/maps/TestTown/scripts.pory"
+	walk_down
+# 121 "data/maps/TestTown/scripts.pory"
+	walk_down
+# 121 "data/maps/TestTown/scripts.pory"
+	walk_down
+# 122 "data/maps/TestTown/scripts.pory"
+	walk_left
+# 122 "data/maps/TestTown/scripts.pory"
+	walk_left
+# 122 "data/maps/TestTown/scripts.pory"
+	walk_left
+# 122 "data/maps/TestTown/scripts.pory"
+	walk_left
+# 122 "data/maps/TestTown/scripts.pory"
+	walk_left
+	step_end
+
+# 125 "data/maps/TestTown/scripts.pory"
+TestTown_Rival_GoesToGym2:
+# 126 "data/maps/TestTown/scripts.pory"
+	walk_fast_right
+# 126 "data/maps/TestTown/scripts.pory"
+	walk_fast_right
+# 127 "data/maps/TestTown/scripts.pory"
+	walk_fast_down
+# 128 "data/maps/TestTown/scripts.pory"
+	walk_down
+# 128 "data/maps/TestTown/scripts.pory"
+	walk_down
+# 128 "data/maps/TestTown/scripts.pory"
+	walk_down
+# 128 "data/maps/TestTown/scripts.pory"
+	walk_down
+# 128 "data/maps/TestTown/scripts.pory"
+	walk_down
+# 128 "data/maps/TestTown/scripts.pory"
+	walk_down
+# 128 "data/maps/TestTown/scripts.pory"
+	walk_down
+# 129 "data/maps/TestTown/scripts.pory"
+	walk_left
+# 129 "data/maps/TestTown/scripts.pory"
+	walk_left
+# 129 "data/maps/TestTown/scripts.pory"
+	walk_left
+# 129 "data/maps/TestTown/scripts.pory"
+	walk_left
+# 129 "data/maps/TestTown/scripts.pory"
+	walk_left
+# 129 "data/maps/TestTown/scripts.pory"
+	walk_left
+	step_end
+
+# 132 "data/maps/TestTown/scripts.pory"
+TestTown_Rival_GoesToGym3:
+# 133 "data/maps/TestTown/scripts.pory"
+	walk_fast_right
+# 133 "data/maps/TestTown/scripts.pory"
+	walk_fast_right
+# 134 "data/maps/TestTown/scripts.pory"
+	walk_fast_down
+# 135 "data/maps/TestTown/scripts.pory"
+	walk_down
+# 135 "data/maps/TestTown/scripts.pory"
+	walk_down
+# 135 "data/maps/TestTown/scripts.pory"
+	walk_down
+# 135 "data/maps/TestTown/scripts.pory"
+	walk_down
+# 135 "data/maps/TestTown/scripts.pory"
+	walk_down
+# 135 "data/maps/TestTown/scripts.pory"
+	walk_down
+# 136 "data/maps/TestTown/scripts.pory"
+	walk_left
+# 136 "data/maps/TestTown/scripts.pory"
+	walk_left
+# 136 "data/maps/TestTown/scripts.pory"
+	walk_left
+# 136 "data/maps/TestTown/scripts.pory"
+	walk_left
+# 136 "data/maps/TestTown/scripts.pory"
+	walk_left
+# 136 "data/maps/TestTown/scripts.pory"
+	walk_left
+# 136 "data/maps/TestTown/scripts.pory"
+	walk_left
+	step_end
+
+# 143 "data/maps/TestTown/scripts.pory"
+TestTown_Rival_EntersGym1:
+# 144 "data/maps/TestTown/scripts.pory"
+	walk_down
+# 145 "data/maps/TestTown/scripts.pory"
+	walk_left
+# 145 "data/maps/TestTown/scripts.pory"
+	walk_left
+# 146 "data/maps/TestTown/scripts.pory"
+	walk_up
+	step_end
+
+# 149 "data/maps/TestTown/scripts.pory"
+TestTown_Rival_EntersGym2:
+# 150 "data/maps/TestTown/scripts.pory"
+	walk_up
+# 151 "data/maps/TestTown/scripts.pory"
+	walk_left
+	step_end
+
+# 154 "data/maps/TestTown/scripts.pory"
+PlayerApprochesGym3:
+# 155 "data/maps/TestTown/scripts.pory"
+	walk_right
+# 156 "data/maps/TestTown/scripts.pory"
+	walk_in_place_faster_up
+	step_end
+
+TestTown_Trigger_Gym_Text_0:
+# 70 "data/maps/TestTown/scripts.pory"
+	.string "WAIT FOR ME!$"
+
+TestTown_Rival_LetsGoTogether::
+# 139 "data/maps/TestTown/scripts.pory"
+	.string "May: Hi {PLAYER}!\p"
+	.string "Sorry if I scared you-I just wanted to\n"
+	.string "get our first Pokémon together.\p"
+	.string "Let's go inside!$"

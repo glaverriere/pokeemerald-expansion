@@ -64,3 +64,94 @@ movement PlayerApprochesGym {
 	walk_left
 	walk_in_place_faster_up
 }
+
+script TestTown_Trigger_Gym {
+	lockall
+	msgbox("WAIT FOR ME!")
+	closemessage
+	addobject(1)
+	turnobject(OBJ_EVENT_ID_PLAYER, DIR_EAST)
+	getplayerxy(VAR_TEMP_0, VAR_TEMP_1)
+	if (var(VAR_TEMP_0) == 6 && var(VAR_TEMP_1) == 17) {
+		applymovement(1, TestTown_Rival_GoesToGym1)
+	}
+	elif (var(VAR_TEMP_0) == 5 && var(VAR_TEMP_1) == 18) {
+		applymovement(1, TestTown_Rival_GoesToGym2)
+	}
+	else {
+		applymovement(1, TestTown_Rival_GoesToGym3)
+	}
+	waitmovement(0)
+	msgbox(TestTown_Rival_LetsGoTogether)
+	closemessage
+	if (var(VAR_TEMP_0) == 6 && var(VAR_TEMP_1) == 17) {
+		applymovement(1, TestTown_Rival_EntersGym1)
+	}
+	elif (var(VAR_TEMP_0) == 5 && var(VAR_TEMP_1) == 18) {
+		applymovement(1, TestTown_Rival_EntersGym2)
+	}
+	waitmovement(0)
+	opendoor(5, 16)
+	waitdooranim
+	applymovement(1, RivalMay_EntersGym)
+	if (var(VAR_TEMP_0) == 6 && var(VAR_TEMP_1) == 17) {
+		applymovement(OBJ_EVENT_ID_PLAYER, PlayerApprochesGym)
+	}
+	elif (var(VAR_TEMP_0) == 5 && var(VAR_TEMP_1) == 18) {
+		applymovement(OBJ_EVENT_ID_PLAYER, RivalMay_EntersGym)
+	}
+	else {
+		applymovement(OBJ_EVENT_ID_PLAYER, PlayerApprochesGym3)
+	}
+	waitmovement(0)
+	hideobjectat(1, MAP_TEST_TOWN)
+	applymovement(OBJ_EVENT_ID_PLAYER, RivalMay_EntersGym)
+	waitmovement(0)
+	clearflag(FLAG_HIDE_MAP_NAME_POPUP)
+	setflag(FLAG_HIDE_RIVAL_MAY_TESTTOWN)
+	setvar(VAR_TESTTOWN_INTRO_STATE, 5)
+	warp(MAP_TEST_TOWN_GYM, 5, 111)
+	waitstate
+	releaseall
+	}
+
+movement TestTown_Rival_GoesToGym1 {
+	walk_fast_right * 2
+	walk_fast_down
+	walk_down * 6
+	walk_left * 5
+}
+
+movement TestTown_Rival_GoesToGym2 {
+	walk_fast_right * 2
+	walk_fast_down
+	walk_down * 7
+	walk_left * 6
+}
+
+movement TestTown_Rival_GoesToGym3 {
+	walk_fast_right * 2
+	walk_fast_down
+	walk_down * 6
+	walk_left * 7
+}
+
+text TestTown_Rival_LetsGoTogether {
+	format("May: Hi {PLAYER}!\p Sorry if I scared you-I just wanted to get our first Pokémon together.\p Let's go inside!")
+}
+
+movement TestTown_Rival_EntersGym1 {
+	walk_down
+	walk_left * 2
+	walk_up
+}
+
+movement TestTown_Rival_EntersGym2 {
+	walk_up
+	walk_left
+}
+
+movement PlayerApprochesGym3 {
+	walk_right
+	walk_in_place_faster_up
+}

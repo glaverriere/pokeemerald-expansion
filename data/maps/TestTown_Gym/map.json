@@ -136,7 +136,24 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 111,
+      "elevation": 0,
+      "var": "VAR_TESTTOWN_INTRO_STATE",
+      "var_value": "6",
+      "script": "TestTown_Gym_Trigger_NoStarter"
+    },
+    {
+      "type": "trigger",
+      "x": 4,
+      "y": 111,
+      "elevation": 0,
+      "var": "VAR_TESTTOWN_INTRO_STATE",
+      "var_value": "6",
+      "script": "TestTown_Gym_Trigger_NoStarter"
+    }
   ],
   "bg_events": [
 

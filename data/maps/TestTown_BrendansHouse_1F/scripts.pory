@@ -30,6 +30,9 @@ script TestTown_BrendansHouse_Mom {
 	if (var(VAR_TESTTOWN_INTRO_STATE) == 3) {
 		msgbox(Mom_MayIsNextDoor)
 	}
+	else {
+		msgbox("Yo!")
+	}
 	releaseall
 }
 

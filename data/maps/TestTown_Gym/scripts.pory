@@ -83,16 +83,12 @@ script TestTown_Gym_NormanWaitsForPokemon {
     faceplayer
     if (var(VAR_TESTTOWN_INTRO_STATE) == 6) {
         msgbox(TestTown_Gym_DadTakeYourTime)
-        closemessage
-        applymovement(1, Common_Movement_WalkInPlaceFasterDown)
-        waitmovement(0)
     }
     elif (var(VAR_TESTTOWN_INTRO_STATE) == 7) {
         msgbox(TestTown_Gym_DadGoToBirch)
-        closemessage
-        applymovement(1, Common_Movement_WalkInPlaceFasterDown)
-        waitmovement(0)
     }
+    closemessage
+    turnobject(1, DIR_SOUTH)
     releaseall
 }
 
@@ -434,4 +430,17 @@ movement TestTown_Gym_WallyOutOfGym {
     walk_down
     walk_right
     walk_down
+}
+
+script TestTown_Gym_Trigger_NoStarter {
+    lockall
+    msgbox(TestTown_Gym_DontLeave)
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp)
+    waitmovement(0)
+    releaseall
+}
+
+text TestTown_Gym_DontLeave {
+    format("Dad: {PLAYER}!\p Don't leave without your Pokémon!")
 }
