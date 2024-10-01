@@ -331,7 +331,7 @@ LittlerootTown_BrendansHouse_1F_EventScript_MeetRival::
 # 166 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
 	removeobject LOCALID_RIVAL
 # 167 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_BRENDAN
+	setflag FLAG_HIDE_ROUTE101_BRENDAN
 # 168 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_POKE_BALL
 # 169 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"

@@ -810,6 +810,18 @@ PlayerApprochesGym3:
 	walk_in_place_faster_up
 	step_end
 
+TestTown_SignPost_EventScript::
+# 260 "data/maps/TestTown/scripts.pory"
+	msgbox TestTown_SignPost_Text, MSGBOX_SIGN
+	return
+
+
+TestTown_GymPost_EventScript::
+# 268 "data/maps/TestTown/scripts.pory"
+	msgbox TestTown_GymPost_Text, MSGBOX_SIGN
+	return
+
+
 TestTown_Trigger_Gym_Text_0:
 # 118 "data/maps/TestTown/scripts.pory"
 	.string "WAIT FOR ME!$"
@@ -827,3 +839,15 @@ TestTown_RivalBrendan_LetsGoTogether::
 	.string "Sorry if I scared you-I just wanted to\n"
 	.string "get our first Pokémon together.\p"
 	.string "Let's go inside!$"
+
+TestTown_SignPost_Text::
+# 263 "data/maps/TestTown/scripts.pory"
+	.string "Blossom Town\n"
+	.string "A town where you can grow.$"
+
+TestTown_GymPost_Text::
+# 271 "data/maps/TestTown/scripts.pory"
+	.string "Blossom Town Pokémon gym\n"
+	.string "Leader: Norman\l"
+	.string "“He leaves a toxic waste behind after\l"
+	.string "every battle!”$"

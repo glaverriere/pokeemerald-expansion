@@ -397,7 +397,7 @@ LittlerootTown_MaysHouse_1F_EventScript_MeetRival::
 # 199 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
 	removeobject LOCALID_RIVAL
 # 200 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_MAY
+	setflag FLAG_HIDE_ROUTE101_MAY
 # 201 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_POKE_BALL
 # 202 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"

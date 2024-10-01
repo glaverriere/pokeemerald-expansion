@@ -180,7 +180,7 @@ DewfordTown_EventScript_SailToSlateport::
 	waitmovement 0
 	clearflag FLAG_HIDE_TEST_TOWN_MUDKIPBALL
 	addobject LOCALID_BOAT_R109
-	clearflag FLAG_HIDE_TEST_TOWN_MUDKIPBALL_BOAT
+	clearflag FLAG_HIDE_ROUTE101_WALLY
 	setflag FLAG_HIDE_RIVAL_BRENDAN_TESTTOWN
 	hideobjectat LOCALID_BOAT_DEWFORD, MAP_DEWFORD_TOWN
 	call_if_unset FLAG_DELIVERED_DEVON_GOODS, DewfordTown_EventScript_LandedSlateportDeliverGoods

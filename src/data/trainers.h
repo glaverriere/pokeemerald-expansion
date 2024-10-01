@@ -24189,7 +24189,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9695
-    [TRAINER_BRENDAN_ROUTE_103_MUDKIP] =
+    [TRAINER_BRENDAN_ROUTE_101_MUDKIP] =
     {
 #line 9696
         .trainerName = _("BRENDAN"),
@@ -24334,7 +24334,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9752
-    [TRAINER_BRENDAN_ROUTE_103_TREECKO] =
+    [TRAINER_BRENDAN_ROUTE_101_TREECKO] =
     {
 #line 9753
         .trainerName = _("BRENDAN"),
@@ -24479,7 +24479,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9809
-    [TRAINER_BRENDAN_ROUTE_103_TORCHIC] =
+    [TRAINER_BRENDAN_ROUTE_101_TORCHIC] =
     {
 #line 9810
         .trainerName = _("BRENDAN"),
@@ -24624,7 +24624,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9866
-    [TRAINER_MAY_ROUTE_103_MUDKIP] =
+    [TRAINER_MAY_ROUTE_101_MUDKIP] =
     {
 #line 9867
         .trainerName = _("MAY"),
@@ -24775,7 +24775,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9923
-    [TRAINER_MAY_ROUTE_103_TREECKO] =
+    [TRAINER_MAY_ROUTE_101_TREECKO] =
     {
 #line 9924
         .trainerName = _("MAY"),
@@ -24926,7 +24926,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9980
-    [TRAINER_MAY_ROUTE_103_TORCHIC] =
+    [TRAINER_MAY_ROUTE_101_TORCHIC] =
     {
 #line 9981
         .trainerName = _("MAY"),

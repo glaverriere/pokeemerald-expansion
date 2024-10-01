@@ -363,7 +363,7 @@ DewfordTown_EventScript_SailToSlateport::
 # 182 "data/maps/DewfordTown/scripts.pory"
 	addobject LOCALID_BOAT_R109
 # 183 "data/maps/DewfordTown/scripts.pory"
-	clearflag FLAG_HIDE_TEST_TOWN_MUDKIPBALL_BOAT
+	clearflag FLAG_HIDE_ROUTE101_WALLY
 # 184 "data/maps/DewfordTown/scripts.pory"
 	setflag FLAG_HIDE_RIVAL_BRENDAN_TESTTOWN
 # 185 "data/maps/DewfordTown/scripts.pory"

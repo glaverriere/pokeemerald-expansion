@@ -113,7 +113,7 @@ Route109_EventScript_DoSailToDewford::
 # 57 "data/maps/Route109/scripts.pory"
 	clearflag FLAG_HIDE_TEST_TOWN_TORCHICBALL
 # 58 "data/maps/Route109/scripts.pory"
-	setflag FLAG_HIDE_TEST_TOWN_MUDKIPBALL_BOAT
+	setflag FLAG_HIDE_ROUTE101_WALLY
 # 59 "data/maps/Route109/scripts.pory"
 	hideobjectat LOCALID_BOAT_R109, MAP_ROUTE109
 # 60 "data/maps/Route109/scripts.pory"

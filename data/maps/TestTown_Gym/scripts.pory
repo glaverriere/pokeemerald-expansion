@@ -152,6 +152,8 @@ text TestTown_Gym_DadGoToBirch {
 script TestTown_Gym_Eventscript_TreeckoBall {
     lockall
     showmonpic(SPECIES_TREECKO, 10, 3)
+    playmoncry(SPECIES_TREECKO, CRY_MODE_NORMAL)
+    waitmoncry
     msgbox("Do you want to choose Treecko?", MSGBOX_YESNO)
     if (var(VAR_RESULT) == YES) {
         givemon(SPECIES_TREECKO, 5 , ITEM_ORAN_BERRY)
@@ -176,6 +178,8 @@ script TestTown_Gym_Eventscript_TreeckoBall {
 script TestTown_Gym_Eventscript_TorchicBall {
     lockall
     showmonpic(SPECIES_TORCHIC, 10, 3)
+    playmoncry(SPECIES_TORCHIC, CRY_MODE_NORMAL)
+    waitmoncry
     msgbox("Do you want to choose Torchic?", MSGBOX_YESNO)
     if (var(VAR_RESULT) == YES) {
         givemon(SPECIES_TORCHIC, 5 , ITEM_ORAN_BERRY)
@@ -200,6 +204,8 @@ script TestTown_Gym_Eventscript_TorchicBall {
 script TestTown_Gym_Eventscript_MudkipBall {
     lockall
     showmonpic(SPECIES_MUDKIP, 10, 3)
+    playmoncry(SPECIES_MUDKIP, CRY_MODE_NORMAL)
+    waitmoncry
     msgbox("Do you want to choose Mudkip?", MSGBOX_YESNO)
     if (var(VAR_RESULT) == YES) {
         givemon(SPECIES_MUDKIP, 5 , ITEM_ORAN_BERRY)
@@ -500,6 +506,7 @@ script TestTown_Gym_WallyEnters {
     setflag(FLAG_HIDE_RIVAL_BRENDANS_HOUSE)
     setflag(FLAG_HIDE_TEST_TOWN_GYM_RIVAL_BRENDAN)
     setflag(FLAG_HIDE_TEST_TOWN_GYM_WALLY)
+    clearflag(FLAG_HIDE_MAP_NAME_POPUP)
     setvar(VAR_TESTTOWN_INTRO_STATE, 7)
     releaseall
 }

@@ -255,3 +255,19 @@ movement PlayerApprochesGym3 {
 	walk_right
 	walk_in_place_faster_up
 }
+
+script TestTown_SignPost_EventScript {
+	msgbox(TestTown_SignPost_Text, MSGBOX_SIGN)
+}
+
+text TestTown_SignPost_Text {
+	format("Blossom Town\n A town where you can grow.")
+}
+
+script TestTown_GymPost_EventScript {
+	msgbox(TestTown_GymPost_Text, MSGBOX_SIGN)
+}
+
+text TestTown_GymPost_Text {
+	format("Blossom Town Pokémon gym\n Leader: Norman\l “He leaves a toxic waste behind after every battle!”")
+}

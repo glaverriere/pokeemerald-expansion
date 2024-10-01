@@ -234,842 +234,856 @@ TestTown_Gym_Eventscript_TreeckoBall::
 # 154 "data/maps/TestTown_Gym/scripts.pory"
 	showmonpic SPECIES_TREECKO, 10, 3
 # 155 "data/maps/TestTown_Gym/scripts.pory"
-	msgbox TestTown_Gym_Eventscript_TreeckoBall_Text_0, MSGBOX_YESNO
+	playmoncry SPECIES_TREECKO, CRY_MODE_NORMAL
 # 156 "data/maps/TestTown_Gym/scripts.pory"
+	waitmoncry
+# 157 "data/maps/TestTown_Gym/scripts.pory"
+	msgbox TestTown_Gym_Eventscript_TreeckoBall_Text_0, MSGBOX_YESNO
+# 158 "data/maps/TestTown_Gym/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq TestTown_Gym_Eventscript_TreeckoBall_2
-# 169 "data/maps/TestTown_Gym/scripts.pory"
+# 171 "data/maps/TestTown_Gym/scripts.pory"
 	hidemonpic
-# 170 "data/maps/TestTown_Gym/scripts.pory"
+# 172 "data/maps/TestTown_Gym/scripts.pory"
 	closemessage
 TestTown_Gym_Eventscript_TreeckoBall_1:
-# 172 "data/maps/TestTown_Gym/scripts.pory"
+# 174 "data/maps/TestTown_Gym/scripts.pory"
 	waitmessage
-# 173 "data/maps/TestTown_Gym/scripts.pory"
+# 175 "data/maps/TestTown_Gym/scripts.pory"
 	releaseall
 	return
 
 TestTown_Gym_Eventscript_TreeckoBall_2:
-# 157 "data/maps/TestTown_Gym/scripts.pory"
-	givemon SPECIES_TREECKO, 5, ITEM_ORAN_BERRY
-# 158 "data/maps/TestTown_Gym/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
 # 159 "data/maps/TestTown_Gym/scripts.pory"
-	msgbox TestTown_Gym_Eventscript_TreeckoBall_Text_1
+	givemon SPECIES_TREECKO, 5, ITEM_ORAN_BERRY
 # 160 "data/maps/TestTown_Gym/scripts.pory"
-	removeobject 6
+	playfanfare MUS_OBTAIN_ITEM
 # 161 "data/maps/TestTown_Gym/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
+	msgbox TestTown_Gym_Eventscript_TreeckoBall_Text_1
 # 162 "data/maps/TestTown_Gym/scripts.pory"
-	setflag FLAG_HIDE_TEST_TOWN_TREECKOBALL
+	removeobject 6
 # 163 "data/maps/TestTown_Gym/scripts.pory"
-	setvar VAR_STARTER_MON, 0
+	setflag FLAG_SYS_POKEMON_GET
 # 164 "data/maps/TestTown_Gym/scripts.pory"
-	waitfanfare
+	setflag FLAG_HIDE_TEST_TOWN_TREECKOBALL
 # 165 "data/maps/TestTown_Gym/scripts.pory"
-	call NicknamePartyMon
+	setvar VAR_STARTER_MON, 0
 # 166 "data/maps/TestTown_Gym/scripts.pory"
+	waitfanfare
+# 167 "data/maps/TestTown_Gym/scripts.pory"
+	call NicknamePartyMon
+# 168 "data/maps/TestTown_Gym/scripts.pory"
 	call StarterReceived
 	goto TestTown_Gym_Eventscript_TreeckoBall_1
 
 
 TestTown_Gym_Eventscript_TorchicBall::
-# 177 "data/maps/TestTown_Gym/scripts.pory"
-	lockall
-# 178 "data/maps/TestTown_Gym/scripts.pory"
-	showmonpic SPECIES_TORCHIC, 10, 3
 # 179 "data/maps/TestTown_Gym/scripts.pory"
-	msgbox TestTown_Gym_Eventscript_TorchicBall_Text_0, MSGBOX_YESNO
+	lockall
 # 180 "data/maps/TestTown_Gym/scripts.pory"
+	showmonpic SPECIES_TORCHIC, 10, 3
+# 181 "data/maps/TestTown_Gym/scripts.pory"
+	playmoncry SPECIES_TORCHIC, CRY_MODE_NORMAL
+# 182 "data/maps/TestTown_Gym/scripts.pory"
+	waitmoncry
+# 183 "data/maps/TestTown_Gym/scripts.pory"
+	msgbox TestTown_Gym_Eventscript_TorchicBall_Text_0, MSGBOX_YESNO
+# 184 "data/maps/TestTown_Gym/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq TestTown_Gym_Eventscript_TorchicBall_2
-# 193 "data/maps/TestTown_Gym/scripts.pory"
+# 197 "data/maps/TestTown_Gym/scripts.pory"
 	hidemonpic
-# 194 "data/maps/TestTown_Gym/scripts.pory"
+# 198 "data/maps/TestTown_Gym/scripts.pory"
 	closemessage
 TestTown_Gym_Eventscript_TorchicBall_1:
-# 196 "data/maps/TestTown_Gym/scripts.pory"
+# 200 "data/maps/TestTown_Gym/scripts.pory"
 	waitmessage
-# 197 "data/maps/TestTown_Gym/scripts.pory"
+# 201 "data/maps/TestTown_Gym/scripts.pory"
 	releaseall
 	return
 
 TestTown_Gym_Eventscript_TorchicBall_2:
-# 181 "data/maps/TestTown_Gym/scripts.pory"
-	givemon SPECIES_TORCHIC, 5, ITEM_ORAN_BERRY
-# 182 "data/maps/TestTown_Gym/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 183 "data/maps/TestTown_Gym/scripts.pory"
-	msgbox TestTown_Gym_Eventscript_TorchicBall_Text_1
-# 184 "data/maps/TestTown_Gym/scripts.pory"
-	removeobject 7
 # 185 "data/maps/TestTown_Gym/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
+	givemon SPECIES_TORCHIC, 5, ITEM_ORAN_BERRY
 # 186 "data/maps/TestTown_Gym/scripts.pory"
-	setflag FLAG_HIDE_TEST_TOWN_TORCHICBALL
+	playfanfare MUS_OBTAIN_ITEM
 # 187 "data/maps/TestTown_Gym/scripts.pory"
-	setvar VAR_STARTER_MON, 1
+	msgbox TestTown_Gym_Eventscript_TorchicBall_Text_1
 # 188 "data/maps/TestTown_Gym/scripts.pory"
-	waitfanfare
+	removeobject 7
 # 189 "data/maps/TestTown_Gym/scripts.pory"
-	call NicknamePartyMon
+	setflag FLAG_SYS_POKEMON_GET
 # 190 "data/maps/TestTown_Gym/scripts.pory"
+	setflag FLAG_HIDE_TEST_TOWN_TORCHICBALL
+# 191 "data/maps/TestTown_Gym/scripts.pory"
+	setvar VAR_STARTER_MON, 1
+# 192 "data/maps/TestTown_Gym/scripts.pory"
+	waitfanfare
+# 193 "data/maps/TestTown_Gym/scripts.pory"
+	call NicknamePartyMon
+# 194 "data/maps/TestTown_Gym/scripts.pory"
 	call StarterReceived
 	goto TestTown_Gym_Eventscript_TorchicBall_1
 
 
 TestTown_Gym_Eventscript_MudkipBall::
-# 201 "data/maps/TestTown_Gym/scripts.pory"
+# 205 "data/maps/TestTown_Gym/scripts.pory"
 	lockall
-# 202 "data/maps/TestTown_Gym/scripts.pory"
+# 206 "data/maps/TestTown_Gym/scripts.pory"
 	showmonpic SPECIES_MUDKIP, 10, 3
-# 203 "data/maps/TestTown_Gym/scripts.pory"
+# 207 "data/maps/TestTown_Gym/scripts.pory"
+	playmoncry SPECIES_MUDKIP, CRY_MODE_NORMAL
+# 208 "data/maps/TestTown_Gym/scripts.pory"
+	waitmoncry
+# 209 "data/maps/TestTown_Gym/scripts.pory"
 	msgbox TestTown_Gym_Eventscript_MudkipBall_Text_0, MSGBOX_YESNO
-# 204 "data/maps/TestTown_Gym/scripts.pory"
+# 210 "data/maps/TestTown_Gym/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq TestTown_Gym_Eventscript_MudkipBall_2
-# 217 "data/maps/TestTown_Gym/scripts.pory"
+# 223 "data/maps/TestTown_Gym/scripts.pory"
 	hidemonpic
-# 218 "data/maps/TestTown_Gym/scripts.pory"
+# 224 "data/maps/TestTown_Gym/scripts.pory"
 	closemessage
 TestTown_Gym_Eventscript_MudkipBall_1:
-# 220 "data/maps/TestTown_Gym/scripts.pory"
+# 226 "data/maps/TestTown_Gym/scripts.pory"
 	waitmessage
-# 221 "data/maps/TestTown_Gym/scripts.pory"
+# 227 "data/maps/TestTown_Gym/scripts.pory"
 	releaseall
 	return
 
 TestTown_Gym_Eventscript_MudkipBall_2:
-# 205 "data/maps/TestTown_Gym/scripts.pory"
-	givemon SPECIES_MUDKIP, 5, ITEM_ORAN_BERRY
-# 206 "data/maps/TestTown_Gym/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 207 "data/maps/TestTown_Gym/scripts.pory"
-	msgbox TestTown_Gym_Eventscript_MudkipBall_Text_1
-# 208 "data/maps/TestTown_Gym/scripts.pory"
-	removeobject 8
-# 209 "data/maps/TestTown_Gym/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
-# 210 "data/maps/TestTown_Gym/scripts.pory"
-	setflag FLAG_HIDE_TEST_TOWN_MUDKIPBALL
 # 211 "data/maps/TestTown_Gym/scripts.pory"
-	setvar VAR_STARTER_MON, 2
+	givemon SPECIES_MUDKIP, 5, ITEM_ORAN_BERRY
 # 212 "data/maps/TestTown_Gym/scripts.pory"
-	waitfanfare
+	playfanfare MUS_OBTAIN_ITEM
 # 213 "data/maps/TestTown_Gym/scripts.pory"
-	call NicknamePartyMon
+	msgbox TestTown_Gym_Eventscript_MudkipBall_Text_1
 # 214 "data/maps/TestTown_Gym/scripts.pory"
+	removeobject 8
+# 215 "data/maps/TestTown_Gym/scripts.pory"
+	setflag FLAG_SYS_POKEMON_GET
+# 216 "data/maps/TestTown_Gym/scripts.pory"
+	setflag FLAG_HIDE_TEST_TOWN_MUDKIPBALL
+# 217 "data/maps/TestTown_Gym/scripts.pory"
+	setvar VAR_STARTER_MON, 2
+# 218 "data/maps/TestTown_Gym/scripts.pory"
+	waitfanfare
+# 219 "data/maps/TestTown_Gym/scripts.pory"
+	call NicknamePartyMon
+# 220 "data/maps/TestTown_Gym/scripts.pory"
 	call StarterReceived
 	goto TestTown_Gym_Eventscript_MudkipBall_1
 
 
 NicknamePartyMon::
-# 226 "data/maps/TestTown_Gym/scripts.pory"
+# 232 "data/maps/TestTown_Gym/scripts.pory"
 	msgbox NicknamePartyMon_Text_0, MSGBOX_YESNO
-# 227 "data/maps/TestTown_Gym/scripts.pory"
+# 233 "data/maps/TestTown_Gym/scripts.pory"
 	hidemonpic
-# 228 "data/maps/TestTown_Gym/scripts.pory"
+# 234 "data/maps/TestTown_Gym/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq NicknamePartyMon_2
 NicknamePartyMon_1:
-# 232 "data/maps/TestTown_Gym/scripts.pory"
+# 238 "data/maps/TestTown_Gym/scripts.pory"
 	waitmessage
-# 233 "data/maps/TestTown_Gym/scripts.pory"
+# 239 "data/maps/TestTown_Gym/scripts.pory"
 	closemessage
 	return
 
 NicknamePartyMon_2:
-# 229 "data/maps/TestTown_Gym/scripts.pory"
+# 235 "data/maps/TestTown_Gym/scripts.pory"
 	call Common_EventScript_GetGiftMonPartySlot
-# 230 "data/maps/TestTown_Gym/scripts.pory"
+# 236 "data/maps/TestTown_Gym/scripts.pory"
 	call Common_EventScript_NameReceivedPartyMon
 	goto NicknamePartyMon_1
 
 
 StarterReceived::
-# 237 "data/maps/TestTown_Gym/scripts.pory"
+# 243 "data/maps/TestTown_Gym/scripts.pory"
 	checkplayergender
-# 238 "data/maps/TestTown_Gym/scripts.pory"
+# 244 "data/maps/TestTown_Gym/scripts.pory"
 	delay 16
-# 239 "data/maps/TestTown_Gym/scripts.pory"
+# 245 "data/maps/TestTown_Gym/scripts.pory"
 	compare VAR_STARTER_MON, 0
 	goto_if_eq StarterReceived_1
-# 269 "data/maps/TestTown_Gym/scripts.pory"
+# 275 "data/maps/TestTown_Gym/scripts.pory"
 	compare VAR_STARTER_MON, 1
 	goto_if_eq StarterReceived_2
-# 294 "data/maps/TestTown_Gym/scripts.pory"
+# 300 "data/maps/TestTown_Gym/scripts.pory"
 	getplayerxy VAR_TEMP_0, VAR_TEMP_1
-# 295 "data/maps/TestTown_Gym/scripts.pory"
+# 301 "data/maps/TestTown_Gym/scripts.pory"
 	compare VAR_RESULT, MALE
 	goto_if_eq StarterReceived_15
-# 299 "data/maps/TestTown_Gym/scripts.pory"
+# 305 "data/maps/TestTown_Gym/scripts.pory"
 	applymovement 3, Movement_RivalChoosesTreecko
 StarterReceived_14:
-# 301 "data/maps/TestTown_Gym/scripts.pory"
-	waitmovement 0
-# 302 "data/maps/TestTown_Gym/scripts.pory"
-	delay 20
-# 303 "data/maps/TestTown_Gym/scripts.pory"
-	msgbox StarterReceived_Text_0
-# 304 "data/maps/TestTown_Gym/scripts.pory"
-	closemessage
-# 305 "data/maps/TestTown_Gym/scripts.pory"
-	removeobject 6
-# 306 "data/maps/TestTown_Gym/scripts.pory"
-	setflag FLAG_HIDE_TEST_TOWN_TREECKOBALL
 # 307 "data/maps/TestTown_Gym/scripts.pory"
-	delay 20
+	waitmovement 0
 # 308 "data/maps/TestTown_Gym/scripts.pory"
+	delay 20
+# 309 "data/maps/TestTown_Gym/scripts.pory"
+	msgbox StarterReceived_Text_0
+# 310 "data/maps/TestTown_Gym/scripts.pory"
+	closemessage
+# 311 "data/maps/TestTown_Gym/scripts.pory"
+	removeobject 6
+# 312 "data/maps/TestTown_Gym/scripts.pory"
+	setflag FLAG_HIDE_TEST_TOWN_TREECKOBALL
+# 313 "data/maps/TestTown_Gym/scripts.pory"
+	delay 20
+# 314 "data/maps/TestTown_Gym/scripts.pory"
 	compare VAR_RESULT, MALE
 	goto_if_eq StarterReceived_27
-# 312 "data/maps/TestTown_Gym/scripts.pory"
+# 318 "data/maps/TestTown_Gym/scripts.pory"
 	applymovement 3, Movement_RivalTreeckoToDad
 StarterReceived_26:
-# 314 "data/maps/TestTown_Gym/scripts.pory"
+# 320 "data/maps/TestTown_Gym/scripts.pory"
 	compare VAR_TEMP_0, 5
 	goto_if_eq StarterReceived_35
-# 318 "data/maps/TestTown_Gym/scripts.pory"
+# 324 "data/maps/TestTown_Gym/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerMudkipToDad2
 StarterReceived_34:
-# 320 "data/maps/TestTown_Gym/scripts.pory"
+# 326 "data/maps/TestTown_Gym/scripts.pory"
 	waitmovement 0
-# 321 "data/maps/TestTown_Gym/scripts.pory"
+# 327 "data/maps/TestTown_Gym/scripts.pory"
 	call TestTown_Gym_WallyEnters
 	return
 
 StarterReceived_1:
-# 240 "data/maps/TestTown_Gym/scripts.pory"
+# 246 "data/maps/TestTown_Gym/scripts.pory"
 	getplayerxy VAR_TEMP_0, VAR_TEMP_1
-# 241 "data/maps/TestTown_Gym/scripts.pory"
+# 247 "data/maps/TestTown_Gym/scripts.pory"
 	compare VAR_RESULT, MALE
 	goto_if_eq StarterReceived_7
-# 245 "data/maps/TestTown_Gym/scripts.pory"
+# 251 "data/maps/TestTown_Gym/scripts.pory"
 	applymovement 3, Movement_RivalChoosesTorchic
 StarterReceived_6:
-# 247 "data/maps/TestTown_Gym/scripts.pory"
-	waitmovement 0
-# 248 "data/maps/TestTown_Gym/scripts.pory"
-	delay 20
-# 249 "data/maps/TestTown_Gym/scripts.pory"
-	msgbox StarterReceived_Text_0
-# 250 "data/maps/TestTown_Gym/scripts.pory"
-	closemessage
-# 251 "data/maps/TestTown_Gym/scripts.pory"
-	removeobject 7
-# 252 "data/maps/TestTown_Gym/scripts.pory"
-	setflag FLAG_HIDE_TEST_TOWN_TORCHICBALL
 # 253 "data/maps/TestTown_Gym/scripts.pory"
-	delay 20
+	waitmovement 0
 # 254 "data/maps/TestTown_Gym/scripts.pory"
+	delay 20
+# 255 "data/maps/TestTown_Gym/scripts.pory"
+	msgbox StarterReceived_Text_0
+# 256 "data/maps/TestTown_Gym/scripts.pory"
+	closemessage
+# 257 "data/maps/TestTown_Gym/scripts.pory"
+	removeobject 7
+# 258 "data/maps/TestTown_Gym/scripts.pory"
+	setflag FLAG_HIDE_TEST_TOWN_TORCHICBALL
+# 259 "data/maps/TestTown_Gym/scripts.pory"
+	delay 20
+# 260 "data/maps/TestTown_Gym/scripts.pory"
 	compare VAR_RESULT, MALE
 	goto_if_eq StarterReceived_19
-# 258 "data/maps/TestTown_Gym/scripts.pory"
+# 264 "data/maps/TestTown_Gym/scripts.pory"
 	applymovement 3, Movement_RivalTorchicToDad
 StarterReceived_18:
-# 260 "data/maps/TestTown_Gym/scripts.pory"
+# 266 "data/maps/TestTown_Gym/scripts.pory"
 	compare VAR_TEMP_0, 3
 	goto_if_eq StarterReceived_31
-# 264 "data/maps/TestTown_Gym/scripts.pory"
+# 270 "data/maps/TestTown_Gym/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerTreeckoToDad2
 StarterReceived_30:
-# 266 "data/maps/TestTown_Gym/scripts.pory"
+# 272 "data/maps/TestTown_Gym/scripts.pory"
 	waitmovement 0
-# 267 "data/maps/TestTown_Gym/scripts.pory"
+# 273 "data/maps/TestTown_Gym/scripts.pory"
 	call TestTown_Gym_WallyEnters
 	return
 
 StarterReceived_2:
-# 270 "data/maps/TestTown_Gym/scripts.pory"
+# 276 "data/maps/TestTown_Gym/scripts.pory"
 	compare VAR_RESULT, MALE
 	goto_if_eq StarterReceived_11
-# 274 "data/maps/TestTown_Gym/scripts.pory"
+# 280 "data/maps/TestTown_Gym/scripts.pory"
 	applymovement 3, Movement_RivalChoosesMudkip
 StarterReceived_10:
-# 276 "data/maps/TestTown_Gym/scripts.pory"
-	waitmovement 0
-# 277 "data/maps/TestTown_Gym/scripts.pory"
-	delay 20
-# 278 "data/maps/TestTown_Gym/scripts.pory"
-	msgbox StarterReceived_Text_0
-# 279 "data/maps/TestTown_Gym/scripts.pory"
-	closemessage
-# 280 "data/maps/TestTown_Gym/scripts.pory"
-	removeobject 8
-# 281 "data/maps/TestTown_Gym/scripts.pory"
-	setflag FLAG_HIDE_TEST_TOWN_MUDKIPBALL
 # 282 "data/maps/TestTown_Gym/scripts.pory"
-	delay 20
+	waitmovement 0
 # 283 "data/maps/TestTown_Gym/scripts.pory"
+	delay 20
+# 284 "data/maps/TestTown_Gym/scripts.pory"
+	msgbox StarterReceived_Text_0
+# 285 "data/maps/TestTown_Gym/scripts.pory"
+	closemessage
+# 286 "data/maps/TestTown_Gym/scripts.pory"
+	removeobject 8
+# 287 "data/maps/TestTown_Gym/scripts.pory"
+	setflag FLAG_HIDE_TEST_TOWN_MUDKIPBALL
+# 288 "data/maps/TestTown_Gym/scripts.pory"
+	delay 20
+# 289 "data/maps/TestTown_Gym/scripts.pory"
 	compare VAR_RESULT, MALE
 	goto_if_eq StarterReceived_23
-# 287 "data/maps/TestTown_Gym/scripts.pory"
+# 293 "data/maps/TestTown_Gym/scripts.pory"
 	applymovement 3, Movement_RivalMudkipToDad
 StarterReceived_22:
-# 289 "data/maps/TestTown_Gym/scripts.pory"
+# 295 "data/maps/TestTown_Gym/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerTorchicToDad
-# 290 "data/maps/TestTown_Gym/scripts.pory"
+# 296 "data/maps/TestTown_Gym/scripts.pory"
 	waitmovement 0
-# 291 "data/maps/TestTown_Gym/scripts.pory"
+# 297 "data/maps/TestTown_Gym/scripts.pory"
 	call TestTown_Gym_WallyEnters
 	return
 
 StarterReceived_7:
-# 242 "data/maps/TestTown_Gym/scripts.pory"
+# 248 "data/maps/TestTown_Gym/scripts.pory"
 	applymovement 2, Movement_RivalChoosesTorchic
 	goto StarterReceived_6
 
 StarterReceived_11:
-# 271 "data/maps/TestTown_Gym/scripts.pory"
+# 277 "data/maps/TestTown_Gym/scripts.pory"
 	applymovement 2, Movement_RivalChoosesMudkip
 	goto StarterReceived_10
 
 StarterReceived_15:
-# 296 "data/maps/TestTown_Gym/scripts.pory"
+# 302 "data/maps/TestTown_Gym/scripts.pory"
 	applymovement 2, Movement_RivalChoosesTreecko
 	goto StarterReceived_14
 
 StarterReceived_19:
-# 255 "data/maps/TestTown_Gym/scripts.pory"
+# 261 "data/maps/TestTown_Gym/scripts.pory"
 	applymovement 2, Movement_RivalTorchicToDad
 	goto StarterReceived_18
 
 StarterReceived_23:
-# 284 "data/maps/TestTown_Gym/scripts.pory"
+# 290 "data/maps/TestTown_Gym/scripts.pory"
 	applymovement 2, Movement_RivalMudkipToDad
 	goto StarterReceived_22
 
 StarterReceived_27:
-# 309 "data/maps/TestTown_Gym/scripts.pory"
+# 315 "data/maps/TestTown_Gym/scripts.pory"
 	applymovement 2, Movement_RivalTreeckoToDad
 	goto StarterReceived_26
 
 StarterReceived_31:
-# 261 "data/maps/TestTown_Gym/scripts.pory"
+# 267 "data/maps/TestTown_Gym/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerTreeckoToDad1
 	goto StarterReceived_30
 
 StarterReceived_35:
-# 315 "data/maps/TestTown_Gym/scripts.pory"
+# 321 "data/maps/TestTown_Gym/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerMudkipToDad1
 	goto StarterReceived_34
 
 
-# 325 "data/maps/TestTown_Gym/scripts.pory"
+# 331 "data/maps/TestTown_Gym/scripts.pory"
 Movement_RivalChoosesTorchic:
-# 326 "data/maps/TestTown_Gym/scripts.pory"
-	walk_right
-# 327 "data/maps/TestTown_Gym/scripts.pory"
-	walk_up
-# 327 "data/maps/TestTown_Gym/scripts.pory"
-	walk_up
-# 328 "data/maps/TestTown_Gym/scripts.pory"
-	walk_left
-# 329 "data/maps/TestTown_Gym/scripts.pory"
-	walk_in_place_faster_up
-	step_end
-
 # 332 "data/maps/TestTown_Gym/scripts.pory"
-Movement_RivalTorchicToDad:
-# 333 "data/maps/TestTown_Gym/scripts.pory"
 	walk_right
+# 333 "data/maps/TestTown_Gym/scripts.pory"
+	walk_up
+# 333 "data/maps/TestTown_Gym/scripts.pory"
+	walk_up
 # 334 "data/maps/TestTown_Gym/scripts.pory"
-	walk_down
-# 334 "data/maps/TestTown_Gym/scripts.pory"
-	walk_down
-# 335 "data/maps/TestTown_Gym/scripts.pory"
 	walk_left
-# 336 "data/maps/TestTown_Gym/scripts.pory"
+# 335 "data/maps/TestTown_Gym/scripts.pory"
 	walk_in_place_faster_up
 	step_end
 
+# 338 "data/maps/TestTown_Gym/scripts.pory"
+Movement_RivalTorchicToDad:
 # 339 "data/maps/TestTown_Gym/scripts.pory"
-Movement_PlayerTreeckoToDad1:
-# 340 "data/maps/TestTown_Gym/scripts.pory"
 	walk_right
 # 340 "data/maps/TestTown_Gym/scripts.pory"
-	walk_right
-# 341 "data/maps/TestTown_Gym/scripts.pory"
+	walk_down
+# 340 "data/maps/TestTown_Gym/scripts.pory"
 	walk_down
 # 341 "data/maps/TestTown_Gym/scripts.pory"
-	walk_down
+	walk_left
 # 342 "data/maps/TestTown_Gym/scripts.pory"
 	walk_in_place_faster_up
 	step_end
 
 # 345 "data/maps/TestTown_Gym/scripts.pory"
-Movement_PlayerTreeckoToDad2:
+Movement_PlayerTreeckoToDad1:
 # 346 "data/maps/TestTown_Gym/scripts.pory"
+	walk_right
+# 346 "data/maps/TestTown_Gym/scripts.pory"
+	walk_right
+# 347 "data/maps/TestTown_Gym/scripts.pory"
 	walk_down
 # 347 "data/maps/TestTown_Gym/scripts.pory"
-	walk_right
-# 347 "data/maps/TestTown_Gym/scripts.pory"
-	walk_right
-# 347 "data/maps/TestTown_Gym/scripts.pory"
-	walk_right
-# 348 "data/maps/TestTown_Gym/scripts.pory"
 	walk_down
 # 348 "data/maps/TestTown_Gym/scripts.pory"
-	walk_down
-# 349 "data/maps/TestTown_Gym/scripts.pory"
 	walk_in_place_faster_up
 	step_end
 
+# 351 "data/maps/TestTown_Gym/scripts.pory"
+Movement_PlayerTreeckoToDad2:
 # 352 "data/maps/TestTown_Gym/scripts.pory"
-Movement_RivalChoosesMudkip:
+	walk_down
+# 353 "data/maps/TestTown_Gym/scripts.pory"
+	walk_right
+# 353 "data/maps/TestTown_Gym/scripts.pory"
+	walk_right
 # 353 "data/maps/TestTown_Gym/scripts.pory"
 	walk_right
 # 354 "data/maps/TestTown_Gym/scripts.pory"
-	walk_up
+	walk_down
 # 354 "data/maps/TestTown_Gym/scripts.pory"
-	walk_up
-	step_end
-
-# 357 "data/maps/TestTown_Gym/scripts.pory"
-Movement_RivalMudkipToDad:
-# 358 "data/maps/TestTown_Gym/scripts.pory"
 	walk_down
-# 358 "data/maps/TestTown_Gym/scripts.pory"
-	walk_down
-# 359 "data/maps/TestTown_Gym/scripts.pory"
-	walk_left
-# 360 "data/maps/TestTown_Gym/scripts.pory"
+# 355 "data/maps/TestTown_Gym/scripts.pory"
 	walk_in_place_faster_up
 	step_end
 
-# 363 "data/maps/TestTown_Gym/scripts.pory"
-Movement_PlayerTorchicToDad:
-# 364 "data/maps/TestTown_Gym/scripts.pory"
+# 358 "data/maps/TestTown_Gym/scripts.pory"
+Movement_RivalChoosesMudkip:
+# 359 "data/maps/TestTown_Gym/scripts.pory"
 	walk_right
-# 365 "data/maps/TestTown_Gym/scripts.pory"
+# 360 "data/maps/TestTown_Gym/scripts.pory"
+	walk_up
+# 360 "data/maps/TestTown_Gym/scripts.pory"
+	walk_up
+	step_end
+
+# 363 "data/maps/TestTown_Gym/scripts.pory"
+Movement_RivalMudkipToDad:
+# 364 "data/maps/TestTown_Gym/scripts.pory"
+	walk_down
+# 364 "data/maps/TestTown_Gym/scripts.pory"
 	walk_down
 # 365 "data/maps/TestTown_Gym/scripts.pory"
-	walk_down
+	walk_left
 # 366 "data/maps/TestTown_Gym/scripts.pory"
 	walk_in_place_faster_up
 	step_end
 
 # 369 "data/maps/TestTown_Gym/scripts.pory"
-Movement_RivalChoosesTreecko:
+Movement_PlayerTorchicToDad:
 # 370 "data/maps/TestTown_Gym/scripts.pory"
-	walk_left
-# 371 "data/maps/TestTown_Gym/scripts.pory"
-	walk_up
-# 371 "data/maps/TestTown_Gym/scripts.pory"
-	walk_up
-	step_end
-
-# 374 "data/maps/TestTown_Gym/scripts.pory"
-Movement_RivalTreeckoToDad:
-# 375 "data/maps/TestTown_Gym/scripts.pory"
-	walk_down
-# 375 "data/maps/TestTown_Gym/scripts.pory"
-	walk_down
-# 376 "data/maps/TestTown_Gym/scripts.pory"
 	walk_right
-# 377 "data/maps/TestTown_Gym/scripts.pory"
+# 371 "data/maps/TestTown_Gym/scripts.pory"
+	walk_down
+# 371 "data/maps/TestTown_Gym/scripts.pory"
+	walk_down
+# 372 "data/maps/TestTown_Gym/scripts.pory"
 	walk_in_place_faster_up
 	step_end
 
+# 375 "data/maps/TestTown_Gym/scripts.pory"
+Movement_RivalChoosesTreecko:
+# 376 "data/maps/TestTown_Gym/scripts.pory"
+	walk_left
+# 377 "data/maps/TestTown_Gym/scripts.pory"
+	walk_up
+# 377 "data/maps/TestTown_Gym/scripts.pory"
+	walk_up
+	step_end
+
 # 380 "data/maps/TestTown_Gym/scripts.pory"
-Movement_PlayerMudkipToDad1:
+Movement_RivalTreeckoToDad:
 # 381 "data/maps/TestTown_Gym/scripts.pory"
 	walk_down
 # 381 "data/maps/TestTown_Gym/scripts.pory"
 	walk_down
 # 382 "data/maps/TestTown_Gym/scripts.pory"
-	walk_in_place_faster_up
+	walk_right
 # 383 "data/maps/TestTown_Gym/scripts.pory"
-	delay_16
+	walk_in_place_faster_up
 	step_end
 
 # 386 "data/maps/TestTown_Gym/scripts.pory"
-Movement_PlayerMudkipToDad2:
-# 387 "data/maps/TestTown_Gym/scripts.pory"
-	walk_down
+Movement_PlayerMudkipToDad1:
 # 387 "data/maps/TestTown_Gym/scripts.pory"
 	walk_down
 # 387 "data/maps/TestTown_Gym/scripts.pory"
 	walk_down
 # 388 "data/maps/TestTown_Gym/scripts.pory"
-	walk_left
+	walk_in_place_faster_up
 # 389 "data/maps/TestTown_Gym/scripts.pory"
+	delay_16
+	step_end
+
+# 392 "data/maps/TestTown_Gym/scripts.pory"
+Movement_PlayerMudkipToDad2:
+# 393 "data/maps/TestTown_Gym/scripts.pory"
+	walk_down
+# 393 "data/maps/TestTown_Gym/scripts.pory"
+	walk_down
+# 393 "data/maps/TestTown_Gym/scripts.pory"
+	walk_down
+# 394 "data/maps/TestTown_Gym/scripts.pory"
+	walk_left
+# 395 "data/maps/TestTown_Gym/scripts.pory"
 	walk_in_place_faster_up
 	step_end
 
 TestTown_Gym_WallyEnters::
-# 393 "data/maps/TestTown_Gym/scripts.pory"
-	delay 32
-# 394 "data/maps/TestTown_Gym/scripts.pory"
-	msgbox TestTown_Gym_WallyEnters_Text_0
-# 395 "data/maps/TestTown_Gym/scripts.pory"
-	closemessage
-# 396 "data/maps/TestTown_Gym/scripts.pory"
-	playse SE_EXIT
-# 397 "data/maps/TestTown_Gym/scripts.pory"
-	delay 10
-# 398 "data/maps/TestTown_Gym/scripts.pory"
-	addobject 4
 # 399 "data/maps/TestTown_Gym/scripts.pory"
 	delay 32
 # 400 "data/maps/TestTown_Gym/scripts.pory"
-	applymovement 4, TestTown_Gym_WallyApproachesDad
+	msgbox TestTown_Gym_WallyEnters_Text_0
 # 401 "data/maps/TestTown_Gym/scripts.pory"
-	waitmovement 0
+	closemessage
 # 402 "data/maps/TestTown_Gym/scripts.pory"
-	msgbox TestTown_Gym_IAmWally
+	playse SE_EXIT
 # 403 "data/maps/TestTown_Gym/scripts.pory"
+	delay 10
+# 404 "data/maps/TestTown_Gym/scripts.pory"
+	addobject 4
+# 405 "data/maps/TestTown_Gym/scripts.pory"
+	delay 32
+# 406 "data/maps/TestTown_Gym/scripts.pory"
+	applymovement 4, TestTown_Gym_WallyApproachesDad
+# 407 "data/maps/TestTown_Gym/scripts.pory"
+	waitmovement 0
+# 408 "data/maps/TestTown_Gym/scripts.pory"
+	msgbox TestTown_Gym_IAmWally
+# 409 "data/maps/TestTown_Gym/scripts.pory"
 	compare VAR_RESULT, MALE
 	goto_if_eq TestTown_Gym_WallyEnters_2
-# 407 "data/maps/TestTown_Gym/scripts.pory"
+# 413 "data/maps/TestTown_Gym/scripts.pory"
 	applymovement 3, Common_Movement_WalkInPlaceFasterLeft
 TestTown_Gym_WallyEnters_1:
-# 409 "data/maps/TestTown_Gym/scripts.pory"
+# 415 "data/maps/TestTown_Gym/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
-# 410 "data/maps/TestTown_Gym/scripts.pory"
-	applymovement 4, Common_Movement_WalkInPlaceFasterRight
-# 411 "data/maps/TestTown_Gym/scripts.pory"
-	waitmovement 0
-# 412 "data/maps/TestTown_Gym/scripts.pory"
-	compare VAR_RESULT, MALE
-	goto_if_eq TestTown_Gym_WallyEnters_6
 # 416 "data/maps/TestTown_Gym/scripts.pory"
-	msgbox TestTown_Gym_BrendanWouldLoveToTeachYou
-TestTown_Gym_WallyEnters_5:
+	applymovement 4, Common_Movement_WalkInPlaceFasterRight
+# 417 "data/maps/TestTown_Gym/scripts.pory"
+	waitmovement 0
 # 418 "data/maps/TestTown_Gym/scripts.pory"
 	compare VAR_RESULT, MALE
-	goto_if_eq TestTown_Gym_WallyEnters_10
+	goto_if_eq TestTown_Gym_WallyEnters_6
 # 422 "data/maps/TestTown_Gym/scripts.pory"
+	msgbox TestTown_Gym_BrendanWouldLoveToTeachYou
+TestTown_Gym_WallyEnters_5:
+# 424 "data/maps/TestTown_Gym/scripts.pory"
+	compare VAR_RESULT, MALE
+	goto_if_eq TestTown_Gym_WallyEnters_10
+# 428 "data/maps/TestTown_Gym/scripts.pory"
 	applymovement 3, Common_Movement_WalkInPlaceFasterUp
 TestTown_Gym_WallyEnters_9:
-# 424 "data/maps/TestTown_Gym/scripts.pory"
+# 430 "data/maps/TestTown_Gym/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
-# 425 "data/maps/TestTown_Gym/scripts.pory"
+# 431 "data/maps/TestTown_Gym/scripts.pory"
 	applymovement 4, Common_Movement_WalkInPlaceFasterUp
-# 426 "data/maps/TestTown_Gym/scripts.pory"
+# 432 "data/maps/TestTown_Gym/scripts.pory"
 	waitmovement 0
-# 427 "data/maps/TestTown_Gym/scripts.pory"
+# 433 "data/maps/TestTown_Gym/scripts.pory"
 	msgbox TestTown_Gym_DadGivesWallyAPokemon
-# 428 "data/maps/TestTown_Gym/scripts.pory"
+# 434 "data/maps/TestTown_Gym/scripts.pory"
 	closemessage
-# 429 "data/maps/TestTown_Gym/scripts.pory"
+# 435 "data/maps/TestTown_Gym/scripts.pory"
 	compare VAR_STARTER_MON, 0
 	goto_if_eq TestTown_Gym_WallyEnters_14
-# 438 "data/maps/TestTown_Gym/scripts.pory"
+# 444 "data/maps/TestTown_Gym/scripts.pory"
 	compare VAR_STARTER_MON, 1
 	goto_if_eq TestTown_Gym_WallyEnters_15
-# 448 "data/maps/TestTown_Gym/scripts.pory"
-	applymovement 4, TestTown_Gym_WallyGoesToTorchic
-# 449 "data/maps/TestTown_Gym/scripts.pory"
-	waitmovement 0
-# 450 "data/maps/TestTown_Gym/scripts.pory"
-	delay 20
-# 451 "data/maps/TestTown_Gym/scripts.pory"
-	removeobject 7
-# 452 "data/maps/TestTown_Gym/scripts.pory"
-	setflag FLAG_HIDE_TEST_TOWN_TORCHICBALL
-# 453 "data/maps/TestTown_Gym/scripts.pory"
-	delay 20
 # 454 "data/maps/TestTown_Gym/scripts.pory"
+	applymovement 4, TestTown_Gym_WallyGoesToTorchic
+# 455 "data/maps/TestTown_Gym/scripts.pory"
+	waitmovement 0
+# 456 "data/maps/TestTown_Gym/scripts.pory"
+	delay 20
+# 457 "data/maps/TestTown_Gym/scripts.pory"
+	removeobject 7
+# 458 "data/maps/TestTown_Gym/scripts.pory"
+	setflag FLAG_HIDE_TEST_TOWN_TORCHICBALL
+# 459 "data/maps/TestTown_Gym/scripts.pory"
+	delay 20
+# 460 "data/maps/TestTown_Gym/scripts.pory"
 	applymovement 4, TestTown_Gym_WallyTorchicBackToDad
 TestTown_Gym_WallyEnters_13:
-# 456 "data/maps/TestTown_Gym/scripts.pory"
+# 462 "data/maps/TestTown_Gym/scripts.pory"
 	waitmovement 0
-# 457 "data/maps/TestTown_Gym/scripts.pory"
+# 463 "data/maps/TestTown_Gym/scripts.pory"
 	msgbox TestTown_Gym_WallyCantBelieveIt
-# 458 "data/maps/TestTown_Gym/scripts.pory"
+# 464 "data/maps/TestTown_Gym/scripts.pory"
 	compare VAR_RESULT, MALE
 	goto_if_eq TestTown_Gym_WallyEnters_20
-# 462 "data/maps/TestTown_Gym/scripts.pory"
+# 468 "data/maps/TestTown_Gym/scripts.pory"
 	applymovement 3, Common_Movement_WalkInPlaceFasterRight
 TestTown_Gym_WallyEnters_19:
-# 464 "data/maps/TestTown_Gym/scripts.pory"
+# 470 "data/maps/TestTown_Gym/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
-# 465 "data/maps/TestTown_Gym/scripts.pory"
+# 471 "data/maps/TestTown_Gym/scripts.pory"
 	applymovement 4, Common_Movement_WalkInPlaceFasterRight
-# 466 "data/maps/TestTown_Gym/scripts.pory"
+# 472 "data/maps/TestTown_Gym/scripts.pory"
 	waitmovement 0
-# 467 "data/maps/TestTown_Gym/scripts.pory"
+# 473 "data/maps/TestTown_Gym/scripts.pory"
 	compare VAR_RESULT, MALE
 	goto_if_eq TestTown_Gym_WallyEnters_24
-# 471 "data/maps/TestTown_Gym/scripts.pory"
+# 477 "data/maps/TestTown_Gym/scripts.pory"
 	msgbox TestTown_Gym_IllRaceYouToTheLab_Brendan
 TestTown_Gym_WallyEnters_23:
-# 473 "data/maps/TestTown_Gym/scripts.pory"
+# 479 "data/maps/TestTown_Gym/scripts.pory"
 	closemessage
-# 474 "data/maps/TestTown_Gym/scripts.pory"
+# 480 "data/maps/TestTown_Gym/scripts.pory"
 	compare VAR_RESULT, MALE
 	goto_if_eq TestTown_Gym_WallyEnters_28
-# 478 "data/maps/TestTown_Gym/scripts.pory"
+# 484 "data/maps/TestTown_Gym/scripts.pory"
 	applymovement 3, TestTown_Gym_RivalRunsOutOfGym
 TestTown_Gym_WallyEnters_27:
-# 480 "data/maps/TestTown_Gym/scripts.pory"
+# 486 "data/maps/TestTown_Gym/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
-# 481 "data/maps/TestTown_Gym/scripts.pory"
+# 487 "data/maps/TestTown_Gym/scripts.pory"
 	applymovement 4, Common_Movement_WalkInPlaceFasterDown
-# 482 "data/maps/TestTown_Gym/scripts.pory"
+# 488 "data/maps/TestTown_Gym/scripts.pory"
 	waitmovement 0
-# 483 "data/maps/TestTown_Gym/scripts.pory"
+# 489 "data/maps/TestTown_Gym/scripts.pory"
 	playse SE_EXIT
-# 484 "data/maps/TestTown_Gym/scripts.pory"
+# 490 "data/maps/TestTown_Gym/scripts.pory"
 	delay 10
-# 485 "data/maps/TestTown_Gym/scripts.pory"
+# 491 "data/maps/TestTown_Gym/scripts.pory"
 	compare VAR_RESULT, MALE
 	goto_if_eq TestTown_Gym_WallyEnters_32
-# 489 "data/maps/TestTown_Gym/scripts.pory"
+# 495 "data/maps/TestTown_Gym/scripts.pory"
 	removeobject 3
 TestTown_Gym_WallyEnters_31:
-# 491 "data/maps/TestTown_Gym/scripts.pory"
-	msgbox TestTown_Gym_WallyEnters_Text_1
-# 492 "data/maps/TestTown_Gym/scripts.pory"
-	closemessage
-# 493 "data/maps/TestTown_Gym/scripts.pory"
-	applymovement 4, TestTown_Gym_WallyOutOfGym
-# 494 "data/maps/TestTown_Gym/scripts.pory"
-	waitmovement 0
-# 495 "data/maps/TestTown_Gym/scripts.pory"
-	playse SE_EXIT
-# 496 "data/maps/TestTown_Gym/scripts.pory"
-	delay 10
 # 497 "data/maps/TestTown_Gym/scripts.pory"
-	removeobject 4
+	msgbox TestTown_Gym_WallyEnters_Text_1
 # 498 "data/maps/TestTown_Gym/scripts.pory"
-	setflag FLAG_HIDE_TEST_TOWN_GYM_RIVAL_MAY
+	closemessage
 # 499 "data/maps/TestTown_Gym/scripts.pory"
-	setflag FLAG_HIDE_RIVAL_MAYS_HOUSE
+	applymovement 4, TestTown_Gym_WallyOutOfGym
 # 500 "data/maps/TestTown_Gym/scripts.pory"
-	setflag FLAG_HIDE_RIVAL_BRENDANS_HOUSE
+	waitmovement 0
 # 501 "data/maps/TestTown_Gym/scripts.pory"
-	setflag FLAG_HIDE_TEST_TOWN_GYM_RIVAL_BRENDAN
+	playse SE_EXIT
 # 502 "data/maps/TestTown_Gym/scripts.pory"
-	setflag FLAG_HIDE_TEST_TOWN_GYM_WALLY
+	delay 10
 # 503 "data/maps/TestTown_Gym/scripts.pory"
-	setvar VAR_TESTTOWN_INTRO_STATE, 7
+	removeobject 4
 # 504 "data/maps/TestTown_Gym/scripts.pory"
+	setflag FLAG_HIDE_TEST_TOWN_GYM_RIVAL_MAY
+# 505 "data/maps/TestTown_Gym/scripts.pory"
+	setflag FLAG_HIDE_RIVAL_MAYS_HOUSE
+# 506 "data/maps/TestTown_Gym/scripts.pory"
+	setflag FLAG_HIDE_RIVAL_BRENDANS_HOUSE
+# 507 "data/maps/TestTown_Gym/scripts.pory"
+	setflag FLAG_HIDE_TEST_TOWN_GYM_RIVAL_BRENDAN
+# 508 "data/maps/TestTown_Gym/scripts.pory"
+	setflag FLAG_HIDE_TEST_TOWN_GYM_WALLY
+# 509 "data/maps/TestTown_Gym/scripts.pory"
+	clearflag FLAG_HIDE_MAP_NAME_POPUP
+# 510 "data/maps/TestTown_Gym/scripts.pory"
+	setvar VAR_TESTTOWN_INTRO_STATE, 7
+# 511 "data/maps/TestTown_Gym/scripts.pory"
 	releaseall
 	return
 
 TestTown_Gym_WallyEnters_2:
-# 404 "data/maps/TestTown_Gym/scripts.pory"
+# 410 "data/maps/TestTown_Gym/scripts.pory"
 	applymovement 2, Common_Movement_WalkInPlaceFasterLeft
 	goto TestTown_Gym_WallyEnters_1
 
 TestTown_Gym_WallyEnters_6:
-# 413 "data/maps/TestTown_Gym/scripts.pory"
+# 419 "data/maps/TestTown_Gym/scripts.pory"
 	msgbox TestTown_Gym_MayWouldLoveToTeachYou
 	goto TestTown_Gym_WallyEnters_5
 
 TestTown_Gym_WallyEnters_10:
-# 419 "data/maps/TestTown_Gym/scripts.pory"
+# 425 "data/maps/TestTown_Gym/scripts.pory"
 	applymovement 2, Common_Movement_WalkInPlaceFasterUp
 	goto TestTown_Gym_WallyEnters_9
 
 TestTown_Gym_WallyEnters_14:
-# 430 "data/maps/TestTown_Gym/scripts.pory"
-	applymovement 4, TestTown_Gym_WallyGoesToMudkip
-# 431 "data/maps/TestTown_Gym/scripts.pory"
-	waitmovement 0
-# 432 "data/maps/TestTown_Gym/scripts.pory"
-	delay 20
-# 433 "data/maps/TestTown_Gym/scripts.pory"
-	removeobject 8
-# 434 "data/maps/TestTown_Gym/scripts.pory"
-	setflag FLAG_HIDE_TEST_TOWN_MUDKIPBALL
-# 435 "data/maps/TestTown_Gym/scripts.pory"
-	delay 20
 # 436 "data/maps/TestTown_Gym/scripts.pory"
+	applymovement 4, TestTown_Gym_WallyGoesToMudkip
+# 437 "data/maps/TestTown_Gym/scripts.pory"
+	waitmovement 0
+# 438 "data/maps/TestTown_Gym/scripts.pory"
+	delay 20
+# 439 "data/maps/TestTown_Gym/scripts.pory"
+	removeobject 8
+# 440 "data/maps/TestTown_Gym/scripts.pory"
+	setflag FLAG_HIDE_TEST_TOWN_MUDKIPBALL
+# 441 "data/maps/TestTown_Gym/scripts.pory"
+	delay 20
+# 442 "data/maps/TestTown_Gym/scripts.pory"
 	applymovement 4, TestTown_Gym_WallyMudkipBackToDad
 	goto TestTown_Gym_WallyEnters_13
 
 TestTown_Gym_WallyEnters_15:
-# 439 "data/maps/TestTown_Gym/scripts.pory"
-	applymovement 4, TestTown_Gym_WallyGoesToTreecko
-# 440 "data/maps/TestTown_Gym/scripts.pory"
-	waitmovement 0
-# 441 "data/maps/TestTown_Gym/scripts.pory"
-	delay 20
-# 442 "data/maps/TestTown_Gym/scripts.pory"
-	removeobject 6
-# 443 "data/maps/TestTown_Gym/scripts.pory"
-	setflag FLAG_HIDE_TEST_TOWN_TREECKOBALL
-# 444 "data/maps/TestTown_Gym/scripts.pory"
-	delay 20
 # 445 "data/maps/TestTown_Gym/scripts.pory"
+	applymovement 4, TestTown_Gym_WallyGoesToTreecko
+# 446 "data/maps/TestTown_Gym/scripts.pory"
+	waitmovement 0
+# 447 "data/maps/TestTown_Gym/scripts.pory"
+	delay 20
+# 448 "data/maps/TestTown_Gym/scripts.pory"
+	removeobject 6
+# 449 "data/maps/TestTown_Gym/scripts.pory"
+	setflag FLAG_HIDE_TEST_TOWN_TREECKOBALL
+# 450 "data/maps/TestTown_Gym/scripts.pory"
+	delay 20
+# 451 "data/maps/TestTown_Gym/scripts.pory"
 	applymovement 4, TestTown_Gym_WallyTreeckoBackToDad
 	goto TestTown_Gym_WallyEnters_13
 
 TestTown_Gym_WallyEnters_20:
-# 459 "data/maps/TestTown_Gym/scripts.pory"
+# 465 "data/maps/TestTown_Gym/scripts.pory"
 	applymovement 2, Common_Movement_WalkInPlaceFasterRight
 	goto TestTown_Gym_WallyEnters_19
 
 TestTown_Gym_WallyEnters_24:
-# 468 "data/maps/TestTown_Gym/scripts.pory"
+# 474 "data/maps/TestTown_Gym/scripts.pory"
 	msgbox TestTown_Gym_IllRaceYouToTheLab_May
 	goto TestTown_Gym_WallyEnters_23
 
 TestTown_Gym_WallyEnters_28:
-# 475 "data/maps/TestTown_Gym/scripts.pory"
+# 481 "data/maps/TestTown_Gym/scripts.pory"
 	applymovement 2, TestTown_Gym_RivalRunsOutOfGym
 	goto TestTown_Gym_WallyEnters_27
 
 TestTown_Gym_WallyEnters_32:
-# 486 "data/maps/TestTown_Gym/scripts.pory"
+# 492 "data/maps/TestTown_Gym/scripts.pory"
 	removeobject 2
 	goto TestTown_Gym_WallyEnters_31
 
 
-# 507 "data/maps/TestTown_Gym/scripts.pory"
+# 514 "data/maps/TestTown_Gym/scripts.pory"
 TestTown_Gym_WallyApproachesDad:
-# 508 "data/maps/TestTown_Gym/scripts.pory"
+# 515 "data/maps/TestTown_Gym/scripts.pory"
 	walk_up
-# 509 "data/maps/TestTown_Gym/scripts.pory"
+# 516 "data/maps/TestTown_Gym/scripts.pory"
 	walk_left
-# 510 "data/maps/TestTown_Gym/scripts.pory"
+# 517 "data/maps/TestTown_Gym/scripts.pory"
 	walk_up
 	step_end
 
-# 529 "data/maps/TestTown_Gym/scripts.pory"
+# 536 "data/maps/TestTown_Gym/scripts.pory"
 TestTown_Gym_WallyGoesToMudkip:
-# 530 "data/maps/TestTown_Gym/scripts.pory"
-	walk_up
-# 530 "data/maps/TestTown_Gym/scripts.pory"
-	walk_up
-# 531 "data/maps/TestTown_Gym/scripts.pory"
-	walk_right
-# 531 "data/maps/TestTown_Gym/scripts.pory"
-	walk_right
-# 532 "data/maps/TestTown_Gym/scripts.pory"
-	walk_in_place_faster_up
-	step_end
-
-# 535 "data/maps/TestTown_Gym/scripts.pory"
-TestTown_Gym_WallyMudkipBackToDad:
-# 536 "data/maps/TestTown_Gym/scripts.pory"
-	walk_left
-# 536 "data/maps/TestTown_Gym/scripts.pory"
-	walk_left
 # 537 "data/maps/TestTown_Gym/scripts.pory"
-	walk_down
+	walk_up
 # 537 "data/maps/TestTown_Gym/scripts.pory"
-	walk_down
+	walk_up
 # 538 "data/maps/TestTown_Gym/scripts.pory"
-	walk_in_place_faster_up
-	step_end
-
-# 541 "data/maps/TestTown_Gym/scripts.pory"
-TestTown_Gym_WallyGoesToTreecko:
-# 542 "data/maps/TestTown_Gym/scripts.pory"
-	walk_up
-# 542 "data/maps/TestTown_Gym/scripts.pory"
-	walk_up
-	step_end
-
-# 545 "data/maps/TestTown_Gym/scripts.pory"
-TestTown_Gym_WallyTreeckoBackToDad:
-# 546 "data/maps/TestTown_Gym/scripts.pory"
-	walk_down
-# 546 "data/maps/TestTown_Gym/scripts.pory"
-	walk_down
-# 547 "data/maps/TestTown_Gym/scripts.pory"
-	walk_in_place_faster_up
-	step_end
-
-# 550 "data/maps/TestTown_Gym/scripts.pory"
-TestTown_Gym_WallyGoesToTorchic:
-# 551 "data/maps/TestTown_Gym/scripts.pory"
-	walk_up
-# 551 "data/maps/TestTown_Gym/scripts.pory"
-	walk_up
-# 552 "data/maps/TestTown_Gym/scripts.pory"
 	walk_right
-# 553 "data/maps/TestTown_Gym/scripts.pory"
+# 538 "data/maps/TestTown_Gym/scripts.pory"
+	walk_right
+# 539 "data/maps/TestTown_Gym/scripts.pory"
 	walk_in_place_faster_up
 	step_end
 
-# 556 "data/maps/TestTown_Gym/scripts.pory"
-TestTown_Gym_WallyTorchicBackToDad:
-# 557 "data/maps/TestTown_Gym/scripts.pory"
+# 542 "data/maps/TestTown_Gym/scripts.pory"
+TestTown_Gym_WallyMudkipBackToDad:
+# 543 "data/maps/TestTown_Gym/scripts.pory"
 	walk_left
-# 558 "data/maps/TestTown_Gym/scripts.pory"
+# 543 "data/maps/TestTown_Gym/scripts.pory"
+	walk_left
+# 544 "data/maps/TestTown_Gym/scripts.pory"
 	walk_down
-# 558 "data/maps/TestTown_Gym/scripts.pory"
+# 544 "data/maps/TestTown_Gym/scripts.pory"
 	walk_down
-# 559 "data/maps/TestTown_Gym/scripts.pory"
+# 545 "data/maps/TestTown_Gym/scripts.pory"
 	walk_in_place_faster_up
 	step_end
 
-# 574 "data/maps/TestTown_Gym/scripts.pory"
+# 548 "data/maps/TestTown_Gym/scripts.pory"
+TestTown_Gym_WallyGoesToTreecko:
+# 549 "data/maps/TestTown_Gym/scripts.pory"
+	walk_up
+# 549 "data/maps/TestTown_Gym/scripts.pory"
+	walk_up
+	step_end
+
+# 552 "data/maps/TestTown_Gym/scripts.pory"
+TestTown_Gym_WallyTreeckoBackToDad:
+# 553 "data/maps/TestTown_Gym/scripts.pory"
+	walk_down
+# 553 "data/maps/TestTown_Gym/scripts.pory"
+	walk_down
+# 554 "data/maps/TestTown_Gym/scripts.pory"
+	walk_in_place_faster_up
+	step_end
+
+# 557 "data/maps/TestTown_Gym/scripts.pory"
+TestTown_Gym_WallyGoesToTorchic:
+# 558 "data/maps/TestTown_Gym/scripts.pory"
+	walk_up
+# 558 "data/maps/TestTown_Gym/scripts.pory"
+	walk_up
+# 559 "data/maps/TestTown_Gym/scripts.pory"
+	walk_right
+# 560 "data/maps/TestTown_Gym/scripts.pory"
+	walk_in_place_faster_up
+	step_end
+
+# 563 "data/maps/TestTown_Gym/scripts.pory"
+TestTown_Gym_WallyTorchicBackToDad:
+# 564 "data/maps/TestTown_Gym/scripts.pory"
+	walk_left
+# 565 "data/maps/TestTown_Gym/scripts.pory"
+	walk_down
+# 565 "data/maps/TestTown_Gym/scripts.pory"
+	walk_down
+# 566 "data/maps/TestTown_Gym/scripts.pory"
+	walk_in_place_faster_up
+	step_end
+
+# 581 "data/maps/TestTown_Gym/scripts.pory"
 TestTown_Gym_RivalRunsOutOfGym:
-# 575 "data/maps/TestTown_Gym/scripts.pory"
+# 582 "data/maps/TestTown_Gym/scripts.pory"
 	walk_faster_down
-# 575 "data/maps/TestTown_Gym/scripts.pory"
+# 582 "data/maps/TestTown_Gym/scripts.pory"
 	walk_faster_down
 	step_end
 
-# 578 "data/maps/TestTown_Gym/scripts.pory"
+# 585 "data/maps/TestTown_Gym/scripts.pory"
 TestTown_Gym_WallyOutOfGym:
-# 579 "data/maps/TestTown_Gym/scripts.pory"
+# 586 "data/maps/TestTown_Gym/scripts.pory"
 	walk_down
-# 580 "data/maps/TestTown_Gym/scripts.pory"
+# 587 "data/maps/TestTown_Gym/scripts.pory"
 	walk_right
-# 581 "data/maps/TestTown_Gym/scripts.pory"
+# 588 "data/maps/TestTown_Gym/scripts.pory"
 	walk_down
 	step_end
 
 TestTown_Gym_Trigger_NoStarter::
-# 585 "data/maps/TestTown_Gym/scripts.pory"
+# 592 "data/maps/TestTown_Gym/scripts.pory"
 	lockall
-# 586 "data/maps/TestTown_Gym/scripts.pory"
+# 593 "data/maps/TestTown_Gym/scripts.pory"
 	msgbox TestTown_Gym_DontLeave
-# 587 "data/maps/TestTown_Gym/scripts.pory"
+# 594 "data/maps/TestTown_Gym/scripts.pory"
 	closemessage
-# 588 "data/maps/TestTown_Gym/scripts.pory"
+# 595 "data/maps/TestTown_Gym/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
-# 589 "data/maps/TestTown_Gym/scripts.pory"
+# 596 "data/maps/TestTown_Gym/scripts.pory"
 	waitmovement 0
-# 590 "data/maps/TestTown_Gym/scripts.pory"
+# 597 "data/maps/TestTown_Gym/scripts.pory"
 	releaseall
 	return
 
 
 TestTown_Gym_Eventscript_TreeckoBall_Text_0:
-# 155 "data/maps/TestTown_Gym/scripts.pory"
+# 157 "data/maps/TestTown_Gym/scripts.pory"
 	.string "Do you want to choose Treecko?$"
 
 TestTown_Gym_Eventscript_TreeckoBall_Text_1:
-# 159 "data/maps/TestTown_Gym/scripts.pory"
+# 161 "data/maps/TestTown_Gym/scripts.pory"
 	.string "You received Treecko!$"
 
 TestTown_Gym_Eventscript_TorchicBall_Text_0:
-# 179 "data/maps/TestTown_Gym/scripts.pory"
+# 183 "data/maps/TestTown_Gym/scripts.pory"
 	.string "Do you want to choose Torchic?$"
 
 TestTown_Gym_Eventscript_TorchicBall_Text_1:
-# 183 "data/maps/TestTown_Gym/scripts.pory"
+# 187 "data/maps/TestTown_Gym/scripts.pory"
 	.string "You received Torchic!$"
 
 TestTown_Gym_Eventscript_MudkipBall_Text_0:
-# 203 "data/maps/TestTown_Gym/scripts.pory"
+# 209 "data/maps/TestTown_Gym/scripts.pory"
 	.string "Do you want to choose Mudkip?$"
 
 TestTown_Gym_Eventscript_MudkipBall_Text_1:
-# 207 "data/maps/TestTown_Gym/scripts.pory"
+# 213 "data/maps/TestTown_Gym/scripts.pory"
 	.string "You received Mudkip!$"
 
 NicknamePartyMon_Text_0:
-# 226 "data/maps/TestTown_Gym/scripts.pory"
+# 232 "data/maps/TestTown_Gym/scripts.pory"
 	.string "Give it a nickname?$"
 
 StarterReceived_Text_0:
-# 249 "data/maps/TestTown_Gym/scripts.pory"
+# 255 "data/maps/TestTown_Gym/scripts.pory"
 	.string "I choose this one!$"
 
 TestTown_Gym_WallyEnters_Text_0:
-# 394 "data/maps/TestTown_Gym/scripts.pory"
+# 400 "data/maps/TestTown_Gym/scripts.pory"
 	.string "Dad: So...$"
 
 TestTown_Gym_WallyEnters_Text_1:
-# 491 "data/maps/TestTown_Gym/scripts.pory"
+# 497 "data/maps/TestTown_Gym/scripts.pory"
 	.string "Wally: Wait for me!$"
 
 TestTown_Gym_WelcomeToMyGym_Male::
@@ -1144,7 +1158,7 @@ TestTown_Gym_DadGoToBirch::
 	.string "It's north of our town.$"
 
 TestTown_Gym_IAmWally::
-# 513 "data/maps/TestTown_Gym/scripts.pory"
+# 520 "data/maps/TestTown_Gym/scripts.pory"
 	.string "Wally: Um, hi, my name is Wally and I'm\n"
 	.string "new in Hoenn.\p"
 	.string "I'd like to learn how to catch a Pokémon\n"
@@ -1153,7 +1167,7 @@ TestTown_Gym_IAmWally::
 	.string "could help me with that.$"
 
 TestTown_Gym_MayWouldLoveToTeachYou::
-# 517 "data/maps/TestTown_Gym/scripts.pory"
+# 524 "data/maps/TestTown_Gym/scripts.pory"
 	.string "May: Hi, Wally! I'm May and this is\n"
 	.string "{PLAYER}.\p"
 	.string "Professor Birch is my dad, so I've seen\n"
@@ -1162,7 +1176,7 @@ TestTown_Gym_MayWouldLoveToTeachYou::
 	.string "one!$"
 
 TestTown_Gym_BrendanWouldLoveToTeachYou::
-# 521 "data/maps/TestTown_Gym/scripts.pory"
+# 528 "data/maps/TestTown_Gym/scripts.pory"
 	.string "Brendan: Hi, Wally! I'm Brendan and this\n"
 	.string "is {PLAYER}.\p"
 	.string "Professor Birch is my dad, so I've seen\n"
@@ -1171,7 +1185,7 @@ TestTown_Gym_BrendanWouldLoveToTeachYou::
 	.string "one!$"
 
 TestTown_Gym_DadGivesWallyAPokemon::
-# 525 "data/maps/TestTown_Gym/scripts.pory"
+# 532 "data/maps/TestTown_Gym/scripts.pory"
 	.string "Dad: How nice of you to offer!\p"
 	.string "Listen Wally, you come just at the right\n"
 	.string "moment.\p"
@@ -1188,7 +1202,7 @@ TestTown_Gym_DadGivesWallyAPokemon::
 	.string "It's so nice of you!$"
 
 TestTown_Gym_WallyCantBelieveIt::
-# 562 "data/maps/TestTown_Gym/scripts.pory"
+# 569 "data/maps/TestTown_Gym/scripts.pory"
 	.string "Wally: Thank you again-I can't believe\n"
 	.string "it!\p"
 	.string "Dad: You're welcome.\p"
@@ -1200,18 +1214,18 @@ TestTown_Gym_WallyCantBelieveIt::
 	.string "Wally, with you!$"
 
 TestTown_Gym_IllRaceYouToTheLab_May::
-# 566 "data/maps/TestTown_Gym/scripts.pory"
+# 573 "data/maps/TestTown_Gym/scripts.pory"
 	.string "May: My Dad's lab is in the town north of\n"
 	.string "here.\p"
 	.string "I'll race both of you to it!$"
 
 TestTown_Gym_IllRaceYouToTheLab_Brendan::
-# 570 "data/maps/TestTown_Gym/scripts.pory"
+# 577 "data/maps/TestTown_Gym/scripts.pory"
 	.string "Brendan: My Dad's lab is in the town\n"
 	.string "north of here.\p"
 	.string "I'll race both of you to it!$"
 
 TestTown_Gym_DontLeave::
-# 593 "data/maps/TestTown_Gym/scripts.pory"
+# 600 "data/maps/TestTown_Gym/scripts.pory"
 	.string "Dad: {PLAYER}!\p"
 	.string "Don't leave without your Pokémon!$"
