@@ -148,3 +148,11 @@ text RivalMomToBrendan_BeSafe {
 text RivalBrendanToPlayer_CantWaitLetsGo {
 	format("Brendan: Hi {PLAYER}!\p I can't wait anymore to meet my first Pokémon!\p I've been waiting for this day for so long!\p Let's not waste another second and head straight to the gym!")
 }
+
+script TestTown_BrendansHouse_1F_RivalMom {
+	msgbox(TestTown_BrendansHouse_1F_RivalMom_Text, MSGBOX_NPC)
+}
+
+text TestTown_BrendansHouse_1F_RivalMom_Text {
+	format("Hello {PLAYER}!\p Thank you for being such a good friend to Brendan.\p It means a lot to me.")
+}

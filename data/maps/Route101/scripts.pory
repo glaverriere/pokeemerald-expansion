@@ -131,7 +131,7 @@ script Route101_RivalBattle_Trigger {
 		applymovement(2, Common_Movement_Delay48)
 		waitmovement(0)
 		applymovement(2, Common_Movement_WalkInPlaceFasterDown)
-		applymovement(4, Common_Movement_WalkInPlaceFasterDown)
+		applymovement(1, Common_Movement_WalkInPlaceFasterDown)
 		waitmovement(0)
 		playbgm(MUS_ENCOUNTER_MAY, TRUE)
 		delay(10)
@@ -168,7 +168,7 @@ script Route101_RivalBattle_Trigger {
 		applymovement(3, Common_Movement_Delay48)
 		waitmovement(0)
 		applymovement(3, Common_Movement_WalkInPlaceFasterDown)
-		applymovement(4, Common_Movement_WalkInPlaceFasterDown)
+		applymovement(1, Common_Movement_WalkInPlaceFasterDown)
 		waitmovement(0)
 		playbgm(MUS_ENCOUNTER_BRENDAN, TRUE)
 		delay(10)
@@ -195,15 +195,68 @@ script Route101_RivalBattle_Trigger {
 				trainerbattle_no_intro(TRAINER_BRENDAN_ROUTE_101_MUDKIP, Route101_Text_RivalDefeated)
 		}
 	}
+	msgbox(Route101_Text_RivalLetsGoToLab)
+	closemessage
+	checkplayergender
+	getplayerxy(VAR_TEMP_0, VAR_TEMP_1)
+	if (var(VAR_RESULT) == MALE) {
+		switch (var(VAR_TEMP_0)) {
+			case 6:
+				applymovement(2, Route101_RivalToWally6)
+			case 7:
+				applymovement(2, Route101_RivalToWally7)
+			case 8:
+				applymovement(2, Route101_RivalToWally8)
+			case 9:
+				applymovement(2, Route101_RivalToWally9)
+			case 10:
+				applymovement(2, Route101_RivalToWally10)
+		}
+	}
+	else {
+		switch (var(VAR_TEMP_0)) {
+			case 6:
+				applymovement(3, Route101_RivalToWally6)
+			case 7:
+				applymovement(3, Route101_RivalToWally7)
+			case 8:
+				applymovement(3, Route101_RivalToWally8)
+			case 9:
+				applymovement(3, Route101_RivalToWally9)
+			case 10:
+				applymovement(3, Route101_RivalToWally10)
+		}
+	}
+	waitmovement(0)
+	applymovement(1, Common_Movement_WalkInPlaceFasterUp)
+	if (var(VAR_RESULT) == MALE) {
+		applymovement(2, Route101_RivalToLab)
+	}
+	else {
+		applymovement(3, Route101_RivalToLab)
+	}
+	waitmovement(0)
+	removeobject(2)
+	removeobject(3)
+	msgbox("Wally: Wait for me!")
+	closemessage
+	applymovement(1, Route101_RivalToLab)
+	waitmovement(0)
+	removeobject(1)
+	setflag(FLAG_HIDE_ROUTE101_BRENDAN)
+	setflag(FLAG_HIDE_ROUTE101_MAY)
+	setflag(FLAG_HIDE_ROUTE101_WALLY)
+	setvar(VAR_ROUTE101_STATE, 1)
+	playbgm(MUS_ROUTE101, TRUE)
 	releaseall
 }
 
 text Route101_Text_MayVsWally {
-	format("May: Wally! I challenge you to a Pokémon battle!\p Wally: What? Me? A Pokémon battle?\p I don't know how that works.\p May: Don't worry about it.\p I'll challenge {PLAYER} instead.")
+	format("May: Wally! I challenge you to a Pokémon battle!\p Wally: What? Me? A Pokémon battle?\p I don't know how that works.\p May: Don't worry about it.\p I'll challenge {PLAYER} instead.\p Feel free to watch if you would like to learn.")
 }
 
 text Route101_Text_BrendanVsWally {
-	format("Brendan: Wally! I challenge you to a Pokémon battle!\p Wally: What? Me? A Pokémon battle?\p I don't know how that works.\p Brendan: Don't worry about it.\p I'll challenge {PLAYER} instead.")
+	format("Brendan: Wally! I challenge you to a Pokémon battle!\p Wally: What? Me? A Pokémon battle?\p I don't know how that works.\p Brendan: Don't worry about it.\p I'll challenge {PLAYER} instead.\p Feel free to watch if you would like to learn.")
 }
 
 movement Route101_RivalToPlayer6 {
@@ -240,4 +293,62 @@ text Route101_Text_LetsBattle {
 
 text Route101_Text_RivalDefeated {
 	format("Wow, {PLAYER}...\n You sure are good at this!")
+}
+
+text Route101_Text_RivalLetsGoToLab {
+	format("You're a natural!\p Anyways, let's go to my dad's lab.")
+}
+
+movement Route101_RivalToWally6 {
+	walk_right * 4
+	walk_up * 3
+}
+
+movement Route101_RivalToWally7 {
+	walk_right * 3
+	walk_up * 3
+}
+
+movement Route101_RivalToWally8 {
+	walk_right * 2
+	walk_up * 3
+}
+
+movement Route101_RivalToWally9 {
+	walk_right
+	walk_up * 3
+}
+
+movement Route101_RivalToWally10 {
+	walk_up * 3
+}
+
+movement Route101_RivalToLab {
+	walk_up * 5
+}
+
+script Route101_GirlWalking {
+	msgbox(Route101_Text_GirlWalking, MSGBOX_NPC)
+}
+
+text Route101_Text_GirlWalking {
+	format("Did you know that if you keep walking in tall grass, you'll eventually stumble upon a wild Pokémon?")
+}
+
+script Route101_Ronnie_Eventscript {
+	trainerbattle_single(TRAINER_RONNIE, Route101_Ronnie_Intro, Route101_Ronnie_Defeated)
+	msgbox(Route101_Ronnie_PostBattle)
+	closemessage
+}
+
+text Route101_Ronnie_Intro {
+	format("When two trainers' eyes meet, it means they have to battle!")
+}
+
+text Route101_Ronnie_Defeated {
+	format("I lost...")
+}
+
+text Route101_Ronnie_PostBattle {
+	format("Now you know how battling works!")
 }

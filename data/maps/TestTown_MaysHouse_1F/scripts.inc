@@ -239,6 +239,12 @@ Rival_ExitsMaysHouse:
 	walk_down
 	step_end
 
+TestTown_MaysHouse_1F_RivalMom::
+# 153 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+	msgbox TestTown_MaysHouse_1F_RivalMom_Text, MSGBOX_NPC
+	return
+
+
 TestTown_Text_GiveDadsRod_May::
 # 48 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
 	.string "Hi {PLAYER}!\p"
@@ -299,3 +305,10 @@ RivalToPlayer_CantWaitLetsGo::
 	.string "long!\p"
 	.string "Let's not waste another second and\n"
 	.string "head straight to the gym!$"
+
+TestTown_MaysHouse_1F_RivalMom_Text::
+# 156 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
+	.string "Hello {PLAYER}!\p"
+	.string "Thank you for being such a good friend\n"
+	.string "to May.\p"
+	.string "It means a lot to me.$"
