@@ -1,0 +1,55 @@
+mapscripts TestTown_Mart_MapScripts {
+    
+}
+
+script TestTown_Mart_Clerk {
+	lock
+	message("Welcome to my store.")
+	waitmessage
+    if (!flag(FLAG_ADVENTURE_STARTED)) {
+        pokemart(TestTown_Mart_Items)
+    }
+	else {
+        pokemart(TestTown_Mart_ItemsExpanded)
+    }
+	msgbox("Come again soon.")
+	release
+}
+
+mart TestTown_Mart_Items {
+	ITEM_POTION
+    ITEM_ANTIDOTE
+    ITEM_PARALYZE_HEAL
+    ITEM_AWAKENING
+}
+
+mart TestTown_Mart_ItemsExpanded {
+	ITEM_POKE_BALL
+    ITEM_QUICK_BALL
+    ITEM_POTION
+    ITEM_ANTIDOTE
+    ITEM_PARALYZE_HEAL
+    ITEM_AWAKENING
+    ITEM_ORAN_BERRY
+	ITEM_PECHA_BERRY
+	ITEM_ASPEAR_BERRY
+	ITEM_CHERI_BERRY
+	ITEM_CHESTO_BERRY
+	ITEM_RAWST_BERRY
+}
+
+script TestTown_Mart_Girl {
+	msgbox(TestTown_Mart_Girl_Text, MSGBOX_NPC)
+}
+
+text TestTown_Mart_Girl_Text {
+	format("I'm currently saving for a Quick ball.\p They're pricier, but they make catching Pokémon so easy!")
+}
+
+script TestTown_Mart_Man {
+	msgbox(TestTown_Mart_Man_Text, MSGBOX_NPC)
+}
+
+text TestTown_Mart_Man_Text {
+	format("I give my Pokémon an Oran berry to hold during battle so when its HP goes too low, it regains 10 HP.\p I love experimenting with different items!")
+}

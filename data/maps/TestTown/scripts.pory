@@ -271,3 +271,19 @@ script TestTown_GymPost_EventScript {
 text TestTown_GymPost_Text {
 	format("Blossom Town Pokémon gym\n Leader: Norman\l “He leaves a toxic waste behind after every battle!”")
 }
+
+script TestTown_Eventscript_Fisherman {
+	msgbox(TestTown_Text_Fisherman, MSGBOX_NPC)
+}
+
+text TestTown_Text_Fisherman {
+	format("It's a fairly small pond, but it's quite useful to practice fishing in peace.")
+}
+
+script TestTown_Eventscript_Woman {
+	msgbox(TestTown_Text_Woman, MSGBOX_NPC)
+}
+
+text TestTown_Text_Woman {
+	format("Blossom town is such a nice little place!\p I'm only visiting, but I wish I could live here.")
+}

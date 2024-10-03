@@ -5177,8 +5177,8 @@ void AdjustFriendship(struct Pokemon *mon, u8 event)
 
         mod = sFriendshipEventModifiers[event][friendshipLevel];
         if (mod > 0 && holdEffect == HOLD_EFFECT_FRIENDSHIP_UP)
-            // 50% increase, rounding down
-            mod = (150 * mod) / 100;
+            // 200% increase, rounding down
+            mod = (300 * mod) / 100;
 
         friendship += mod;
         if (mod > 0)

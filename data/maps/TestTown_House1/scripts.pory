@@ -4,13 +4,16 @@ mapscripts TestTown_House1_MapScripts {
 
 script TestTown_House1_Dude {
     lockall
-    if (flag(FLAG_RECEIVED_LIGHT_BALL)) {
+    faceplayer
+    if (!flag(FLAG_RECEIVED_LIGHT_BALL)) {
         msgbox(TestTown_House1_Dude_Evolved)
         giveitem(ITEM_LIGHT_BALL)
+        msgbox("Maybe it will be useful to you.", MSGBOX_NPC)
         setflag(FLAG_RECEIVED_LIGHT_BALL)
     }
-    msgbox("Maybe it will be useful to you.")
-    closemessage
+    else {
+        msgbox("Did you get to use the light ball?", MSGBOX_NPC)
+    }
     releaseall
 }
 

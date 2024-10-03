@@ -1,0 +1,39 @@
+mapscripts TestTown_PokeCenter_MapScripts {
+    
+}
+
+script TestTown_PokemonCenter_EventScript_Nurse {
+    if (flag(FLAG_SYS_POKEMON_GET)) {
+        setvar(VAR_0x800B, 1)
+        call(Common_EventScript_PkmnCenterNurse)
+        waitmessage
+        waitbuttonpress
+        release
+    }
+    else {
+        msgbox("Hi! Can I help you?", MSGBOX_NPC)
+    }
+    end
+}
+
+script TestTown_PokemonCenter_EventScript_FatMan {
+    msgbox(TestTown_PokemonCenter_Text_FatMan, MSGBOX_NPC)
+}
+
+text TestTown_PokemonCenter_Text_FatMan {
+    format("Do you see the PC right behind me?\p Pokémon trainers use it to store Pokémon and items.\p There's one in each Pokémon center across Hoenn.\p Neat, isn't it?")
+}
+
+script TestTown_PokemonCenter_EventScript_Boy {
+    msgbox(TestTown_PokemonCenter_Text_Boy, MSGBOX_NPC)
+}
+text TestTown_PokemonCenter_Text_Boy {
+    format("I love hanging out here with my girlfriend!")
+}
+
+script TestTown_PokemonCenter_EventScript_Girl {
+    msgbox(TestTown_PokemonCenter_Text_Girl, MSGBOX_NPC)
+}
+text TestTown_PokemonCenter_Text_Girl {
+    format("It's so fun to spend time with my friend at the Pokémon center!")
+}

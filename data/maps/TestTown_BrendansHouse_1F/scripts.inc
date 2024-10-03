@@ -64,7 +64,7 @@ TestTown_BrendansHouse_Mom::
 	compare VAR_RESULT, 0
 	goto_if_eq TestTown_BrendansHouse_Mom_3
 # 42 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
-	msgbox TestTown_Mom_IhopeYoureWell
+	msgbox TestTown_Mom_IhopeYoureWell, MSGBOX_NPC
 TestTown_BrendansHouse_Mom_1:
 # 44 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
 	closemessage
@@ -74,7 +74,7 @@ TestTown_BrendansHouse_Mom_1:
 
 TestTown_BrendansHouse_Mom_2:
 # 33 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
-	msgbox Mom_MayIsNextDoor
+	msgbox Mom_MayIsNextDoor, MSGBOX_NPC
 	goto TestTown_BrendansHouse_Mom_1
 
 TestTown_BrendansHouse_Mom_3:
@@ -85,7 +85,7 @@ TestTown_BrendansHouse_Mom_3:
 # 38 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
 	setflag FLAG_RECEIVED_OLD_ROD
 # 39 "data/maps/TestTown_BrendansHouse_1F/scripts.pory"
-	msgbox TestTown_Text_ThrowInFishingAdvice
+	msgbox TestTown_Text_ThrowInFishingAdvice, MSGBOX_NPC
 	goto TestTown_BrendansHouse_Mom_1
 
 

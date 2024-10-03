@@ -339,7 +339,7 @@ const struct Item gItemsInfo[] =
     [ITEM_QUICK_BALL] =
     {
         .name = _("Quick Ball"),
-        .price = 100,
+        .price = 1000,
         .description = COMPOUND_STRING(
             "Works well if\n"
             "used on the\n"

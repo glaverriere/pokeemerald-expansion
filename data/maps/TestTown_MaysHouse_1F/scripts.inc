@@ -64,7 +64,7 @@ TestTown_MaysHouse_Mom::
 	compare VAR_RESULT, 0
 	goto_if_eq TestTown_MaysHouse_Mom_3
 # 42 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	msgbox TestTown_Mom_IhopeYoureWell_May
+	msgbox TestTown_Mom_IhopeYoureWell_May, MSGBOX_NPC
 TestTown_MaysHouse_Mom_1:
 # 44 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
 	closemessage
@@ -74,7 +74,7 @@ TestTown_MaysHouse_Mom_1:
 
 TestTown_MaysHouse_Mom_2:
 # 33 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	msgbox Mom_BrendanIsNextDoor
+	msgbox Mom_BrendanIsNextDoor, MSGBOX_NPC
 	goto TestTown_MaysHouse_Mom_1
 
 TestTown_MaysHouse_Mom_3:
@@ -85,7 +85,7 @@ TestTown_MaysHouse_Mom_3:
 # 38 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
 	setflag FLAG_RECEIVED_OLD_ROD
 # 39 "data/maps/TestTown_MaysHouse_1F/scripts.pory"
-	msgbox TestTown_Text_ThrowInFishingAdvice_May
+	msgbox TestTown_Text_ThrowInFishingAdvice_May, MSGBOX_NPC
 	goto TestTown_MaysHouse_Mom_1
 
 

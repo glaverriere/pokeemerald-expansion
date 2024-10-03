@@ -822,6 +822,18 @@ TestTown_GymPost_EventScript::
 	return
 
 
+TestTown_Eventscript_Fisherman::
+# 276 "data/maps/TestTown/scripts.pory"
+	msgbox TestTown_Text_Fisherman, MSGBOX_NPC
+	return
+
+
+TestTown_Eventscript_Woman::
+# 284 "data/maps/TestTown/scripts.pory"
+	msgbox TestTown_Text_Woman, MSGBOX_NPC
+	return
+
+
 TestTown_Trigger_Gym_Text_0:
 # 118 "data/maps/TestTown/scripts.pory"
 	.string "WAIT FOR ME!$"
@@ -851,3 +863,15 @@ TestTown_GymPost_Text::
 	.string "Leader: Norman\l"
 	.string "“He leaves a toxic waste behind after\l"
 	.string "every battle!”$"
+
+TestTown_Text_Fisherman::
+# 279 "data/maps/TestTown/scripts.pory"
+	.string "It's a fairly small pond, but it's quite\n"
+	.string "useful to practice fishing in peace.$"
+
+TestTown_Text_Woman::
+# 287 "data/maps/TestTown/scripts.pory"
+	.string "Blossom town is such a nice little\n"
+	.string "place!\p"
+	.string "I'm only visiting, but I wish I could live\n"
+	.string "here.$"

@@ -30,16 +30,16 @@ script TestTown_MaysHouse_Mom {
 	lockall
 	faceplayer
 	if (var(VAR_TESTTOWN_INTRO_STATE) == 5) {
-		msgbox(Mom_BrendanIsNextDoor)
+		msgbox(Mom_BrendanIsNextDoor, MSGBOX_NPC)
 	}
 	elif (!checkitem(ITEM_OLD_ROD)) {
 		msgbox(TestTown_Text_GiveDadsRod_May)
 		giveitem(ITEM_OLD_ROD)
 		setflag(FLAG_RECEIVED_OLD_ROD)
-		msgbox(TestTown_Text_ThrowInFishingAdvice_May)
+		msgbox(TestTown_Text_ThrowInFishingAdvice_May, MSGBOX_NPC)
 	}
 	else {
-		msgbox(TestTown_Mom_IhopeYoureWell_May)
+		msgbox(TestTown_Mom_IhopeYoureWell_May, MSGBOX_NPC)
 	}
 	closemessage
 	releaseall
