@@ -312,7 +312,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sTepigLevelUpLearnset,
         .teachableLearnset = sTepigTeachableLearnset,
         .eggMoveLearnset = sTepigEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 17, SPECIES_PIGNITE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_PIGNITE}),
     },
 
     [SPECIES_PIGNITE] =

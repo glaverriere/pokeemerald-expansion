@@ -1282,11 +1282,15 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
         }
     }
 
-    if (gSpeciesInfo[species].abilities[1])
+    value = Random() % 3;
+
+    do
     {
-        value = personality & 1;
-        SetBoxMonData(boxMon, MON_DATA_ABILITY_NUM, &value);
-    }
+        value = Random() % 3;
+    } while (gSpeciesInfo[species].abilities[value] == ABILITY_NONE);
+    
+    value = Random() % 3;
+    SetBoxMonData(boxMon, MON_DATA_ABILITY_NUM, &value);
 
     GiveBoxMonInitialMoveset(boxMon);
 }
