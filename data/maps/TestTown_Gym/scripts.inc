@@ -255,7 +255,7 @@ TestTown_Gym_Eventscript_TreeckoBall_1:
 
 TestTown_Gym_Eventscript_TreeckoBall_2:
 # 159 "data/maps/TestTown_Gym/scripts.pory"
-	givemon SPECIES_TREECKO, 5, ITEM_ORAN_BERRY
+	givemon SPECIES_TREECKO, 5, ITEM_ORAN_BERRY, , , 0
 # 160 "data/maps/TestTown_Gym/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 161 "data/maps/TestTown_Gym/scripts.pory"
@@ -304,7 +304,7 @@ TestTown_Gym_Eventscript_TorchicBall_1:
 
 TestTown_Gym_Eventscript_TorchicBall_2:
 # 185 "data/maps/TestTown_Gym/scripts.pory"
-	givemon SPECIES_TORCHIC, 5, ITEM_ORAN_BERRY
+	givemon SPECIES_TORCHIC, 5, ITEM_ORAN_BERRY, , , 0
 # 186 "data/maps/TestTown_Gym/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 187 "data/maps/TestTown_Gym/scripts.pory"
@@ -353,7 +353,7 @@ TestTown_Gym_Eventscript_MudkipBall_1:
 
 TestTown_Gym_Eventscript_MudkipBall_2:
 # 211 "data/maps/TestTown_Gym/scripts.pory"
-	givemon SPECIES_MUDKIP, 5, ITEM_ORAN_BERRY
+	givemon SPECIES_MUDKIP, 5, ITEM_ORAN_BERRY, , , 0
 # 212 "data/maps/TestTown_Gym/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 213 "data/maps/TestTown_Gym/scripts.pory"

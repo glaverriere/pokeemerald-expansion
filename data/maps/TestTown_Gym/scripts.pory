@@ -156,7 +156,7 @@ script TestTown_Gym_Eventscript_TreeckoBall {
     waitmoncry
     msgbox("Do you want to choose Treecko?", MSGBOX_YESNO)
     if (var(VAR_RESULT) == YES) {
-        givemon(SPECIES_TREECKO, 5 , ITEM_ORAN_BERRY)
+        givemon(SPECIES_TREECKO, 5, ITEM_ORAN_BERRY, , , 0)
         playfanfare(MUS_OBTAIN_ITEM)
         msgbox("You received Treecko!")
         removeobject(6)
@@ -182,7 +182,7 @@ script TestTown_Gym_Eventscript_TorchicBall {
     waitmoncry
     msgbox("Do you want to choose Torchic?", MSGBOX_YESNO)
     if (var(VAR_RESULT) == YES) {
-        givemon(SPECIES_TORCHIC, 5 , ITEM_ORAN_BERRY)
+        givemon(SPECIES_TORCHIC, 5, ITEM_ORAN_BERRY, , , 0)
         playfanfare(MUS_OBTAIN_ITEM)
         msgbox("You received Torchic!")
         removeobject(7)
@@ -208,7 +208,7 @@ script TestTown_Gym_Eventscript_MudkipBall {
     waitmoncry
     msgbox("Do you want to choose Mudkip?", MSGBOX_YESNO)
     if (var(VAR_RESULT) == YES) {
-        givemon(SPECIES_MUDKIP, 5 , ITEM_ORAN_BERRY)
+        givemon(SPECIES_MUDKIP, 5, ITEM_ORAN_BERRY, , , 0)
         playfanfare(MUS_OBTAIN_ITEM)
         msgbox("You received Mudkip!")
         removeobject(8)

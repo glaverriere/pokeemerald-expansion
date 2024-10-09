@@ -31,6 +31,7 @@
 static void CB2_ReturnFromChooseHalfParty(void);
 static void CB2_ReturnFromChooseBattleFrontierParty(void);
 static void HealPlayerBoxes(void);
+static void RemoveIVIndexFromList(u8 *ivs, u8 selectedIv);
 
 void HealPlayerParty(void)
 {
@@ -58,6 +59,25 @@ static void HealPlayerBoxes(void)
             if (GetBoxMonData(boxMon, MON_DATA_SANITY_HAS_SPECIES))
                 HealBoxPokemon(boxMon);
         }
+    }
+}
+
+static void RemoveIVIndexFromList(u8 *ivs, u8 selectedIv)
+{
+    s32 i, j;
+    u8 temp[NUM_STATS];
+
+    ivs[selectedIv] = 0xFF;
+    for (i = 0; i < NUM_STATS; i++)
+    {
+        temp[i] = ivs[i];
+    }
+
+    j = 0;
+    for (i = 0; i < NUM_STATS; i++)
+    {
+        if (temp[i] != 0xFF)
+            ivs[j++] = temp[i];
     }
 }
 
@@ -470,6 +490,10 @@ u32 ScriptGiveMon(u16 species, u8 level, u16 item)
  */
 void ScrCmd_createmon(struct ScriptContext *ctx)
 {
+    u8 i;
+    u32 iv;
+    u8 availableIVs[NUM_STATS];
+    u8 selectedIvs[LEGENDARY_PERFECT_IV_COUNT];
     u8 side           = ScriptReadByte(ctx);
     u8 slot           = ScriptReadByte(ctx);
     u16 species       = VarGet(ScriptReadHalfword(ctx));
@@ -500,6 +524,53 @@ void ScrCmd_createmon(struct ScriptContext *ctx)
     bool8 isShiny     = PARSE_FLAG(21, FALSE);
     bool8 ggMaxFactor = PARSE_FLAG(22, FALSE);
     u8 teraType       = PARSE_FLAG(23, NUMBER_OF_MON_TYPES);
+
+    if (P_LEGENDARY_PERFECT_IVS >= GEN_6
+         && (gSpeciesInfo[species].isLegendary
+          || gSpeciesInfo[species].isMythical
+          || gSpeciesInfo[species].isUltraBeast
+          || gSpeciesInfo[species].isTotem
+          || gSpeciesInfo[species].isStarter))
+        {
+            iv = MAX_PER_STAT_IVS;
+            // Initialize a list of IV indices.
+            for (i = 0; i < NUM_STATS; i++)
+            {
+                availableIVs[i] = i;
+            }
+
+            // Select the 3 IVs that will be perfected.
+            for (i = 0; i < LEGENDARY_PERFECT_IV_COUNT; i++)
+            {
+                u8 index = Random() % (NUM_STATS - i);
+                selectedIvs[i] = availableIVs[index];
+                RemoveIVIndexFromList(availableIVs, index);
+            }
+            for (i = 0; i < LEGENDARY_PERFECT_IV_COUNT; i++)
+            {
+                switch (selectedIvs[i])
+                {
+                case STAT_HP:
+                    hpIv = iv;
+                    break;
+                case STAT_ATK:
+                    atkIv = iv;
+                    break;
+                case STAT_DEF:
+                    defIv = iv;
+                    break;
+                case STAT_SPEED:
+                    speedIv = iv;
+                    break;
+                case STAT_SPATK:
+                    spAtkIv = iv;
+                    break;
+                case STAT_SPDEF:
+                    spDefIv = iv;
+                    break;
+                }
+            }
+        }
 
     u8 evs[NUM_STATS]        = {hpEv, atkEv, defEv, speedEv, spAtkEv, spDefEv};
     u8 ivs[NUM_STATS]        = {hpIv, atkIv, defIv, speedIv, spAtkIv, spDefIv};
