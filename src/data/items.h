@@ -12140,20 +12140,20 @@ const struct Item gItemsInfo[] =
 
 // Misc. Key Items
 
-    [ITEM_BICYCLE] =
+    [ITEM_RARE_CANDIES] =
     {
-        .name = _("Bicycle"),
+        .name = _("Rare Candies"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "A folding bicycle\n"
-            "that is faster than\n"
-            "the Running Shoes."),
-        .importance = 1,
+            "Raises the level\n"
+            "of a Pokémon by\n"
+            "one."),
         .pocket = POCKET_KEY_ITEMS,
-        .type = ITEM_USE_FIELD,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .iconPic = gItemIcon_Bicycle,
-        .iconPalette = gItemIconPalette_Bicycle,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_RareCandy,
+        .effect = gItemEffect_RareCandy,
+        .iconPic = gItemIcon_RareCandy,
+        .iconPalette = gItemIconPalette_RareCandy,
     },
 
     [ITEM_MACH_BIKE] =
@@ -12207,21 +12207,20 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_OldRod,
     },
 
-    [ITEM_GOOD_ROD] =
+    [ITEM_KEY_REPEL] =
     {
-        .name = _("Good Rod"),
+        .name = _("Repel"),
         .price = 0,
+        .holdEffectParam = 1,
         .description = COMPOUND_STRING(
-            "A decent fishing\n"
-            "rod for catching\n"
-            "wild Pokémon."),
+            "Repels weak wild\n"
+            "Pokémon."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
-        .type = ITEM_USE_FIELD,
-        .fieldUseFunc = ItemUseOutOfBattle_Rod,
-        .secondaryId = GOOD_ROD,
-        .iconPic = gItemIcon_GoodRod,
-        .iconPalette = gItemIconPalette_GoodRod,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Repel,
+        .iconPic = gItemIcon_Repel,
+        .iconPalette = gItemIconPalette_Repel,
     },
 
     [ITEM_SUPER_ROD] =
