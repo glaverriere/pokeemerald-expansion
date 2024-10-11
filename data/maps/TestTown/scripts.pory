@@ -7,6 +7,7 @@ mapscripts TestTown_MapScripts {
 }
 
 script TestTown_OnTransition {
+	setflag(FLAG_VISITED_TEST_TOWN)
 	if (var(VAR_TESTTOWN_INTRO_STATE) == 4) {
 		clearflag(FLAG_HIDE_RIVAL_MAY_TESTTOWN)
 		setflag(FLAG_HIDE_MAP_NAME_POPUP)

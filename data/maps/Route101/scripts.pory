@@ -111,9 +111,6 @@ movement Route101_4Playerto12 {
 
 script Route101_DudeInGrass {
 	giveitem(ITEM_QUICK_BALL, 100)
-	giveitem(ITEM_RARE_CANDIES)
-	giveitem(ITEM_KEY_REPEL)
-	giveitem(ITEM_REPEL)
 	msgbox(Route101_Text_DudeInGrass, MSGBOX_NPC)
 }
 

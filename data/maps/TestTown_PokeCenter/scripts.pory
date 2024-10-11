@@ -1,5 +1,9 @@
 mapscripts TestTown_PokeCenter_MapScripts {
-    
+    MAP_SCRIPT_ON_TRANSITION: TestTown_PokemonCenter_OnTransition
+}
+
+script TestTown_PokemonCenter_OnTransition {
+    setrespawn(HEAL_LOCATION_TEST_TOWN)
 }
 
 script TestTown_PokemonCenter_EventScript_Nurse {

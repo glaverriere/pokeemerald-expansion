@@ -791,9 +791,9 @@
 #define FLAG_HIDE_ROUTE101_WALLY                                    0x2E8
 #define FLAG_HIDE_ROUTE101_BRENDAN                                  0x2E9
 #define FLAG_HIDE_ROUTE101_MAY                                      0x2EA
-#define FLAG_HIDE_SAFARI_ZONE_SOUTH_EAST_EXPANSION                  0x2EB
-#define FLAG_HIDE_LILYCOVE_HARBOR_EVENT_TICKET_TAKER                0x2EC
-#define FLAG_HIDE_SLATEPORT_CITY_SCOTT                              0x2ED
+#define FLAG_HIDE_GLADEHAVEN_TOWN_MAY                               0x2EB
+#define FLAG_HIDE_GLADEHAVEN_TOWN_BRENDAN                           0x2EC
+#define FLAG_HIDE_GLADEHAVEN_TOWN_WALLY                             0x2ED
 #define FLAG_HIDE_ROUTE_101_ZIGZAGOON                               0x2EE
 #define FLAG_HIDE_VICTORY_ROAD_EXIT_WALLY                           0x2EF
 #define FLAG_HIDE_LITTLEROOT_TOWN_MOM_OUTSIDE                       0x2F0
@@ -1363,8 +1363,8 @@
 #define NUM_BADGES                                   (1 + FLAG_BADGE08_GET - FLAG_BADGE01_GET)
 
 // Towns and Cities
-#define FLAG_VISITED_LITTLEROOT_TOWN                (SYSTEM_FLAGS + 0xF)
-#define FLAG_VISITED_OLDALE_TOWN                    (SYSTEM_FLAGS + 0x10)
+#define FLAG_VISITED_GLADEHAVEN_TOWN                (SYSTEM_FLAGS + 0xF)
+#define FLAG_VISITED_TEST_TOWN                    (SYSTEM_FLAGS + 0x10)
 #define FLAG_VISITED_DEWFORD_TOWN                   (SYSTEM_FLAGS + 0x11)
 #define FLAG_VISITED_LAVARIDGE_TOWN                 (SYSTEM_FLAGS + 0x12)
 #define FLAG_VISITED_FALLARBOR_TOWN                 (SYSTEM_FLAGS + 0x13)
