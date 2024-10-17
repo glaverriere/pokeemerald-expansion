@@ -1,0 +1,31 @@
+mapscripts GladehavenTown_PokeCenter_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION: GladehavenTown_PokemonCenter_OnTransition
+}
+
+script GladehavenTown_PokemonCenter_OnTransition {
+	setrespawn(HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE)
+}
+
+script GladehavenTown_PokemonCenter_EventScript_Nurse {
+    setvar(VAR_0x800B, 1)
+    call(Common_EventScript_PkmnCenterNurse)
+    waitmessage
+    waitbuttonpress
+    release
+}
+
+script GladehavenTown_PokeCenter_EventScript_Girl {
+	msgbox(GladehavenTown_PokeCenter_Text_Girl, MSGBOX_NPC)
+}
+
+text GladehavenTown_PokeCenter_Text_Girl {
+	format("Not_done")
+}
+
+script GladehavenTown_PokeCenter_EventScript_PokeFan {
+	msgbox(GladehavenTown_PokeCenter_Text_PokeFan, MSGBOX_NPC)
+}
+
+text GladehavenTown_PokeCenter_Text_PokeFan {
+	format("Not_done")
+}

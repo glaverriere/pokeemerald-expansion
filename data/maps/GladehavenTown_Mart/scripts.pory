@@ -1,0 +1,63 @@
+mapscripts GladehavenTown_Mart_MapScripts {
+	
+}
+
+script GladehavenTown_Mart_Clerk {
+	lock
+	message("Welcome to my store.")
+	waitmessage
+    if (!flag(FLAG_ADVENTURE_STARTED)) {
+        pokemart(GladehavenTown_Mart_Items)
+    }
+	else {
+        pokemart(GladehavenTown_Mart_ItemsExpanded)
+    }
+	msgbox("Come again soon.")
+	release
+}
+
+mart GladehavenTown_Mart_Items {
+	ITEM_POTION
+    ITEM_ANTIDOTE
+    ITEM_PARALYZE_HEAL
+    ITEM_AWAKENING
+}
+
+mart GladehavenTown_Mart_ItemsExpanded {
+	ITEM_POKE_BALL
+    ITEM_QUICK_BALL
+    ITEM_POTION
+    ITEM_ANTIDOTE
+    ITEM_PARALYZE_HEAL
+    ITEM_AWAKENING
+    ITEM_ORAN_BERRY
+	ITEM_PECHA_BERRY
+	ITEM_ASPEAR_BERRY
+	ITEM_CHERI_BERRY
+	ITEM_CHESTO_BERRY
+	ITEM_RAWST_BERRY
+}
+
+script GladehavenTown_Mart_EventScript_Lass {
+	msgbox(GladehavenTown_Mart_Text_Lass, MSGBOX_NPC)
+}
+
+text GladehavenTown_Mart_Text_Lass {
+	format("Not_done")
+}
+
+script GladehavenTown_Mart_EventScript_Hiker {
+	msgbox(GladehavenTown_Mart_Text_Hiker, MSGBOX_NPC)
+}
+
+text GladehavenTown_Mart_Text_Hiker {
+	format("Not_done")
+}
+
+script GladehavenTown_Mart_EventScript_Girl {
+	msgbox(GladehavenTown_Mart_Text_Girl, MSGBOX_NPC)
+}
+
+text GladehavenTown_Mart_Text_Girl {
+	format("Not_done")
+}

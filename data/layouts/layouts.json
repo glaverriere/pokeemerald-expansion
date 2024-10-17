@@ -537,7 +537,7 @@
       "width": 14,
       "height": 9,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonCenter",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
       "border_filepath": "data/layouts/LittlerootTown_BrendansHouse_1F/border.bin",
       "blockdata_filepath": "data/layouts/LittlerootTown_BrendansHouse_1F/map.bin"
     },
@@ -547,7 +547,7 @@
       "width": 11,
       "height": 8,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
       "border_filepath": "data/layouts/LittlerootTown_BrendansHouse_2F/border.bin",
       "blockdata_filepath": "data/layouts/LittlerootTown_BrendansHouse_2F/map.bin"
     },
@@ -4540,6 +4540,36 @@
       "secondary_tileset": "gTileset_PokemonCenter",
       "border_filepath": "data/layouts/TestTown_PokeCenter/border.bin",
       "blockdata_filepath": "data/layouts/TestTown_PokeCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_GLADEHAVEN_TOWN_MART",
+      "name": "GladehavenTown_Mart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/GladehavenTown_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/GladehavenTown_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_GLADEHAVEN_TOWN_POKE_CENTER",
+      "name": "GladehavenTown_PokeCenter_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/GladehavenTown_PokeCenter/border.bin",
+      "blockdata_filepath": "data/layouts/GladehavenTown_PokeCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_GLADEHAVEN_TOWN_HOUSE",
+      "name": "GladehavenTown_House_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/GladehavenTown_House/border.bin",
+      "blockdata_filepath": "data/layouts/GladehavenTown_House/map.bin"
     }
   ]
 }

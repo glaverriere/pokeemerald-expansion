@@ -83,6 +83,9 @@
 #define MAP_TEST_TOWN_HOUSE1                     (14 | (1 << 8))
 #define MAP_TEST_TOWN_MART                       (15 | (1 << 8))
 #define MAP_TEST_TOWN_POKE_CENTER                (16 | (1 << 8))
+#define MAP_GLADEHAVEN_TOWN_MART                 (17 | (1 << 8))
+#define MAP_GLADEHAVEN_TOWN_POKE_CENTER          (18 | (1 << 8))
+#define MAP_GLADEHAVEN_TOWN_HOUSE                (19 | (1 << 8))
 
 // gMapGroup_IndoorOldale
 #define MAP_OLDALE_TOWN_HOUSE1            (0 | (2 << 8))

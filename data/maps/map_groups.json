@@ -112,7 +112,10 @@
     "TestTown_Gym",
     "TestTown_House1",
     "TestTown_Mart",
-    "TestTown_PokeCenter"
+    "TestTown_PokeCenter",
+    "GladehavenTown_Mart",
+    "GladehavenTown_PokeCenter",
+    "GladehavenTown_House"
   ],
   "gMapGroup_IndoorOldale": [
     "OldaleTown_House1",

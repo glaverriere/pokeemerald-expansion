@@ -1,0 +1,19 @@
+mapscripts GladehavenTown_House_MapScripts {
+	
+}
+
+script GladehavenTown_House_EventScript_Woman {
+    msgbox(GladehavenTown_House_Text_Woman, MSGBOX_NPC)
+}
+
+text GladehavenTown_House_Text_Woman {
+    format("Not_done")
+}
+
+script GladehavenTown_House_EventScript_Girl {
+    msgbox(GladehavenTown_House_Text_Girl, MSGBOX_NPC)
+}
+
+text GladehavenTown_House_Text_Girl {
+    format("Not_done")
+}
