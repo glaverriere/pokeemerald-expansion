@@ -58,75 +58,77 @@
         },
     },
 #line 97
-    [TRAINER_GRUNT_AQUA_HIDEOUT_1] =
+    [TRAINER_ASTON] =
     {
 #line 98
-        .trainerName = _("GRUNT"),
+        .trainerName = _("Aston"),
 #line 99
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+        .trainerClass = TRAINER_CLASS_BUG_CATCHER,
 #line 100
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_BUG_CATCHER,
         .encounterMusic_gender = 
 #line 102
-            TRAINER_ENCOUNTER_MUSIC_AQUA,
+            TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 103
         .doubleBattle = FALSE,
 #line 104
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
             {
 #line 106
-            .species = SPECIES_POOCHYENA,
+            .species = SPECIES_WURMPLE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 108
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 107
-            .lvl = 32,
+            .lvl = 12,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
         },
     },
 #line 110
-    [TRAINER_GRUNT_AQUA_HIDEOUT_2] =
+    [TRAINER_JULIA] =
     {
 #line 111
-        .trainerName = _("GRUNT"),
+        .trainerName = _("Julia"),
 #line 112
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+        .trainerClass = TRAINER_CLASS_LASS,
 #line 113
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_LASS,
         .encounterMusic_gender = 
+#line 114
+F_TRAINER_FEMALE | 
 #line 115
-            TRAINER_ENCOUNTER_MUSIC_AQUA,
+            TRAINER_ENCOUNTER_MUSIC_FEMALE,
 #line 116
         .doubleBattle = FALSE,
 #line 117
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
             {
 #line 119
-            .species = SPECIES_ZUBAT,
+            .species = SPECIES_ZIGZAGOON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 121
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 120
-            .lvl = 31,
+            .lvl = 12,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
 #line 123
-            .species = SPECIES_CARVANHA,
+            .species = SPECIES_LOTAD,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 125
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 124
-            .lvl = 31,
+            .lvl = 12,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },

@@ -1,220 +1,403 @@
-# 1 "data/maps/Route102/scripts.pory"
-
-# 2 "data/maps/Route102/scripts.pory"
 Route102_MapScripts::
-# 3 "data/maps/Route102/scripts.pory"
+# 2 "data/maps/Route102/scripts.pory"
+	map_script MAP_SCRIPT_ON_TRANSITION, Route102_OnTransition
 	.byte 0
-# 4 "data/maps/Route102/scripts.pory"
 
-# 5 "data/maps/Route102/scripts.pory"
-Route102_EventScript_LittleBoy::
+
+Route102_OnTransition::
 # 6 "data/maps/Route102/scripts.pory"
-	msgbox Route102_Text_ImNotVeryTall, MSGBOX_NPC
+	compare VAR_ROUTE102_STATE, 0
+	goto_if_eq Route102_OnTransition_1
+	return
+
+Route102_OnTransition_1:
 # 7 "data/maps/Route102/scripts.pory"
-	end
+	checkplayergender
 # 8 "data/maps/Route102/scripts.pory"
-
-# 9 "data/maps/Route102/scripts.pory"
-Route102_EventScript_RouteSignOldale::
-# 10 "data/maps/Route102/scripts.pory"
-	msgbox Route102_Text_RouteSignOldale, MSGBOX_SIGN
-# 11 "data/maps/Route102/scripts.pory"
-	end
+	compare VAR_RESULT, MALE
+	goto_if_eq Route102_OnTransition_3
 # 12 "data/maps/Route102/scripts.pory"
+	clearflag FLAG_HIDE_ROUTE_102_BRENDAN
+	return
 
-# 13 "data/maps/Route102/scripts.pory"
-Route102_EventScript_RouteSignPetalburg::
-# 14 "data/maps/Route102/scripts.pory"
-	msgbox Route102_Text_RouteSignPetalburg, MSGBOX_SIGN
-# 15 "data/maps/Route102/scripts.pory"
-	end
-# 16 "data/maps/Route102/scripts.pory"
+Route102_OnTransition_3:
+# 9 "data/maps/Route102/scripts.pory"
+	clearflag FLAG_HIDE_ROUTE_102_MAY
+	return
 
-# 17 "data/maps/Route102/scripts.pory"
-Route102_EventScript_Boy::
+
+Route102_CatchingTutorial_EventScript::
 # 18 "data/maps/Route102/scripts.pory"
-	msgbox Route102_Text_CatchWholeBunchOfPokemon, MSGBOX_NPC
+	lockall
 # 19 "data/maps/Route102/scripts.pory"
-	end
+	checkplayergender
 # 20 "data/maps/Route102/scripts.pory"
-
+	delay 10
 # 21 "data/maps/Route102/scripts.pory"
-Route102_EventScript_Calvin::
+	playse SE_PIN
 # 22 "data/maps/Route102/scripts.pory"
-	trainerbattle_single TRAINER_CALVIN_1, Route102_Text_CalvinIntro, Route102_Text_CalvinDefeated, Route102_EventScript_CalvinRegisterMatchCallAfterBattle
-# 23 "data/maps/Route102/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-# 24 "data/maps/Route102/scripts.pory"
-	goto_if_eq VAR_RESULT, TRUE, Route102_EventScript_CalvinRematch
-# 25 "data/maps/Route102/scripts.pory"
-	setvar VAR_0x8004, TRAINER_CALVIN_1
-# 26 "data/maps/Route102/scripts.pory"
-	specialvar VAR_RESULT, IsTrainerRegistered
-# 27 "data/maps/Route102/scripts.pory"
-	goto_if_eq VAR_RESULT, FALSE, Route102_EventScript_CalvinTryRegister
-# 28 "data/maps/Route102/scripts.pory"
-	msgbox Route102_Text_CalvinPostBattle, MSGBOX_DEFAULT
-# 29 "data/maps/Route102/scripts.pory"
-	release
-# 30 "data/maps/Route102/scripts.pory"
-	end
-# 31 "data/maps/Route102/scripts.pory"
-
-# 32 "data/maps/Route102/scripts.pory"
-Route102_EventScript_CalvinRegisterMatchCallAfterBattle::
+	compare VAR_RESULT, MALE
+	goto_if_eq Route102_CatchingTutorial_EventScript_2
 # 33 "data/maps/Route102/scripts.pory"
-	special PlayerFaceTrainerAfterBattle
+	applymovement 6, Common_Movement_ExclamationMark
 # 34 "data/maps/Route102/scripts.pory"
 	waitmovement 0
 # 35 "data/maps/Route102/scripts.pory"
-	goto_if_set FLAG_HAS_MATCH_CALL, Route102_EventScript_CalvinRegisterMatchCall
+	applymovement 6, Common_Movement_Delay48
 # 36 "data/maps/Route102/scripts.pory"
-	release
+	waitmovement 0
 # 37 "data/maps/Route102/scripts.pory"
-	end
+	applymovement 6, Common_Movement_WalkInPlaceFasterUp
 # 38 "data/maps/Route102/scripts.pory"
-
+	applymovement 4, Common_Movement_WalkInPlaceFasterUp
 # 39 "data/maps/Route102/scripts.pory"
-Route102_EventScript_CalvinRegisterMatchCall::
+	waitmovement 0
 # 40 "data/maps/Route102/scripts.pory"
-	msgbox Route102_Text_CalvinRegisterShort, MSGBOX_DEFAULT
-# 41 "data/maps/Route102/scripts.pory"
-	register_matchcall TRAINER_CALVIN_1
+	delay 10
+Route102_CatchingTutorial_EventScript_1:
 # 42 "data/maps/Route102/scripts.pory"
-	release
+	msgbox Route102_RivalGreetsPlayer_Text
 # 43 "data/maps/Route102/scripts.pory"
-	end
+	closemessage
 # 44 "data/maps/Route102/scripts.pory"
-
+	getplayerxy VAR_TEMP_0, VAR_TEMP_1
 # 45 "data/maps/Route102/scripts.pory"
-Route102_EventScript_CalvinTryRegister::
+	switch VAR_TEMP_0
 # 46 "data/maps/Route102/scripts.pory"
-	goto_if_set FLAG_HAS_MATCH_CALL, Route102_EventScript_CalvinRegister
-# 47 "data/maps/Route102/scripts.pory"
-	msgbox Route102_Text_CalvinPostBattle, MSGBOX_DEFAULT
+	case 13, Route102_CatchingTutorial_EventScript_7
 # 48 "data/maps/Route102/scripts.pory"
-	release
-# 49 "data/maps/Route102/scripts.pory"
-	end
+	case 14, Route102_CatchingTutorial_EventScript_8
 # 50 "data/maps/Route102/scripts.pory"
-
-# 51 "data/maps/Route102/scripts.pory"
-Route102_EventScript_CalvinRegister::
+	case 15, Route102_CatchingTutorial_EventScript_9
 # 52 "data/maps/Route102/scripts.pory"
-	msgbox Route102_Text_CalvinRegister, MSGBOX_DEFAULT
-# 53 "data/maps/Route102/scripts.pory"
-	register_matchcall TRAINER_CALVIN_1
+	case 16, Route102_CatchingTutorial_EventScript_10
 # 54 "data/maps/Route102/scripts.pory"
-	release
-# 55 "data/maps/Route102/scripts.pory"
-	end
-# 56 "data/maps/Route102/scripts.pory"
-
+	case 17, Route102_CatchingTutorial_EventScript_11
+Route102_CatchingTutorial_EventScript_5:
 # 57 "data/maps/Route102/scripts.pory"
-Route102_EventScript_CalvinRematch::
+	waitmovement 0
 # 58 "data/maps/Route102/scripts.pory"
-	trainerbattle_rematch TRAINER_CALVIN_1, Route102_Text_CalvinRematchIntro, Route102_Text_CalvinRematchDefeated
+	applymovement 4, Common_Movement_WalkInPlaceFasterRight
 # 59 "data/maps/Route102/scripts.pory"
-	msgbox Route102_Text_CalvinRematchPostBattle, MSGBOX_AUTOCLOSE
+	waitmovement 0
 # 60 "data/maps/Route102/scripts.pory"
-	end
+	msgbox Route102_FirstStepIs_Text
 # 61 "data/maps/Route102/scripts.pory"
-
+	closemessage
 # 62 "data/maps/Route102/scripts.pory"
-Route102_EventScript_Rick::
+	special SavePlayerParty
 # 63 "data/maps/Route102/scripts.pory"
-	trainerbattle_single TRAINER_RICK, Route102_Text_RickIntro, Route102_Text_RickDefeated
+	special LoadWallyZigzagoon
 # 64 "data/maps/Route102/scripts.pory"
-	msgbox Route102_Text_RickPostBattle, MSGBOX_AUTOCLOSE
+	special StartWallyTutorialBattle
 # 65 "data/maps/Route102/scripts.pory"
-	end
+	waitstate
 # 66 "data/maps/Route102/scripts.pory"
-
+	special LoadPlayerParty
 # 67 "data/maps/Route102/scripts.pory"
-Route102_EventScript_Tiana::
+	checkplayergender
 # 68 "data/maps/Route102/scripts.pory"
-	trainerbattle_single TRAINER_TIANA, Route102_Text_TianaIntro, Route102_Text_TianaDefeated
-# 69 "data/maps/Route102/scripts.pory"
-	msgbox Route102_Text_TianaPostBattle, MSGBOX_AUTOCLOSE
-# 70 "data/maps/Route102/scripts.pory"
-	end
-# 71 "data/maps/Route102/scripts.pory"
-
+	compare VAR_RESULT, MALE
+	goto_if_eq Route102_CatchingTutorial_EventScript_13
 # 72 "data/maps/Route102/scripts.pory"
-Route102_EventScript_Allen::
-# 73 "data/maps/Route102/scripts.pory"
-	trainerbattle_single TRAINER_ALLEN, Route102_Text_AllenIntro, Route102_Text_AllenDefeated
+	applymovement 6, Common_Movement_WalkInPlaceFasterLeft
+Route102_CatchingTutorial_EventScript_12:
 # 74 "data/maps/Route102/scripts.pory"
-	msgbox Route102_Text_AllenPostBattle, MSGBOX_AUTOCLOSE
+	msgbox Route102_IDidIt_Text
 # 75 "data/maps/Route102/scripts.pory"
-	end
+	waitmessage
 # 76 "data/maps/Route102/scripts.pory"
-
+	checkplayergender
 # 77 "data/maps/Route102/scripts.pory"
-Route102_Text_WatchMeCatchPokemon:
-# 78 "data/maps/Route102/scripts.pory"
-	.string "WALLY: {PLAYER}…\n"
-# 79 "data/maps/Route102/scripts.pory"
-	.string "POKéMON hide in tall grass like this,\l"
-# 80 "data/maps/Route102/scripts.pory"
-	.string "don't they?\p"
+	compare VAR_RESULT, MALE
+	goto_if_eq Route102_CatchingTutorial_EventScript_17
 # 81 "data/maps/Route102/scripts.pory"
-	.string "Please watch me and see if I can\n"
-# 82 "data/maps/Route102/scripts.pory"
-	.string "catch one properly.\p"
+	applymovement 6, Common_Movement_WalkInPlaceFasterUp
+Route102_CatchingTutorial_EventScript_16:
 # 83 "data/maps/Route102/scripts.pory"
-	.string "…Whoa!$"
+	msgbox Route102_YoushouldToo_Text
 # 84 "data/maps/Route102/scripts.pory"
-
+	closemessage
 # 85 "data/maps/Route102/scripts.pory"
-Route102_Text_WallyIDidIt:
-# 86 "data/maps/Route102/scripts.pory"
-	.string "WALLY: I did it… It's my…\n"
-# 87 "data/maps/Route102/scripts.pory"
-	.string "My POKéMON!$"
-# 88 "data/maps/Route102/scripts.pory"
-
+	compare VAR_RESULT, MALE
+	goto_if_eq Route102_CatchingTutorial_EventScript_21
 # 89 "data/maps/Route102/scripts.pory"
-Route102_Text_LetsGoBack:
-# 90 "data/maps/Route102/scripts.pory"
-	.string "{PLAYER}, thank you!\n"
+	applymovement 6, Route102_RivalTakesOff
+Route102_CatchingTutorial_EventScript_20:
 # 91 "data/maps/Route102/scripts.pory"
-	.string "Let's go back to the GYM!$"
+	waitmovement 0
 # 92 "data/maps/Route102/scripts.pory"
-
+	removeobject 5
 # 93 "data/maps/Route102/scripts.pory"
-Route102_Text_ImNotVeryTall:
+	removeobject 6
 # 94 "data/maps/Route102/scripts.pory"
-	.string "I'm…not very tall, so I sink right\n"
+	msgbox Route102_IllFollowRival_Text
 # 95 "data/maps/Route102/scripts.pory"
-	.string "into tall grass.\p"
+	closemessage
 # 96 "data/maps/Route102/scripts.pory"
-	.string "The grass goes up my nose and…\n"
+	applymovement 4, Route102_WallyTakesOff
 # 97 "data/maps/Route102/scripts.pory"
-	.string "Fwafwafwafwafwa…\p"
+	waitmovement 0
 # 98 "data/maps/Route102/scripts.pory"
-	.string "Fwatchoo!$"
+	removeobject 4
 # 99 "data/maps/Route102/scripts.pory"
-
+	setvar VAR_ROUTE102_STATE, 1
 # 100 "data/maps/Route102/scripts.pory"
-Route102_Text_CatchWholeBunchOfPokemon:
+	setflag FLAG_HIDE_ROUTE_102_BRENDAN
 # 101 "data/maps/Route102/scripts.pory"
-	.string "I'm going to catch a whole bunch of\n"
+	setflag FLAG_HIDE_ROUTE_102_MAY
 # 102 "data/maps/Route102/scripts.pory"
-	.string "POKéMON!$"
+	setflag FLAG_HIDE_ROUTE_102_WALLY
 # 103 "data/maps/Route102/scripts.pory"
+	releaseall
+	return
 
-# 104 "data/maps/Route102/scripts.pory"
-Route102_Text_RouteSignOldale:
-# 105 "data/maps/Route102/scripts.pory"
-	.string "ROUTE 102\n"
+Route102_CatchingTutorial_EventScript_2:
+# 23 "data/maps/Route102/scripts.pory"
+	applymovement 5, Common_Movement_ExclamationMark
+# 24 "data/maps/Route102/scripts.pory"
+	waitmovement 0
+# 25 "data/maps/Route102/scripts.pory"
+	applymovement 5, Common_Movement_Delay48
+# 26 "data/maps/Route102/scripts.pory"
+	waitmovement 0
+# 27 "data/maps/Route102/scripts.pory"
+	applymovement 5, Common_Movement_WalkInPlaceFasterUp
+# 28 "data/maps/Route102/scripts.pory"
+	applymovement 4, Common_Movement_WalkInPlaceFasterUp
+# 29 "data/maps/Route102/scripts.pory"
+	waitmovement 0
+# 30 "data/maps/Route102/scripts.pory"
+	delay 10
+	goto Route102_CatchingTutorial_EventScript_1
+
+Route102_CatchingTutorial_EventScript_7:
+# 47 "data/maps/Route102/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route102_PlayerToRival13
+	goto Route102_CatchingTutorial_EventScript_5
+
+Route102_CatchingTutorial_EventScript_8:
+# 49 "data/maps/Route102/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route102_PlayerToRival14
+	goto Route102_CatchingTutorial_EventScript_5
+
+Route102_CatchingTutorial_EventScript_9:
+# 51 "data/maps/Route102/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route102_PlayerToRival15
+	goto Route102_CatchingTutorial_EventScript_5
+
+Route102_CatchingTutorial_EventScript_10:
+# 53 "data/maps/Route102/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route102_PlayerToRival16
+	goto Route102_CatchingTutorial_EventScript_5
+
+Route102_CatchingTutorial_EventScript_11:
+# 55 "data/maps/Route102/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route102_PlayerToRival17
+	goto Route102_CatchingTutorial_EventScript_5
+
+Route102_CatchingTutorial_EventScript_13:
+# 69 "data/maps/Route102/scripts.pory"
+	applymovement 5, Common_Movement_WalkInPlaceFasterLeft
+	goto Route102_CatchingTutorial_EventScript_12
+
+Route102_CatchingTutorial_EventScript_17:
+# 78 "data/maps/Route102/scripts.pory"
+	applymovement 5, Common_Movement_WalkInPlaceFasterUp
+	goto Route102_CatchingTutorial_EventScript_16
+
+Route102_CatchingTutorial_EventScript_21:
+# 86 "data/maps/Route102/scripts.pory"
+	applymovement 5, Route102_RivalTakesOff
+	goto Route102_CatchingTutorial_EventScript_20
+
+
 # 106 "data/maps/Route102/scripts.pory"
-	.string "{RIGHT_ARROW} OLDALE TOWN$"
+Route102_PlayerToRival13:
 # 107 "data/maps/Route102/scripts.pory"
-
+	walk_down
 # 108 "data/maps/Route102/scripts.pory"
-Route102_Text_RouteSignPetalburg:
+	walk_right
+# 108 "data/maps/Route102/scripts.pory"
+	walk_right
 # 109 "data/maps/Route102/scripts.pory"
-	.string "ROUTE 102\n"
-# 110 "data/maps/Route102/scripts.pory"
-	.string "{LEFT_ARROW} PETALBURG CITY$"
+	walk_in_place_faster_down
+	step_end
+
+# 112 "data/maps/Route102/scripts.pory"
+Route102_PlayerToRival14:
+# 113 "data/maps/Route102/scripts.pory"
+	walk_down
+# 114 "data/maps/Route102/scripts.pory"
+	walk_right
+# 115 "data/maps/Route102/scripts.pory"
+	walk_in_place_faster_down
+	step_end
+
+# 118 "data/maps/Route102/scripts.pory"
+Route102_PlayerToRival15:
+# 119 "data/maps/Route102/scripts.pory"
+	walk_down
+	step_end
+
+# 122 "data/maps/Route102/scripts.pory"
+Route102_PlayerToRival16:
+# 123 "data/maps/Route102/scripts.pory"
+	walk_down
+# 124 "data/maps/Route102/scripts.pory"
+	walk_left
+# 125 "data/maps/Route102/scripts.pory"
+	walk_in_place_faster_down
+	step_end
+
+# 128 "data/maps/Route102/scripts.pory"
+Route102_PlayerToRival17:
+# 129 "data/maps/Route102/scripts.pory"
+	walk_down
+# 130 "data/maps/Route102/scripts.pory"
+	walk_left
+# 130 "data/maps/Route102/scripts.pory"
+	walk_left
+# 131 "data/maps/Route102/scripts.pory"
+	walk_in_place_faster_down
+	step_end
+
+# 134 "data/maps/Route102/scripts.pory"
+Route102_RivalTakesOff:
+# 135 "data/maps/Route102/scripts.pory"
+	walk_down
+# 136 "data/maps/Route102/scripts.pory"
+	walk_left
+# 136 "data/maps/Route102/scripts.pory"
+	walk_left
+# 136 "data/maps/Route102/scripts.pory"
+	walk_left
+# 136 "data/maps/Route102/scripts.pory"
+	walk_left
+# 136 "data/maps/Route102/scripts.pory"
+	walk_left
+# 136 "data/maps/Route102/scripts.pory"
+	walk_left
+# 136 "data/maps/Route102/scripts.pory"
+	walk_left
+# 136 "data/maps/Route102/scripts.pory"
+	walk_left
+	step_end
+
+# 139 "data/maps/Route102/scripts.pory"
+Route102_WallyTakesOff:
+# 140 "data/maps/Route102/scripts.pory"
+	walk_left
+# 140 "data/maps/Route102/scripts.pory"
+	walk_left
+# 140 "data/maps/Route102/scripts.pory"
+	walk_left
+# 140 "data/maps/Route102/scripts.pory"
+	walk_left
+# 140 "data/maps/Route102/scripts.pory"
+	walk_left
+# 140 "data/maps/Route102/scripts.pory"
+	walk_left
+# 140 "data/maps/Route102/scripts.pory"
+	walk_left
+	step_end
+
+Route102_Aston_Eventscript::
+# 164 "data/maps/Route102/scripts.pory"
+	trainerbattle_single TRAINER_ASTON, Route102_Aston_Intro, Route102_Aston_Defeated
+# 165 "data/maps/Route102/scripts.pory"
+	msgbox Route102_Aston_PostBattle
+# 166 "data/maps/Route102/scripts.pory"
+	closemessage
+	return
+
+
+Route102_Julia_Eventscript::
+# 182 "data/maps/Route102/scripts.pory"
+	trainerbattle_single TRAINER_JULIA, Route102_Julia_Intro, Route102_Julia_Defeated
+# 183 "data/maps/Route102/scripts.pory"
+	msgbox Route102_Julia_PostBattle
+# 184 "data/maps/Route102/scripts.pory"
+	closemessage
+	return
+
+
+Route102_BerryMan_EventScript::
+# 200 "data/maps/Route102/scripts.pory"
+	msgbox Route102_BerryMan_Text, MSGBOX_NPC
+	return
+
+
+Route102_RivalGreetsPlayer_Text::
+# 143 "data/maps/Route102/scripts.pory"
+	.string "{RIVAL}: {PLAYER}! You are just in\n"
+	.string "time to learn how to catch a Pokémon.\p"
+	.string "I was just going to teach Wally.\l"
+	.string "Come!$"
+
+Route102_FirstStepIs_Text::
+# 147 "data/maps/Route102/scripts.pory"
+	.string "{RIVAL}: Ok! The first step is to\n"
+	.string "find a wild Pokémon.\p"
+	.string "And then...$"
+
+Route102_IDidIt_Text::
+# 151 "data/maps/Route102/scripts.pory"
+	.string "Wally: I did it!\n"
+	.string "I wasn't sure I could do it, but here I\l"
+	.string "am!\p"
+	.string "I caught a Pokémon by myself!\p"
+	.string "{RIVAL}: Congrats! You did well.\p"
+	.string "What will you do next?\p"
+	.string "Wally: I think I'm going to go to the\n"
+	.string "Pokémon trainer school in Jello City.\p"
+	.string "I want to know more about Pokémon\n"
+	.string "battling before I try it out for myself.\p"
+	.string "{RIVAL}: Good idea! I heard there's a\n"
+	.string "Pokémon gym in Jello City.\p"
+	.string "I think i will try to challenge the gym\n"
+	.string "leader for a badge.$"
+
+Route102_YoushouldToo_Text::
+# 155 "data/maps/Route102/scripts.pory"
+	.string "{PLAYER}, you should totally do that\n"
+	.string "too if you want to become a stronger\l"
+	.string "trainer!\p"
+	.string "See ya!$"
+
+Route102_IllFollowRival_Text::
+# 159 "data/maps/Route102/scripts.pory"
+	.string "Wally: I'll follow {RIVAL} to Jello\n"
+	.string "city just to be safe.\p"
+	.string "Bye!$"
+
+Route102_Aston_Intro::
+# 169 "data/maps/Route102/scripts.pory"
+	.string "Hey! I want to show off the Pokémon I\n"
+	.string "caught earlier in the woods!$"
+
+Route102_Aston_Defeated::
+# 173 "data/maps/Route102/scripts.pory"
+	.string "You didn't have to go this hard...$"
+
+Route102_Aston_PostBattle::
+# 177 "data/maps/Route102/scripts.pory"
+	.string "Welp, these are the Pokémon I caught!$"
+
+Route102_Julia_Intro::
+# 187 "data/maps/Route102/scripts.pory"
+	.string "What's your favorite kind of Berry? I'll\n"
+	.string "tell you mine if you win this battle.$"
+
+Route102_Julia_Defeated::
+# 191 "data/maps/Route102/scripts.pory"
+	.string "You win! I guess I have to tell you my\n"
+	.string "favorite kind of Berry now.$"
+
+Route102_Julia_PostBattle::
+# 195 "data/maps/Route102/scripts.pory"
+	.string "My favorites are Oran Berries!$"
+
+Route102_BerryMan_Text::
+# 203 "data/maps/Route102/scripts.pory"
+	.string "Not_done$"

@@ -6,7 +6,7 @@
     F(DRAGON_CLAW) \
     F(WATER_PULSE) \
     F(CALM_MIND) \
-    F(ROAR) \
+    F(PIN_MISSILE) \
     F(TOXIC) \
     F(HAIL) \
     F(BULK_UP) \
@@ -33,9 +33,9 @@
     F(PSYCHIC) \
     F(SHADOW_BALL) \
     F(BRICK_BREAK) \
-    F(DOUBLE_TEAM) \
+    F(GIGA_IMPACT) \
     F(REFLECT) \
-    F(SHOCK_WAVE) \
+    F(THUNDER_WAVE) \
     F(FLAMETHROWER) \
     F(SLUDGE_BOMB) \
     F(SANDSTORM) \
@@ -44,14 +44,63 @@
     F(AERIAL_ACE) \
     F(TORMENT) \
     F(FACADE) \
-    F(SECRET_POWER) \
+    F(ROCK_SLIDE) \
     F(REST) \
-    F(ATTRACT) \
+    F(WILL_O_WISP) \
     F(THIEF) \
     F(STEEL_WING) \
     F(SKILL_SWAP) \
-    F(SNATCH) \
-    F(OVERHEAT)
+    F(SHADOW_CLAW) \
+    F(OVERHEAT) \
+    F(AQUA_JET) \
+    F(ICICLE_SPEAR) \
+    F(POISON_JAB) \
+    F(DRAINING_KISS) \
+    F(AIR_SLASH) \
+    F(SMART_STRIKE) \
+    F(LEECH_LIFE) \
+    F(BUG_BUZZ) \
+    F(WILD_CHARGE) \
+    F(DRACO_METEOR) \
+    F(PLAY_ROUGH) \
+    F(DAZZLING_GLEAM) \
+    F(DARK_PULSE) \
+    F(THROAT_CHOP) \
+    F(PSYCHO_CUT) \
+    F(CLOSE_COMBAT) \
+    F(DISABLE) \
+    F(ENTRAINMENT) \
+    F(MOONLIGHT) \
+    F(HYPNOSIS) \
+    F(NASTY_PLOT) \
+    F(RECYCLE) \
+    F(ROOST) \
+    F(SHELL_SMASH) \
+    F(SPIKES) \
+    F(CONFUSE_RAY) \
+    F(SMACK_DOWN) \
+    F(BULLDOZE) \
+    F(DRAGON_BREATH) \
+    F(BUG_BITE) \
+    F(CHARM) \
+    F(VACUUM_WAVE) \
+    F(DRAIN_PUNCH) \
+    F(FLAME_CHARGE) \
+    F(ACROBATICS) \
+    F(OMINOUS_WIND) \
+    F(SHADOW_SNEAK) \
+    F(GRASS_KNOT) \
+    F(SEED_BOMB) \
+    F(EARTH_POWER) \
+    F(HAZE) \
+    F(AVALANCHE) \
+    F(HYPER_VOICE) \
+    F(VENOSHOCK) \
+    F(POWER_GEM) \
+    F(FLASH_CANNON) \
+    F(IRON_HEAD) \
+    F(SCALD) \
+    F(ELECTROWEB)
 
 #define FOREACH_HM(F) \
     F(CUT) \

@@ -1446,11 +1446,26 @@ void SetShoalItemFlag(u16 unused)
 void LoadWallyZigzagoon(void)
 {
     u16 monData;
-    CreateMon(&gPlayerParty[0], SPECIES_ZIGZAGOON, 7, USE_RANDOM_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
+    if (VAR_STARTER_MON == 0) 
+    {
+        CreateMon(&gPlayerParty[0], SPECIES_MUDKIP, 5, USE_RANDOM_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
+        monData = MOVE_TACKLE;
+        SetMonData(&gPlayerParty[0], MON_DATA_MOVE1, &monData);
+    }
+    else if (VAR_STARTER_MON == 1) 
+    {
+        CreateMon(&gPlayerParty[0], SPECIES_TREECKO, 5, USE_RANDOM_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
+        monData = MOVE_POUND;
+        SetMonData(&gPlayerParty[0], MON_DATA_MOVE1, &monData);
+    }
+    else 
+    {
+        CreateMon(&gPlayerParty[0], SPECIES_TORCHIC, 5, USE_RANDOM_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
+        monData = MOVE_SCRATCH;
+        SetMonData(&gPlayerParty[0], MON_DATA_MOVE1, &monData);
+    }
     monData = TRUE;
     SetMonData(&gPlayerParty[0], MON_DATA_ABILITY_NUM, &monData);
-    monData = MOVE_TACKLE;
-    SetMonData(&gPlayerParty[0], MON_DATA_MOVE1, &monData);
     monData = MOVE_NONE;
     SetMonData(&gPlayerParty[0], MON_DATA_MOVE2, &monData);
     SetMonData(&gPlayerParty[0], MON_DATA_MOVE3, &monData);
