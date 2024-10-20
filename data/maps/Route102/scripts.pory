@@ -149,7 +149,7 @@ text Route102_FirstStepIs_Text {
 }
 
 text Route102_IDidIt_Text {
-	format("Wally: I did it!\n I wasn't sure I could do it, but here I am!\p I caught a Pokémon by myself!\p {RIVAL}: Congrats! You did well.\p What will you do next?\p Wally: I think I'm going to go to the Pokémon trainer school in Jello City.\p I want to know more about Pokémon battling before I try it out for myself.\p {RIVAL}: Good idea! I heard there's a Pokémon gym in Jello City.\p I think i will try to challenge the gym leader for a badge.")
+	format("Wally: I did it!\n I wasn't sure I could do it, but here I am!\p I caught a Pokémon by myself!\p {RIVAL}: Congrats! You did well.\p What will you do next?\p Wally: I think I'm going to go to the Pokémon trainer school in Jello City.\p I want to know more about Pokémon battling before I try it out for myself.\p {RIVAL}: Good idea! I heard there's a Pokémon gym in Jello City.\p I think I will try to challenge the gym leader for a badge.")
 }
 
 text Route102_YoushouldToo_Text {
@@ -202,4 +202,12 @@ script Route102_BerryMan_EventScript {
 
 text Route102_BerryMan_Text {
 	format("Not_done")
+}
+
+script Route102_Runner_EventScript {
+	msgbox(Route102_Runner_Text, MSGBOX_NPC)
+}
+
+text Route102_Runner_Text {
+	format("I'd gladly battle you, but today is training day.")
 }

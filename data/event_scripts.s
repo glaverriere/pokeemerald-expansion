@@ -1106,3 +1106,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/GladehavenTown_PokeCenter/scripts.inc"
 
 	.include "data/maps/GladehavenTown_House/scripts.inc"
+
+	.include "data/maps/PetalburgWoods_2/scripts.inc"

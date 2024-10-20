@@ -328,6 +328,12 @@ Route102_BerryMan_EventScript::
 	return
 
 
+Route102_Runner_EventScript::
+# 208 "data/maps/Route102/scripts.pory"
+	msgbox Route102_Runner_Text, MSGBOX_NPC
+	return
+
+
 Route102_RivalGreetsPlayer_Text::
 # 143 "data/maps/Route102/scripts.pory"
 	.string "{RIVAL}: {PLAYER}! You are just in\n"
@@ -355,7 +361,7 @@ Route102_IDidIt_Text::
 	.string "battling before I try it out for myself.\p"
 	.string "{RIVAL}: Good idea! I heard there's a\n"
 	.string "Pokémon gym in Jello City.\p"
-	.string "I think i will try to challenge the gym\n"
+	.string "I think I will try to challenge the gym\n"
 	.string "leader for a badge.$"
 
 Route102_YoushouldToo_Text::
@@ -401,3 +407,8 @@ Route102_Julia_PostBattle::
 Route102_BerryMan_Text::
 # 203 "data/maps/Route102/scripts.pory"
 	.string "Not_done$"
+
+Route102_Runner_Text::
+# 211 "data/maps/Route102/scripts.pory"
+	.string "I'd gladly battle you, but today is\n"
+	.string "training day.$"
