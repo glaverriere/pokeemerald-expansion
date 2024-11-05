@@ -72,6 +72,7 @@ script RustboroCity_PokemonSchool_EventScript_Roxanne {
 		fadescreen(FADE_FROM_BLACK)
 		setflag(FLAG_HIDE_ROXANNE_PKMNSCHOOL)
 		setvar(VAR_RUSTBORO_CITY_STATE, 1)
+		setflag(FLAG_HIDE_RUSTBOROCITY_GYMGUIDE)
 		releaseall
 	}
 	else {
@@ -159,6 +160,60 @@ text RustboroCity_PokemonSchool_Text_SchoolKidM2 {
 	format("It can be overwhelming to learn about Pokémon battle, but I think I'm doing great!")
 }
 
+script PokemonSchool_Eventscript_Scott {
+	lockall
+	faceplayer
+	if (var(VAR_SCOTT_STATE) == 1) {
+		msgbox(PokemonSchool_Text_ScottNextBadge)
+	}
+	elif (flag(FLAG_MET_SCOTT_RUSTBORO) && flag(FLAG_BADGE01_GET) == TRUE) {
+		msgbox(PokemonSchool_Text_ScottAlreadyMetAfterBadge, MSGBOX_YESNO)
+		msgbox(PokemonSchool_Text_ScottGivesItem)
+		giveitem(ITEM_MASTER_BALL)
+		setvar(VAR_SCOTT_STATE, 1)
+	}
+	elif (flag(FLAG_BADGE01_GET) == TRUE) {
+		msgbox(PokemonSchool_Text_ScottFirstTimeMetAfterBadge, MSGBOX_YESNO)
+		msgbox(PokemonSchool_Text_ScottGivesItem)
+		giveitem(ITEM_MASTER_BALL)
+		setvar(VAR_SCOTT_STATE, 1)
+		setflag(FLAG_MET_SCOTT_RUSTBORO)
+	}
+	elif (flag(FLAG_MET_SCOTT_RUSTBORO) == TRUE) {
+		msgbox(PokemonSchool_Text_ScottAlreadyMet)
+	}
+	else {
+		msgbox(PokemonSchool_Text_ScottFirstTimeMet)
+		setflag(FLAG_MET_SCOTT_RUSTBORO)
+	}
+	closemessage
+	releaseall
+}
+
+text PokemonSchool_Text_ScottFirstTimeMet {
+	format("Scott: Are you a student here? No?\p Oh! But you're a Pokémon trainer. I can see it in your face.\p My name is Scott and I'm a board member of the Pokémon league.\p Which means I oversee all Pokémon gyms and of course the Pokémon league.\p Recently, I've made some changes to ensure it's not too easy to earn badges.\p So, some gym leaders and elite four members were promoted and some were demoted.\p Also, I made some of them change Pokémon type to balance things out.\p Anyways, it was nice meeting you!")
+}
+
+text PokemonSchool_Text_ScottAlreadyMet {
+	format("Scott: Are you going to tackle the gym in this city?\p Roxanne is the leader and her specialty is ground-type Pokémon.\p If you challenge her, I'd love to have your opinion on how difficult the battle was.\p I'll maybe even throw you a little gift to thank you.")
+}
+
+text PokemonSchool_Text_ScottFirstTimeMetAfterBadge {
+	format("Scott: Are you a student here? No?\p Oh! But you're a Pokémon trainer. I can see it in your face.\p My name is Scott and I'm a board member of the Pokémon league.\p Which means I oversee all Pokémon gyms and of course the Pokémon league.\p Recently, I've made some changes to ensure it's not too easy to earn badges.\p So, some gym leaders and elite four members were promoted and some were demoted.\p Also, I made some of them change Pokémon type to balance things out.\p Is that a ground badge?\p Good job! Was the battle with Roxanne too easy?")
+}
+
+text PokemonSchool_Text_ScottGivesItem {
+	format("I see... Thank you for taking the time.\p The board really appreciates it.\p Anyways, take this as a thank you gift.")
+}
+
+text PokemonSchool_Text_ScottAlreadyMetAfterBadge {
+	format("Scott: Is that a ground badge?\p Good job! Was the battle with Roxanne too easy?")
+}
+
+text PokemonSchool_Text_ScottNextBadge {
+	format("Scott: The next badge on your list should be in Dewford town.\p The gym leader, Glacia, is a grass-type Pokémon trainer.")
+}
+
 raw `
 RustboroCity_PokemonSchool_EventScript_Blackboard::
 	lockall
@@ -223,45 +278,6 @@ RustboroCity_PokemonSchool_EventScript_SchoolKidM::
 
 RustboroCity_PokemonSchool_EventScript_StudentNotebook::
 	msgbox RustboroCity_PokemonSchool_Text_StudentsNotes, MSGBOX_SIGN
-	end
-
-RustboroCity_PokemonSchool_EventScript_Scott::
-	lock
-	faceplayer
-	goto_if_set FLAG_MET_SCOTT_AFTER_OBTAINING_STONE_BADGE, RustboroCity_PokemonSchool_EventScript_ScottWatchStudents
-	goto_if_set FLAG_MET_SCOTT_RUSTBORO, RustboroCity_PokemonSchool_EventScript_ScottSpokeAlready
-	goto_if_set FLAG_BADGE01_GET, RustboroCity_PokemonSchool_EventScript_ScottGreetHasBadge
-	msgbox RustboroCity_PokemonSchool_Text_ScottMetAlreadyCut, MSGBOX_DEFAULT
-	addvar VAR_SCOTT_STATE, 1
-	setflag FLAG_MET_SCOTT_RUSTBORO
-	release
-	end
-
-RustboroCity_PokemonSchool_EventScript_ScottSpokeAlready::
-	goto_if_set FLAG_BADGE01_GET, RustboroCity_PokemonSchool_EventScript_ScottNoticeBadge
-	msgbox RustboroCity_PokemonSchool_Text_StudentTalentLevelUnknown, MSGBOX_DEFAULT
-	release
-	end
-
-RustboroCity_PokemonSchool_EventScript_ScottGreetHasBadge::
-	msgbox RustboroCity_PokemonSchool_Text_ScottMetAlreadyStoneBadge, MSGBOX_DEFAULT
-	goto RustboroCity_PokemonSchool_EventScript_MetScottAfterBadge
-	end
-
-RustboroCity_PokemonSchool_EventScript_ScottNoticeBadge::
-	msgbox RustboroCity_PokemonSchool_Text_ScottStoneBadge, MSGBOX_DEFAULT
-	goto RustboroCity_PokemonSchool_EventScript_MetScottAfterBadge
-	end
-
-RustboroCity_PokemonSchool_EventScript_MetScottAfterBadge::
-	addvar VAR_SCOTT_STATE, 1
-	setflag FLAG_MET_SCOTT_AFTER_OBTAINING_STONE_BADGE
-	release
-	end
-
-RustboroCity_PokemonSchool_EventScript_ScottWatchStudents::
-	msgbox RustboroCity_PokemonSchool_Text_StudentTalentLevelUnknown, MSGBOX_DEFAULT
-	release
 	end
 
 RustboroCity_PokemonSchool_Text_BlackboardListsStatusChanges:
@@ -341,53 +357,5 @@ RustboroCity_PokemonSchool_Text_StudentsNotes:
 	.string "A trainer's mission is to defeat\n"
 	.string "the strong trainers who await\l"
 	.string "challengers in Pokémon gyms.$"
-
-RustboroCity_PokemonSchool_Text_ScottMetAlreadyCut:
-	.string "Hello? Didn't we meet before?\n"
-	.string "I think back in PETALBURG CITY.\p"
-	.string "Let me introduce myself.\n"
-	.string "My name's SCOTT.\p"
-	.string "I've been traveling everywhere in\n"
-	.string "search of outstanding TRAINERS.\p"
-	.string "More specifically, I'm looking for\n"
-	.string "POKéMON battle experts.\p"
-	.string "So, what brings you to this SCHOOL?\n"
-	.string "Are you a TRAINER, too?\p"
-	.string "The first thing you should do is to\n"
-	.string "have a POKéMON learn the move CUT.\p"
-	.string "If I remember correctly, someone in\n"
-	.string "this town has CUT.$"
-
-RustboroCity_PokemonSchool_Text_StudentTalentLevelUnknown:
-	.string "SCOTT: Hmm…\p"
-	.string "The talent levels of the students here\n"
-	.string "are unknown. The potential's there.$"
-
-RustboroCity_PokemonSchool_Text_ScottStoneBadge:
-	.string "SCOTT: Oh, what's that?\p"
-	.string "It's a STONE BADGE, isn't it?\n"
-	.string "That's pretty impressive, I'd say.\p"
-	.string "But, you know, I would've loved to see\n"
-	.string "you in battle.\p"
-	.string "It's hard to tell what you're like as\n"
-	.string "a TRAINER from a LEAGUE BADGE.$"
-
-RustboroCity_PokemonSchool_Text_ScottMetAlreadyStoneBadge:
-	.string "Hello? Didn't we meet before?\n"
-	.string "I think back in PETALBURG CITY.\p"
-	.string "Let me introduce myself.\n"
-	.string "My name's SCOTT.\p"
-	.string "I've been traveling everywhere in\n"
-	.string "search of outstanding TRAINERS.\p"
-	.string "More specifically, I'm looking for\n"
-	.string "POKéMON battle experts.\p"
-	.string "Oh, what's that?\n"
-	.string "It's a STONE BADGE, isn't it?\p"
-	.string "That's pretty impressive, I'd say, for\n"
-	.string "a starting TRAINER like yourself.\p"
-	.string "But, you know, I would've loved to see\n"
-	.string "you in battle.\p"
-	.string "It's hard to tell what you're like as\n"
-	.string "a TRAINER from a LEAGUE BADGE.$"
 
 `

@@ -11,8 +11,8 @@
     {
       "map_section": "MAPSEC_OLDALE_TOWN",
       "name": "OLDALE TOWN",
-      "x": 6,
-      "y": 4,
+      "x": 24,
+      "y": 8,
       "width": 1,
       "height": 2
     },
@@ -83,8 +83,8 @@
     {
       "map_section": "MAPSEC_RUSTBORO_CITY",
       "name": "Bay Harbor City",
-      "x": 24,
-      "y": 8,
+      "x": 6,
+      "y": 4,
       "width": 1,
       "height": 2
     },

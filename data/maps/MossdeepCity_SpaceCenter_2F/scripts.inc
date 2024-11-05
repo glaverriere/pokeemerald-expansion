@@ -569,7 +569,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_DefeatedMaxieTabitha::
 # 285 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	setvar VAR_MOSSDEEP_SPACE_CENTER_STATE, 3
 # 286 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
-	setflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_TEAM_MAGMA
+	setflag FLAG_HIDE_RUSTBOROCITY_GYMGUIDE
 # 287 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"
 	setflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_2F_TEAM_MAGMA
 # 288 "data/maps/MossdeepCity_SpaceCenter_2F/scripts.pory"

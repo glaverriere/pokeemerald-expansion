@@ -290,6 +290,88 @@ Torchic
 Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
+=== TRAINER_JOSH ===
+Name: Josh
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Geodude
+Level: 15
+Ability: Sturdy
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Flail
+- Rock Polish
+
+Aron
+Level: 15
+Ability: Rock Head
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Geodude
+Level: 15
+Ability: Rock Head
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Take down
+- Defense Curl
+- Rock Throw
+
+Rhyhorn
+Level: 15
+Ability: Rock Head
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Take Down
+- Bulldoze
+- Rock Throw
+
+=== TRAINER_TOMMY ===
+Name: Tommy
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Geodude
+Level: 15
+IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+
+Aron
+Level: 15
+Ability: Heavy Metal
+IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+
+Onix
+Level: 15
+Ability: Weak Armor
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+
+=== TRAINER_MARC ===
+Name: Marc
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Geodude-Alola
+Level: 15
+Ability: Rock Head
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+
+Rhyhorn
+Level: 15
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
+Shuckle
+Level: 15
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+
 === TRAINER_GRUNT_RUSTURF_TUNNEL ===
 Name: GRUNT
 Class: Team Aqua
@@ -6035,71 +6117,6 @@ Plusle
 Level: 13
 IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 
-=== TRAINER_JOSH ===
-Name: JOSH
-Class: Youngster
-Pic: Youngster
-Gender: Male
-Music: Male
-Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
-
-Geodude
-Level: 15
-Ability: Sturdy
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Flail
-- Rock Polish
-
-Aron
-Level: 15
-Ability: Rock Head
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Geodude
-Level: 15
-Ability: Rock Head
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Take down
-- Defense Curl
-- Rock Throw
-
-Rhyhorn
-Level: 15
-Ability: Rock Head
-IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
-- Take Down
-- Bulldoze
-- Rock Throw
-
-=== TRAINER_TOMMY ===
-Name: TOMMY
-Class: Youngster
-Pic: Youngster
-Gender: Male
-Music: Male
-Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
-
-Geodude
-Level: 15
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
-
-Aron
-Level: 15
-Ability: Heavy Metal
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
-
-Onix
-Level: 15
-Ability: Weak Armor
-IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
-
-Larvitar
-Level: 15
-Ability: Guts
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
-
 === TRAINER_JOEY ===
 Name: JOEY
 Class: Youngster
@@ -10681,36 +10698,6 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Numel
 Level: 22
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
-=== TRAINER_MARC ===
-Name: MARC
-Class: Hiker
-Pic: Hiker
-Gender: Male
-Music: Hiker
-Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
-
-Geodude-Alola
-Level: 15
-Ability: Rock Head
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
-
-Rhyhorn
-Level: 15
-IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
-
-Shuckle
-Level: 15
-IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
-
-Solrock
-Level: 12
-IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
-- Rock Throw
-- Hypnosis
-- Confusion
-- Tackle
 
 === TRAINER_BRENDEN ===
 Name: BRENDEN

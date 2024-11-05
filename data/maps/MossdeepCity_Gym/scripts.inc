@@ -157,7 +157,7 @@ MossdeepCity_Gym_EventScript_TateAndLizaDefeated::
 # 79 "data/maps/MossdeepCity_Gym/scripts.pory"
 	clearflag FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA
 # 80 "data/maps/MossdeepCity_Gym/scripts.pory"
-	clearflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_TEAM_MAGMA
+	clearflag FLAG_HIDE_RUSTBOROCITY_GYMGUIDE
 # 81 "data/maps/MossdeepCity_Gym/scripts.pory"
 	clearflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_2F_TEAM_MAGMA
 # 82 "data/maps/MossdeepCity_Gym/scripts.pory"
