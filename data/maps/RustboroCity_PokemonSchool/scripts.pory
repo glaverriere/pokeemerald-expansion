@@ -18,7 +18,127 @@ script RustboroCity_PokemonSchool_EventScript_Wally {
 }
 
 script RustboroCity_PokemonSchool_EventScript_Roxanne {
-	
+	lockall
+	faceplayer
+	msgbox(RustboroCity_PokemonSchool_Text_Roxanne1)
+	msgbox("So, are you ready?", MSGBOX_YESNO)
+	if (var(VAR_RESULT) == YES) {
+		msgbox("Good, let's start then!")
+		applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown)
+		applymovement(7, Common_Movement_WalkInPlaceFasterDown)
+		applymovement(8, Common_Movement_WalkInPlaceFasterDown)
+		waitmovement(0)
+		msgbox("First up is Dave!")
+		closemessage
+		applymovement(6, RustboroCity_PokemonSchool_Movement_Dave)
+		waitmovement(0)
+		trainerbattle_no_intro(TRAINER_DAVE, PokemonSchool_Dave_Defeated)
+		applymovement(6, RustboroCity_PokemonSchool_Movement_Dave2)
+		waitmovement(0)
+		msgbox("Roxanne: Next is Eva!")
+		closemessage
+		applymovement(2, RustboroCity_PokemonSchool_Movement_Eva)
+		waitmovement(0)
+		trainerbattle_no_intro(TRAINER_EVA, PokemonSchool_Eva_Defeated)
+		applymovement(2, RustboroCity_PokemonSchool_Movement_Eva2)
+		waitmovement(0)
+		msgbox("Roxanne: And finally, Wally!")
+		closemessage
+		applymovement(7, RustboroCity_PokemonSchool_Movement_Wally1)
+		waitmovement(0)
+		msgbox(RustboroCity_PokemonSchool_Text_Wally_HopeICanDoThis)
+		if (var(VAR_STARTER_MON) == 0) {
+			trainerbattle_no_intro(TRAINER_WALLY_SCHOOL_MUDKIP, PokemonSchool_Wally_Defeated)
+		}
+		elif (var(VAR_STARTER_MON) == 1) {
+			trainerbattle_no_intro(TRAINER_WALLY_SCHOOL_TREECKO, PokemonSchool_Wally_Defeated)
+		}
+		else {
+			trainerbattle_no_intro(TRAINER_WALLY_SCHOOL_TORCHIC, PokemonSchool_Wally_Defeated)
+		}
+		msgbox(RustboroCity_PokemonSchool_Text_Wally_AfterBattle)
+		closemessage
+		applymovement(7, RustboroCity_PokemonSchool_Movement_Wally2)
+		waitmovement(0)
+		applymovement(8, Common_Movement_WalkInPlaceFasterLeft)
+		applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight)
+		waitmovement(0)
+		msgbox(RustboroCity_PokemonSchool_Text_Roxanne2)
+		closemessage
+		fadescreen(FADE_TO_BLACK)
+		playse(SE_EXIT)
+    	delay(10)
+    	removeobject(8)
+		fadescreen(FADE_FROM_BLACK)
+		setflag(FLAG_HIDE_ROXANNE_PKMNSCHOOL)
+		setvar(VAR_RUSTBORO_CITY_STATE, 1)
+		releaseall
+	}
+	else {
+		msgbox("Ok! Come back when you're ready.")
+	}
+	closemessage
+}
+
+text RustboroCity_PokemonSchool_Text_Roxanne1 {
+	format("Roxanne: Hello, my name is Roxanne and I'm this city's gym leader!\p I also tutor at this school when the teacher is not here.\p Oh? You want to challenge me?\p Hmm, let's see...\p I have an idea!\p If you can win three times in a row against my students without healing your Pokémon,\p I will let you challenge me at my gym later!")
+}
+
+movement RustboroCity_PokemonSchool_Movement_Dave {
+	walk_right * 3
+	walk_up * 2
+}
+
+text PokemonSchool_Dave_Defeated {
+	format("It's not fair, I went first!")
+}
+
+movement RustboroCity_PokemonSchool_Movement_Dave2 {
+	walk_down * 2
+	walk_left * 3
+	walk_in_place_fast_up
+}
+
+movement RustboroCity_PokemonSchool_Movement_Eva {
+	walk_right
+	walk_up * 4
+}
+
+text PokemonSchool_Eva_Defeated {
+	format("You make it seems so easy!")
+}
+
+movement RustboroCity_PokemonSchool_Movement_Eva2 {
+	walk_down * 4
+	walk_left
+	walk_in_place_faster_down
+}
+
+movement RustboroCity_PokemonSchool_Movement_Wally1 {
+	walk_right
+	walk_down * 2
+	walk_left * 3
+	walk_up
+}
+
+text RustboroCity_PokemonSchool_Text_Wally_HopeICanDoThis {
+	format("Wally: I think I'm ready to take you on, {PLAYER}!")
+}
+
+text PokemonSchool_Wally_Defeated {
+	format("I was maybe a little overconfident...")
+}
+
+movement RustboroCity_PokemonSchool_Movement_Wally2 {
+	walk_down
+	walk_right * 3
+	walk_up * 2
+	walk_left
+	walk_in_place_fast_up
+}
+
+text RustboroCity_PokemonSchool_Text_Roxanne2 {
+	format("Roxanne: Congrats! I think it means you're ready to challenge me.\p Come by the gym whenever and I'll give you what you want!")
 }
 
 script RustboroCity_PokemonSchool_EventScript_SchoolKidM2 {
@@ -28,11 +148,11 @@ script RustboroCity_PokemonSchool_EventScript_SchoolKidM2 {
 }
 
 text RustboroCity_PokemonSchool_Text_Wally_BeforeBattle {
-	format("Hi {PLAYER}!\l I'm learning all about status conditions that can affect Pokémon!")
+	format("Hi {PLAYER}!\p I'm learning all about status conditions that can affect Pokémon!")
 }
 
 text RustboroCity_PokemonSchool_Text_Wally_AfterBattle {
-	format("Wow! You beat all of us in a row just like that!\n I better go back to studying so I get better at battling.")
+	format("Wow! You beat all of us in a row just like that!\p I better go back to studying so I get better at battling.")
 }
 
 text RustboroCity_PokemonSchool_Text_SchoolKidM2 {

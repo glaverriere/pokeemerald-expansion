@@ -165,7 +165,7 @@ MossdeepCity_Gym_EventScript_TateAndLizaDefeated::
 # 83 "data/maps/MossdeepCity_Gym/scripts.pory"
 	setvar VAR_MOSSDEEP_CITY_STATE, 1
 # 84 "data/maps/MossdeepCity_Gym/scripts.pory"
-	setflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_STEVEN
+	setflag FLAG_HIDE_WALLY_PKMNSCHOOL
 # 85 "data/maps/MossdeepCity_Gym/scripts.pory"
 	setvar VAR_MOSSDEEP_SPACE_CENTER_STATE, 1
 # 86 "data/maps/MossdeepCity_Gym/scripts.pory"

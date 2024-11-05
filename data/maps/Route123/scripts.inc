@@ -245,7 +245,7 @@ Route123_EventScript_Frederick::
 # 123 "data/maps/Route123/scripts.pory"
 Route123_EventScript_Alberto::
 # 124 "data/maps/Route123/scripts.pory"
-	trainerbattle_single TRAINER_ALBERTO, Route123_Text_AlbertoIntro, Route123_Text_AlbertoDefeat
+	trainerbattle_single TRAINER_EVA, Route123_Text_AlbertoIntro, Route123_Text_AlbertoDefeat
 # 125 "data/maps/Route123/scripts.pory"
 	msgbox Route123_Text_AlbertoPostBattle, MSGBOX_AUTOCLOSE
 # 126 "data/maps/Route123/scripts.pory"
@@ -255,7 +255,7 @@ Route123_EventScript_Alberto::
 # 128 "data/maps/Route123/scripts.pory"
 Route123_EventScript_Ed::
 # 129 "data/maps/Route123/scripts.pory"
-	trainerbattle_single TRAINER_ED, Route123_Text_EdIntro, Route123_Text_EdDefeat
+	trainerbattle_single TRAINER_WALLY_SCHOOL_MUDKIP, Route123_Text_EdIntro, Route123_Text_EdDefeat
 # 130 "data/maps/Route123/scripts.pory"
 	msgbox Route123_Text_EdPostBattle, MSGBOX_AUTOCLOSE
 # 131 "data/maps/Route123/scripts.pory"

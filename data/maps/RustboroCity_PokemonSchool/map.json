@@ -64,7 +64,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "RustboroCity_PokemonSchool_EventScript_Teacher",
-      "flag": "0"
+      "flag": "FLAG_HIDE_TEACHER_PKMNSCHOOL"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SCOTT",
@@ -103,7 +103,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "RustboroCity_PokemonSchool_EventScript_Wally",
-      "flag": "0"
+      "flag": "FLAG_HIDE_WALLY_PKMNSCHOOL"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ROXANNE",
@@ -116,7 +116,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "RustboroCity_PokemonSchool_EventScript_Roxanne",
-      "flag": "0"
+      "flag": "FLAG_HIDE_ROXANNE_PKMNSCHOOL"
     }
   ],
   "warp_events": [

@@ -299,7 +299,7 @@ Route121_EventScript_Pat::
 # 150 "data/maps/Route121/scripts.pory"
 Route121_EventScript_Marcel::
 # 151 "data/maps/Route121/scripts.pory"
-	trainerbattle_single TRAINER_MARCEL, Route121_Text_MarcelIntro, Route121_Text_MarcelDefeat
+	trainerbattle_single TRAINER_DAVE, Route121_Text_MarcelIntro, Route121_Text_MarcelDefeat
 # 152 "data/maps/Route121/scripts.pory"
 	msgbox Route121_Text_MarcelPostBattle, MSGBOX_AUTOCLOSE
 # 153 "data/maps/Route121/scripts.pory"

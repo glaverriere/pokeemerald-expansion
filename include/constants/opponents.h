@@ -14,11 +14,11 @@
 #define TRAINER_CALVIN_1                      8
 #define TRAINER_TYLER                         9
 #define TRAINER_KIM                          10
-#define TRAINER_MARCEL                       11
-#define TRAINER_ALBERTO                      12
-#define TRAINER_ED                           13
-#define TRAINER_GRUNT_SEAFLOOR_CAVERN_4      14
-#define TRAINER_DECLAN                       15
+#define TRAINER_DAVE                       11
+#define TRAINER_EVA                      12
+#define TRAINER_WALLY_SCHOOL_MUDKIP                           13
+#define TRAINER_WALLY_SCHOOL_TREECKO      14
+#define TRAINER_WALLY_SCHOOL_TORCHIC                       15
 #define TRAINER_GRUNT_RUSTURF_TUNNEL         16
 #define TRAINER_GRUNT_WEATHER_INST_1         17
 #define TRAINER_GRUNT_WEATHER_INST_2         18
