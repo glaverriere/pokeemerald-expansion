@@ -254,519 +254,523 @@ Route101_4Playerto12:
 
 Route101_DudeInGrass::
 # 113 "data/maps/Route101/scripts.pory"
-	givemon SPECIES_DRAGAPULT, 15
+	givemon SPECIES_DRAGAPULT, 14
 # 114 "data/maps/Route101/scripts.pory"
-	givemon SPECIES_ELECTIVIRE, 15
+	givemon SPECIES_LAPRAS, 14
 # 115 "data/maps/Route101/scripts.pory"
-	givemon SPECIES_CHARIZARD, 15
+	givemon SPECIES_CHARIZARD, 14
 # 116 "data/maps/Route101/scripts.pory"
-	giveitem ITEM_QUICK_BALL, 100
+	givemon SPECIES_GOGOAT, 14
 # 117 "data/maps/Route101/scripts.pory"
+	givemon SPECIES_KYOGRE, 14
+# 118 "data/maps/Route101/scripts.pory"
+	giveitem ITEM_QUICK_BALL, 100
+# 119 "data/maps/Route101/scripts.pory"
 	msgbox Route101_Text_DudeInGrass, MSGBOX_NPC
 	return
 
 
 Route101_RivalBattle_Trigger::
-# 125 "data/maps/Route101/scripts.pory"
-	lockall
-# 126 "data/maps/Route101/scripts.pory"
-	checkplayergender
 # 127 "data/maps/Route101/scripts.pory"
-	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+	lockall
 # 128 "data/maps/Route101/scripts.pory"
+	checkplayergender
+# 129 "data/maps/Route101/scripts.pory"
+	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+# 130 "data/maps/Route101/scripts.pory"
 	compare VAR_RESULT, MALE
 	goto_if_eq Route101_RivalBattle_Trigger_2
-# 166 "data/maps/Route101/scripts.pory"
-	msgbox Route101_Text_BrendanVsWally
-# 167 "data/maps/Route101/scripts.pory"
-	closemessage
 # 168 "data/maps/Route101/scripts.pory"
-	delay 10
+	msgbox Route101_Text_BrendanVsWally
 # 169 "data/maps/Route101/scripts.pory"
-	playse SE_PIN
+	closemessage
 # 170 "data/maps/Route101/scripts.pory"
-	applymovement 3, Common_Movement_ExclamationMark
+	delay 10
 # 171 "data/maps/Route101/scripts.pory"
-	waitmovement 0
+	playse SE_PIN
 # 172 "data/maps/Route101/scripts.pory"
-	applymovement 3, Common_Movement_Delay48
+	applymovement 3, Common_Movement_ExclamationMark
 # 173 "data/maps/Route101/scripts.pory"
 	waitmovement 0
 # 174 "data/maps/Route101/scripts.pory"
-	applymovement 3, Common_Movement_WalkInPlaceFasterDown
+	applymovement 3, Common_Movement_Delay48
 # 175 "data/maps/Route101/scripts.pory"
-	applymovement 1, Common_Movement_WalkInPlaceFasterDown
-# 176 "data/maps/Route101/scripts.pory"
 	waitmovement 0
+# 176 "data/maps/Route101/scripts.pory"
+	applymovement 3, Common_Movement_WalkInPlaceFasterDown
 # 177 "data/maps/Route101/scripts.pory"
-	playbgm MUS_ENCOUNTER_BRENDAN, TRUE
+	applymovement 1, Common_Movement_WalkInPlaceFasterDown
 # 178 "data/maps/Route101/scripts.pory"
-	delay 10
+	waitmovement 0
 # 179 "data/maps/Route101/scripts.pory"
-	switch VAR_TEMP_0
+	playbgm MUS_ENCOUNTER_BRENDAN, TRUE
 # 180 "data/maps/Route101/scripts.pory"
-	case 6, Route101_RivalBattle_Trigger_18
+	delay 10
+# 181 "data/maps/Route101/scripts.pory"
+	switch VAR_TEMP_0
 # 182 "data/maps/Route101/scripts.pory"
-	case 7, Route101_RivalBattle_Trigger_19
+	case 6, Route101_RivalBattle_Trigger_18
 # 184 "data/maps/Route101/scripts.pory"
-	case 8, Route101_RivalBattle_Trigger_20
+	case 7, Route101_RivalBattle_Trigger_19
 # 186 "data/maps/Route101/scripts.pory"
-	case 9, Route101_RivalBattle_Trigger_21
+	case 8, Route101_RivalBattle_Trigger_20
 # 188 "data/maps/Route101/scripts.pory"
+	case 9, Route101_RivalBattle_Trigger_21
+# 190 "data/maps/Route101/scripts.pory"
 	case 10, Route101_RivalBattle_Trigger_22
 Route101_RivalBattle_Trigger_16:
-# 191 "data/maps/Route101/scripts.pory"
-	waitmovement 0
-# 192 "data/maps/Route101/scripts.pory"
-	msgbox Route101_Text_LetsBattle
 # 193 "data/maps/Route101/scripts.pory"
-	switch VAR_STARTER_MON
+	waitmovement 0
 # 194 "data/maps/Route101/scripts.pory"
-	case 0, Route101_RivalBattle_Trigger_44
+	msgbox Route101_Text_LetsBattle
+# 195 "data/maps/Route101/scripts.pory"
+	switch VAR_STARTER_MON
 # 196 "data/maps/Route101/scripts.pory"
-	case 1, Route101_RivalBattle_Trigger_45
+	case 0, Route101_RivalBattle_Trigger_44
 # 198 "data/maps/Route101/scripts.pory"
+	case 1, Route101_RivalBattle_Trigger_45
+# 200 "data/maps/Route101/scripts.pory"
 	case 2, Route101_RivalBattle_Trigger_46
 Route101_RivalBattle_Trigger_1:
-# 202 "data/maps/Route101/scripts.pory"
-	msgbox Route101_Text_RivalLetsGoToLab
-# 203 "data/maps/Route101/scripts.pory"
-	closemessage
 # 204 "data/maps/Route101/scripts.pory"
-	checkplayergender
+	msgbox Route101_Text_RivalLetsGoToLab
 # 205 "data/maps/Route101/scripts.pory"
-	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+	closemessage
 # 206 "data/maps/Route101/scripts.pory"
+	checkplayergender
+# 207 "data/maps/Route101/scripts.pory"
+	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+# 208 "data/maps/Route101/scripts.pory"
 	compare VAR_RESULT, MALE
 	goto_if_eq Route101_RivalBattle_Trigger_6
-# 221 "data/maps/Route101/scripts.pory"
+# 223 "data/maps/Route101/scripts.pory"
 	switch VAR_TEMP_0
-# 222 "data/maps/Route101/scripts.pory"
-	case 6, Route101_RivalBattle_Trigger_34
 # 224 "data/maps/Route101/scripts.pory"
-	case 7, Route101_RivalBattle_Trigger_35
+	case 6, Route101_RivalBattle_Trigger_34
 # 226 "data/maps/Route101/scripts.pory"
-	case 8, Route101_RivalBattle_Trigger_36
+	case 7, Route101_RivalBattle_Trigger_35
 # 228 "data/maps/Route101/scripts.pory"
-	case 9, Route101_RivalBattle_Trigger_37
+	case 8, Route101_RivalBattle_Trigger_36
 # 230 "data/maps/Route101/scripts.pory"
+	case 9, Route101_RivalBattle_Trigger_37
+# 232 "data/maps/Route101/scripts.pory"
 	case 10, Route101_RivalBattle_Trigger_38
 Route101_RivalBattle_Trigger_5:
-# 234 "data/maps/Route101/scripts.pory"
-	waitmovement 0
-# 235 "data/maps/Route101/scripts.pory"
-	applymovement 1, Common_Movement_WalkInPlaceFasterUp
 # 236 "data/maps/Route101/scripts.pory"
+	waitmovement 0
+# 237 "data/maps/Route101/scripts.pory"
+	applymovement 1, Common_Movement_WalkInPlaceFasterUp
+# 238 "data/maps/Route101/scripts.pory"
 	compare VAR_RESULT, MALE
 	goto_if_eq Route101_RivalBattle_Trigger_24
-# 240 "data/maps/Route101/scripts.pory"
+# 242 "data/maps/Route101/scripts.pory"
 	applymovement 3, Route101_RivalToLab
 Route101_RivalBattle_Trigger_23:
-# 242 "data/maps/Route101/scripts.pory"
-	waitmovement 0
-# 243 "data/maps/Route101/scripts.pory"
-	removeobject 2
 # 244 "data/maps/Route101/scripts.pory"
-	removeobject 3
-# 245 "data/maps/Route101/scripts.pory"
-	msgbox Route101_RivalBattle_Trigger_Text_0
-# 246 "data/maps/Route101/scripts.pory"
-	closemessage
-# 247 "data/maps/Route101/scripts.pory"
-	applymovement 1, Route101_RivalToLab
-# 248 "data/maps/Route101/scripts.pory"
 	waitmovement 0
+# 245 "data/maps/Route101/scripts.pory"
+	removeobject 2
+# 246 "data/maps/Route101/scripts.pory"
+	removeobject 3
+# 247 "data/maps/Route101/scripts.pory"
+	msgbox Route101_RivalBattle_Trigger_Text_0
+# 248 "data/maps/Route101/scripts.pory"
+	closemessage
 # 249 "data/maps/Route101/scripts.pory"
-	removeobject 1
+	applymovement 1, Route101_RivalToLab
 # 250 "data/maps/Route101/scripts.pory"
-	setflag FLAG_HIDE_ROUTE101_BRENDAN
+	waitmovement 0
 # 251 "data/maps/Route101/scripts.pory"
-	setflag FLAG_HIDE_ROUTE101_MAY
+	removeobject 1
 # 252 "data/maps/Route101/scripts.pory"
-	setflag FLAG_HIDE_ROUTE101_WALLY
+	setflag FLAG_HIDE_ROUTE101_BRENDAN
 # 253 "data/maps/Route101/scripts.pory"
-	setvar VAR_ROUTE101_STATE, 1
+	setflag FLAG_HIDE_ROUTE101_MAY
 # 254 "data/maps/Route101/scripts.pory"
-	playbgm MUS_ROUTE101, TRUE
+	setflag FLAG_HIDE_ROUTE101_WALLY
 # 255 "data/maps/Route101/scripts.pory"
+	setvar VAR_ROUTE101_STATE, 1
+# 256 "data/maps/Route101/scripts.pory"
+	playbgm MUS_ROUTE101, TRUE
+# 257 "data/maps/Route101/scripts.pory"
 	releaseall
 	return
 
 Route101_RivalBattle_Trigger_2:
-# 129 "data/maps/Route101/scripts.pory"
-	msgbox Route101_Text_MayVsWally
-# 130 "data/maps/Route101/scripts.pory"
-	closemessage
 # 131 "data/maps/Route101/scripts.pory"
-	delay 10
+	msgbox Route101_Text_MayVsWally
 # 132 "data/maps/Route101/scripts.pory"
-	playse SE_PIN
+	closemessage
 # 133 "data/maps/Route101/scripts.pory"
-	applymovement 2, Common_Movement_ExclamationMark
+	delay 10
 # 134 "data/maps/Route101/scripts.pory"
-	waitmovement 0
+	playse SE_PIN
 # 135 "data/maps/Route101/scripts.pory"
-	applymovement 2, Common_Movement_Delay48
+	applymovement 2, Common_Movement_ExclamationMark
 # 136 "data/maps/Route101/scripts.pory"
 	waitmovement 0
 # 137 "data/maps/Route101/scripts.pory"
-	applymovement 2, Common_Movement_WalkInPlaceFasterDown
+	applymovement 2, Common_Movement_Delay48
 # 138 "data/maps/Route101/scripts.pory"
-	applymovement 1, Common_Movement_WalkInPlaceFasterDown
-# 139 "data/maps/Route101/scripts.pory"
 	waitmovement 0
+# 139 "data/maps/Route101/scripts.pory"
+	applymovement 2, Common_Movement_WalkInPlaceFasterDown
 # 140 "data/maps/Route101/scripts.pory"
-	playbgm MUS_ENCOUNTER_MAY, TRUE
+	applymovement 1, Common_Movement_WalkInPlaceFasterDown
 # 141 "data/maps/Route101/scripts.pory"
-	delay 10
+	waitmovement 0
 # 142 "data/maps/Route101/scripts.pory"
-	switch VAR_TEMP_0
+	playbgm MUS_ENCOUNTER_MAY, TRUE
 # 143 "data/maps/Route101/scripts.pory"
-	case 6, Route101_RivalBattle_Trigger_11
+	delay 10
+# 144 "data/maps/Route101/scripts.pory"
+	switch VAR_TEMP_0
 # 145 "data/maps/Route101/scripts.pory"
-	case 7, Route101_RivalBattle_Trigger_12
+	case 6, Route101_RivalBattle_Trigger_11
 # 147 "data/maps/Route101/scripts.pory"
-	case 8, Route101_RivalBattle_Trigger_13
+	case 7, Route101_RivalBattle_Trigger_12
 # 149 "data/maps/Route101/scripts.pory"
-	case 9, Route101_RivalBattle_Trigger_14
+	case 8, Route101_RivalBattle_Trigger_13
 # 151 "data/maps/Route101/scripts.pory"
+	case 9, Route101_RivalBattle_Trigger_14
+# 153 "data/maps/Route101/scripts.pory"
 	case 10, Route101_RivalBattle_Trigger_15
 Route101_RivalBattle_Trigger_9:
-# 154 "data/maps/Route101/scripts.pory"
-	waitmovement 0
-# 155 "data/maps/Route101/scripts.pory"
-	msgbox Route101_Text_LetsBattle
 # 156 "data/maps/Route101/scripts.pory"
-	switch VAR_STARTER_MON
+	waitmovement 0
 # 157 "data/maps/Route101/scripts.pory"
-	case 0, Route101_RivalBattle_Trigger_40
+	msgbox Route101_Text_LetsBattle
+# 158 "data/maps/Route101/scripts.pory"
+	switch VAR_STARTER_MON
 # 159 "data/maps/Route101/scripts.pory"
-	case 1, Route101_RivalBattle_Trigger_41
+	case 0, Route101_RivalBattle_Trigger_40
 # 161 "data/maps/Route101/scripts.pory"
+	case 1, Route101_RivalBattle_Trigger_41
+# 163 "data/maps/Route101/scripts.pory"
 	case 2, Route101_RivalBattle_Trigger_42
 	goto Route101_RivalBattle_Trigger_1
 
 Route101_RivalBattle_Trigger_6:
-# 207 "data/maps/Route101/scripts.pory"
+# 209 "data/maps/Route101/scripts.pory"
 	switch VAR_TEMP_0
-# 208 "data/maps/Route101/scripts.pory"
-	case 6, Route101_RivalBattle_Trigger_28
 # 210 "data/maps/Route101/scripts.pory"
-	case 7, Route101_RivalBattle_Trigger_29
+	case 6, Route101_RivalBattle_Trigger_28
 # 212 "data/maps/Route101/scripts.pory"
-	case 8, Route101_RivalBattle_Trigger_30
+	case 7, Route101_RivalBattle_Trigger_29
 # 214 "data/maps/Route101/scripts.pory"
-	case 9, Route101_RivalBattle_Trigger_31
+	case 8, Route101_RivalBattle_Trigger_30
 # 216 "data/maps/Route101/scripts.pory"
+	case 9, Route101_RivalBattle_Trigger_31
+# 218 "data/maps/Route101/scripts.pory"
 	case 10, Route101_RivalBattle_Trigger_32
 	goto Route101_RivalBattle_Trigger_5
 
 Route101_RivalBattle_Trigger_11:
-# 144 "data/maps/Route101/scripts.pory"
+# 146 "data/maps/Route101/scripts.pory"
 	applymovement 2, Route101_RivalToPlayer6
 	goto Route101_RivalBattle_Trigger_9
 
 Route101_RivalBattle_Trigger_12:
-# 146 "data/maps/Route101/scripts.pory"
+# 148 "data/maps/Route101/scripts.pory"
 	applymovement 2, Route101_RivalToPlayer7
 	goto Route101_RivalBattle_Trigger_9
 
 Route101_RivalBattle_Trigger_13:
-# 148 "data/maps/Route101/scripts.pory"
+# 150 "data/maps/Route101/scripts.pory"
 	applymovement 2, Route101_RivalToPlayer8
 	goto Route101_RivalBattle_Trigger_9
 
 Route101_RivalBattle_Trigger_14:
-# 150 "data/maps/Route101/scripts.pory"
+# 152 "data/maps/Route101/scripts.pory"
 	applymovement 2, Route101_RivalToPlayer9
 	goto Route101_RivalBattle_Trigger_9
 
 Route101_RivalBattle_Trigger_15:
-# 152 "data/maps/Route101/scripts.pory"
+# 154 "data/maps/Route101/scripts.pory"
 	applymovement 2, Route101_RivalToPlayer10
 	goto Route101_RivalBattle_Trigger_9
 
 Route101_RivalBattle_Trigger_18:
-# 181 "data/maps/Route101/scripts.pory"
+# 183 "data/maps/Route101/scripts.pory"
 	applymovement 3, Route101_RivalToPlayer6
 	goto Route101_RivalBattle_Trigger_16
 
 Route101_RivalBattle_Trigger_19:
-# 183 "data/maps/Route101/scripts.pory"
+# 185 "data/maps/Route101/scripts.pory"
 	applymovement 3, Route101_RivalToPlayer7
 	goto Route101_RivalBattle_Trigger_16
 
 Route101_RivalBattle_Trigger_20:
-# 185 "data/maps/Route101/scripts.pory"
+# 187 "data/maps/Route101/scripts.pory"
 	applymovement 3, Route101_RivalToPlayer8
 	goto Route101_RivalBattle_Trigger_16
 
 Route101_RivalBattle_Trigger_21:
-# 187 "data/maps/Route101/scripts.pory"
+# 189 "data/maps/Route101/scripts.pory"
 	applymovement 3, Route101_RivalToPlayer9
 	goto Route101_RivalBattle_Trigger_16
 
 Route101_RivalBattle_Trigger_22:
-# 189 "data/maps/Route101/scripts.pory"
+# 191 "data/maps/Route101/scripts.pory"
 	applymovement 3, Route101_RivalToPlayer10
 	goto Route101_RivalBattle_Trigger_16
 
 Route101_RivalBattle_Trigger_24:
-# 237 "data/maps/Route101/scripts.pory"
+# 239 "data/maps/Route101/scripts.pory"
 	applymovement 2, Route101_RivalToLab
 	goto Route101_RivalBattle_Trigger_23
 
 Route101_RivalBattle_Trigger_28:
-# 209 "data/maps/Route101/scripts.pory"
+# 211 "data/maps/Route101/scripts.pory"
 	applymovement 2, Route101_RivalToWally6
 	goto Route101_RivalBattle_Trigger_5
 
 Route101_RivalBattle_Trigger_29:
-# 211 "data/maps/Route101/scripts.pory"
+# 213 "data/maps/Route101/scripts.pory"
 	applymovement 2, Route101_RivalToWally7
 	goto Route101_RivalBattle_Trigger_5
 
 Route101_RivalBattle_Trigger_30:
-# 213 "data/maps/Route101/scripts.pory"
+# 215 "data/maps/Route101/scripts.pory"
 	applymovement 2, Route101_RivalToWally8
 	goto Route101_RivalBattle_Trigger_5
 
 Route101_RivalBattle_Trigger_31:
-# 215 "data/maps/Route101/scripts.pory"
+# 217 "data/maps/Route101/scripts.pory"
 	applymovement 2, Route101_RivalToWally9
 	goto Route101_RivalBattle_Trigger_5
 
 Route101_RivalBattle_Trigger_32:
-# 217 "data/maps/Route101/scripts.pory"
+# 219 "data/maps/Route101/scripts.pory"
 	applymovement 2, Route101_RivalToWally10
 	goto Route101_RivalBattle_Trigger_5
 
 Route101_RivalBattle_Trigger_34:
-# 223 "data/maps/Route101/scripts.pory"
+# 225 "data/maps/Route101/scripts.pory"
 	applymovement 3, Route101_RivalToWally6
 	goto Route101_RivalBattle_Trigger_5
 
 Route101_RivalBattle_Trigger_35:
-# 225 "data/maps/Route101/scripts.pory"
+# 227 "data/maps/Route101/scripts.pory"
 	applymovement 3, Route101_RivalToWally7
 	goto Route101_RivalBattle_Trigger_5
 
 Route101_RivalBattle_Trigger_36:
-# 227 "data/maps/Route101/scripts.pory"
+# 229 "data/maps/Route101/scripts.pory"
 	applymovement 3, Route101_RivalToWally8
 	goto Route101_RivalBattle_Trigger_5
 
 Route101_RivalBattle_Trigger_37:
-# 229 "data/maps/Route101/scripts.pory"
+# 231 "data/maps/Route101/scripts.pory"
 	applymovement 3, Route101_RivalToWally9
 	goto Route101_RivalBattle_Trigger_5
 
 Route101_RivalBattle_Trigger_38:
-# 231 "data/maps/Route101/scripts.pory"
+# 233 "data/maps/Route101/scripts.pory"
 	applymovement 3, Route101_RivalToWally10
 	goto Route101_RivalBattle_Trigger_5
 
 Route101_RivalBattle_Trigger_40:
-# 158 "data/maps/Route101/scripts.pory"
+# 160 "data/maps/Route101/scripts.pory"
 	trainerbattle_no_intro TRAINER_MAY_ROUTE_101_TREECKO, Route101_Text_RivalDefeated
 	goto Route101_RivalBattle_Trigger_1
 
 Route101_RivalBattle_Trigger_41:
-# 160 "data/maps/Route101/scripts.pory"
+# 162 "data/maps/Route101/scripts.pory"
 	trainerbattle_no_intro TRAINER_MAY_ROUTE_101_TORCHIC, Route101_Text_RivalDefeated
 	goto Route101_RivalBattle_Trigger_1
 
 Route101_RivalBattle_Trigger_42:
-# 162 "data/maps/Route101/scripts.pory"
+# 164 "data/maps/Route101/scripts.pory"
 	trainerbattle_no_intro TRAINER_MAY_ROUTE_101_MUDKIP, Route101_Text_RivalDefeated
 	goto Route101_RivalBattle_Trigger_1
 
 Route101_RivalBattle_Trigger_44:
-# 195 "data/maps/Route101/scripts.pory"
+# 197 "data/maps/Route101/scripts.pory"
 	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_101_TREECKO, Route101_Text_RivalDefeated
 	goto Route101_RivalBattle_Trigger_1
 
 Route101_RivalBattle_Trigger_45:
-# 197 "data/maps/Route101/scripts.pory"
+# 199 "data/maps/Route101/scripts.pory"
 	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_101_TORCHIC, Route101_Text_RivalDefeated
 	goto Route101_RivalBattle_Trigger_1
 
 Route101_RivalBattle_Trigger_46:
-# 199 "data/maps/Route101/scripts.pory"
+# 201 "data/maps/Route101/scripts.pory"
 	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_101_MUDKIP, Route101_Text_RivalDefeated
 	goto Route101_RivalBattle_Trigger_1
 
 
-# 266 "data/maps/Route101/scripts.pory"
+# 268 "data/maps/Route101/scripts.pory"
 Route101_RivalToPlayer6:
-# 267 "data/maps/Route101/scripts.pory"
-	walk_down
-# 267 "data/maps/Route101/scripts.pory"
-	walk_down
-# 268 "data/maps/Route101/scripts.pory"
-	walk_left
-# 268 "data/maps/Route101/scripts.pory"
-	walk_left
-# 268 "data/maps/Route101/scripts.pory"
-	walk_left
-# 268 "data/maps/Route101/scripts.pory"
-	walk_left
 # 269 "data/maps/Route101/scripts.pory"
+	walk_down
+# 269 "data/maps/Route101/scripts.pory"
+	walk_down
+# 270 "data/maps/Route101/scripts.pory"
+	walk_left
+# 270 "data/maps/Route101/scripts.pory"
+	walk_left
+# 270 "data/maps/Route101/scripts.pory"
+	walk_left
+# 270 "data/maps/Route101/scripts.pory"
+	walk_left
+# 271 "data/maps/Route101/scripts.pory"
 	walk_in_place_faster_down
 	step_end
 
-# 272 "data/maps/Route101/scripts.pory"
+# 274 "data/maps/Route101/scripts.pory"
 Route101_RivalToPlayer7:
-# 273 "data/maps/Route101/scripts.pory"
-	walk_down
-# 273 "data/maps/Route101/scripts.pory"
-	walk_down
-# 274 "data/maps/Route101/scripts.pory"
-	walk_left
-# 274 "data/maps/Route101/scripts.pory"
-	walk_left
-# 274 "data/maps/Route101/scripts.pory"
-	walk_left
 # 275 "data/maps/Route101/scripts.pory"
+	walk_down
+# 275 "data/maps/Route101/scripts.pory"
+	walk_down
+# 276 "data/maps/Route101/scripts.pory"
+	walk_left
+# 276 "data/maps/Route101/scripts.pory"
+	walk_left
+# 276 "data/maps/Route101/scripts.pory"
+	walk_left
+# 277 "data/maps/Route101/scripts.pory"
 	walk_in_place_faster_down
 	step_end
 
-# 278 "data/maps/Route101/scripts.pory"
+# 280 "data/maps/Route101/scripts.pory"
 Route101_RivalToPlayer8:
-# 279 "data/maps/Route101/scripts.pory"
-	walk_down
-# 279 "data/maps/Route101/scripts.pory"
-	walk_down
-# 280 "data/maps/Route101/scripts.pory"
-	walk_left
-# 280 "data/maps/Route101/scripts.pory"
-	walk_left
 # 281 "data/maps/Route101/scripts.pory"
-	walk_in_place_faster_down
-	step_end
-
-# 284 "data/maps/Route101/scripts.pory"
-Route101_RivalToPlayer9:
-# 285 "data/maps/Route101/scripts.pory"
 	walk_down
-# 285 "data/maps/Route101/scripts.pory"
+# 281 "data/maps/Route101/scripts.pory"
 	walk_down
-# 286 "data/maps/Route101/scripts.pory"
+# 282 "data/maps/Route101/scripts.pory"
 	walk_left
-# 287 "data/maps/Route101/scripts.pory"
+# 282 "data/maps/Route101/scripts.pory"
+	walk_left
+# 283 "data/maps/Route101/scripts.pory"
 	walk_in_place_faster_down
 	step_end
 
-# 290 "data/maps/Route101/scripts.pory"
+# 286 "data/maps/Route101/scripts.pory"
+Route101_RivalToPlayer9:
+# 287 "data/maps/Route101/scripts.pory"
+	walk_down
+# 287 "data/maps/Route101/scripts.pory"
+	walk_down
+# 288 "data/maps/Route101/scripts.pory"
+	walk_left
+# 289 "data/maps/Route101/scripts.pory"
+	walk_in_place_faster_down
+	step_end
+
+# 292 "data/maps/Route101/scripts.pory"
 Route101_RivalToPlayer10:
-# 291 "data/maps/Route101/scripts.pory"
+# 293 "data/maps/Route101/scripts.pory"
 	walk_down
-# 291 "data/maps/Route101/scripts.pory"
+# 293 "data/maps/Route101/scripts.pory"
 	walk_down
 	step_end
 
-# 306 "data/maps/Route101/scripts.pory"
+# 308 "data/maps/Route101/scripts.pory"
 Route101_RivalToWally6:
-# 307 "data/maps/Route101/scripts.pory"
+# 309 "data/maps/Route101/scripts.pory"
 	walk_right
-# 307 "data/maps/Route101/scripts.pory"
+# 309 "data/maps/Route101/scripts.pory"
 	walk_right
-# 307 "data/maps/Route101/scripts.pory"
+# 309 "data/maps/Route101/scripts.pory"
 	walk_right
-# 307 "data/maps/Route101/scripts.pory"
+# 309 "data/maps/Route101/scripts.pory"
 	walk_right
-# 308 "data/maps/Route101/scripts.pory"
+# 310 "data/maps/Route101/scripts.pory"
 	walk_up
-# 308 "data/maps/Route101/scripts.pory"
+# 310 "data/maps/Route101/scripts.pory"
 	walk_up
-# 308 "data/maps/Route101/scripts.pory"
+# 310 "data/maps/Route101/scripts.pory"
 	walk_up
 	step_end
 
-# 311 "data/maps/Route101/scripts.pory"
+# 313 "data/maps/Route101/scripts.pory"
 Route101_RivalToWally7:
-# 312 "data/maps/Route101/scripts.pory"
+# 314 "data/maps/Route101/scripts.pory"
 	walk_right
-# 312 "data/maps/Route101/scripts.pory"
+# 314 "data/maps/Route101/scripts.pory"
 	walk_right
-# 312 "data/maps/Route101/scripts.pory"
+# 314 "data/maps/Route101/scripts.pory"
 	walk_right
-# 313 "data/maps/Route101/scripts.pory"
+# 315 "data/maps/Route101/scripts.pory"
 	walk_up
-# 313 "data/maps/Route101/scripts.pory"
+# 315 "data/maps/Route101/scripts.pory"
 	walk_up
-# 313 "data/maps/Route101/scripts.pory"
+# 315 "data/maps/Route101/scripts.pory"
 	walk_up
 	step_end
 
-# 316 "data/maps/Route101/scripts.pory"
+# 318 "data/maps/Route101/scripts.pory"
 Route101_RivalToWally8:
-# 317 "data/maps/Route101/scripts.pory"
+# 319 "data/maps/Route101/scripts.pory"
 	walk_right
-# 317 "data/maps/Route101/scripts.pory"
+# 319 "data/maps/Route101/scripts.pory"
 	walk_right
-# 318 "data/maps/Route101/scripts.pory"
+# 320 "data/maps/Route101/scripts.pory"
 	walk_up
-# 318 "data/maps/Route101/scripts.pory"
+# 320 "data/maps/Route101/scripts.pory"
 	walk_up
-# 318 "data/maps/Route101/scripts.pory"
+# 320 "data/maps/Route101/scripts.pory"
 	walk_up
 	step_end
 
-# 321 "data/maps/Route101/scripts.pory"
+# 323 "data/maps/Route101/scripts.pory"
 Route101_RivalToWally9:
-# 322 "data/maps/Route101/scripts.pory"
+# 324 "data/maps/Route101/scripts.pory"
 	walk_right
-# 323 "data/maps/Route101/scripts.pory"
+# 325 "data/maps/Route101/scripts.pory"
 	walk_up
-# 323 "data/maps/Route101/scripts.pory"
+# 325 "data/maps/Route101/scripts.pory"
 	walk_up
-# 323 "data/maps/Route101/scripts.pory"
+# 325 "data/maps/Route101/scripts.pory"
 	walk_up
 	step_end
 
-# 326 "data/maps/Route101/scripts.pory"
+# 328 "data/maps/Route101/scripts.pory"
 Route101_RivalToWally10:
-# 327 "data/maps/Route101/scripts.pory"
+# 329 "data/maps/Route101/scripts.pory"
 	walk_up
-# 327 "data/maps/Route101/scripts.pory"
+# 329 "data/maps/Route101/scripts.pory"
 	walk_up
-# 327 "data/maps/Route101/scripts.pory"
+# 329 "data/maps/Route101/scripts.pory"
 	walk_up
 	step_end
 
-# 330 "data/maps/Route101/scripts.pory"
+# 332 "data/maps/Route101/scripts.pory"
 Route101_RivalToLab:
-# 331 "data/maps/Route101/scripts.pory"
+# 333 "data/maps/Route101/scripts.pory"
 	walk_up
-# 331 "data/maps/Route101/scripts.pory"
+# 333 "data/maps/Route101/scripts.pory"
 	walk_up
-# 331 "data/maps/Route101/scripts.pory"
+# 333 "data/maps/Route101/scripts.pory"
 	walk_up
-# 331 "data/maps/Route101/scripts.pory"
+# 333 "data/maps/Route101/scripts.pory"
 	walk_up
-# 331 "data/maps/Route101/scripts.pory"
+# 333 "data/maps/Route101/scripts.pory"
 	walk_up
 	step_end
 
 Route101_GirlWalking::
-# 335 "data/maps/Route101/scripts.pory"
+# 337 "data/maps/Route101/scripts.pory"
 	msgbox Route101_Text_GirlWalking, MSGBOX_NPC
 	return
 
 
 Route101_Ronnie_Eventscript::
-# 343 "data/maps/Route101/scripts.pory"
-	trainerbattle_single TRAINER_RONNIE, Route101_Ronnie_Intro, Route101_Ronnie_Defeated
-# 344 "data/maps/Route101/scripts.pory"
-	msgbox Route101_Ronnie_PostBattle
 # 345 "data/maps/Route101/scripts.pory"
+	trainerbattle_single TRAINER_RONNIE, Route101_Ronnie_Intro, Route101_Ronnie_Defeated
+# 346 "data/maps/Route101/scripts.pory"
+	msgbox Route101_Ronnie_PostBattle
+# 347 "data/maps/Route101/scripts.pory"
 	closemessage
 	return
 
 
 Route101_RivalBattle_Trigger_Text_0:
-# 245 "data/maps/Route101/scripts.pory"
+# 247 "data/maps/Route101/scripts.pory"
 	.string "Wally: Wait for me!$"
 
 Route101_ItsDangerous::
@@ -776,13 +780,13 @@ Route101_ItsDangerous::
 	.string "I recommend you come back with one.$"
 
 Route101_Text_DudeInGrass::
-# 120 "data/maps/Route101/scripts.pory"
+# 122 "data/maps/Route101/scripts.pory"
 	.string "Searching for Pokémon in tall grass is\n"
 	.string "so fun!\p"
 	.string "The other day, I even found a Pikachu!$"
 
 Route101_Text_MayVsWally::
-# 258 "data/maps/Route101/scripts.pory"
+# 260 "data/maps/Route101/scripts.pory"
 	.string "May: Wally! I challenge you to a Pokémon\n"
 	.string "battle!\p"
 	.string "Wally: What? Me? A Pokémon battle?\p"
@@ -793,7 +797,7 @@ Route101_Text_MayVsWally::
 	.string "learn.$"
 
 Route101_Text_BrendanVsWally::
-# 262 "data/maps/Route101/scripts.pory"
+# 264 "data/maps/Route101/scripts.pory"
 	.string "Brendan: Wally! I challenge you to a\n"
 	.string "Pokémon battle!\p"
 	.string "Wally: What? Me? A Pokémon battle?\p"
@@ -804,34 +808,34 @@ Route101_Text_BrendanVsWally::
 	.string "learn.$"
 
 Route101_Text_LetsBattle::
-# 294 "data/maps/Route101/scripts.pory"
+# 296 "data/maps/Route101/scripts.pory"
 	.string "Alright {PLAYER}, let's battle!$"
 
 Route101_Text_RivalDefeated::
-# 298 "data/maps/Route101/scripts.pory"
+# 300 "data/maps/Route101/scripts.pory"
 	.string "Wow, {PLAYER}...\n"
 	.string "You sure are good at this!$"
 
 Route101_Text_RivalLetsGoToLab::
-# 302 "data/maps/Route101/scripts.pory"
+# 304 "data/maps/Route101/scripts.pory"
 	.string "You're a natural!\p"
 	.string "Anyways, let's go to my dad's lab.$"
 
 Route101_Text_GirlWalking::
-# 338 "data/maps/Route101/scripts.pory"
+# 340 "data/maps/Route101/scripts.pory"
 	.string "Did you know that if you keep walking in\n"
 	.string "tall grass, you'll eventually stumble\l"
 	.string "upon a wild Pokémon?$"
 
 Route101_Ronnie_Intro::
-# 348 "data/maps/Route101/scripts.pory"
+# 350 "data/maps/Route101/scripts.pory"
 	.string "When two trainers' eyes meet, it means\n"
 	.string "they have to battle!$"
 
 Route101_Ronnie_Defeated::
-# 352 "data/maps/Route101/scripts.pory"
+# 354 "data/maps/Route101/scripts.pory"
 	.string "I lost...$"
 
 Route101_Ronnie_PostBattle::
-# 356 "data/maps/Route101/scripts.pory"
+# 358 "data/maps/Route101/scripts.pory"
 	.string "Now you know how battling works!$"

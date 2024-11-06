@@ -1446,13 +1446,13 @@ void SetShoalItemFlag(u16 unused)
 void LoadWallyZigzagoon(void)
 {
     u16 monData;
-    if (VAR_STARTER_MON == 0) 
+    if (VarGet(VAR_STARTER_MON) == 0)
     {
         CreateMon(&gPlayerParty[0], SPECIES_MUDKIP, 5, USE_RANDOM_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
         monData = MOVE_TACKLE;
         SetMonData(&gPlayerParty[0], MON_DATA_MOVE1, &monData);
     }
-    else if (VAR_STARTER_MON == 1) 
+    else if (VarGet(VAR_STARTER_MON) == 1) 
     {
         CreateMon(&gPlayerParty[0], SPECIES_TREECKO, 5, USE_RANDOM_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
         monData = MOVE_POUND;

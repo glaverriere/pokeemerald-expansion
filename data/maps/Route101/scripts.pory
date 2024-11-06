@@ -110,9 +110,11 @@ movement Route101_4Playerto12 {
 }
 
 script Route101_DudeInGrass {
-	givemon(SPECIES_DRAGAPULT, 15)
-	givemon(SPECIES_ELECTIVIRE, 15)
-	givemon(SPECIES_CHARIZARD, 15)
+	givemon(SPECIES_DRAGAPULT, 14)
+	givemon(SPECIES_LAPRAS, 14)
+	givemon(SPECIES_CHARIZARD, 14)
+	givemon(SPECIES_GOGOAT, 14)
+	givemon(SPECIES_KYOGRE, 14)
 	giveitem(ITEM_QUICK_BALL, 100)
 	msgbox(Route101_Text_DudeInGrass, MSGBOX_NPC)
 }

@@ -7,7 +7,7 @@ script GladehavenTown_House_EventScript_Woman {
 }
 
 text GladehavenTown_House_Text_Woman {
-    format("Not_done")
+    format("Hi! My dad just outside our house loves to teach Fury cutter to random trainers passing by.\p If you haven't checked him out yet, you should.\p But he will only teach it to you once and he never forgets a face!")
 }
 
 script GladehavenTown_House_EventScript_Girl {
@@ -15,5 +15,5 @@ script GladehavenTown_House_EventScript_Girl {
 }
 
 text GladehavenTown_House_Text_Girl {
-    format("Not_done")
+    format("I'm so excited! Mom said we can go to the beach in Bay Harbor City later!")
 }

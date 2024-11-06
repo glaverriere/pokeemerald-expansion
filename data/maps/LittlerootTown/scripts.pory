@@ -27,3 +27,79 @@ script GladehavenTown_EventScript_Woman {
 text GladehavenTown_Text_Woman {
 	format("Professor Birch is really passionate about researching Pokémon!\p Also, I heard he is very generous with young trainers.")
 }
+
+script GLadehavenTown_Eventscript_ProfAide {
+	lockall
+	msgbox(GLadehavenTown_Text_ProfAide)
+	closemessage
+	releaseall
+}
+
+text GLadehavenTown_Text_ProfAide {
+	format("Are you {PLAYER}? Professor Birch wants to meet you at his lab.\p You should promptly go there.")
+}
+
+script GLadehavenTown_Eventscript_Trigger {
+	lockall
+	getplayerxy(VAR_TEMP_0, VAR_TEMP_1)
+	if (var(VAR_TEMP_1) == 5) {
+		turnobject(OBJ_EVENT_ID_PLAYER, DIR_NORTH)
+	}
+	elif (var(VAR_TEMP_1) == 6) {
+		applymovement(3, GLadehavenTown_movement1_ProfAide)
+		waitmovement(0)
+		turnobject(OBJ_EVENT_ID_PLAYER, DIR_NORTH)
+	}
+	elif (var(VAR_TEMP_1) == 7) {
+		applymovement(3, GLadehavenTown_movement2_ProfAide)
+		waitmovement(0)
+		turnobject(OBJ_EVENT_ID_PLAYER, DIR_NORTH)
+	}
+	else {
+		applymovement(3, GLadehavenTown_movement3_ProfAide)
+		waitmovement(0)
+		turnobject(OBJ_EVENT_ID_PLAYER, DIR_NORTH)
+	}
+	msgbox(GLadehavenTown_Text_ProfAide)
+	closemessage
+	applymovement(OBJ_EVENT_ID_PLAYER, GLadehavenTown_movement_Player)
+	if (var(VAR_TEMP_1) == 6) {
+		applymovement(3, GLadehavenTown_movement4_ProfAide)
+	}
+	elif (var(VAR_TEMP_1) == 7) {
+		applymovement(3, GLadehavenTown_movement5_ProfAide)
+	}
+	else {
+		applymovement(3, GLadehavenTown_movement6_ProfAide)
+	}
+	waitmovement(0)
+	releaseall
+}
+
+movement GLadehavenTown_movement1_ProfAide {
+	walk_down
+}
+
+movement GLadehavenTown_movement2_ProfAide {
+	walk_down * 2
+}
+
+movement GLadehavenTown_movement3_ProfAide {
+	walk_down * 3
+}
+
+movement GLadehavenTown_movement4_ProfAide {
+	walk_up
+}
+
+movement GLadehavenTown_movement5_ProfAide {
+	walk_up * 2
+}
+
+movement GLadehavenTown_movement6_ProfAide {
+	walk_up * 3
+}
+
+movement GLadehavenTown_movement_Player {
+	walk_right
+}

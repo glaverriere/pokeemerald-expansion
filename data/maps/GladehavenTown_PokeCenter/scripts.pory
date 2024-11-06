@@ -19,7 +19,7 @@ script GladehavenTown_PokeCenter_EventScript_Girl {
 }
 
 text GladehavenTown_PokeCenter_Text_Girl {
-	format("Not_done")
+	format("I'm taking a rest here with my Pokémon.\p The trainers down on Route 102 don't mess around!")
 }
 
 script GladehavenTown_PokeCenter_EventScript_PokeFan {
@@ -27,5 +27,5 @@ script GladehavenTown_PokeCenter_EventScript_PokeFan {
 }
 
 text GladehavenTown_PokeCenter_Text_PokeFan {
-	format("Not_done")
+	format("I like this Poké center.\n It's not too busy.")
 }
