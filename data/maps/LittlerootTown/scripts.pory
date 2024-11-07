@@ -30,6 +30,7 @@ text GladehavenTown_Text_Woman {
 
 script GLadehavenTown_Eventscript_ProfAide {
 	lockall
+	faceplayer
 	msgbox(GLadehavenTown_Text_ProfAide)
 	closemessage
 	releaseall
@@ -41,6 +42,7 @@ text GLadehavenTown_Text_ProfAide {
 
 script GLadehavenTown_Eventscript_Trigger {
 	lockall
+	turnobject(3, DIR_SOUTH)
 	getplayerxy(VAR_TEMP_0, VAR_TEMP_1)
 	if (var(VAR_TEMP_1) == 5) {
 		turnobject(OBJ_EVENT_ID_PLAYER, DIR_NORTH)
@@ -69,10 +71,11 @@ script GLadehavenTown_Eventscript_Trigger {
 	elif (var(VAR_TEMP_1) == 7) {
 		applymovement(3, GLadehavenTown_movement5_ProfAide)
 	}
-	else {
+	elif (var(VAR_TEMP_1) == 8) {
 		applymovement(3, GLadehavenTown_movement6_ProfAide)
 	}
 	waitmovement(0)
+	turnobject(3, DIR_SOUTH)
 	releaseall
 }
 

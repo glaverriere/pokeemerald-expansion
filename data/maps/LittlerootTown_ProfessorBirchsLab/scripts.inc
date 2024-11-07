@@ -108,6 +108,8 @@ GladehavenTown_ProfessorBirchsLab_OnFrame_1:
 # 64 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	setflag FLAG_HIDE_GLADEHAVEN_TOWN_BRENDAN
 # 65 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	setflag FLAG_HIDE_GLADEHAVEN_TOWN_PROFAIDE
+# 66 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	releaseall
 	return
 
@@ -130,86 +132,86 @@ GladehavenTown_ProfessorBirchsLab_OnFrame_3:
 	goto GladehavenTown_ProfessorBirchsLab_OnFrame_1
 
 
-# 68 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 69 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 GladehavenTown_ProfessorBirchsLab_Movement_PlayerEnterLabForPokedex:
-# 69 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 70 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	walk_up
-# 69 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 70 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	walk_up
-# 69 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 70 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	walk_up
-# 69 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 70 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	walk_up
-# 69 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 70 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	walk_up
-# 69 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 70 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	walk_up
 	step_end
 
 GladehavenTown_ProfessorBirchsLab_EventScript_Birch::
-# 101 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	lock
 # 102 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	faceplayer
+	lock
 # 103 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	goto ProfBirch_EventScript_RatePokedexOrRegister
+	faceplayer
 # 104 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
-	msgbox GladehavenTown_ProfessorBirchsLab_Text_CountlessPokemonAwaitting
+	goto ProfBirch_EventScript_RatePokedexOrRegister
 # 105 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+	msgbox GladehavenTown_ProfessorBirchsLab_Text_CountlessPokemonAwaitting
+# 106 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	release
 	return
 
 
 GladehavenTown_ProfessorBirchsLab_EventScript_Rival::
-# 109 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 110 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox GladehavenTown_ProfessorBirchsLab_Text_MeetUsInRoute102, MSGBOX_NPC
 	return
 
 
 GladehavenTown_ProfessorBirchsLab_EventScript_Wally::
-# 117 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 118 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox GladehavenTown_ProfessorBirchsLab_Text_Wally, MSGBOX_NPC
 	return
 
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Machine::
-# 129 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 130 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_SeriousLookingMachine, MSGBOX_SIGN
 	return
 
 
 LittlerootTown_ProfessorBirchsLab_EventScript_PC::
-# 133 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 134 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_PCUsedForResearch, MSGBOX_SIGN
 	return
 
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Bookshelf::
-# 137 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 138 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_CrammedWithBooksOnPokemon, MSGBOX_SIGN
 	return
 
 
 LittlerootTown_ProfessorBirchsLab_EventScript_Book::
-# 141 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 142 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_BookTooHardToRead, MSGBOX_SIGN
 	return
 
 
 GladehavenTown_ProfessorBirchsLab_EventScript_Aide1::
-# 145 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 146 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox GladehavenTown_ProfessorBirchsLab_Text_BirchIsntOneForDeskWork, MSGBOX_NPC
 	return
 
 
 GladehavenTown_ProfessorBirchsLab_EventScript_Aide2::
-# 153 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 154 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	msgbox GladehavenTown_ProfessorBirchsLab_Text_BirchEnjoysRivalsHelpToo, MSGBOX_NPC
 	return
 
 
 GladehavenTown_ProfessorBirchsLab_Text_HeardYouBeatRivalTakePokedex::
-# 72 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 73 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Prof. Birch: Oh, hi, Wally and {PLAYER}!\p"
 	.string "I heard you already had your first\n"
 	.string "battle a couple of minutes ago. That's\l"
@@ -226,11 +228,11 @@ GladehavenTown_ProfessorBirchsLab_Text_HeardYouBeatRivalTakePokedex::
 	.string "on Pokémon.$"
 
 GladehavenTown_ProfessorBirchsLab_Text_ReceivedPokedex::
-# 76 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 77 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "{PLAYER} received the Pokédex!$"
 
 GladehavenTown_ProfessorBirchsLab_Text_ExplainPokedex::
-# 80 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 81 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Prof. Birch: The Pokédex is a high-tech\n"
 	.string "tool that automatically makes a record\l"
 	.string "of any Pokémon you meet or catch.\p"
@@ -244,14 +246,14 @@ GladehavenTown_ProfessorBirchsLab_Text_ExplainPokedex::
 	.string "Please take these items.$"
 
 GladehavenTown_ProfessorBirchsLab_Text_MayGotPokedexTooTakeThese::
-# 84 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 85 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "May: Oh, wow, you guys!\n"
 	.string "You got a Pokédex, too!\p"
 	.string "That's great! Just like me!\n"
 	.string "I've got something for you, too!$"
 
 GladehavenTown_ProfessorBirchsLab_Text_CatchCutePokemonWithPokeBalls::
-# 88 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 89 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "May: It's fun if you can get a lot of\n"
 	.string "Pokémon!\p"
 	.string "I'm going to look all over the place\n"
@@ -262,14 +264,14 @@ GladehavenTown_ProfessorBirchsLab_Text_CatchCutePokemonWithPokeBalls::
 	.string "with a Poké ball.$"
 
 GladehavenTown_ProfessorBirchsLab_Text_BrendanGotPokedexTooTakeThese::
-# 92 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 93 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Brendan: Huh!\n"
 	.string "So you got a Pokédex, too.\p"
 	.string "Well then, here.\n"
 	.string "You should have these.$"
 
 GladehavenTown_ProfessorBirchsLab_Text_CatchCoolPokemonWithPokeBalls::
-# 96 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 97 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Brendan: You know it's more fun to have\n"
 	.string "a whole bunch of Pokémon.\p"
 	.string "I'm going to explore all over the place\n"
@@ -280,12 +282,12 @@ GladehavenTown_ProfessorBirchsLab_Text_CatchCoolPokemonWithPokeBalls::
 	.string "with a Poké ball.$"
 
 GladehavenTown_ProfessorBirchsLab_Text_MeetUsInRoute102::
-# 112 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 113 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Meet me and Wally in route 102.\n"
 	.string "We will learn how to catch Pokémon.$"
 
 GladehavenTown_ProfessorBirchsLab_Text_Wally::
-# 120 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 121 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "You've all shown me nothing but\n"
 	.string "generosity!\p"
 	.string "I don't know how will repay any of you...\p"
@@ -294,14 +296,14 @@ GladehavenTown_ProfessorBirchsLab_Text_Wally::
 	.string "as possible!$"
 
 GladehavenTown_ProfessorBirchsLab_Text_CountlessPokemonAwaitting::
-# 124 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 125 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Prof. Birch: Countless Pokémon await\n"
 	.string "you!\p"
 	.string "Argh, I'm getting the itch to get out\n"
 	.string "and do fieldwork again!$"
 
 GladehavenTown_ProfessorBirchsLab_Text_BirchIsntOneForDeskWork::
-# 148 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 149 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "The professor isn't one for doing desk\n"
 	.string "work.\p"
 	.string "He's the type of person who would\n"
@@ -309,26 +311,26 @@ GladehavenTown_ProfessorBirchsLab_Text_BirchIsntOneForDeskWork::
 	.string "things than read about them here.$"
 
 GladehavenTown_ProfessorBirchsLab_Text_BirchEnjoysRivalsHelpToo::
-# 156 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 157 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "Prof. Birch is studying the habitats\n"
 	.string "and distribution of Pokémon.\p"
 	.string "The Prof enjoys {RIVAL}'s help, too.\n"
 	.string "There's a lot of love there.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_SeriousLookingMachine::
-# 160 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 161 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "It's a serious-looking machine.\n"
 	.string "The Prof must use this for research.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_PCUsedForResearch::
-# 164 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 165 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "It's a PC used for research.\n"
 	.string "Better not mess around with it.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CrammedWithBooksOnPokemon::
-# 168 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 169 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "It's crammed with books on Pokémon.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BookTooHardToRead::
-# 172 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
+# 173 "data/maps/LittlerootTown_ProfessorBirchsLab/scripts.pory"
 	.string "It's a book that's too hard to read.$"

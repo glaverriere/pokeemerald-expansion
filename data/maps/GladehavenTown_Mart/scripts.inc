@@ -96,12 +96,16 @@ GladehavenTown_Mart_Clerk_Text_1:
 
 GladehavenTown_Mart_Text_Lass::
 # 45 "data/maps/GladehavenTown_Mart/scripts.pory"
-	.string "Not_done$"
+	.string "...\p"
+	.string "Oh sorry! I didn't see you there.\p"
+	.string "I was so concentrated filling this\n"
+	.string "application to work here.$"
 
 GladehavenTown_Mart_Text_Hiker::
 # 53 "data/maps/GladehavenTown_Mart/scripts.pory"
-	.string "Not_done$"
+	.string "I'm browsing healing items. It can be\n"
+	.string "handy to have them while on a trek!$"
 
 GladehavenTown_Mart_Text_Girl::
 # 61 "data/maps/GladehavenTown_Mart/scripts.pory"
-	.string "Not_done$"
+	.string "I love shopping so much!$"

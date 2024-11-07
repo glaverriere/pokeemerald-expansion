@@ -62,6 +62,7 @@ script GladehavenTown_ProfessorBirchsLab_OnFrame {
 	setflag(FLAG_HIDE_GLADEHAVEN_TOWN_WALLY)
 	setflag(FLAG_HIDE_GLADEHAVEN_TOWN_MAY)
 	setflag(FLAG_HIDE_GLADEHAVEN_TOWN_BRENDAN)
+	setflag(FLAG_HIDE_GLADEHAVEN_TOWN_PROFAIDE)
 	releaseall
 }
 

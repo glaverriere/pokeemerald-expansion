@@ -167,7 +167,7 @@ script Route102_Aston_Eventscript {
 }
 
 text Route102_Aston_Intro {
-	format("Hey! I want to show off the Pokémon I caught earlier in the woods!")
+	format("Hey! I want to show off the Pokémon I caught earlier in the forest!")
 }
 
 text Route102_Aston_Defeated {
@@ -201,7 +201,7 @@ script Route102_BerryMan_EventScript {
 }
 
 text Route102_BerryMan_Text {
-	format("Not_done")
+	format("Yo! I'm the berry man.\p Did you know that berry trees like these beside me grow all over Hoenn?\p Yeah! You can pick a berry from them, but then they will be gone for good...")
 }
 
 script Route102_Runner_EventScript {

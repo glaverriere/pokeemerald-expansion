@@ -38,8 +38,11 @@ GladehavenTown_PokeCenter_EventScript_PokeFan::
 
 GladehavenTown_PokeCenter_Text_Girl::
 # 21 "data/maps/GladehavenTown_PokeCenter/scripts.pory"
-	.string "Not_done$"
+	.string "I'm taking a rest here with my Pokémon.\p"
+	.string "The trainers down on Route 102 don't\n"
+	.string "mess around!$"
 
 GladehavenTown_PokeCenter_Text_PokeFan::
 # 29 "data/maps/GladehavenTown_PokeCenter/scripts.pory"
-	.string "Not_done$"
+	.string "I like this Poké center.\n"
+	.string "It's not too busy.$"

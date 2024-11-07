@@ -356,11 +356,12 @@ Route102_IDidIt_Text::
 	.string "{RIVAL}: Congrats! You did well.\p"
 	.string "What will you do next?\p"
 	.string "Wally: I think I'm going to go to the\n"
-	.string "Pokémon trainer school in Jello City.\p"
+	.string "Pokémon trainer school in Bay Harbor\l"
+	.string "City.\p"
 	.string "I want to know more about Pokémon\n"
 	.string "battling before I try it out for myself.\p"
 	.string "{RIVAL}: Good idea! I heard there's a\n"
-	.string "Pokémon gym in Jello City.\p"
+	.string "Pokémon gym in Bay Harbor City.\p"
 	.string "I think I will try to challenge the gym\n"
 	.string "leader for a badge.$"
 
@@ -373,14 +374,14 @@ Route102_YoushouldToo_Text::
 
 Route102_IllFollowRival_Text::
 # 159 "data/maps/Route102/scripts.pory"
-	.string "Wally: I'll follow {RIVAL} to Jello\n"
-	.string "city just to be safe.\p"
+	.string "Wally: I'll follow {RIVAL} to Bay\n"
+	.string "Harbor City just to be safe.\p"
 	.string "Bye!$"
 
 Route102_Aston_Intro::
 # 169 "data/maps/Route102/scripts.pory"
 	.string "Hey! I want to show off the Pokémon I\n"
-	.string "caught earlier in the woods!$"
+	.string "caught earlier in the forest!$"
 
 Route102_Aston_Defeated::
 # 173 "data/maps/Route102/scripts.pory"
@@ -406,7 +407,11 @@ Route102_Julia_PostBattle::
 
 Route102_BerryMan_Text::
 # 203 "data/maps/Route102/scripts.pory"
-	.string "Not_done$"
+	.string "Yo! I'm the berry man.\p"
+	.string "Did you know that berry trees like\n"
+	.string "these beside me grow all over Hoenn?\p"
+	.string "Yeah! You can pick a berry from them,\n"
+	.string "but then they will be gone for good...$"
 
 Route102_Runner_Text::
 # 211 "data/maps/Route102/scripts.pory"

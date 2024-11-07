@@ -539,9 +539,9 @@
 
 // Hidden Items
 #define FLAG_HIDDEN_ITEMS_START                                                         0x1F4
-#define FLAG_HIDDEN_ITEM_LAVARIDGE_TOWN_ICE_HEAL             (FLAG_HIDDEN_ITEMS_START + 0x00)
-#define FLAG_HIDDEN_ITEM_TRICK_HOUSE_NUGGET                  (FLAG_HIDDEN_ITEMS_START + 0x01)
-#define FLAG_HIDDEN_ITEM_ROUTE_111_STARDUST                  (FLAG_HIDDEN_ITEMS_START + 0x02)
+#define FLAG_HIDDEN_ITEM_SHADE_FOREST_BIG_MUSHROOM           (FLAG_HIDDEN_ITEMS_START + 0x00)
+#define FLAG_HIDDEN_ITEM_SHADE_FOREST_SILVER_POWDER          (FLAG_HIDDEN_ITEMS_START + 0x01)
+#define FLAG_HIDDEN_ITEM_SHADE_FOREST_LAX_MINT               (FLAG_HIDDEN_ITEMS_START + 0x02)
 #define FLAG_HIDDEN_ITEM_ROUTE_113_ETHER                     (FLAG_HIDDEN_ITEMS_START + 0x03)
 #define FLAG_HIDDEN_ITEM_ROUTE_114_CARBOS                    (FLAG_HIDDEN_ITEMS_START + 0x04)
 #define FLAG_HIDDEN_ITEM_ROUTE_119_CALCIUM                   (FLAG_HIDDEN_ITEMS_START + 0x05)
@@ -800,8 +800,8 @@
 #define FLAG_HIDE_WALLY_PKMNSCHOOL                                  0x2F1
 #define FLAG_HIDE_ROXANNE_PKMNSCHOOL                                0x2F2
 #define FLAG_HIDE_TEACHER_PKMNSCHOOL                                0x2F3
-#define FLAG_HIDE_RUSTBOROCITY_GYMGUIDE                            0x2F4
-#define FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_BEDROOM_MOM               0x2F5
+#define FLAG_HIDE_RUSTBOROCITY_GYMGUIDE                             0x2F4
+#define FLAG_HIDE_GLADEHAVEN_TOWN_PROFAIDE                          0x2F5
 #define FLAG_HIDE_TEST_TOWN_BRENDANS_HOUSE_MOM                      0x2F6
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_MOM                    0x2F7
 #define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_BEDROOM      0x2F8
@@ -1046,9 +1046,9 @@
 #define FLAG_HIDE_RUSTBORO_CITY_POKEMON_SCHOOL_SCOTT                0x3E7
 
 // Item Ball Flags
-#define FLAG_ITEM_ROUTE_102_POTION                                  0x3E8
-#define FLAG_ITEM_ROUTE_116_X_SPECIAL                               0x3E9
-#define FLAG_ITEM_ROUTE_104_PP_UP                                   0x3EA
+#define FLAG_ITEM_SHADE_FOREST_TM_CHARM                             0x3E8
+#define FLAG_ITEM_SHADE_FOREST_FLUFFY_TAIL                          0x3E9
+#define FLAG_ITEM_SHADE_FOREST_SOOTHE_BELL                          0x3EA
 #define FLAG_ITEM_ROUTE_105_IRON                                    0x3EB
 #define FLAG_ITEM_ROUTE_106_PROTEIN                                 0x3EC
 #define FLAG_ITEM_ROUTE_109_PP_UP                                   0x3ED
