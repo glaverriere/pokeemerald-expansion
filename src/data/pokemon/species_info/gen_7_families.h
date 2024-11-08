@@ -1663,8 +1663,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .levelUpLearnset = sCutieflyLevelUpLearnset,
         .teachableLearnset = sCutieflyTeachableLearnset,
         .eggMoveLearnset = sCutieflyEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_RIBOMBEE},
-                                {EVO_NONE, 0, SPECIES_RIBOMBEE_TOTEM}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_RIBOMBEE}),
     },
 
     [SPECIES_RIBOMBEE] =
@@ -2708,8 +2707,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .levelUpLearnset = sFomantisLevelUpLearnset,
         .teachableLearnset = sFomantisTeachableLearnset,
         .eggMoveLearnset = sFomantisEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL_DAY, 34, SPECIES_LURANTIS},
-                                {EVO_NONE, 0, SPECIES_LURANTIS_TOTEM}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_LURANTIS}),
     },
 
     [SPECIES_LURANTIS] =
@@ -3019,8 +3017,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .levelUpLearnset = sSalanditLevelUpLearnset,
         .teachableLearnset = sSalanditTeachableLearnset,
         .eggMoveLearnset = sSalanditEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL_FEMALE, 33, SPECIES_SALAZZLE},
-                                {EVO_NONE, 0, SPECIES_SALAZZLE_TOTEM}),
+        .evolutions = EVOLUTION({EVO_LEVEL_FEMALE, 33, SPECIES_SALAZZLE}),
     },
 
     [SPECIES_SALAZZLE] =

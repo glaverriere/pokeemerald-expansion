@@ -299,33 +299,53 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Geodude
+Geodude @ Salac Berry
 Level: 15
+Impish Nature
 Ability: Sturdy
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Flail
 - Rock Polish
 
-Aron
+Phanpy @ Sitrus Berry
 Level: 15
-Ability: Rock Head
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Adamant Nature
+Ability: Sand Veil
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Bulldoze
+- Facade
+- Thief
+- Charm
 
-Geodude
+Rhyhorn @ Passho Berry
 Level: 15
-Ability: Rock Head
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Take down
-- Defense Curl
-- Rock Throw
-
-Rhyhorn
-Level: 15
+Impish Nature
 Ability: Rock Head
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Take Down
 - Bulldoze
 - Rock Throw
+- Curse
+
+Sandile @ Bright Powder
+Level: 15
+Adamant Nature
+Ability: Intimidate
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Sand Attack
+- Hone Claws
+- Power Trip
+- Bulldoze
+
+Swinub @ Chesto Berry
+Level: 15
+Jolly Nature
+Ability: Thick Fat
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Ice Shard
+- Bulldoze
+- Bite
+- Rest
 
 === TRAINER_TOMMY ===
 Name: Tommy
@@ -336,19 +356,25 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Geodude
+Numel @ Quick Claw
 Level: 15
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+Impish Nature
+Ability: Simple
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Curse
+- Bulldoze
+- Flame Charge
+- Stomp
 
-Aron
+Barboach @ Salac Berry
 Level: 15
-Ability: Heavy Metal
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
-
-Onix
-Level: 15
-Ability: Weak Armor
-IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+Naive Nature
+Ability: Oblivious
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Spark
+- Water Pulse
+- Mud Shot
+- Aqua Jet
 
 === TRAINER_MARC ===
 Name: Marc
@@ -359,18 +385,35 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Geodude-Alola
+Trapinch @ Sitrus Berry
 Level: 15
-Ability: Rock Head
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
-
-Rhyhorn
-Level: 15
+Brave Nature
+Ability: Arena Trap
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Bug Bite
+- First Impression
+- Dig
+- Bite
 
-Shuckle
+Nincada @ Eviolite
 Level: 15
+Impish Nature
+Ability: Compound Eyes
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Bug Bite
+- Flail
+- Dig
+- Aerial Ace
+
+Toedscool @ Miracle Seed
+Level: 15
+Calm Nature
+Ability: Mycelium Might
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Acid Spray
+- Mega Drain
+- Mud Shot
+- Leech Seed
 
 === TRAINER_GRUNT_RUSTURF_TUNNEL ===
 Name: GRUNT
@@ -4881,7 +4924,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Crunch
 
 === TRAINER_ROXANNE_1 ===
-Name: ROXANNE
+Name: Roxanne
 Class: Leader
 Pic: Leader Roxanne
 Gender: Female
@@ -4889,65 +4932,65 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Geodude @ Rocky Helmet
+Hippopotas @ Smooth Rock
 Level: 15
 Impish Nature
-Ability: Sturdy
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Ability: Sand Stream
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Bulldoze
-- Rock Polish
-- Rock Throw
-- Rock Tomb
+- Spikes
+- Roar
+- Bite
 
-Geodude-Alola @ Luminous Moss
+Sandshrew @ ITEM_KINGS_ROCK
 Level: 15
 Impish Nature
-Ability: Sturdy
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Spark
-- Flail
-- Rock Throw
-- Rollout
-
-Nosepass @ Sitrus Berry
-Level: 15
-Relaxed Nature
-Ability: Sturdy
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Block
-- Thunder Wave
-- Sand Tomb
-- Rock Tomb
-
-Rhyhorn @ Oran Berry
-Level: 15
-Impish Nature
-Ability: Rock Head
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Horn Attack
+Ability: Sand Rush
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Bulldoze
-- Smack Down
-- Curse
-
-Anorith @ ITEM_KINGS_ROCK
-Level: 15
-Adamant Nature
-Ability: Battle Armor
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Fury Cutter
 - Smack Down
 - Metal Claw
-- Aqua Jet
+- Flail
 
-Lileep @ Tanga Berry
+Geodude @ Quick Claw
 Level: 15
-Calm Nature
-Ability: Storm Drain
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Ancient Power
-- Ingrain
-- Acid
-- Absorb
+Impish Nature
+Ability: Sand Veil
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Bulldoze
+- Rollout
+- Sandstorm
+- Dynamic Punch
+
+Sandygast @ Sitrus Berry
+Level: 15
+Bold Nature
+Ability: Water Compaction
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Mud shot
+- Mega Drain
+- Hex
+- Confuse Ray
+
+SPECIES_WOOPER_PALDEAN @ Eviolite
+Level: 15
+Bashful Nature
+Ability: Poison Point
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Bulldoze
+- Trailblaze
+- Acid Spray
+- Water Pulse
+
+Baltoy @ Tanga Berry
+Level: 15
+Bashful Nature
+Ability: Levitate
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Psybeam
+- Bulldoze
+- Reflect
+- Light Screen
 
 === TRAINER_BRAWLY_1 ===
 Name: BRAWLY
