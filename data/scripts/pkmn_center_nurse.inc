@@ -16,6 +16,7 @@ EventScript_PkmnCenterNurse_HealPkmn::
 	call EventScript_PkmnCenterNurse_IllTakeYourPkmn
 	waitmessage
 	call EventScript_PkmnCenterNurse_TakeAndHealPkmn
+	msgbox gText_WeHopeToSeeYouAgain
 	closemessage
 	end
 

@@ -1,27 +1,33 @@
+mapscripts RustboroCity_DevonCorp_1F_MapScripts {
+	MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_RUSTBORO_CITY_STATE, 0: RustboroCity_DevonCorp_1F_OnFrame
+		VAR_RUSTBORO_CITY_STATE, 1: RustboroCity_DevonCorp_1F_OnFrame
+		VAR_RUSTBORO_CITY_STATE, 2: RustboroCity_DevonCorp_1F_OnFrame
+    ]
+}
+
+script RustboroCity_DevonCorp_1F_OnFrame {
+	lockall
+	getplayerxy(VAR_TEMP_0, VAR_TEMP_1)
+	if (var(VAR_TEMP_0) == 5) {
+		turnobject(11, DIR_EAST)
+		msgbox(RustboroCityDevonCorps1F_AquaGrunt_GetOutOfHere)
+		closemessage
+		applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown)
+		warp(MAP_RUSTBORO_CITY, 25, 15)
+	}
+	else {
+		turnobject(10, DIR_WEST)
+		msgbox(RustboroCityDevonCorps1F_AquaGrunt_GetOutOfHere)
+		closemessage
+		applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown)
+		warp(MAP_RUSTBORO_CITY, 26, 15)
+	}
+	releaseall
+}
+
 raw `
 .set LOCALID_STAIR_GUARD, 2
-
-RustboroCity_DevonCorp_1F_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, RustboroCity_DevonCorp_1F_OnTransition
-	.byte 0
-
-RustboroCity_DevonCorp_1F_OnTransition:
-	call_if_unset FLAG_RETURNED_DEVON_GOODS, RustboroCity_DevonCorp_1F_EventScript_BlockStairs
-	end
-
-RustboroCity_DevonCorp_1F_EventScript_BlockStairs::
-	setobjectxyperm LOCALID_STAIR_GUARD, 14, 2
-	setobjectmovementtype LOCALID_STAIR_GUARD, MOVEMENT_TYPE_FACE_DOWN
-	return
-
-RustboroCity_DevonCorp_1F_EventScript_Employee::
-	lock
-	faceplayer
-	goto_if_set FLAG_RETURNED_DEVON_GOODS, RustboroCity_DevonCorp_1F_EventScript_GoodsRecovered
-	goto_if_set FLAG_DEVON_GOODS_STOLEN, RustboroCity_DevonCorp_1F_EventScript_RobberWasntBright
-	msgbox RustboroCity_DevonCorp_1F_Text_ThoseShoesAreOurProduct, MSGBOX_DEFAULT
-	release
-	end
 
 RustboroCity_DevonCorp_1F_EventScript_RobberWasntBright::
 	msgbox RustboroCity_DevonCorp_1F_Text_RobberWasntVeryBright, MSGBOX_DEFAULT
@@ -146,3 +152,11 @@ RustboroCity_DevonCorp_1F_Text_ProductDisplay:
 	.string "POKé BALLS and POKéNAV systems.”$"
 
 `
+
+text RustboroCityDevonCorps1F_AquaGrunt_GetOutOfHere {
+	format("Hey!\n You're not supposed to be here.\p Get out!")
+}
+
+movement RustboroCityDevonCorps1F_MovementDown {
+	walk_down
+}
