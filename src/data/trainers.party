@@ -90,9 +90,35 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Zigzagoon
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Zigzagoon @ Oran Berry
+Level: 12
+Jolly Nature
+Ability: Gluttony
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Headbutt
+- Baby-Doll Eyes
+- Thief
+- Work Up
+
+Zigzagoon @ Oran Berry
+Level: 12
+Timid Nature
+Ability: Quick Feet
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Water Pulse
+- Grass Knot
+- Shock Wave
+- Mud Slap
+
+Zigzagoon @ Oran Berry
+Level: 12
+Serious Nature
+Ability: Pickup
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Tickle
+- Facade
+- Sand Attack
+- Charge Beam
 
 === TRAINER_ASTON ===
 Name: Aston
@@ -103,9 +129,35 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Wurmple
+Wurmple @ Silver Powder
 Level: 12
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Adamant Nature
+Ability: Shield Dust
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Bug Bite
+- Poison Sting
+- String Shot
+- Tackle
+
+Cascoon @ Oran Berry
+Level: 12
+Impish Nature
+Ability: Shed Skin
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Bug Bite
+- Poison Sting
+- String Shot
+- Harden
+
+Silcoon @ Oran Berry
+Level: 12
+Impish Nature
+Ability: Shed Skin
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Bug Bite
+- Poison Sting
+- String Shot
+- Harden
 
 === TRAINER_JULIA ===
 Name: Julia
@@ -116,13 +168,35 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Zigzagoon
+Lotad @ Lax Incense
 Level: 12
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Calm Nature
+Ability: Own Tempo
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Astonish
+- Mega Drain
+- Water Gun
+- Teeter Dance
 
-Lotad
+Charcadet @ Quick Claw
 Level: 12
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Hardy Nature
+Ability: Flame Body
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Clear Smog
+- Fire Spin
+- Astonish
+- Will O Wisp
+
+Zubat @ Wide Lens
+Level: 12
+Jolly Nature
+Ability: Inner Focus
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Poison Fang
+- Supersonic
+- Wing Attack
+- Hypnosis
 
 === TRAINER_BILLY_1 ===
 Name: Billy
@@ -133,9 +207,45 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Cascoon
+Nincada @ Sitrus Berry
 Level: 12
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Impish Nature
+Ability: Compound Eyes
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Bug Bite
+- Night Slash
+- Dig
+- Harden
+
+Surskit @ Mystic Water
+Level: 12
+Timid Nature
+Ability: Swift Swim
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Mud Shot
+- Psybeam
+- Bubble Beam
+- Quick Attack
+
+Poochyena @ Shell Bell
+Level: 13
+Adamant Nature
+Ability: Quick Feet
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Bite
+- Poison Fang
+- Howl
+- Astonish
+
+Bronzor @ Light Clay
+Level: 12
+Quirky Nature
+Ability: Levitate
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Confusion
+- Confuse Ray
+- Payback
+- Reflect
 
 === TRAINER_SHAWN_1 ===
 Name: Shawn
@@ -146,9 +256,45 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Silcoon
+Inkay @ Razor Fang
 Level: 12
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Quirky Nature
+Ability: Suction Cups
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Payback
+- Pluck
+- Hypnosis
+- Acupressure
+
+Axew @ Roseli Berry
+Level: 12
+Adamant Nature
+Ability: Mold Breaker
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Leer
+- Slash
+- Bite
+- Breaking Swipe
+
+Shuppet @ Starf Berry
+Level: 12
+Adamant Nature
+Ability: Insomnia
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Astonish
+- Destiny Bond
+- Screech
+- Metronome
+
+Pawmi @ Focus Band
+Level: 12
+Jolly Nature
+Ability: Static
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Nuzzle
+- Fake Out
+- Mach Punch
+- Spark
 
 === TRAINER_JIMMY ===
 Name: Jimmy
@@ -159,9 +305,41 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Wurmple
+Nincada @ Metronome
 Level: 12
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Adamant Nature
+Ability: Compound Eyes
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Fury Cutter
+
+Combee @ Mirror Herb
+Level: 12
+Jolly Nature
+Ability: Hustle
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Bug Bite
+- Endeavor
+- Gust
+
+Rookidee @ Oran Berry
+Level: 12
+Jolly Nature
+Ability: Keen Eye
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Pluck
+- Hone Claws
+- Power Trip
+- Roost
+
+Staryu @ Wave Incense
+Level: 12
+Quiet Nature
+Ability: Analytic
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 0 Spe
+- Water Pulse
+- Harden
+- Confuse Ray
+- Protect
 
 === TRAINER_GABRIEL ===
 Name: Gabriel
@@ -172,9 +350,45 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Pidgey
+Teddiursa
 Level: 12
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Adamant Nature
+Ability: Quick Feet
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Covet
+- Payback
+- Metal Claw
+- Yawn
+
+Seedot
+Level: 12
+Impish Nature
+Ability: Pickpocket
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Rollout
+- Leech Seed
+- Quick Attack
+- Trailblaze
+
+Gulpin @ Apicot Berry
+Level: 12
+Bashful Nature
+Ability: Liquid Ooze
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Stuff Cheeks
+- Poison Gas
+- Sludge
+- Facade
+
+Rolycoly @ Passho Berry
+Level: 12
+Bashful Nature
+Ability: Steam Engine
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Smack Down
+- Rapid Spin
+- Mud Slap
+- Smokescreen
 
 === TRAINER_CALVIN_1 ===
 Name: Calvin
@@ -185,9 +399,45 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Surskit
+Yanma @ Sitrus Berry
 Level: 12
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Modest Nature
+Ability: Speed Boost
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Protect
+- Air Cutter
+- Struggle Bug
+- Double Team
+
+Surskit @ Expert Belt
+Level: 12
+Timid Nature
+Ability: Rain Dish
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Soak
+- Aqua Jet
+- Struggle Bug
+- Chilling Water
+
+Snorunt @ White Herb
+Level: 12
+Quirky Nature
+Ability: Moody
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Ice Shard
+- Powder Snow
+- Headbutt
+- Water Pulse
+
+SPECIES_MEOWTH_GALARIAN @ Sitrus Berry
+Level: 12
+Adamant Nature
+Ability: Tough Claws
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Metal Claw
+- Fake Out
+- Hone Claws
+- Covet
 
 === TRAINER_TYLER ===
 Name: Tyler
@@ -198,13 +448,25 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Wurmple
+Beautifly @ Oran Berry
 Level: 12
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Modest Nature
+Ability: Swarm
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Gust
+- Stun Spore
+- Mega Drain
+- Struggle Bug
 
-Caterpie
+Dustox @ Oran Berry
 Level: 12
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Bashful Nature
+Ability: Shield Dust
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Bug Bite
+- Poison Powder
+- Confusion
+- Acid Spray
 
 === TRAINER_KIM ===
 Name: Kim
@@ -215,15 +477,25 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Taillow
+Taillow @ Silk Scarf
 Level: 12
 Adamant Nature
+Ability: Guts
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Quick Attack
+- Wing Attack
+- Focus Energy
+- Work Up
 
-Yanma
+Poochyena @ Quick Claw
 Level: 12
 Adamant Nature
+Ability: Rattled
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Howl
+- Bite
+- Headbutt
+- Dig
 
 === TRAINER_DAVE ===
 Name: Dave
@@ -234,9 +506,25 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Zigzagoon
-Level: 13
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Slakoth @ Leftovers
+Level: 12
+Adamant Nature
+Ability: Truant
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Yawn
+- Slack Off
+- Headbutt
+- Night Slash
+
+Starly @ Lum Berry
+Level: 12
+Jolly Nature
+Ability: Keen Eye
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Quick Attack
+- Wing Attack
+- Feather Dance
+- Astonish
 
 === TRAINER_EVA ===
 Name: Eva
@@ -247,9 +535,25 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Wingull
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ralts @ Wide Lens
+Level: 12
+Modest Nature
+Ability: Trace
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Draining Kiss
+- Psybeam
+- Confuse Ray
+- Hypnosis
+
+Riolu @ ITEM_KINGS_ROCK
+Level: 12
+Adamant Nature
+Ability: Prankster
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Bulk Up
+- Bullet Punch
+- Counter
+- Low Kick
 
 === TRAINER_WALLY_SCHOOL_MUDKIP ===
 Name: Wally
@@ -260,9 +564,25 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Mudkip
+Mudkip @ Sitrus Berry
 Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Adamant Nature
+Ability: Torrent
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Rock Smash
+- Rock Throw
+- Aqua Jet
+- Stomp
+
+SPECIES_PONYTA_GALARIAN @ Muscle Band
+Level: 12
+Jolly Nature
+Ability: Pastel Veil
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Double Kick
+- Zen Headbutt
+- Agility
+- Headbutt
 
 === TRAINER_WALLY_SCHOOL_TREECKO ===
 Name: Wally
@@ -273,9 +593,25 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Treecko
+Treecko @ Sitrus Berry
 Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Timid Nature
+Ability: Unburden
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Leafage
+- Quick Attack
+- Slash
+- Double Kick
+
+SPECIES_PONYTA_GALARIAN @ Muscle Band
+Level: 12
+Jolly Nature
+Ability: Pastel Veil
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Double Kick
+- Zen Headbutt
+- Agility
+- Headbutt
 
 === TRAINER_WALLY_SCHOOL_TORCHIC ===
 Name: Wally
@@ -286,9 +622,25 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Torchic
+Torchic @ Sitrus Berry
 Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Adamant Nature
+Ability: Speed Boost
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Flame Charge
+- Detect
+- Peck
+- Low Kick
+
+SPECIES_PONYTA_GALARIAN @ Muscle Band
+Level: 12
+Jolly Nature
+Ability: Pastel Veil
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Double Kick
+- Zen Headbutt
+- Agility
+- Headbutt
 
 === TRAINER_JOSH ===
 Name: Josh
