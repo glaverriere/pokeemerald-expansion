@@ -35,40 +35,32 @@ RustboroCity_House3_EventScript_Pekachu::
 # 18 "data/maps/RustboroCity_House3/scripts.pory"
 	playmoncry SPECIES_PIKACHU, CRY_MODE_NORMAL
 # 19 "data/maps/RustboroCity_House3/scripts.pory"
-	msgbox RustboroCity_House3_Text_Pekachu, MSGBOX_DEFAULT
-# 20 "data/maps/RustboroCity_House3/scripts.pory"
 	waitmoncry
-# 21 "data/maps/RustboroCity_House3/scripts.pory"
+# 20 "data/maps/RustboroCity_House3/scripts.pory"
 	release
-# 22 "data/maps/RustboroCity_House3/scripts.pory"
+# 21 "data/maps/RustboroCity_House3/scripts.pory"
 	end
+# 22 "data/maps/RustboroCity_House3/scripts.pory"
+
 # 23 "data/maps/RustboroCity_House3/scripts.pory"
-
-# 24 "data/maps/RustboroCity_House3/scripts.pory"
 RustboroCity_House3_Text_IGivePerfectlySuitedNicknames:
+# 24 "data/maps/RustboroCity_House3/scripts.pory"
+	.string "For my own Pokémon, I give them\n"
 # 25 "data/maps/RustboroCity_House3/scripts.pory"
-	.string "For my own POKéMON, I give them\n"
-# 26 "data/maps/RustboroCity_House3/scripts.pory"
 	.string "perfectly suited nicknames!\p"
-# 27 "data/maps/RustboroCity_House3/scripts.pory"
+# 26 "data/maps/RustboroCity_House3/scripts.pory"
 	.string "It's my expression of, uh…\n"
-# 28 "data/maps/RustboroCity_House3/scripts.pory"
+# 27 "data/maps/RustboroCity_House3/scripts.pory"
 	.string "originality, yes, that's it!$"
+# 28 "data/maps/RustboroCity_House3/scripts.pory"
+
 # 29 "data/maps/RustboroCity_House3/scripts.pory"
-
-# 30 "data/maps/RustboroCity_House3/scripts.pory"
 RustboroCity_House3_Text_NamingPikachuPekachu:
-# 31 "data/maps/RustboroCity_House3/scripts.pory"
+# 30 "data/maps/RustboroCity_House3/scripts.pory"
 	.string "But giving the name PEKACHU to\n"
+# 31 "data/maps/RustboroCity_House3/scripts.pory"
+	.string "a Pikachu? It seems pointless.\p"
 # 32 "data/maps/RustboroCity_House3/scripts.pory"
-	.string "a PIKACHU? It seems pointless.\p"
-# 33 "data/maps/RustboroCity_House3/scripts.pory"
 	.string "I suppose it is good to use a name\n"
-# 34 "data/maps/RustboroCity_House3/scripts.pory"
+# 33 "data/maps/RustboroCity_House3/scripts.pory"
 	.string "that's easy to understand, but…$"
-# 35 "data/maps/RustboroCity_House3/scripts.pory"
-
-# 36 "data/maps/RustboroCity_House3/scripts.pory"
-RustboroCity_House3_Text_Pekachu:
-# 37 "data/maps/RustboroCity_House3/scripts.pory"
-	.string "PEKACHU: Peka!$"

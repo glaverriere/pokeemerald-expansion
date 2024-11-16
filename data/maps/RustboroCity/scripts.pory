@@ -13,3 +13,43 @@ script RustboroCity_EventScript_GymGuide {
 text RustboroCity_Text_GymGuide {
 	format("You're here to challenge Roxanne?\p Sorry, but the gym is temporarily closed because Roxanne is currently tutoring at the Pokémon school.\p Please come back later!")
 }
+
+script RustboroCity_EventScript_GymSign {
+	msgbox(RustboroCity_Text_GymSign, MSGBOX_SIGN)
+}
+
+text RustboroCity_Text_GymSign {
+	format("Bay Habor City Pokémon gym\n Leader: Roxanne\p “The competition trembles before her!”")
+}
+
+script RustboroCity_EventScript_Route105Sign {
+	msgbox(RustboroCity_Text_Route105Sign, MSGBOX_SIGN)
+}
+
+text RustboroCity_Text_Route105Sign {
+	format("{RIGHT_ARROW} Shade forest\l {DOWN_ARROW} Route 105")
+}
+
+script RustboroCity_EventScript_Route103Sign {
+	msgbox(RustboroCity_Text_Route103Sign, MSGBOX_SIGN)
+}
+
+text RustboroCity_Text_Route103Sign {
+	format("{UP_ARROW} Route 103\l {LEFT_ARROW} Route 125")
+}
+
+script RustboroCity_EventScript_TrainerSchoolSign {
+	msgbox(RustboroCity_Text_TrainerSchoolSign, MSGBOX_SIGN)
+}
+
+text RustboroCity_Text_TrainerSchoolSign {
+	format("Pokémon Trainer's School")
+}
+
+script RustboroCity_EventScript_CitySign {
+	msgbox(RustboroCity_Text_CitySign, MSGBOX_SIGN)
+}
+
+text RustboroCity_Text_CitySign {
+	format("Bay Harbor City\n Enjoy the salty ocean breeze!")
+}

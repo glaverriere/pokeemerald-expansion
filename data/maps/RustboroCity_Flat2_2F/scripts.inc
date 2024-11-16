@@ -25,7 +25,7 @@ RustboroCity_Flat2_2F_EventScript_NinjaBoy::
 # 13 "data/maps/RustboroCity_Flat2_2F/scripts.pory"
 	msgbox RustboroCity_Flat2_2F_Text_MyDaddyMadeThisYouCanHaveIt, MSGBOX_DEFAULT
 # 14 "data/maps/RustboroCity_Flat2_2F/scripts.pory"
-	giveitem ITEM_PREMIER_BALL
+	giveitem ITEM_GREAT_BALL
 # 15 "data/maps/RustboroCity_Flat2_2F/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 # 16 "data/maps/RustboroCity_Flat2_2F/scripts.pory"
@@ -49,7 +49,7 @@ RustboroCity_Flat2_2F_EventScript_GavePremierBall::
 # 25 "data/maps/RustboroCity_Flat2_2F/scripts.pory"
 RustboroCity_Flat2_2F_Text_DevonWasTinyInOldDays:
 # 26 "data/maps/RustboroCity_Flat2_2F/scripts.pory"
-	.string "Way back in the old days, DEVON was just\n"
+	.string "Way back in the old days, Devon was just\n"
 # 27 "data/maps/RustboroCity_Flat2_2F/scripts.pory"
 	.string "a teeny, tiny company.$"
 # 28 "data/maps/RustboroCity_Flat2_2F/scripts.pory"
@@ -57,7 +57,7 @@ RustboroCity_Flat2_2F_Text_DevonWasTinyInOldDays:
 # 29 "data/maps/RustboroCity_Flat2_2F/scripts.pory"
 RustboroCity_Flat2_2F_Text_MyDaddyMadeThisYouCanHaveIt:
 # 30 "data/maps/RustboroCity_Flat2_2F/scripts.pory"
-	.string "My daddy's working at the CORPORATION.\p"
+	.string "My daddy's working at the Corporation.\p"
 # 31 "data/maps/RustboroCity_Flat2_2F/scripts.pory"
 	.string "My daddy made this!\n"
 # 32 "data/maps/RustboroCity_Flat2_2F/scripts.pory"
@@ -67,8 +67,8 @@ RustboroCity_Flat2_2F_Text_MyDaddyMadeThisYouCanHaveIt:
 # 34 "data/maps/RustboroCity_Flat2_2F/scripts.pory"
 RustboroCity_Flat2_2F_Text_GoingToWorkAtDevonToo:
 # 35 "data/maps/RustboroCity_Flat2_2F/scripts.pory"
-	.string "My daddy's working at the CORPORATION.\p"
+	.string "My daddy's working at the Corporation.\p"
 # 36 "data/maps/RustboroCity_Flat2_2F/scripts.pory"
-	.string "When I grow up, I'm going to work for\n"
+	.string "When I grow up, I want to work for\n"
 # 37 "data/maps/RustboroCity_Flat2_2F/scripts.pory"
-	.string "DEVON, too.$"
+	.string "Devon, too.$"

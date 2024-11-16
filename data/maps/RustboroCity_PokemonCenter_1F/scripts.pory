@@ -30,22 +30,15 @@ RustboroCity_PokemonCenter_1F_EventScript_Boy::
 RustboroCity_PokemonCenter_1F_EventScript_Girl::
 	msgbox RustboroCity_PokemonCenter_1F_Text_HMCutNextDoor, MSGBOX_NPC
 	end
-
-RustboroCity_PokemonCenter_1F_Text_PokemonHavePersonalities:
-	.string "My POKéMON has a NAIVE nature, and my\n"
-	.string "friend's has a JOLLY nature.\p"
-	.string "It's fascinating how POKéMON have\n"
-	.string "personalities!$"
-
-RustboroCity_PokemonCenter_1F_Text_MaleAndFemalePokemon:
-	.string "Just like people, there are male and\n"
-	.string "female POKéMON.\p"
-	.string "But no one seems to have any idea how\n"
-	.string "they're different.$"
-
-RustboroCity_PokemonCenter_1F_Text_HMCutNextDoor:
-	.string "The man next door gave me an HM!\p"
-	.string "I used it to teach my POKéMON how to\n"
-	.string "CUT down skinny trees.$"
-
 `
+text RustboroCity_PokemonCenter_1F_Text_PokemonHavePersonalities {
+	format("It's so cool how Pokémon can have different personalities!\p My Pokémon has a Impish nature and friend's has a Timid nature.\p Next time I catch a Pokémon, I'll try to find one that matches my personality.")
+}
+
+text RustboroCity_PokemonCenter_1F_Text_MaleAndFemalePokemon {
+	format("Have you had the chance to challenge Roxanne, the gym leader?\p She's a tough one!")
+}
+
+text RustboroCity_PokemonCenter_1F_Text_HMCutNextDoor {
+	format("There's an old man that lives in a house in this city that gave me an HM!\p I used it on my Nuzleaf and now, he can cut small trees.")
+}

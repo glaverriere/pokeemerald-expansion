@@ -62,37 +62,25 @@ RustboroCity_PokemonCenter_1F_EventScript_Girl::
 	msgbox RustboroCity_PokemonCenter_1F_Text_HMCutNextDoor, MSGBOX_NPC
 # 32 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
 	end
-# 33 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
 
+RustboroCity_PokemonCenter_1F_Text_PokemonHavePersonalities::
 # 34 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
-RustboroCity_PokemonCenter_1F_Text_PokemonHavePersonalities:
-# 35 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
-	.string "My POKéMON has a NAIVE nature, and my\n"
-# 36 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
-	.string "friend's has a JOLLY nature.\p"
-# 37 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
-	.string "It's fascinating how POKéMON have\n"
+	.string "It's so cool how Pokémon can have\n"
+	.string "different personalities!\p"
+	.string "My Pokémon has a Impish nature and\n"
+	.string "friend's has a Timid nature.\p"
+	.string "Next time I catch a Pokémon, I'll try to\n"
+	.string "find one that matches my personality.$"
+
+RustboroCity_PokemonCenter_1F_Text_MaleAndFemalePokemon::
 # 38 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
-	.string "personalities!$"
-# 39 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
+	.string "Have you had the chance to challenge\n"
+	.string "Roxanne, the gym leader?\p"
+	.string "She's a tough one!$"
 
-# 40 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
-RustboroCity_PokemonCenter_1F_Text_MaleAndFemalePokemon:
-# 41 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
-	.string "Just like people, there are male and\n"
+RustboroCity_PokemonCenter_1F_Text_HMCutNextDoor::
 # 42 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
-	.string "female POKéMON.\p"
-# 43 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
-	.string "But no one seems to have any idea how\n"
-# 44 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
-	.string "they're different.$"
-# 45 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
-
-# 46 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
-RustboroCity_PokemonCenter_1F_Text_HMCutNextDoor:
-# 47 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
-	.string "The man next door gave me an HM!\p"
-# 48 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
-	.string "I used it to teach my POKéMON how to\n"
-# 49 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
-	.string "CUT down skinny trees.$"
+	.string "There's an old man that lives in a house\n"
+	.string "in this city that gave me an HM!\p"
+	.string "I used it on my Nuzleaf and now, he can\n"
+	.string "cut small trees.$"

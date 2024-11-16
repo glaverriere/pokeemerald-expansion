@@ -103,60 +103,41 @@ RustboroCity_House1_EventScript_Hiker::
 # 52 "data/maps/RustboroCity_House1/scripts.pory"
 
 # 53 "data/maps/RustboroCity_House1/scripts.pory"
-RustboroCity_House1_Text_IllTradeIfYouWant:
-# 54 "data/maps/RustboroCity_House1/scripts.pory"
-	.string "Huh? My POKéMON is cute?\n"
-# 55 "data/maps/RustboroCity_House1/scripts.pory"
-	.string "Sure, I knew that.\p"
-# 56 "data/maps/RustboroCity_House1/scripts.pory"
-	.string "But if you really want, I'm willing\n"
-# 57 "data/maps/RustboroCity_House1/scripts.pory"
-	.string "to trade it to you.\p"
-# 58 "data/maps/RustboroCity_House1/scripts.pory"
-	.string "I'll trade you my {STR_VAR_2} for\n"
-# 59 "data/maps/RustboroCity_House1/scripts.pory"
-	.string "a {STR_VAR_1} if you want.$"
-# 60 "data/maps/RustboroCity_House1/scripts.pory"
-
-# 61 "data/maps/RustboroCity_House1/scripts.pory"
-RustboroCity_House1_Text_PleaseBeGoodToMyPokemon:
-# 62 "data/maps/RustboroCity_House1/scripts.pory"
-	.string "Eheheh…\n"
-# 63 "data/maps/RustboroCity_House1/scripts.pory"
-	.string "Please be good to my POKéMON.$"
-# 64 "data/maps/RustboroCity_House1/scripts.pory"
-
-# 65 "data/maps/RustboroCity_House1/scripts.pory"
-RustboroCity_House1_Text_DoesntLookLikeMonToMe:
-# 66 "data/maps/RustboroCity_House1/scripts.pory"
-	.string "Huh? That doesn't look anything like\n"
-# 67 "data/maps/RustboroCity_House1/scripts.pory"
-	.string "a {STR_VAR_1} to me.$"
-# 68 "data/maps/RustboroCity_House1/scripts.pory"
-
-# 69 "data/maps/RustboroCity_House1/scripts.pory"
-RustboroCity_House1_Text_YouDontWantToThatsOkay:
-# 70 "data/maps/RustboroCity_House1/scripts.pory"
-	.string "Oh, if you don't want to, that's okay.\n"
-# 71 "data/maps/RustboroCity_House1/scripts.pory"
-	.string "But my POKéMON is cute, you know…$"
-# 72 "data/maps/RustboroCity_House1/scripts.pory"
-
-# 73 "data/maps/RustboroCity_House1/scripts.pory"
-RustboroCity_House1_Text_AnyPokemonCanBeCute:
-# 74 "data/maps/RustboroCity_House1/scripts.pory"
-	.string "Any POKéMON can be cute if you raise\n"
-# 75 "data/maps/RustboroCity_House1/scripts.pory"
-	.string "it with care and kindness.$"
-# 76 "data/maps/RustboroCity_House1/scripts.pory"
-
-# 77 "data/maps/RustboroCity_House1/scripts.pory"
 RustboroCity_House1_Text_AllSortsOfPlaces:
-# 78 "data/maps/RustboroCity_House1/scripts.pory"
+# 54 "data/maps/RustboroCity_House1/scripts.pory"
 	.string "In all sorts of places, there are all\n"
-# 79 "data/maps/RustboroCity_House1/scripts.pory"
-	.string "sorts of POKéMON and people.\p"
-# 80 "data/maps/RustboroCity_House1/scripts.pory"
+# 55 "data/maps/RustboroCity_House1/scripts.pory"
+	.string "sorts of Pokémon and people.\p"
+# 56 "data/maps/RustboroCity_House1/scripts.pory"
 	.string "I find that fascinating, so I go to all\n"
-# 81 "data/maps/RustboroCity_House1/scripts.pory"
+# 57 "data/maps/RustboroCity_House1/scripts.pory"
 	.string "sorts of places.$"
+
+RustboroCity_House1_Text_IllTradeIfYouWant::
+# 60 "data/maps/RustboroCity_House1/scripts.pory"
+	.string "Huh? My Pokémon is cute?\n"
+	.string "Sure, I knew that.\p"
+	.string "But if you really want, I'm willing to\n"
+	.string "trade it to you.\p"
+	.string "I'll trade you my Alolan Meowth for a\n"
+	.string "Galarian Meowth if you want?$"
+
+RustboroCity_House1_Text_PleaseBeGoodToMyPokemon::
+# 64 "data/maps/RustboroCity_House1/scripts.pory"
+	.string "Eheheh...\n"
+	.string "Be good to my Pokémon.$"
+
+RustboroCity_House1_Text_DoesntLookLikeMonToMe::
+# 68 "data/maps/RustboroCity_House1/scripts.pory"
+	.string "Huh? it doesn't look like anything like a\n"
+	.string "Galarian Meowth to me.$"
+
+RustboroCity_House1_Text_YouDontWantToThatsOkay::
+# 72 "data/maps/RustboroCity_House1/scripts.pory"
+	.string "Oh, if you don't want to, that's okay.\n"
+	.string "But my Pokémon is cute, you know...$"
+
+RustboroCity_House1_Text_AnyPokemonCanBeCute::
+# 76 "data/maps/RustboroCity_House1/scripts.pory"
+	.string "Any Pokémon can be cute if you raise it\n"
+	.string "with care and kindness.$"

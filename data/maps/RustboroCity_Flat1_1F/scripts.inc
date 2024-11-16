@@ -33,4 +33,6 @@ RustboroCity_Flat1_1F_Text_EveryPokemonHasAbility:
 # 17 "data/maps/RustboroCity_Flat1_1F/scripts.pory"
 RustboroCity_Flat1_1F_Text_PokemonStrange:
 # 18 "data/maps/RustboroCity_Flat1_1F/scripts.pory"
-	.string "POKéMON are such strange creatures.$"
+	.string "POKéMON are such strange creatures.\n"
+# 19 "data/maps/RustboroCity_Flat1_1F/scripts.pory"
+	.string "I wonder if humans are Pokémon too?$"

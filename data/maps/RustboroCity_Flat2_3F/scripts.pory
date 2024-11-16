@@ -11,11 +11,13 @@ RustboroCity_Flat2_3F_EventScript_Woman::
 	end
 
 RustboroCity_Flat2_3F_Text_PresidentCollectsRareStones:
-	.string "DEVON's PRESIDENT likes to collect\n"
-	.string "rare stones.$"
+	.string "Devon's President likes to collect\n"
+	.string "rare stones.\p"
+	.string "I wonder if he has any evolution.\n"
+	.string "stones in his collection.$"
 
 RustboroCity_Flat2_3F_Text_PresidentsSonAlsoCollectsRareStones:
-	.string "I think the PRESIDENT's son also\n"
-	.string "collects rare stones.$"
-
+	.string "I think the President's son can\n"
+	.string "can revive Pokémon from their\p."
+	.string "fossils.$"
 `

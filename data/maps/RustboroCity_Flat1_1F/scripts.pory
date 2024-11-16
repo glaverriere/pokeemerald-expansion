@@ -15,6 +15,7 @@ RustboroCity_Flat1_1F_Text_EveryPokemonHasAbility:
 	.string "that it can use.$"
 
 RustboroCity_Flat1_1F_Text_PokemonStrange:
-	.string "POKéMON are such strange creatures.$"
+	.string "POKéMON are such strange creatures.\n"
+	.string "I wonder if humans are Pokémon too?$"
 
 `
