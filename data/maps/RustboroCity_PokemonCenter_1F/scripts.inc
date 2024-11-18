@@ -67,7 +67,7 @@ RustboroCity_PokemonCenter_1F_Text_PokemonHavePersonalities::
 # 34 "data/maps/RustboroCity_PokemonCenter_1F/scripts.pory"
 	.string "It's so cool how Pokémon can have\n"
 	.string "different personalities!\p"
-	.string "My Pokémon has a Impish nature and\n"
+	.string "My Pokémon has a Impish nature and my\n"
 	.string "friend's has a Timid nature.\p"
 	.string "Next time I catch a Pokémon, I'll try to\n"
 	.string "find one that matches my personality.$"

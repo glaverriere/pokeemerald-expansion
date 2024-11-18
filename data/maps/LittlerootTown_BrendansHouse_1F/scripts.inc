@@ -205,7 +205,7 @@ LittlerootTown_BrendansHouse_1F_EventScript_YoureNewNeighbor::
 # 103 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
 	msgbox RivalsHouse_1F_Text_OhYoureTheNewNeighbor, MSGBOX_DEFAULT
 # 104 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	setflag FLAG_MET_RIVAL_MOM
+	setflag FLAG_ITEM_SHADE_FOREST_TM_CHARM
 # 105 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
 	setvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 2
 # 106 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"

@@ -53,3 +53,137 @@ script RustboroCity_EventScript_CitySign {
 text RustboroCity_Text_CitySign {
 	format("Bay Harbor City\n Enjoy the salty ocean breeze!")
 }
+
+script RustboroCity_EventScript_BeachBoy {
+	msgbox(RustboroCity_Text_BeachBoy, MSGBOX_NPC)
+}
+
+text RustboroCity_Text_BeachBoy {
+	format("If I get her, she'll tell me where she hid an item!")
+}
+
+script RustboroCity_EventScript_BeachGirl {
+	msgbox(RustboroCity_Text_BeachGirl, MSGBOX_NPC)
+}
+
+text RustboroCity_Text_BeachGirl {
+	format("Hihihi!\n He doesn't know the item I buried in the sand is so close!")
+}
+
+script RustboroCity_EventScript_BeachYoungster {
+	lock
+	msgbox(RustboroCity_Text_BeachYoungster)
+	closemessage
+	release
+}
+
+text RustboroCity_Text_BeachYoungster {
+	format("Zigzagoon, use headbutt!")
+}
+
+script RustboroCity_EventScript_BeachHiker {
+	lock
+	msgbox(RustboroCity_Text_BeachHiker)
+	closemessage
+	release
+}
+
+text RustboroCity_Text_BeachHiker {
+	format("Poochyena, use howl!")
+}
+
+script RustboroCity_EventScript_BeachFisherman {
+	msgbox(RustboroCity_Text_BeachFisherman, MSGBOX_NPC)
+}
+
+text RustboroCity_Text_BeachFisherman {
+	format("Fishing is so relaxing, but it's a bit less so when you reel in a Carvanha.")
+}
+
+script RustboroCity_EventScript_BeachTriathlete {
+	lockall
+    faceplayer
+    if (!flag(FLAG_RUSTBORO_HEART_SCALE)) {
+        msgbox(RustboroCity_Text_BeachTriathlete)
+        giveitem(ITEM_HEART_SCALE)
+        setflag(FLAG_RUSTBORO_HEART_SCALE)
+    }
+    msgbox(RustboroCity_Text_BeachTriathlete2)
+	closemessage
+    releaseall
+}
+
+text RustboroCity_Text_BeachTriathlete {
+	format("I found this Heart Scale on the beach earlier.\n You can have it.")
+}
+
+text RustboroCity_Text_BeachTriathlete2 {
+	format("I heard Heart Scales are pretty rare.\n I also heard you can exchange them with someone in Hoenn.\p In return, he can teach Pokémon a forgotten move.")
+}
+
+script RustboroCity_EventScript_Boy {
+	msgbox(RustboroCity_Text_Boy, MSGBOX_NPC)
+}
+
+text RustboroCity_Text_Boy {
+	format("I gave myself the challenge to catch every Pokémon in the school backyard!\p I already caught a Mienfoo and a Lillipup.\p I just need a Lotad and a Doduo, and I'll have succeeded.")
+}
+
+script RustboroCity_EventScript_Picknicker {
+	lock
+	msgbox(RustboroCity_Text_Picknicker)
+	closemessage
+	release
+}
+
+text RustboroCity_Text_Picknicker {
+	format("...and after that, he said he'd rather be learning about Pokémon than spend time with me.\p Can you believe that?")
+}
+
+script RustboroCity_EventScript_Girl {
+	lock
+	msgbox(RustboroCity_Text_Girl)
+	closemessage
+	release
+}
+
+text RustboroCity_Text_Girl {
+	format("Wow, the audacity this boy has!\n You're definitely better off without him.")
+}
+
+script RustboroCity_EventScript_DevonEmployee {
+	msgbox(RustboroCity_Text_DevonEmployee, MSGBOX_NPC)
+}
+
+text RustboroCity_Text_DevonEmployee {
+	format("This is crazy! Team aqua is invading the Devon Corps building.\p I sure am glad that I called in sick this morning.")
+}
+
+script RustboroCity_EventScript_FatMan {
+	lockall
+    faceplayer
+    if (!flag(FLAG_RUSTBORO_HIDDEN_POWER)) {
+        msgbox(RustboroCity_Text_FatMan)
+        giveitem(ITEM_TM10)
+        setflag(FLAG_RUSTBORO_HIDDEN_POWER)
+    }
+    msgbox(RustboroCity_Text_FatMan2)
+	closemessage
+    releaseall
+}
+
+text RustboroCity_Text_FatMan {
+	format("Oh! You found me!\n I was hidden here waiting for someone perceptive such as yourself to find me.\p To congratulate you, I'm giving you this TM!")
+}
+
+text RustboroCity_Text_FatMan2 {
+	format("This move's type can differ from Pokémon to Pokémon.")
+}
+
+script RustboroCity_EventScript_Artist {
+	msgbox(RustboroCity_Text_Artist, MSGBOX_NPC)
+}
+
+text RustboroCity_Text_Artist {
+	format("Bay Harbor City's architecture is so inspiring for an artist like me.")
+}

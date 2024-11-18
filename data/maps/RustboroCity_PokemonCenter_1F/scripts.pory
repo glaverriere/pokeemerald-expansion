@@ -32,7 +32,7 @@ RustboroCity_PokemonCenter_1F_EventScript_Girl::
 	end
 `
 text RustboroCity_PokemonCenter_1F_Text_PokemonHavePersonalities {
-	format("It's so cool how Pokémon can have different personalities!\p My Pokémon has a Impish nature and friend's has a Timid nature.\p Next time I catch a Pokémon, I'll try to find one that matches my personality.")
+	format("It's so cool how Pokémon can have different personalities!\p My Pokémon has a Impish nature and my friend's has a Timid nature.\p Next time I catch a Pokémon, I'll try to find one that matches my personality.")
 }
 
 text RustboroCity_PokemonCenter_1F_Text_MaleAndFemalePokemon {
