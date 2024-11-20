@@ -223,8 +223,8 @@ RustboroCity_Text_BeachBoy::
 RustboroCity_Text_BeachGirl::
 # 69 "data/maps/RustboroCity/scripts.pory"
 	.string "Hihihi!\n"
-	.string "He doesn't the item I buried in the sand\l"
-	.string "is so close!$"
+	.string "He doesn't know the item I buried in the\l"
+	.string "sand is so close!$"
 
 RustboroCity_Text_BeachYoungster::
 # 80 "data/maps/RustboroCity/scripts.pory"
@@ -241,13 +241,13 @@ RustboroCity_Text_BeachFisherman::
 
 RustboroCity_Text_BeachTriathlete::
 # 116 "data/maps/RustboroCity/scripts.pory"
-	.string "I found this Heart scale on the beach\n"
+	.string "I found this Heart Scale on the beach\n"
 	.string "earlier.\n"
 	.string "You can have it.$"
 
 RustboroCity_Text_BeachTriathlete2::
 # 120 "data/maps/RustboroCity/scripts.pory"
-	.string "I heard Heart scales are pretty rare.\n"
+	.string "I heard Heart Scales are pretty rare.\n"
 	.string "I also heard you can exchange them with\l"
 	.string "someone in Hoenn.\p"
 	.string "In return, he can teach Pokémon a\n"
