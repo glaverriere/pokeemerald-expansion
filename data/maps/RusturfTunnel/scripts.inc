@@ -619,7 +619,7 @@ RusturfTunnel_EventScript_Grunt::
 # 310 "data/maps/RusturfTunnel/scripts.pory"
 	msgbox RusturfTunnel_Text_GruntIntro, MSGBOX_DEFAULT
 # 311 "data/maps/RusturfTunnel/scripts.pory"
-	trainerbattle_no_intro TRAINER_GRUNT_RUSTURF_TUNNEL, RusturfTunnel_Text_GruntDefeat
+	trainerbattle_no_intro TRAINER_JASMINE, RusturfTunnel_Text_GruntDefeat
 # 312 "data/maps/RusturfTunnel/scripts.pory"
 	msgbox RusturfTunnel_Text_GruntTakePackage, MSGBOX_DEFAULT
 # 313 "data/maps/RusturfTunnel/scripts.pory"

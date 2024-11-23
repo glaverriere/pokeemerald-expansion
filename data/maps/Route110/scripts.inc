@@ -471,7 +471,7 @@ Route110_EventScript_BenjaminRematch::
 # 236 "data/maps/Route110/scripts.pory"
 Route110_EventScript_Jasmine::
 # 237 "data/maps/Route110/scripts.pory"
-	trainerbattle_single TRAINER_JASMINE, Route110_Text_JasmineIntro, Route110_Text_JasmineDefeated
+	trainerbattle_single TRAINER_JASMINE2, Route110_Text_JasmineIntro, Route110_Text_JasmineDefeated
 # 238 "data/maps/Route110/scripts.pory"
 	msgbox Route110_Text_JasminePostBattle, MSGBOX_AUTOCLOSE
 # 239 "data/maps/Route110/scripts.pory"

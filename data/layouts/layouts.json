@@ -375,7 +375,7 @@
       "id": "LAYOUT_ROUTE122",
       "name": "Route122_Layout",
       "width": 40,
-      "height": 40,
+      "height": 60,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/Route122/border.bin",

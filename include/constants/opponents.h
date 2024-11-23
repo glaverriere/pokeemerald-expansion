@@ -19,7 +19,7 @@
 #define TRAINER_WALLY_SCHOOL_MUDKIP                           13
 #define TRAINER_WALLY_SCHOOL_TREECKO      14
 #define TRAINER_WALLY_SCHOOL_TORCHIC                       15
-#define TRAINER_GRUNT_RUSTURF_TUNNEL         16
+#define TRAINER_JASMINE         16
 #define TRAINER_GRUNT_WEATHER_INST_1         17
 #define TRAINER_GRUNT_WEATHER_INST_2         18
 #define TRAINER_GRUNT_WEATHER_INST_3         19
@@ -362,7 +362,7 @@
 #define TRAINER_BENJAMIN_4                  356
 #define TRAINER_BENJAMIN_5                  357
 #define TRAINER_ABIGAIL_1                   358
-#define TRAINER_JASMINE                     359
+#define TRAINER_JASMINE2                     359
 #define TRAINER_ABIGAIL_2                   360
 #define TRAINER_ABIGAIL_3                   361
 #define TRAINER_ABIGAIL_4                   362
