@@ -77,7 +77,7 @@ movement Route101_4ToPlayer12 {
 }
 
 text Route101_ItsDangerous {
-	format("It's dangerous to wander in tall grass without a Pokémon.\p I recommend you come back with one.")
+	format("It's dangerous to wander in tall grass without a POKéMON.\p I recommend you come back with one.")
 }
 
 movement Route101_PlayerDown {
@@ -114,7 +114,7 @@ script Route101_DudeInGrass {
 }
 
 text Route101_Text_DudeInGrass {
-	format("Searching for Pokémon in tall grass is so fun!\p The other day, I even found a Pikachu!")
+	format("Searching for POKéMON in tall grass is so fun!\p The other day, I even found a PIKACHU!")
 }
 
 script Route101_RivalBattle_Trigger {
@@ -238,7 +238,7 @@ script Route101_RivalBattle_Trigger {
 	waitmovement(0)
 	removeobject(2)
 	removeobject(3)
-	msgbox("Wally: Wait for me!")
+	msgbox("WALLY: Wait for me!")
 	closemessage
 	applymovement(1, Route101_RivalToLab)
 	waitmovement(0)
@@ -252,11 +252,11 @@ script Route101_RivalBattle_Trigger {
 }
 
 text Route101_Text_MayVsWally {
-	format("May: Wally! I challenge you to a Pokémon battle!\p Wally: What? Me? A Pokémon battle?\p I don't know how that works.\p May: Don't worry about it.\p I'll challenge {PLAYER} instead.\p Feel free to watch if you would like to learn.")
+	format("{RIVAL}: WALLY! Let's have a POKéMON battle!\p WALLY: What? Me? A POKéMON battle?\p I don't know how that works.\p {RIVAL}: Don't worry about it.\p I'll challenge {PLAYER} instead.\p Feel free to watch if you would like to learn.")
 }
 
 text Route101_Text_BrendanVsWally {
-	format("Brendan: Wally! I challenge you to a Pokémon battle!\p Wally: What? Me? A Pokémon battle?\p I don't know how that works.\p Brendan: Don't worry about it.\p I'll challenge {PLAYER} instead.\p Feel free to watch if you would like to learn.")
+	format("{RIVAL}: WALLY! I challenge you to a POKéMON battle!\p WALLY: What? Me? A Pokémon battle?\p I don't know how that works.\p {RIVAL}: Fine.\p I'll challenge {PLAYER} instead.\p Stand back and watch.\p It's a good way to learn how this works.")
 }
 
 movement Route101_RivalToPlayer6 {
@@ -296,7 +296,7 @@ text Route101_Text_RivalDefeated {
 }
 
 text Route101_Text_RivalLetsGoToLab {
-	format("You're a natural!\p Anyways, let's go to my dad's lab.")
+	format("You're a natural!\p Anyways, let's go to my dad's LAB.")
 }
 
 movement Route101_RivalToWally6 {
@@ -332,7 +332,7 @@ script Route101_GirlWalking {
 }
 
 text Route101_Text_GirlWalking {
-	format("Did you know that if you keep walking in tall grass, you'll eventually stumble upon a wild Pokémon?")
+	format("Did you know that if you keep walking in tall grass, you'll eventually stumble upon a wild POKéMON?")
 }
 
 script Route101_Ronnie_Eventscript {

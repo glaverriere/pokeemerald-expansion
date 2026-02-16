@@ -11,7 +11,7 @@ script RustboroCity_EventScript_GymGuide {
 }
 
 text RustboroCity_Text_GymGuide {
-	format("You're here to challenge Roxanne?\p Sorry, but the gym is temporarily closed because Roxanne is currently tutoring at the Pokémon school.\p Please come back later!")
+	format("You're here to challenge ROXANNE?\p Sorry, but the GYM is temporarily closed because ROXANNE is currently tutoring at the POKéMON SCHOOL.\p Please come back later!")
 }
 
 script RustboroCity_EventScript_GymSign {
@@ -19,7 +19,7 @@ script RustboroCity_EventScript_GymSign {
 }
 
 text RustboroCity_Text_GymSign {
-	format("Bay Habor City Pokémon gym\n Leader: Roxanne\p “The competition trembles before her!”")
+	format("BAY HARBOR CITY POKéMON GYM\n Leader: ROXANNE\p “The competition trembles before her!”")
 }
 
 script RustboroCity_EventScript_Route105Sign {
@@ -27,7 +27,7 @@ script RustboroCity_EventScript_Route105Sign {
 }
 
 text RustboroCity_Text_Route105Sign {
-	format("{RIGHT_ARROW} Shade forest\l {DOWN_ARROW} Route 105")
+	format("{RIGHT_ARROW} SHADE FOREST\l {DOWN_ARROW} ROUTE 105")
 }
 
 script RustboroCity_EventScript_Route103Sign {
@@ -35,7 +35,7 @@ script RustboroCity_EventScript_Route103Sign {
 }
 
 text RustboroCity_Text_Route103Sign {
-	format("{UP_ARROW} Route 103\l {LEFT_ARROW} Route 125")
+	format("{UP_ARROW} ROUTE 103\l {LEFT_ARROW} ROUTE 125")
 }
 
 script RustboroCity_EventScript_TrainerSchoolSign {
@@ -43,7 +43,7 @@ script RustboroCity_EventScript_TrainerSchoolSign {
 }
 
 text RustboroCity_Text_TrainerSchoolSign {
-	format("Pokémon Trainer's School")
+	format("POKéMON TRAINER's SCHOOL")
 }
 
 script RustboroCity_EventScript_CitySign {
@@ -51,7 +51,7 @@ script RustboroCity_EventScript_CitySign {
 }
 
 text RustboroCity_Text_CitySign {
-	format("Bay Harbor City\n Enjoy the salty ocean breeze!")
+	format("BAY HARBOR CITY\n Enjoy the salty ocean breeze!")
 }
 
 script RustboroCity_EventScript_BeachBoy {
@@ -59,7 +59,7 @@ script RustboroCity_EventScript_BeachBoy {
 }
 
 text RustboroCity_Text_BeachBoy {
-	format("If I get her, she'll tell me where she hid an item!")
+	format("If I get her, she'll tell me where she hid an ITEM!")
 }
 
 script RustboroCity_EventScript_BeachGirl {
@@ -78,7 +78,7 @@ script RustboroCity_EventScript_BeachYoungster {
 }
 
 text RustboroCity_Text_BeachYoungster {
-	format("Zigzagoon, use headbutt!")
+	format("ZIGZAGOON, use HEADBUTT!")
 }
 
 script RustboroCity_EventScript_BeachHiker {
@@ -89,7 +89,7 @@ script RustboroCity_EventScript_BeachHiker {
 }
 
 text RustboroCity_Text_BeachHiker {
-	format("Poochyena, use howl!")
+	format("POOCHYENA, use HOWL!")
 }
 
 script RustboroCity_EventScript_BeachFisherman {
@@ -97,7 +97,7 @@ script RustboroCity_EventScript_BeachFisherman {
 }
 
 text RustboroCity_Text_BeachFisherman {
-	format("Fishing is so relaxing, but it's a bit less so when you reel in a Carvanha.")
+	format("Fishing is so relaxing, but it's a bit less so when you reel in a CARVANHA.")
 }
 
 script RustboroCity_EventScript_BeachTriathlete {
@@ -114,11 +114,11 @@ script RustboroCity_EventScript_BeachTriathlete {
 }
 
 text RustboroCity_Text_BeachTriathlete {
-	format("I found this Heart Scale on the beach earlier.\n You can have it.")
+	format("I found this HEART SCALE on the beach earlier.\n You can have it.")
 }
 
 text RustboroCity_Text_BeachTriathlete2 {
-	format("I heard Heart Scales are pretty rare.\n I also heard you can exchange them with someone in Hoenn.\p In return, he can teach Pokémon a forgotten move.")
+	format("I heard HEART SCALES are pretty rare.\n I also heard you can exchange them with someone in HOENN.\p In return, he can teach POKéMON a forgotten move.")
 }
 
 script RustboroCity_EventScript_Boy {
@@ -126,7 +126,7 @@ script RustboroCity_EventScript_Boy {
 }
 
 text RustboroCity_Text_Boy {
-	format("I gave myself the challenge to catch every Pokémon in the school backyard!\p I already caught a Mienfoo and a Lillipup.\p I just need a Lotad and a Doduo, and I'll have succeeded.")
+	format("I gave myself the challenge to catch every POKéMON in the school backyard!\p I already caught a MIENFOO and a LILLIPUP.\p I just need a LOTAD and a DODUO, and I'll have succeeded.")
 }
 
 script RustboroCity_EventScript_Picknicker {
@@ -137,7 +137,7 @@ script RustboroCity_EventScript_Picknicker {
 }
 
 text RustboroCity_Text_Picknicker {
-	format("...and after that, he said he'd rather be learning about Pokémon than spend time with me.\p Can you believe that?")
+	format("...and after that, he said he'd rather be learning about POKéMON than spend time with me.\p Can you believe that?")
 }
 
 script RustboroCity_EventScript_Girl {
@@ -156,7 +156,7 @@ script RustboroCity_EventScript_DevonEmployee {
 }
 
 text RustboroCity_Text_DevonEmployee {
-	format("This is crazy! Team aqua is invading the Devon Corps building.\p I sure am glad that I called in sick this morning.")
+	format("This is crazy! TEAM AQUA is invading the DEVON CORPS building.\p I sure am glad that I called in sick this morning.")
 }
 
 script RustboroCity_EventScript_FatMan {
@@ -177,7 +177,7 @@ text RustboroCity_Text_FatMan {
 }
 
 text RustboroCity_Text_FatMan2 {
-	format("This move's type can differ from Pokémon to Pokémon.")
+	format("This move's type can differ from POKéMON to POKéMON.")
 }
 
 script RustboroCity_EventScript_Artist {
@@ -185,5 +185,5 @@ script RustboroCity_EventScript_Artist {
 }
 
 text RustboroCity_Text_Artist {
-	format("Bay Harbor City's architecture is so inspiring for an artist like me.")
+	format("BAY HARBOR CITY's architecture is so inspiring for an artist like me.")
 }

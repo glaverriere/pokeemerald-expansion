@@ -9,7 +9,7 @@ script ShadeForest_Billy_EventScript {
 }
 
 text ShadeForest_Billy_Intro {
-	format("Catching Bug Pokémon is so cool!")
+	format("Catching BUG POKéMON is so cool!")
 }
 
 text ShadeForest_Billy_Defeated {
@@ -17,7 +17,7 @@ text ShadeForest_Billy_Defeated {
 }
 
 text ShadeForest_Billy_PostBattle {
-	format("If only I could find Revives...")
+	format("If only I could find REVIVES...")
 }
 
 script ShadeForest_Shawn_EventScript {
@@ -27,7 +27,7 @@ script ShadeForest_Shawn_EventScript {
 }
 
 text ShadeForest_Shawn_Intro {
-	format("I'm working on building the strongest Pokémon team!")
+	format("I'm working on building the strongest POKéMON team!")
 }
 
 text ShadeForest_Shawn_Defeated {
@@ -45,7 +45,7 @@ script ShadeForest_Jimmy_EventScript {
 }
 
 text ShadeForest_Jimmy_Intro {
-	format("I'll show you the power of the Bug Pokémon!")
+	format("I'll show you the power of the BUG POKéMON!")
 }
 
 text ShadeForest_Jimmy_Defeated {
@@ -53,7 +53,7 @@ text ShadeForest_Jimmy_Defeated {
 }
 
 text ShadeForest_Jimmy_PostBattle {
-	format("Some people say that Bug Pokémon are the weakest.\p I don't think that's true.")
+	format("Some people say that BUG POKéMON are the weakest.\p I don't think that's true.")
 }
 
 script ShadeForest_Gabriel_EventScript {
@@ -63,7 +63,7 @@ script ShadeForest_Gabriel_EventScript {
 }
 
 text ShadeForest_Gabriel_Intro {
-	format("My Pokémon never lost me a battle. Let's go!")
+	format("My POKéMON never lost me a battle. Let's go!")
 }
 
 text ShadeForest_Gabriel_Defeated {
@@ -141,7 +141,7 @@ script ShadeForest_Boy_EventScript {
 }
 
 text ShadeForest_Boy_Text {
-	format("I heard a rumor that there is a pretty well hidden grove in Shade forest.\p Some say that you can find rare Pokémon there.\p I haven't been lucky enough to find it yet.")
+	format("I heard a rumor that there is a pretty well hidden grove in SHADE FOREST.\p Some say that you can find rare POKéMON there.\p I haven't been lucky enough to find it yet.")
 }
 
 script ShadeForest_Girl_EventScript {

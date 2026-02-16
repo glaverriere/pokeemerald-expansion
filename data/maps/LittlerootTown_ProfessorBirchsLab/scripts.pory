@@ -71,31 +71,31 @@ movement GladehavenTown_ProfessorBirchsLab_Movement_PlayerEnterLabForPokedex {
 }
 
 text GladehavenTown_ProfessorBirchsLab_Text_HeardYouBeatRivalTakePokedex {
-	format("Prof. Birch: Oh, hi, Wally and {PLAYER}!\p I heard you already had your first battle a couple of minutes ago. That's great!\p {RIVAL}'s been helping with my research for a while now.\p Even if {RIVAL} just had their first Pokémon, they know a lot about them.\p Wally, {PLAYER}, I ordered this for my research and I think you should both have it.\p The Pokédex will help you as trainers and will help with my ongoing research on Pokémon.")
+	format("PROF. BIRCH: Oh, hi, WALLY and {PLAYER}!\p I heard you already had your first battle a couple of minutes ago. That's great!\p {RIVAL}'s been helping with my research for a while now.\p Even if {RIVAL} just had their first POKéMON, they know a lot about them.\p WALLY, {PLAYER}, I ordered this for my research and I think you should both have it.\p The POKéDEX will help you as trainers and will help with my ongoing research on POKéMON.")
 }
 
 text GladehavenTown_ProfessorBirchsLab_Text_ReceivedPokedex {
-	format("{PLAYER} received the Pokédex!")
+	format("{PLAYER} received the POKéDEX!")
 }
 
 text GladehavenTown_ProfessorBirchsLab_Text_ExplainPokedex {
-	format("Prof. Birch: The Pokédex is a high-tech tool that automatically makes a record of any Pokémon you meet or catch.\p My kid, {RIVAL}, goes everywhere with it.\p Whenever my kid catches a rare Pokémon and records its data in the Pokédex, why, {RIVAL} looks for me while I'm out doing fieldwork, and shows me.\p Oh! Before I forget.\n Please take these items.")
+	format("PROF. BIRCH: The POKéDEX is a high-tech tool that automatically makes a record of any POKéMON you meet or catch.\p My kid, {RIVAL}, goes everywhere with it.\p Whenever my kid catches a rare POKéMON and records its data in the POKéDEX, why, {RIVAL} looks for me while I'm out doing fieldwork, and shows me.\p Oh! Before I forget.\n Please take these ITEMS.")
 }
 
 text GladehavenTown_ProfessorBirchsLab_Text_MayGotPokedexTooTakeThese {
-	format("May: Oh, wow, you guys!\n You got a Pokédex, too!\p That's great! Just like me!\n I've got something for you, too!")
+	format("{RIVAL}: Oh, wow, you guys!\n You got a POKéDEX, too!\p That's great! Just like me!\n I've got something for you, too!")
 }
 
 text GladehavenTown_ProfessorBirchsLab_Text_CatchCutePokemonWithPokeBalls {
-	format("May: It's fun if you can get a lot of Pokémon!\p I'm going to look all over the place because I want different Pokémon.\p Wally, {PLAYER}, let's meet in route 102.\p I'll teach you how to catch a Pokémon with a Poké ball.")
+	format("{RIVAL}: It's fun if you can get a lot of POKéMON!\p I'm going to look all over the place because I want different POKéMON.\p WALLY, {PLAYER}, let's meet in ROUTE 102.\p I'll teach you how to catch a POKéMON with a POKé BALL.")
 }
 
 text GladehavenTown_ProfessorBirchsLab_Text_BrendanGotPokedexTooTakeThese {
-	format("Brendan: Huh!\n So you got a Pokédex, too.\p Well then, here.\n You should have these.")
+	format("{RIVAL}: Huh!\n So you got a POKéDEX, too.\p Well then, here.\n You should have these.")
 }
 
 text GladehavenTown_ProfessorBirchsLab_Text_CatchCoolPokemonWithPokeBalls {
-	format("Brendan: You know it's more fun to have a whole bunch of Pokémon.\p I'm going to explore all over the place to find different Pokémon.\p Wally, {PLAYER}, let's meet in route 102.\p I'll teach you how to catch a Pokémon with a Poké ball.")
+	format("{RIVAL}: You know it's more fun to have a whole bunch of POKéMON.\p I'm going to explore all over the place to find different POKéMON.\p WALLY, {PLAYER}, let's meet in ROUTE 102.\p I'll teach you how to catch a POKéMON with a POKé BALL.")
 }
 
 script GladehavenTown_ProfessorBirchsLab_EventScript_Birch {
@@ -111,7 +111,7 @@ script GladehavenTown_ProfessorBirchsLab_EventScript_Rival {
 }
 
 text GladehavenTown_ProfessorBirchsLab_Text_MeetUsInRoute102 {
-	format("Meet me and Wally in route 102.\n We will learn how to catch Pokémon.")
+	format("Meet me and WALLY in ROUTE 102.\n We will learn how to catch a POKéMON.")
 }
 
 script GladehavenTown_ProfessorBirchsLab_EventScript_Wally {
@@ -119,11 +119,11 @@ script GladehavenTown_ProfessorBirchsLab_EventScript_Wally {
 }
 
 text GladehavenTown_ProfessorBirchsLab_Text_Wally {
-	format("You've all shown me nothing but generosity!\p I don't know how will repay any of you...\p I know!\n I'll start by filling my Pokédex as much as possible!")
+	format("You've all shown me nothing but generosity!\p I don't know how will repay any of you...\p I know!\n I'll start by filling my POKéDEX as much as possible!")
 }
 
 text GladehavenTown_ProfessorBirchsLab_Text_CountlessPokemonAwaitting {
-	format("Prof. Birch: Countless Pokémon await you!\p Argh, I'm getting the itch to get out and do fieldwork again!")
+	format("PROF. BIRCH: Countless POKéMON await you!\p Argh, I'm getting the itch to get out and do fieldwork again!")
 }
 
 script LittlerootTown_ProfessorBirchsLab_EventScript_Machine {
@@ -147,7 +147,7 @@ script GladehavenTown_ProfessorBirchsLab_EventScript_Aide1 {
 }
 
 text GladehavenTown_ProfessorBirchsLab_Text_BirchIsntOneForDeskWork {
-	format("The professor isn't one for doing desk work.\p He's the type of person who would rather go outside and experience things than read about them here.")
+	format("The PROFESSOR isn't one for doing desk work.\p He's the type of person who would rather go outside and experience things than read about them here.")
 }
 
 script GladehavenTown_ProfessorBirchsLab_EventScript_Aide2 {
@@ -155,7 +155,7 @@ script GladehavenTown_ProfessorBirchsLab_EventScript_Aide2 {
 }
 
 text GladehavenTown_ProfessorBirchsLab_Text_BirchEnjoysRivalsHelpToo {
-	format("Prof. Birch is studying the habitats and distribution of Pokémon.\p The Prof enjoys {RIVAL}'s help, too.\n There's a lot of love there.")
+	format("PROF. BIRCH is studying the habitats and distribution of POKéMON.\p The Prof enjoys {RIVAL}'s help, too.\n There's a lot of love there.")
 }
 
 text LittlerootTown_ProfessorBirchsLab_Text_SeriousLookingMachine {
@@ -167,7 +167,7 @@ text LittlerootTown_ProfessorBirchsLab_Text_PCUsedForResearch {
 }
 
 text LittlerootTown_ProfessorBirchsLab_Text_CrammedWithBooksOnPokemon {
-	format("It's crammed with books on Pokémon.")
+	format("It's crammed with books on POKéMON.")
 }
 
 text LittlerootTown_ProfessorBirchsLab_Text_BookTooHardToRead {

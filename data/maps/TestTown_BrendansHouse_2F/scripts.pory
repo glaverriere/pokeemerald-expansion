@@ -39,5 +39,5 @@ movement Movement_DadToPlayer {
 }
 
 text Dad_MeetMeAtGym {
-    format("Dad: Good morning, {PLAYER}. Today is your big day, isn't it? That's right!\p Today is the day that you're gonna get your very first Pokémon.\p Meet me at the Pokémon gym. We will do this the official way.\p See you later!")
+    format("DAD: Good morning, {PLAYER}. Today is your big day, isn't it? That's right!\p Today is the day that you're gonna get your very first POKéMON.\p Meet me at the POKéMON GYM.\n We will do this the official way.\p See you later!")
 }

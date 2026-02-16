@@ -233,11 +233,11 @@ movement TestTown_Rival_GoesToGym3 {
 }
 
 text TestTown_RivalMay_LetsGoTogether {
-	format("May: Hi {PLAYER}!\p Sorry if I scared you-I just wanted to get our first Pokémon together.\p Let's go inside!")
+	format("{RIVAL}: Hi {PLAYER}!\p Sorry if I scared you-I just wanted to get our first POKéMON together.\p Let's go inside!")
 }
 
 text TestTown_RivalBrendan_LetsGoTogether {
-	format("Brendan: Hi {PLAYER}!\p Sorry if I scared you-I just wanted to get our first Pokémon together.\p Let's go inside!")
+	format("{RIVAL}: Hey {PLAYER}!\p I can't believe you would go get our first POKéMON without me!\p Come on.\n Let's go.")
 }
 
 movement TestTown_Rival_EntersGym1 {
@@ -262,7 +262,7 @@ script TestTown_SignPost_EventScript {
 }
 
 text TestTown_SignPost_Text {
-	format("Blossom Town\n A town where you can grow.")
+	format("BLOSSOM TOWN\n A town where you can grow.")
 }
 
 script TestTown_GymPost_EventScript {
@@ -270,7 +270,7 @@ script TestTown_GymPost_EventScript {
 }
 
 text TestTown_GymPost_Text {
-	format("Blossom Town Pokémon gym\n Leader: Norman\l “He leaves a toxic waste behind after every battle!”")
+	format("BLOSSOM TOWN POKéMON GYM\n Leader: NORMAN\l “He leaves a toxic waste behind after every battle!”")
 }
 
 script TestTown_Eventscript_Fisherman {
@@ -286,5 +286,5 @@ script TestTown_Eventscript_Woman {
 }
 
 text TestTown_Text_Woman {
-	format("Blossom town is such a nice little place!\p I'm only visiting, but I wish I could live here.")
+	format("BLOSSON TOWN is such a nice little place!\p I'm only visiting, but I wish I could live here.")
 }

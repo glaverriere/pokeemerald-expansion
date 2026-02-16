@@ -43,7 +43,7 @@ script TestTown_Mart_Girl {
 }
 
 text TestTown_Mart_Girl_Text {
-	format("I'm currently saving for a Quick ball.\p They're pricier, but they make catching Pokémon so easy!")
+	format("I'm currently saving for a QUICK BALL.\p They're pricier, but they make catching POKéMON so easy!")
 }
 
 script TestTown_Mart_Man {
@@ -51,5 +51,5 @@ script TestTown_Mart_Man {
 }
 
 text TestTown_Mart_Man_Text {
-	format("I give my Pokémon an Oran berry to hold during battle so when its HP goes too low, it regains 10 HP.\p I love experimenting with different items!")
+	format("I give my POKéMON an ORAN BERRY to hold during battle so when its HP goes too low, it regains 10 HP.\p I love experimenting with different ITEMS!")
 }

@@ -14,11 +14,11 @@ script RustboroCity_Gym_EventScript_Roxanne {
 }
 
 text RustboroCity_Gym_Text_StoneBadgeInfoTakeThis {
-	format("The earth badge enables your Pokémon to use the HM move cut outside of battle.\p Please take this with you, too.")
+	format("The EARTH BADGE enables your POKéMON to use the HM move CUT outside of battle.\p Please take this with you, too.")
 }
 
 text RustboroCity_Gym_Text_ExplainRockTomb {
-	format("That technical machine, TM78, contains Bulldoze.\p It not only inflicts damage by shaking the ground, it also lowers speed.\p If you use a TM, it instantly teaches the move to a Pokémon.\p Remember, a TM can be used only once, so think before you use it.")
+	format("That TECHNICAL MACHINE, TM78, contains BULLDOZE.\p It not only inflicts damage by shaking the ground, it also lowers SPEED.\p If you use a TM, it instantly teaches the move to a POK.MON.\p Remember, a TM can be used only once, so think before you use it.")
 }
 
 raw `
@@ -97,31 +97,31 @@ RustboroCity_Gym_EventScript_GymStatue::
 RustboroCity_Gym_Text_GymGuideAdvice:
 	.string "Yo, how's it going?\p"
 	.string "Listen, my friend!\n"
-	.string "Would you like to become the champion?\p"
+	.string "Would you like to become the CHAMPION?\p"
 	.string "I'm no trainer, not me, but I can\n"
 	.string "sure give you winning advice.\p"
 	.string "That's settled, then! We'll aim for the\n"
-	.string "Pokémon championship together!\p"
+	.string "POKéMON championship together!\p"
 	.string "It's your job as a trainer to collect\n"
-	.string "gym badges, am I right?\p"
-	.string "But gym leaders aren't pushovers!\p"
+	.string "GYM BADGES, am I right?\p"
+	.string "But GYM leaders aren't pushovers!\p"
 	.string "And that's where I come in!\n"
 	.string "I'm here to provide expert advice!\p"
-	.string "Roxanne, the gym leader, is a user\n"
-	.string "of ground-type Pokémon.\p"
-	.string "The ground type is very durable, but\n"
-	.string "it can't stand water-type and\l"
-	.string "grass-type moves.\p"
+	.string "ROXANNE, the GYM leader, is a user\n"
+	.string "of GROUND-type POKéMON.\p"
+	.string "The GROUND type is very durable, but\n"
+	.string "it can't stand WATER-type,\l"
+	.string "GRASS-type AND ICE-type moves.\p"
 	.string "Come see me afterwards, if you beat\n"
-	.string "the gym leader.\p"
+	.string "the GYM leader.\p"
 	.string "Well, go for it!$"
 
 RustboroCity_Gym_Text_GymGuidePostVictory:
 	.string "Whoa! What a breathtaking victory!\n"
 	.string "My cheering must've worked!\p"
 	.string "Great!\n"
-	.string "Check your trainer card.\p"
-	.string "The earth badge you got should be\n"
+	.string "Check your TRAINER CARD.\p"
+	.string "The EARTH BADGE you got should be\n"
 	.string "properly recorded on it.\p"
 	.string "In other words…\p"
 	.string "You've climbed the first step on\n"
@@ -129,7 +129,7 @@ RustboroCity_Gym_Text_GymGuidePostVictory:
 	.string "That's got to feel awesome!$"
 
 RustboroCity_Gym_Text_JoshIntro:
-	.string "Don't take us gym trainers lightly!\n"
+	.string "Don't take us GYM trainers lightly!\n"
 	.string "I'll show you why we're better!$"
 
 RustboroCity_Gym_Text_JoshDefeat:
@@ -137,24 +137,24 @@ RustboroCity_Gym_Text_JoshDefeat:
 
 RustboroCity_Gym_Text_JoshPostBattle:
 	.string "You haven't seen anything of the\n"
-	.string "ground type's terrifying power!$"
+	.string "GROUND type's terrifying power!$"
 
 RustboroCity_Gym_Text_TommyIntro:
 	.string "If you can't beat me, you won't stand\n"
-	.string "a chance against Roxanne!$"
+	.string "a chance against ROXANNE!$"
 
 RustboroCity_Gym_Text_TommyDefeat:
 	.string "Wow! You've got some potential!$"
 
 RustboroCity_Gym_Text_TommyPostBattle:
-	.string "Roxanne is stronger than me by\n"
+	.string "ROXANNE is stronger than me by\n"
 	.string "several times.\p"
 	.string "You'd better be on your guard!$"
 
 RustboroCity_Gym_Text_MarcIntro:
 	.string "We might be in the middle of town,\n"
 	.string "but so what?\p"
-	.string "My ground Pokémon need room to\n"
+	.string "My GROUND POKéMON need room to\n"
 	.string "rampage!$"
 
 RustboroCity_Gym_Text_MarcDefeat:
@@ -164,16 +164,16 @@ RustboroCity_Gym_Text_MarcDefeat:
 RustboroCity_Gym_Text_MarcPostBattle:
 	.string "I have to hand it to our leader.\p"
 	.string "It took smarts and sense for her to\n"
-	.string "pick the ground type at her young age.$"
+	.string "pick the GROUND type at her young age.$"
 
 RustboroCity_Gym_Text_RoxanneIntro:
-	.string "Hello, I am Roxanne, the Bay Harbor\n"
-	.string "Pokémon gym leader.\p"
-	.string "I became a gym leader so that I might\n"
-	.string "apply what I learned at the Pokémon\l"
-	.string "trainer's school in battle.\p"
+	.string "Hello, I am ROXANNE, the BAY HARBOR\n"
+	.string "POKéMON GYM leader.\p"
+	.string "I became a GYM leader so that I might\n"
+	.string "apply what I learned at the POKéMON\l"
+	.string "TRAINER's SCHOOL in battle.\p"
 	.string "Would you kindly demonstrate how you\n"
-	.string "battle, and with which Pokémon?$"
+	.string "battle, and with which POKéMON?$"
 
 RustboroCity_Gym_Text_RoxanneDefeat:
 	.string "So…\n"
@@ -181,27 +181,27 @@ RustboroCity_Gym_Text_RoxanneDefeat:
 	.string "It seems that I still have much more\n"
 	.string "to learn…\p"
 	.string "I understand.\p"
-	.string "The Pokémon league's rules state\n"
+	.string "The POKéMON LEAGUE's rules state\n"
 	.string "that trainers are to be given this\l"
-	.string "if they defeat a gym leader.\p"
-	.string "Please accept the official Pokémon\n"
-	.string "league earth badge.$"
+	.string "if they defeat a GYM leader.\p"
+	.string "Please accept the official POKéMON\n"
+	.string "LEAGUE EARTH BADGE.$"
 
 RustboroCity_Gym_Text_ReceivedStoneBadge:
-	.string "{PLAYER} received the earth badge\n"
-	.string "from Roxanne.$"
+	.string "{PLAYER} received the EARTH BADGE\n"
+	.string "from ROXANNE.$"
 
 RustboroCity_Gym_Text_RoxannePostBattle:
 	.string "Since you are so strong, you should\n"
-	.string "challenge other gym leaders.\p"
+	.string "challenge other GYM leaders.\p"
 	.string "By battling many trainers, you should\n"
 	.string "learn many things.$"
 
 RustboroCity_Gym_Text_GymStatue:
-	.string "Bay Harbor City Pokémon gym$"
+	.string "BAY HARBOR CITY POKéMON GYM$"
 
 RustboroCity_Gym_Text_GymStatueCertified:
-	.string "Bay Harbor City Pokémon gym\p"
-	.string "Roxanne's certified trainers:\n"
+	.string "BAY HARBOR CITY POKéMON GYM\p"
+	.string "ROXANNE's certified trainers:\n"
 	.string "{PLAYER}$"
 `

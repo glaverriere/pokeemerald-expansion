@@ -12,11 +12,11 @@ script TestTown_House1_Dude {
         setflag(FLAG_RECEIVED_LIGHT_BALL)
     }
     else {
-        msgbox("Did you get to use the light ball?", MSGBOX_NPC)
+        msgbox("Did you get to use the LIGHT BALL?", MSGBOX_NPC)
     }
     releaseall
 }
 
 text TestTown_House1_Dude_Evolved {
-    format("Hey kiddo!\p Since my Pikachu evolved into a Raichu, I don't need this anymore.\p Please, take it!")
+    format("Hey kiddo!\p Since my PIKACHU evolved into a RAICHU, I don't need this anymore.\p Please, take it!")
 }

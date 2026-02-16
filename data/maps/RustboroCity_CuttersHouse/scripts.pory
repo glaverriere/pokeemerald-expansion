@@ -24,13 +24,13 @@ RustboroCity_CuttersHouse_EventScript_Lass::
 `
 
 text RustboroCity_CuttersHouse_Text_DadHelpedClearLandOfTrees {
-	format("When they were expanding the city of Bay Harbor, my husband helped out.\p His Pokémon used Cut to clear the trees and make place for the buildings.\p He made a deal with Devon Coprs so we could keep our lovely home.")
+	format("When they were expanding the city of BAY HARBOR, my husband helped out.\p His POKéMON used CUT to clear the trees and make place for the buildings.\p He made a deal with DEVON CORPS so we could keep our lovely home.")
 }
 
 text RustboroCity_CuttersHouse_Text_YouCanPutThisHMToGoodUse {
-	format("When I was younger, I used to Cut trees all the time with my Pokémon.\p Yes, it was my job.\n And I loved to do it.\p It was a great time to bond with my Pokémon.\p Thank you for listening to my little story.\p As a reward, I want you to have the chance to experience this special bond with your Pokémon.\p Here, take this Hidden Machine!\n Don't be shy, take it!")
+	format("When I was younger, I used to cut trees all the time with my POKéMON.\p Yes, it was my job.\n And I loved to do it.\p It was a great time to bond with my POKéMON.\p Thank you for listening to my little story.\p As a reward, I want you to have the chance to experience this special bond with your POKéMON.\p Here, take this HIDDEN MACHINE!\n Don't be shy, take it!")
 }
 
 text RustboroCity_CuttersHouse_Text_ExplainCut {
-	format("That Hidden Machine, or HM for short, contains the move Cut.\p An HM move is one that can be used by Pokémon outside of battle.\p Any Pokémon that's learned Cut can chop down thin trees if the trainer has earned the earth badge.\p And, unlike a TM, an HM can be used more than once.")
+	format("That HIDDEN MACHINE, or HM for short, contains the move CUT.\p An HM move is one that can be used by POKéMON outside of battle.\p Any POKéMON that's learned CUT can chop down thin trees if the trainer has earned the EARTH BADGE.\p And, unlike a TM, an HM can be used more than once.")
 }

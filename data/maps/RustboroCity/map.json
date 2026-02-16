@@ -443,6 +443,14 @@
       "elevation": 0,
       "item": "ITEM_ETHER",
       "flag": "FLAG_HIDDEN_ITEM_BAY_HARBOR_CITY_ETHER"
+    },
+    {
+      "type": "hidden_item",
+      "x": 41,
+      "y": 7,
+      "elevation": 0,
+      "item": "ITEM_SILK_SCARF",
+      "flag": "FLAG_HIDDEN_ITEM_BAY_HARBOR_CITY_SILK_SCARF"
     }
   ]
 }

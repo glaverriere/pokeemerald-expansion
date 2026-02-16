@@ -25,7 +25,7 @@ script TestTown_PokemonCenter_EventScript_FatMan {
 }
 
 text TestTown_PokemonCenter_Text_FatMan {
-    format("Do you see the PC right behind me?\p Pokémon trainers use it to store Pokémon and items.\p There's one in each Pokémon center across Hoenn.\p Neat, isn't it?")
+    format("Do you see the PC right behind me?\p POKéMON trainers use it to store POKéMON and ITEMS.\p There's one in each POKéMON CENTER across HOENN.\p Neat, isn't it?")
 }
 
 script TestTown_PokemonCenter_EventScript_Boy {
@@ -39,5 +39,5 @@ script TestTown_PokemonCenter_EventScript_Girl {
     msgbox(TestTown_PokemonCenter_Text_Girl, MSGBOX_NPC)
 }
 text TestTown_PokemonCenter_Text_Girl {
-    format("It's so fun to spend time with my friend at the Pokémon center!")
+    format("It's so fun to spend time with my friend at the POKéMON CENTER!")
 }

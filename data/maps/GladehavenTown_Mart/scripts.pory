@@ -51,7 +51,7 @@ script GladehavenTown_Mart_EventScript_Hiker {
 }
 
 text GladehavenTown_Mart_Text_Hiker {
-	format("I'm browsing healing items. It can be handy to have them while on a trek!")
+	format("I'm browsing healing ITEMS. It can be handy to have them while on a trek!")
 }
 
 script GladehavenTown_Mart_EventScript_Girl {

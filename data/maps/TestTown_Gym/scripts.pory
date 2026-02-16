@@ -96,19 +96,19 @@ movement TestTown_Gym_RivalToBag {
 }
 
 text TestTown_Gym_WelcomeToMyGym_Male {
-	format("Dad: Welcome to my gym.\p I hope you are ready, you have a very difficult decision to make.\p Behind me, there's three Poké balls.\p Each one containing a different Pokémon.\p You must choose your first partner for your journey.\p May, would you do us the honor of choosing first?\p May: Yes! Thank you so much for this opportunity, Norman!")
+	format("DAD: Welcome to my GYM.\p I hope you are ready, you have a very difficult decision to make.\p Behind me, there's three POKé BALLS.\p Each one containing a different POKéMON.\p You must choose your first partner for your journey.\p {RIVAL}, would you do us the honor of choosing first?\p {RIVAL}: Yes!\n Thank you so much for this opportunity, NORMAN!")
 }
 
 text TestTown_Gym_WelcomeToMyGym_Female {
-	format("Dad: Welcome to my gym.\p I hope you are ready, you have a very difficult decision to make.\p Behind me, there's three Poké balls.\p Each one containing a different Pokémon.\p You must choose your first partner for your journey.\p Brendan, would you do us the honor of choosing first?\p Brendan: Yes! Thank you so much for this opportunity, Norman!")
+	format("DAD: Welcome to my GYM.\p I hope you are ready, you have a very difficult decision to make.\p Behind me, there's three POKé BALLS.\p Each one containing a different POKéMON.\p You must choose your first partner for your journey.\p {RIVAL}, would you do us the honor of choosing first?\p {RIVAL}: Yes, NORMAN!\n I've been ready my whole life!")
 }
 
 text TestTown_Gym_ICantDecide_May {
-    format("May: They're all so cool and unique.\p I really don't know which one to choose...")
+    format("{RIVAL}: They're all so cute and unique.\p I really don't know which one to choose...")
 }
 
 text TestTown_Gym_ICantDecide_Brendan {
-    format("Brendan: They're all so cool and unique.\p I really don't know which one to choose...")
+    format("{RIVAL}: They're all very cool and unique.\p I really don't know which one to choose...")
 }
 
 text TestTown_Gym_PlayerYouChooseFirst {
@@ -116,7 +116,7 @@ text TestTown_Gym_PlayerYouChooseFirst {
 }
 
 text TestTown_Gym_DadGoAhead {
-    format("Dad: Alright {PLAYER}, go ahead.")
+    format("DAD: Alright {PLAYER}, go ahead.")
 }
 
 script TestTown_Gym_Rival {
@@ -138,15 +138,15 @@ script TestTown_Gym_NormanWaitsForPokemon {
 }
 
 text TestTown_Gym_RivalCantDecide {
-    format("Pick first.\p It will be easier for me to choose if there is only two Pokémon left.")
+    format("Pick first.\p It will be easier for me to choose if there is only two POKéMON left.")
 }
 
 text TestTown_Gym_DadTakeYourTime {
-    format("The Poké balls are right behind me.\p Take your time, it's a very important decision to make.")
+    format("The POKé BALLS are right behind me.\p Take your time, it's a very important decision to make.")
 }
 
 text TestTown_Gym_DadGoToBirch {
-    format("Once you get stronger as a trainer, I'll gladly challenge you.\p For now, go meet your friends at Professor Birch's lab.\p It's north of our town.")
+    format("Once you get stronger as a trainer, I'll gladly challenge you.\p For now, go meet your friends at PROFESSOR BIRCH's LAB.\p It's north of our town.")
 }
 
 script TestTown_Gym_Eventscript_TreeckoBall {
@@ -154,11 +154,11 @@ script TestTown_Gym_Eventscript_TreeckoBall {
     showmonpic(SPECIES_TREECKO, 10, 3)
     playmoncry(SPECIES_TREECKO, CRY_MODE_NORMAL)
     waitmoncry
-    msgbox("Do you want to choose Treecko?", MSGBOX_YESNO)
+    msgbox("Do you want to choose TREECKO?", MSGBOX_YESNO)
     if (var(VAR_RESULT) == YES) {
         givemon(SPECIES_TREECKO, 5, ITEM_ORAN_BERRY, , , 0)
         playfanfare(MUS_OBTAIN_ITEM)
-        msgbox("You received Treecko!")
+        msgbox("You received TREECKO!")
         removeobject(6)
         setflag(FLAG_SYS_POKEMON_GET)
         setflag(FLAG_HIDE_TEST_TOWN_TREECKOBALL)
@@ -180,11 +180,11 @@ script TestTown_Gym_Eventscript_TorchicBall {
     showmonpic(SPECIES_TORCHIC, 10, 3)
     playmoncry(SPECIES_TORCHIC, CRY_MODE_NORMAL)
     waitmoncry
-    msgbox("Do you want to choose Torchic?", MSGBOX_YESNO)
+    msgbox("Do you want to choose TORCHIC?", MSGBOX_YESNO)
     if (var(VAR_RESULT) == YES) {
         givemon(SPECIES_TORCHIC, 5, ITEM_ORAN_BERRY, , , 0)
         playfanfare(MUS_OBTAIN_ITEM)
-        msgbox("You received Torchic!")
+        msgbox("You received TORCHIC!")
         removeobject(7)
         setflag(FLAG_SYS_POKEMON_GET)
         setflag(FLAG_HIDE_TEST_TOWN_TORCHICBALL)
@@ -206,11 +206,11 @@ script TestTown_Gym_Eventscript_MudkipBall {
     showmonpic(SPECIES_MUDKIP, 10, 3)
     playmoncry(SPECIES_MUDKIP, CRY_MODE_NORMAL)
     waitmoncry
-    msgbox("Do you want to choose Mudkip?", MSGBOX_YESNO)
+    msgbox("Do you want to choose MUDKIP?", MSGBOX_YESNO)
     if (var(VAR_RESULT) == YES) {
         givemon(SPECIES_MUDKIP, 5, ITEM_ORAN_BERRY, , , 0)
         playfanfare(MUS_OBTAIN_ITEM)
-        msgbox("You received Mudkip!")
+        msgbox("You received MUDKIP!")
         removeobject(8)
         setflag(FLAG_SYS_POKEMON_GET)
         setflag(FLAG_HIDE_TEST_TOWN_MUDKIPBALL)
@@ -397,7 +397,7 @@ movement Movement_PlayerMudkipToDad2 {
 
 script TestTown_Gym_WallyEnters {
     delay(32)
-    msgbox("Dad: So...")
+    msgbox("DAD: So...")
     closemessage
     playse(SE_EXIT)
 	delay(10)
@@ -494,7 +494,7 @@ script TestTown_Gym_WallyEnters {
     else {
         removeobject(3)
     }
-    msgbox("Wally: Wait for me!")
+    msgbox("WALLY: Wait for me!")
     closemessage
     applymovement(4, TestTown_Gym_WallyOutOfGym)
     waitmovement(0)
@@ -518,19 +518,19 @@ movement TestTown_Gym_WallyApproachesDad {
 }
 
 text TestTown_Gym_IAmWally {
-    format("Wally: Um, hi, my name is Wally and I'm new in Hoenn.\p I'd like to learn how to catch a Pokémon of my own, but I don't know how.\p Professor Birch told me someone here could help me with that.")
+    format("WALLY: Um, hi, my name is WALLY and I'm new in HOENN.\p I'd like to learn how to catch a POKéMON of my own, but I don't know how.\p PROFESSOR BIRCH told me someone here could help me with that.")
 }
 
 text TestTown_Gym_MayWouldLoveToTeachYou {
-    format("May: Hi, Wally! I'm May and this is {PLAYER}.\p Professor Birch is my dad, so I've seen him catch Pokémon plenty of times.\p I would love to teach you how to catch one!")
+    format("{RIVAL}: Hi, WALLY! I'm {RIVAL} and this is {PLAYER}.\p PROFESSOR BIRCH is my dad, so I've seen him catch POKéMON plenty of times.\p I would love to teach you how to catch one!")
 }
 
 text TestTown_Gym_BrendanWouldLoveToTeachYou {
-    format("Brendan: Hi, Wally! I'm Brendan and this is {PLAYER}.\p Professor Birch is my dad, so I've seen him catch Pokémon plenty of times.\p I would love to teach you how to catch one!")
+    format("{RIVAL}: Hey, WALLY! I'm {RIVAL} and this is {PLAYER}.\p PROFESSOR BIRCH is my dad, so I've seen him catch POKéMON plenty of times.\p I can teach you how to catch one if you'd like.")
 }
 
 text TestTown_Gym_DadGivesWallyAPokemon {
-    format("Dad: How nice of you to offer!\p Listen Wally, you come just at the right moment.\p May and {PLAYER} just chose their first Pokémon and there's one more left behind me.\p Would you like to have it?\p Wally: Really?\p You would give me a Pokémon just like that?\p Dad: Yes, take it-It's yours!\p Wally: I don't know what to say...\p Thank you so much!\p It's so nice of you!")
+    format("DAD: How nice of you to offer!\p Listen WALLY, you come just at the right moment.\p {RIVAL} and {PLAYER} just chose their first POKéMON and there's one more left behind me.\p Would you like to have it?\p WALLY: Really?\p You would give me a POKéMON just like that?\p DAD: Yes, take it-It's yours!\p WALLY: I don't know what to say...\p Thank you so much!\p It's so nice of you!")
 }
 
 movement TestTown_Gym_WallyGoesToMudkip {
@@ -567,15 +567,15 @@ movement TestTown_Gym_WallyTorchicBackToDad {
 }
 
 text TestTown_Gym_WallyCantBelieveIt {
-    format("Wally: Thank you again-I can't believe it!\p Dad: You're welcome.\p I'm just happy I could help you.\p Now, your adventure begins.\p Go see Professor Birch, he has something to give to you.\p Don't forget to bring your new friend, Wally, with you!")
+    format("WALLY: Thank you again-I can't believe it!\p DAD: You're welcome.\p I'm just happy I could help you.\p Now, your adventure begins.\p Go see PROFESSOR BIRCH, he has something to give to you.\p Don't forget to bring your new friend, WALLY, with you!")
 }
 
 text TestTown_Gym_IllRaceYouToTheLab_May {
-    format("May: My Dad's lab is in the town north of here.\p I'll race both of you to it!")
+    format("{RIVAL}: My Dad's LAB is in the town north of here.\p I'll race both of you to it!")
 }
 
 text TestTown_Gym_IllRaceYouToTheLab_Brendan {
-    format("Brendan: My Dad's lab is in the town north of here.\p I'll race both of you to it!")
+    format("{RIVAL}: My Dad's LAB is in the town north of here.\p The first one there is the best POKéMON trainer!")
 }
 
 movement TestTown_Gym_RivalRunsOutOfGym {
@@ -598,5 +598,5 @@ script TestTown_Gym_Trigger_NoStarter {
 }
 
 text TestTown_Gym_DontLeave {
-    format("Dad: {PLAYER}!\p Don't leave without your Pokémon!")
+    format("DAD: {PLAYER}!\p Don't leave without your POKéMON!")
 }

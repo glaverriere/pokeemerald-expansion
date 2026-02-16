@@ -10,14 +10,14 @@ script GladehavenTown_EventScript_BirchsLabSign {
 	msgbox(GladehavenTown_Text_ProfBirchsLab, MSGBOX_SIGN)
 }
 text GladehavenTown_Text_ProfBirchsLab {
-	format("Professor Birch's Pokémon lab.")
+	format("PROFESSOR BRICH's POKéMON LAB.")
 }
 
 script GladehavenTown_EventScript_TownSign {
 	msgbox(GladehavenTown_Text_TownSign, MSGBOX_SIGN)
 }
 text GladehavenTown_Text_TownSign {
-	format("Gladehaven town\n The home of Pokémon research.")
+	format("GLADEHAVEN TOWN\n The home of POKéMON research.")
 }
 
 script GladehavenTown_EventScript_Woman {
@@ -25,7 +25,7 @@ script GladehavenTown_EventScript_Woman {
 }
 
 text GladehavenTown_Text_Woman {
-	format("Professor Birch is really passionate about researching Pokémon!\p Also, I heard he is very generous with young trainers.")
+	format("PROFESSOR BIRCH is really passionate about researching POKéMON!\p Also, I heard he is very generous with young trainers.")
 }
 
 script GLadehavenTown_Eventscript_ProfAide {
@@ -37,7 +37,7 @@ script GLadehavenTown_Eventscript_ProfAide {
 }
 
 text GLadehavenTown_Text_ProfAide {
-	format("Are you {PLAYER}? Professor Birch wants to meet you at his lab.\p You should promptly go there.")
+	format("Are you {PLAYER}? PROFESSOR BIRCH wants to meet you at his LAB.\p You should promptly go there.")
 }
 
 script GLadehavenTown_Eventscript_Trigger {
