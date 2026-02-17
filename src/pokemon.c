@@ -5177,6 +5177,11 @@ void AdjustFriendship(struct Pokemon *mon, u8 event)
                 || opponentTrainerClass == TRAINER_CLASS_CHAMPION))
                 return;
         }
+        
+        if (event == FRIENDSHIP_SOOTHE_BELL)
+        {
+            friendship = MAX_FRIENDSHIP;
+        }
 
         mod = sFriendshipEventModifiers[event][friendshipLevel];
         if (mod > 0 && holdEffect == HOLD_EFFECT_FRIENDSHIP_UP)
