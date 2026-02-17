@@ -5058,7 +5058,6 @@ void ItemUseCB_ReduceEV(u8 taskId, TaskFunc task)
     {
         gPartyMenuUseExitCallback = TRUE;
         PlaySE(SE_USE_ITEM);
-        RemoveBagItem(item, 1);
         GetMonNickname(mon, gStringVar1);
         ItemEffectToStatString(effectType, gStringVar2);
         if (friendship != newFriendship)

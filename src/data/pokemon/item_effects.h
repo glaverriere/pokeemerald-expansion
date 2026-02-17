@@ -328,10 +328,6 @@ const u8 gItemEffect_RareCandy[10] = {
     VITAMIN_FRIENDSHIP_CHANGE(7),
 };
 
-const u8 gItemEffect_SootheBell[10] = {
-    EV_BERRY_FRIENDSHIP_CHANGE,
-};
-
 const u8 gItemEffect_PPUp[9] = {
     [4] = ITEM4_PP_UP,
     [5] = ITEM5_FRIENDSHIP_ALL,
@@ -460,7 +456,6 @@ const u8 gItemEffect_GrepaBerry[10] = {
 };
 
 const u8 gItemEffect_TamatoBerry[10] = {
-    [5] = ITEM5_EV_SPEED | ITEM5_FRIENDSHIP_ALL,
-    [6] = ITEM6_SUBTRACT_EV,
+    [5] = ITEM5_FRIENDSHIP_ALL,
     EV_BERRY_FRIENDSHIP_CHANGE,
 };

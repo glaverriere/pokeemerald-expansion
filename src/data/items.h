@@ -1291,7 +1291,7 @@ const struct Item gItemsInfo[] =
         .description = COMPOUND_STRING(
             "Raises the base HP\n"
             "of one Pokémon."),
-        .pocket = KEY_ITEMS,
+        .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_HPUp,
@@ -1308,7 +1308,7 @@ const struct Item gItemsInfo[] =
             "Raises the base\n"
             "Attack stat of one\n"
             "Pokémon."),
-        .pocket = KEY_ITEMS,
+        .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_Protein,
@@ -1325,7 +1325,7 @@ const struct Item gItemsInfo[] =
             "Raises the base\n"
             "Defense stat of\n"
             "one Pokémon."),
-        .pocket = KEY_ITEMS,
+        .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_Iron,
@@ -1342,7 +1342,7 @@ const struct Item gItemsInfo[] =
             "Raises the base\n"
             "Sp. Atk stat of one\n"
             "Pokémon."),
-        .pocket = KEY_ITEMS,
+        .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_Calcium,
@@ -1359,7 +1359,7 @@ const struct Item gItemsInfo[] =
             "Raises the base\n"
             "Sp. Def stat of one\n"
             "Pokémon."),
-        .pocket = KEY_ITEMS,
+        .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_Zinc,
@@ -1377,7 +1377,7 @@ const struct Item gItemsInfo[] =
             "Raises the base\n"
             "Speed stat of one\n"
             "Pokémon."),
-        .pocket = KEY_ITEMS,
+        .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_Carbos,
@@ -1911,31 +1911,13 @@ const struct Item gItemsInfo[] =
             "Raises the level\n"
             "of a Pokémon by\n"
             "one."),
-        .pocket = KEY_ITEMS,
+        .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_RareCandy,
         .effect = gItemEffect_RareCandy,
         .flingPower = 30,
         .iconPic = gItemIcon_RareCandy,
         .iconPalette = gItemIconPalette_RareCandy,
-    },
-
-        [ITEM_SOOTHE_BELL] =
-    {
-        .name = _("Soothe Bell"),
-        .pluralName = _("Soothe Bells"),
-        .price = (I_PRICE >= GEN_7) ? 10000 : 4800,
-        .description = COMPOUND_STRING(
-            "Maximises\n"
-            "friendship\n"
-            "of a Pokémon."),
-        .pocket = KEY_ITEMS,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_SootheBell,
-        .effect = gItemEffect_SootheBell,
-        .flingPower = 30,
-        .iconPic = gItemIcon_SootheBell,
-        .iconPalette = gItemIconPalette_SootheBell,
     },
 
     [ITEM_EXP_CANDY_XS] =
@@ -8254,23 +8236,6 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_QuickClaw,
     },
 
-    [ITEM_SOOTHE_BELL] =
-    {
-        .name = _("Soothe Bell"),
-        .price = (I_PRICE >= GEN_9) ? 5000 : ((I_PRICE >= GEN_7) ? 4000 : 100),
-        .holdEffect = HOLD_EFFECT_FRIENDSHIP_UP,
-        .description = COMPOUND_STRING(
-            "A hold item that\n"
-            "calms spirits and\n"
-            "fosters friendship."),
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 10,
-        .iconPic = gItemIcon_SootheBell,
-        .iconPalette = gItemIconPalette_SootheBell,
-    },
-
     [ITEM_MENTAL_HERB] =
     {
         .name = _("Mental Herb"),
@@ -9617,22 +9582,22 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_GrepaBerry,
     },
 
-    [ITEM_TAMATO_BERRY] =
+    [ITEM_SOOTHE_BELL] =
     {
-        .name = _("Tamato Berry"),
-        .pluralName = _("Tamato Berries"),
+        .name = _("Soothe Bell"),
+        .pluralName = _("Soothe Bells"),
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .description = COMPOUND_STRING(
             "Makes a Pokémon\n"
             "friendly but lowers\n"
             "base Speed."),
-        .pocket = POCKET_BERRIES,
+        .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_ReduceEV,
         .effect = gItemEffect_TamatoBerry,
         .flingPower = 10,
-        .iconPic = gItemIcon_TamatoBerry,
-        .iconPalette = gItemIconPalette_TamatoBerry,
+        .iconPic = gItemIcon_SootheBell,
+        .iconPalette = gItemIconPalette_SootheBell,
     },
 
     [ITEM_CORNN_BERRY] =
