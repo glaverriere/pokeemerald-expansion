@@ -2134,7 +2134,7 @@ const struct Item gItemsInfo[] =
             "Repels weak wild\n"
             "Pokémon for 100\n"
             "steps."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Repel,
         .flingPower = 30,
@@ -13782,7 +13782,7 @@ const struct Item gItemsInfo[] =
             "An item that resets\n"
             "all base points of\n"
             "a Pokémon."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_ResetEVs,
         .effect = gItemEffect_ResetMochi,

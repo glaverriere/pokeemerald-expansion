@@ -5026,7 +5026,6 @@ void ItemUseCB_ResetEVs(u8 taskId, TaskFunc task)
     {
         gPartyMenuUseExitCallback = TRUE;
         PlaySE(SE_USE_ITEM);
-        RemoveBagItem(item, 1);
         GetMonNickname(mon, gStringVar1);
         StringExpandPlaceholders(gStringVar4, gText_BasePointsResetToZero);
         DisplayPartyMenuMessage(gStringVar4, TRUE);
