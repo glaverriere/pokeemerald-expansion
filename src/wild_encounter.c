@@ -972,11 +972,13 @@ bool8 UpdateRepelCounter(void)
         steps--;
         if (!isLure)
         {
-            VarSet(VAR_REPEL_STEP_COUNT, steps);
-            if (steps == 0)
+            if (steps == 1)
             {
-                ScriptContext_SetupScript(EventScript_SprayWoreOff);
-                return TRUE;
+                VarSet(VAR_REPEL_STEP_COUNT, 250);
+            }
+            else
+            {
+                VarSet(VAR_REPEL_STEP_COUNT, steps);
             }
         }
         else

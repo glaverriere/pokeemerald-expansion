@@ -51,6 +51,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .shinyPalette = gMonShinyPalette_Treecko,
         .iconSprite = gMonIcon_Treecko,
         .iconPalIndex = 1,
+        .isStarter = TRUE,
         FOOTPRINT(Treecko)
         OVERWORLD(
             sPicTable_Treecko,
@@ -303,6 +304,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .shinyPalette = gMonShinyPalette_Torchic,
         .iconSprite = gMonIcon_Torchic,
         .iconPalIndex = 0,
+        .isStarter = TRUE,
         FOOTPRINT(Torchic)
         OVERWORLD(
             sPicTable_Torchic,
@@ -562,6 +564,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .shinyPalette = gMonShinyPalette_Mudkip,
         .iconSprite = gMonIcon_Mudkip,
         .iconPalIndex = 0,
+        .isStarter = TRUE,
         FOOTPRINT(Mudkip)
         OVERWORLD(
             sPicTable_Mudkip,

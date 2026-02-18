@@ -2129,7 +2129,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Repel"),
         .price = (I_PRICE >= GEN_7) ? 400 : 350,
-        .holdEffectParam = 100,
+        .holdEffectParam = 250,
         .description = COMPOUND_STRING(
             "Repels weak wild\n"
             "Pokémon for 100\n"
