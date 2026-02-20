@@ -3622,9 +3622,9 @@ static void BufferLeftColumnIVs(void)
     u8 *defenseString = Alloc(20);
 
     DynamicPlaceholderTextUtil_Reset();
-    BufferStat(HPString, 0, sMonSummaryScreen->summary.HPIV, 0, 4);
-    BufferStat(attackString, STAT_ATK, sMonSummaryScreen->summary.atkIV, 1, 7);
-    BufferStat(defenseString, STAT_DEF, sMonSummaryScreen->summary.defIV, 2, 7);
+    BufferStat(HPString, 0, sMonSummaryScreen->summary.HPIV, 0, 3);
+    BufferStat(attackString, STAT_ATK, sMonSummaryScreen->summary.atkIV, 2, 7);
+    BufferStat(defenseString, STAT_DEF, sMonSummaryScreen->summary.defIV, 3, 7);
     DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, sStatsLeftColumnLayoutIVs);
 
     Free(HPString);
