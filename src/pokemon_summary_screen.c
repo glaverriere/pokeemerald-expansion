@@ -757,7 +757,7 @@ static const u8 sMemoNatureTextColor[] = _("{COLOR LIGHT_RED}{SHADOW GREEN}");
 static const u8 sMemoMiscTextColor[] = _("{COLOR WHITE}{SHADOW DARK_GRAY}"); // This is also affected by palettes, apparently
 static const u8 sStatsLeftColumnLayout[] = _("{DYNAMIC 0}/{DYNAMIC 1}\n{DYNAMIC 2}\n{DYNAMIC 3}");
 static const u8 sStatsRightColumnLayout[] = _("{DYNAMIC 0}\n{DYNAMIC 1}\n{DYNAMIC 2}");
-static const u8 sStatsLeftColumnLayoutIVs[] = _("IVs{DYNAMIC 0}/{DYNAMIC 1}\n{DYNAMIC 2}");
+static const u8 sStatsLeftColumnLayoutIVs[] = _("IVs{DYNAMIC 0}\n{DYNAMIC 1}\n{DYNAMIC 2}");
 static const u8 sMovesPPLayout[] = _("{PP}{DYNAMIC 0}/{DYNAMIC 1}");
 
 #define TAG_MOVE_SELECTOR 30000
@@ -3622,9 +3622,9 @@ static void BufferLeftColumnIVs(void)
     u8 *defenseString = Alloc(20);
 
     DynamicPlaceholderTextUtil_Reset();
-    BufferStat(HPString, 0, sMonSummaryScreen->summary.HPIV, 0, 3);
-    BufferStat(attackString, STAT_ATK, sMonSummaryScreen->summary.atkIV, 2, 7);
-    BufferStat(defenseString, STAT_DEF, sMonSummaryScreen->summary.defIV, 3, 7);
+    BufferStat(HPString, 0, sMonSummaryScreen->summary.HPIV, 0, 4);
+    BufferStat(attackString, STAT_ATK, sMonSummaryScreen->summary.atkIV, 1, 7);
+    BufferStat(defenseString, STAT_DEF, sMonSummaryScreen->summary.defIV, 2, 7);
     DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, sStatsLeftColumnLayoutIVs);
 
     Free(HPString);
