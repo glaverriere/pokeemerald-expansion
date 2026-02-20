@@ -2035,7 +2035,25 @@ static void SwitchToMoveSelection(u8 taskId)
 
 static u8 AddWindowFromTemplateList(const struct WindowTemplate *template, u8 templateId)
 {
-    
+    u8 *windowIdPtr = &sMonSummaryScreen->windowIds[templateId];
+    if (*windowIdPtr == WINDOW_NONE)
+    {
+        *windowIdPtr = AddWindow(&template[templateId]);
+        FillWindowPixelBuffer(*windowIdPtr, PIXEL_FILL(0));
+    }
+    return *windowIdPtr;
+}
+
+static void SwitchToIVsView(u8 taskId) {
+    FillWindowPixelBuffer(AddWindowFromTemplateList(sPageSkillsTemplate, PSS_DATA_WINDOW_SKILLS_STATS_LEFT), PIXEL_FILL(0));
+    FillWindowPixelBuffer(AddWindowFromTemplateList(sPageSkillsTemplate, PSS_DATA_WINDOW_SKILLS_STATS_RIGHT), PIXEL_FILL(0));
+    PrintIVsPageText();
+}
+
+static void SwitchToStatsView(u8 taskId) {
+    FillWindowPixelBuffer(AddWindowFromTemplateList(sPageSkillsTemplate, PSS_DATA_WINDOW_SKILLS_STATS_LEFT), PIXEL_FILL(0));
+    FillWindowPixelBuffer(AddWindowFromTemplateList(sPageSkillsTemplate, PSS_DATA_WINDOW_SKILLS_STATS_RIGHT), PIXEL_FILL(0));
+    PrintSkillsPageText();
 }
 
 static void Task_HandleInput_MoveSelect(u8 taskId)
@@ -3001,6 +3019,14 @@ static void PrintPageNamesAndStats(void)
     PrintAOrBButtonIcon(PSS_LABEL_WINDOW_PROMPT_SWITCH, FALSE, iconXPos);
     PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_SWITCH, gText_Switch, stringXPos, 1, 0, 0);
 
+    stringXPos = GetStringRightAlignXOffset(FONT_NORMAL, gText_IVs, 62);
+    iconXPos = stringXPos - 16;
+    if (iconXPos < 0) {
+        iconXPos = 0;
+    }
+    PrintAOrBButtonIcon(PSS_LABEL_WINDOW_PROMPT_IVs, FALSE, iconXPos);
+    PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_IVs, gText_IVs, stringXPos, 1, 0, 0);
+
     PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_INFO_RENTAL, gText_RentalPkmn, 0, 1, 0, 1);
     PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_INFO_TYPE, gText_TypeSlash, 0, 1, 0, 0);
     statsXPos = 6 + GetStringCenterAlignXOffset(FONT_NORMAL, gText_HP4, 42);
@@ -3128,17 +3154,6 @@ static void ClearPageWindowTilemaps(u8 page)
         RemoveWindowByIndex(i);
 
     ScheduleBgCopyTilemapToVram(0);
-}
-
-static u8 AddWindowFromTemplateList(const struct WindowTemplate *template, u8 templateId)
-{
-    u8 *windowIdPtr = &sMonSummaryScreen->windowIds[templateId];
-    if (*windowIdPtr == WINDOW_NONE)
-    {
-        *windowIdPtr = AddWindow(&template[templateId]);
-        FillWindowPixelBuffer(*windowIdPtr, PIXEL_FILL(0));
-    }
-    return *windowIdPtr;
 }
 
 static void RemoveWindowByIndex(u8 windowIndex)
@@ -3452,6 +3467,14 @@ static void PrintSkillsPageText(void)
     PrintExpPointsNextLevel();
 }
 
+static void PrintIVsPageText(void)
+{
+    BufferLeftColumnIVs();
+    PrintLeftColumnIVs();
+    BufferRightColumnIVs();
+    PrintRightColumnIVs();
+}
+
 static void Task_PrintSkillsPage(u8 taskId)
 {
     s16 *data = gTasks[taskId].data;
@@ -3590,6 +3613,42 @@ static void BufferRightColumnStats(void)
 static void PrintRightColumnStats(void)
 {
     PrintTextOnWindow(AddWindowFromTemplateList(sPageSkillsTemplate, PSS_DATA_WINDOW_SKILLS_STATS_RIGHT), gStringVar4, 2, 1, 0, 0);
+}
+
+static void BufferLeftColumnIVs(void)
+{
+    u8 *HPString = Alloc(20);
+    u8 *attackString = Alloc(20);
+    u8 *defenseString = Alloc(20);
+
+    DynamicPlaceholderTextUtil_Reset();
+    BufferStat(HPString, 0, sMonSummaryScreen->summary.HPIV, 0, 4);
+    BufferStat(attackString, STAT_ATK, sMonSummaryScreen->summary.atkIV, 1, 7);
+    BufferStat(defenseString, STAT_DEF, sMonSummaryScreen->summary.defIV, 2, 7);
+    DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, sStatsLeftColumnLayoutIVs);
+
+    Free(HPString);
+    Free(attackString);
+    Free(defenseString);
+}
+
+static void PrintLeftColumnIVs(void)
+{
+    PrintTextOnWindow(AddWindowFromTemplateList(sPageSkillsTemplate, PSS_DATA_WINDOW_SKILLS_STATS_LEFT), gStringVar4, 4 ,1 , 0, 0);
+}
+
+static void BufferRightColumnIVs(void)
+{
+    DynamicPlaceholderTextUtil_Reset();
+    BufferStat(gStringVar1, STAT_SPATK, sMonSummaryScreen->summary.spatkIV, 0, 3);
+    BufferStat(gStringVar2, STAT_SPDEF, sMonSummaryScreen->summary.spdefIV, 1, 3);
+    BufferStat(gStringVar3, STAT_SPEED, sMonSummaryScreen->summary.speedIV, 2, 3);
+    DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, sStatsRightColumnLayout);
+}
+
+static void PrintRightColumnIVs(void)
+{
+    PrintTextOnWindow(AddWindowFromTemplateList(sPageSkillsTemplate, PSS_DATA_WINDOW_SKILLS_STATS_RIGHT), gStringVar4, 2 ,1 , 0, 0);
 }
 
 static void PrintExpPointsNextLevel(void)

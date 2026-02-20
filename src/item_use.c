@@ -916,7 +916,7 @@ void ItemUseOutOfBattle_Repel(u8 taskId)
         VarSet(REPEL_LURE_MASK, 0);
         VarSet(REPEL_STEP_COUNT, 0);
         VarSet(VAR_REPEL_STEP_COUNT, 0);
-        DisplayItemMessage(taskId, FONT_NORMAL, gText_RepelWoreOff, CloseItemMessage);
+        DisplayItemMessage(taskId, FONT_NORMAL, gText_RepelEffectsLingered, CloseItemMessage);
     }
     else {
         DisplayItemMessageInBattlePyramid(taskId, gText_RepelEffectsLingered, Task_CloseBattlePyramidBagMessage);
