@@ -4659,11 +4659,11 @@ void ItemUseCB_Medicine(u8 taskId, TaskFunc task)
         if (!IsItemFlute(item))
         {
             PlaySE(SE_USE_ITEM);
-            if (item != ITEM_HP_UP ||
-                item != ITEM_PROTEIN ||
-                item != ITEM_IRON ||
-                item != ITEM_CARBOS ||
-                item != ITEM_ZINC ||
+            if (item != ITEM_HP_UP &&
+                item != ITEM_PROTEIN &&
+                item != ITEM_IRON &&
+                item != ITEM_CARBOS &&
+                item != ITEM_ZINC &&
                 item != ITEM_CALCIUM)
 
                 RemoveBagItem(item, 1);

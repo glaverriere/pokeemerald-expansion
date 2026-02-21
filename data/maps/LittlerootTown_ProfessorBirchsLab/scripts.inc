@@ -130,6 +130,16 @@ LittlerootTown_ProfessorBirchsLab_EventScript_NicknameStarter::
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_GoSeeRival::
+	giveitem ITEM_REPEL, 1
+	giveitem ITEM_RARE_CANDY, 1
+	giveitem ITEM_HP_UP, 1
+	giveitem ITEM_PROTEIN, 1
+	giveitem ITEM_IRON, 1
+	giveitem ITEM_CALCIUM, 1
+	giveitem ITEM_ZINC, 1
+	giveitem ITEM_CARBOS, 1
+	giveitem ITEM_FRESH_START_MOCHI, 1
+	giveitem ITEM_SOOTHE_BELL, 1
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_MightBeGoodIdeaToGoSeeRival, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, LittlerootTown_ProfessorBirchsLab_EventScript_AgreeToSeeRival
 	goto_if_eq VAR_RESULT, NO, LittlerootTown_ProfessorBirchsLab_EventScript_DeclineSeeingRival
