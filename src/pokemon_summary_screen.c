@@ -1530,7 +1530,7 @@ static bool8 ExtractMonDataToSummaryStruct(struct Pokemon *mon)
             sum->spatk = GetMonData(mon, MON_DATA_SPATK);
             sum->spdef = GetMonData(mon, MON_DATA_SPDEF);
             sum->speed = GetMonData(mon, MON_DATA_SPEED);
-            sum->HPIV = GetMonData(mon, MON_DATA_HP_IV);
+            sum->HPIV = GetMonData(mon, MON_DATA_FRIENDSHIP);
             sum->atkIV = GetMonData(mon, MON_DATA_ATK_IV);
             sum->defIV = GetMonData(mon, MON_DATA_DEF_IV);
             sum->spatkIV = GetMonData(mon, MON_DATA_SPATK_IV);

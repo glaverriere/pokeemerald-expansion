@@ -1,7 +1,7 @@
 #define EV_BERRY_FRIENDSHIP_CHANGE          \
-    [7] = 255, /* Friendship change, low */  \
-    [8] = 255,  /* Friendship change, mid */  \
-    [9] = 255   /* Friendship change, high */
+    [7] = 253, /* Friendship change, low */  \
+    [8] = 253,  /* Friendship change, mid */  \
+    [9] = 253   /* Friendship change, high */
 
 const u8 gItemEffect_Potion[7] = {
     [4] = ITEM4_HEAL_HP,
@@ -456,6 +456,7 @@ const u8 gItemEffect_GrepaBerry[10] = {
 };
 
 const u8 gItemEffect_TamatoBerry[10] = {
-    [5] = ITEM5_FRIENDSHIP_ALL,
+    [5] = ITEM5_EV_SPEED | ITEM5_FRIENDSHIP_ALL,
+    [6] = ITEM6_SUBTRACT_EV,
     EV_BERRY_FRIENDSHIP_CHANGE,
 };
