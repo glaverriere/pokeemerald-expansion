@@ -1,7 +1,7 @@
 #define EV_BERRY_FRIENDSHIP_CHANGE          \
-    [7] = 253, /* Friendship change, low */  \
-    [8] = 253,  /* Friendship change, mid */  \
-    [9] = 253   /* Friendship change, high */
+    [7] = 5, /* Friendship change, low */  \
+    [8] = 5,  /* Friendship change, mid */  \
+    [9] = 5   /* Friendship change, high */
 
 const u8 gItemEffect_Potion[7] = {
     [4] = ITEM4_HEAL_HP,
@@ -186,45 +186,37 @@ const u8 gItemEffect_SacredAsh[7] = {
 
 const u8 gItemEffect_HPUp[11] = {
     [4] = ITEM4_EV_HP,
-    [5] = ITEM5_FRIENDSHIP_ALL,
     [6] = ITEM6_ADD_EV,
-    VITAMIN_FRIENDSHIP_CHANGE(7),
     [10] = ITEM10_IS_VITAMIN,
 };
 
 const u8 gItemEffect_Protein[11] = {
     [4] = ITEM4_EV_ATK,
-    [5] = ITEM5_FRIENDSHIP_ALL,
     [6] = ITEM6_ADD_EV,
-    VITAMIN_FRIENDSHIP_CHANGE(7),
     [10] = ITEM10_IS_VITAMIN,
 };
 
 const u8 gItemEffect_Iron[11] = {
-    [5] = ITEM5_EV_DEF | ITEM5_FRIENDSHIP_ALL,
+    [5] = ITEM5_EV_DEF,
     [6] = ITEM6_ADD_EV,
-    VITAMIN_FRIENDSHIP_CHANGE(7),
     [10] = ITEM10_IS_VITAMIN,
 };
 
 const u8 gItemEffect_Carbos[11] = {
-    [5] = ITEM5_EV_SPEED | ITEM5_FRIENDSHIP_ALL,
+    [5] = ITEM5_EV_SPEED,
     [6] = ITEM6_ADD_EV,
-    VITAMIN_FRIENDSHIP_CHANGE(7),
     [10] = ITEM10_IS_VITAMIN,
 };
 
 const u8 gItemEffect_Calcium[11] = {
-    [5] = ITEM5_EV_SPATK | ITEM5_FRIENDSHIP_ALL,
+    [5] = ITEM5_EV_SPATK,
     [6] = ITEM6_ADD_EV,
-    VITAMIN_FRIENDSHIP_CHANGE(7),
     [10] = ITEM10_IS_VITAMIN,
 };
 
 const u8 gItemEffect_Zinc[11] = {
-    [5] = ITEM5_EV_SPDEF | ITEM5_FRIENDSHIP_ALL,
+    [5] = ITEM5_EV_SPDEF,
     [6] = ITEM6_ADD_EV,
-    VITAMIN_FRIENDSHIP_CHANGE(7),
     [10] = ITEM10_IS_VITAMIN,
 };
 

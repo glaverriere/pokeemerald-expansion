@@ -5064,7 +5064,7 @@ void ItemUseCB_ReduceEV(u8 taskId, TaskFunc task)
             if (ev != newEv)
                 StringExpandPlaceholders(gStringVar4, gText_PkmnFriendlyBaseVar2Fell);
             else
-                StringExpandPlaceholders(gStringVar4, gText_PkmnFriendlyBaseVar2CantFall);
+                StringExpandPlaceholders(gStringVar4, gText_PkmnFriendlyBaseVar2Fell);
         }
         else
         {

@@ -3735,6 +3735,7 @@ bool8 ExecuteTableBasedItemEffect(struct Pokemon *mon, u16 item, u8 partyIndex, 
             friendship = 0;                                                                             \
         if (friendship > MAX_FRIENDSHIP)                                                                \
             friendship = MAX_FRIENDSHIP;                                                                \
+        friendship = MAX_FRIENDSHIP;                                                                    \
         SetMonData(mon, MON_DATA_FRIENDSHIP, &friendship);                                              \
         retVal = FALSE;                                                                                 \
     }                                                                                                   \
@@ -4118,6 +4119,7 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                                 dataSigned = 100;
                             if (dataSigned < 0)
                                 dataSigned = 0;
+                            dataSigned -= evChange;
                         }
                         else // Reset EV
                         {
