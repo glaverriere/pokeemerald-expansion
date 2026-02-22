@@ -1291,7 +1291,7 @@ const struct Item gItemsInfo[] =
         .description = COMPOUND_STRING(
             "Raises the base HP\n"
             "of one Pokémon."),
-        .pocket = POCKET_KEY_ITEMS,
+        .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_HPUp,
@@ -1308,7 +1308,7 @@ const struct Item gItemsInfo[] =
             "Raises the base\n"
             "Attack stat of one\n"
             "Pokémon."),
-        .pocket = POCKET_KEY_ITEMS,
+        .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_Protein,
@@ -1325,7 +1325,7 @@ const struct Item gItemsInfo[] =
             "Raises the base\n"
             "Defense stat of\n"
             "one Pokémon."),
-        .pocket = POCKET_KEY_ITEMS,
+        .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_Iron,
@@ -1342,7 +1342,7 @@ const struct Item gItemsInfo[] =
             "Raises the base\n"
             "Sp. Atk stat of one\n"
             "Pokémon."),
-        .pocket = POCKET_KEY_ITEMS,
+        .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_Calcium,
@@ -1359,7 +1359,7 @@ const struct Item gItemsInfo[] =
             "Raises the base\n"
             "Sp. Def stat of one\n"
             "Pokémon."),
-        .pocket = POCKET_KEY_ITEMS,
+        .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_Zinc,
@@ -1377,7 +1377,7 @@ const struct Item gItemsInfo[] =
             "Raises the base\n"
             "Speed stat of one\n"
             "Pokémon."),
-        .pocket = POCKET_KEY_ITEMS,
+        .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_Carbos,
@@ -1911,7 +1911,7 @@ const struct Item gItemsInfo[] =
             "Raises the level\n"
             "of a Pokémon by\n"
             "one."),
-        .pocket = POCKET_KEY_ITEMS,
+        .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_RareCandy,
         .effect = gItemEffect_RareCandy,
@@ -2134,7 +2134,7 @@ const struct Item gItemsInfo[] =
             "Repels weak wild\n"
             "Pokémon for 100\n"
             "steps."),
-        .pocket = POCKET_KEY_ITEMS,
+        .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Repel,
         .flingPower = 30,
@@ -9591,7 +9591,7 @@ const struct Item gItemsInfo[] =
             "Makes a Pokémon\n"
             "friendly but lowers\n"
             "base Speed."),
-        .pocket = POCKET_KEY_ITEMS,
+        .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_ReduceEV,
         .effect = gItemEffect_TamatoBerry,
@@ -13782,7 +13782,7 @@ const struct Item gItemsInfo[] =
             "An item that resets\n"
             "all base points of\n"
             "a Pokémon."),
-        .pocket = POCKET_KEY_ITEMS,
+        .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_ResetEVs,
         .effect = gItemEffect_ResetMochi,

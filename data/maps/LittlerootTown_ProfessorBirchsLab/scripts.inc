@@ -140,7 +140,6 @@ LittlerootTown_ProfessorBirchsLab_EventScript_GoSeeRival::
 	giveitem ITEM_CARBOS, 1
 	giveitem ITEM_FRESH_START_MOCHI, 1
 	giveitem ITEM_SOOTHE_BELL, 1
-	givemon SPECIES_GOLBAT, 5
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_MightBeGoodIdeaToGoSeeRival, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, LittlerootTown_ProfessorBirchsLab_EventScript_AgreeToSeeRival
 	goto_if_eq VAR_RESULT, NO, LittlerootTown_ProfessorBirchsLab_EventScript_DeclineSeeingRival
