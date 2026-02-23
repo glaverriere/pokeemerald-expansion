@@ -69,6 +69,7 @@ enum {
 #define PSS_LABEL_WINDOW_PROMPT_INFO 5
 #define PSS_LABEL_WINDOW_PROMPT_SWITCH 6
 #define PSS_LABEL_WINDOW_PROMPT_IVs 7
+#define PSS_LABEL_WINDOW_PROMPT_EVs 22
 #define PSS_LABEL_WINDOW_PROMPT_Stats 21
 
 // Info screen
@@ -169,6 +170,12 @@ static EWRAM_DATA struct PokemonSummaryScreenData
         u8 spatkIV;
         u8 spdefIV;
         u8 speedIV;
+        u8 HPEV;
+        u8 atkEV;
+        u8 defEV;
+        u8 spatkEV;
+        u8 spdefEV;
+        u8 speedEV;
         u16 item; // 0x2E
         u16 friendship; // 0x30
         u8 OTGender; // 0x32
@@ -295,9 +302,14 @@ static void BufferLeftColumnIVs(void);
 static void PrintLeftColumnIVs(void);
 static void BufferRightColumnIVs(void);
 static void PrintRightColumnIVs(void);
+static void BufferLeftColumnEVs(void);
+static void PrintLeftColumnEVs(void);
+static void BufferRightColumnEVs(void);
+static void PrintRightColumnEVs(void);
 static void PrintExpPointsNextLevel(void);
 static void PrintBattleMoves(void);
 static void PrintIVsPageText(void);
+static void PrintEVsPageText(void);
 static void Task_PrintBattleMoves(u8);
 static void PrintMoveNameAndPP(u8);
 static void PrintContestMoves(void);
@@ -333,9 +345,10 @@ static void SetMainMoveSelectorColor(u8);
 static void KeepMoveSelectorVisible(u8);
 static void SummaryScreen_DestroyAnimDelayTask(void);
 static void SwitchToIVsView(u8);
+static void SwitchToEVsView(u8);
 static void SwitchToStatsView(u8);
 
-bool8 IVsView = FALSE;
+u8 StatsIVEV = 0;
 
 static const struct BgTemplate sBgTemplates[] =
 {
@@ -479,6 +492,7 @@ static const struct WindowTemplate sSummaryTemplate[] =
         .paletteNum = 7,
         .baseBlock = 153,
     },
+    
     [PSS_LABEL_WINDOW_POKEMON_INFO_RENTAL] = {
         .bg = 0,
         .tilemapLeft = 11,
@@ -595,6 +609,15 @@ static const struct WindowTemplate sSummaryTemplate[] =
         .height = 2,
         .paletteNum = 7,
         .baseBlock = 105,
+    },
+    [PSS_LABEL_WINDOW_PROMPT_EVs] = {
+        .bg = 0,
+        .tilemapLeft = 2,
+        .tilemapTop = 0,
+        .width = 8,
+        .height = 2,
+        .paletteNum = 7,
+        .baseBlock = 153,
     },
     [PSS_LABEL_WINDOW_END] = DUMMY_WIN_TEMPLATE
 };
@@ -758,6 +781,7 @@ static const u8 sMemoMiscTextColor[] = _("{COLOR WHITE}{SHADOW DARK_GRAY}"); // 
 static const u8 sStatsLeftColumnLayout[] = _("{DYNAMIC 0}/{DYNAMIC 1}\n{DYNAMIC 2}\n{DYNAMIC 3}");
 static const u8 sStatsRightColumnLayout[] = _("{DYNAMIC 0}\n{DYNAMIC 1}\n{DYNAMIC 2}");
 static const u8 sStatsLeftColumnLayoutIVs[] = _("IVs{DYNAMIC 0}\n{DYNAMIC 1}\n{DYNAMIC 2}");
+static const u8 sStatsLeftColumnLayoutEVs[] = _("EVs{DYNAMIC 0}\n{DYNAMIC 1}\n{DYNAMIC 2}");
 static const u8 sMovesPPLayout[] = _("{PP}{DYNAMIC 0}/{DYNAMIC 1}");
 
 #define TAG_MOVE_SELECTOR 30000
@@ -1536,6 +1560,12 @@ static bool8 ExtractMonDataToSummaryStruct(struct Pokemon *mon)
             sum->spatkIV = GetMonData(mon, MON_DATA_SPATK_IV);
             sum->spdefIV = GetMonData(mon, MON_DATA_SPDEF_IV);
             sum->speedIV = GetMonData(mon, MON_DATA_SPEED_IV);
+            sum->HPEV = GetMonData(mon, MON_DATA_HP_EV);
+            sum->atkEV = GetMonData(mon, MON_DATA_ATK_EV);
+            sum->defEV = GetMonData(mon, MON_DATA_DEF_EV);
+            sum->spatkEV = GetMonData(mon, MON_DATA_SPATK_EV);
+            sum->spdefEV = GetMonData(mon, MON_DATA_SPDEF_EV);
+            sum->speedEV = GetMonData(mon, MON_DATA_SPEED_EV);
         }
         else
         {
@@ -1636,22 +1666,22 @@ static void Task_HandleInput(u8 taskId)
         if (JOY_NEW(DPAD_UP))
         {
             ChangeSummaryPokemon(taskId, -1);
-            IVsView = FALSE;
+            StatsIVEV = 0;
         }
         else if (JOY_NEW(DPAD_DOWN))
         {
             ChangeSummaryPokemon(taskId, 1);
-            IVsView = FALSE;
+            StatsIVEV = 0;
         }
         else if ((JOY_NEW(DPAD_LEFT)) || GetLRKeysPressed() == MENU_L_PRESSED)
         {
             ChangePage(taskId, -1);
-            IVsView = FALSE;
+            StatsIVEV = 0;
         }
         else if ((JOY_NEW(DPAD_RIGHT)) || GetLRKeysPressed() == MENU_R_PRESSED)
         {
             ChangePage(taskId, 1);
-            IVsView = FALSE;
+            StatsIVEV = 0;
         }
         else if (JOY_NEW(A_BUTTON))
         {
@@ -1671,13 +1701,18 @@ static void Task_HandleInput(u8 taskId)
             }
             else {
                 PlaySE(SE_SELECT);
-                if (!IVsView) {
+                if (StatsIVEV == 0) {
                     SwitchToIVsView(taskId);
-                    IVsView = TRUE;
+                    StatsIVEV = 1;
                 }
-                else if (IVsView) {
+                else if (StatsIVEV == 1) {
+                    SwitchToEVsView(taskId);
+                    StatsIVEV = 2;
+                }
+                else 
+                {
                     SwitchToStatsView(taskId);
-                    IVsView = FALSE;
+                    StatsIVEV = 0;
                 }
             }
         }
@@ -1686,7 +1721,7 @@ static void Task_HandleInput(u8 taskId)
             StopPokemonAnimations();
             PlaySE(SE_SELECT);
             BeginCloseSummaryScreen(taskId);
-            IVsView = FALSE;
+            StatsIVEV = 0;
         }
     #if DEBUG_POKEMON_SPRITE_VISUALIZER == TRUE
         else if (JOY_NEW(SELECT_BUTTON) && !gMain.inBattle)
@@ -2048,6 +2083,12 @@ static void SwitchToIVsView(u8 taskId) {
     FillWindowPixelBuffer(AddWindowFromTemplateList(sPageSkillsTemplate, PSS_DATA_WINDOW_SKILLS_STATS_LEFT), PIXEL_FILL(0));
     FillWindowPixelBuffer(AddWindowFromTemplateList(sPageSkillsTemplate, PSS_DATA_WINDOW_SKILLS_STATS_RIGHT), PIXEL_FILL(0));
     PrintIVsPageText();
+}
+
+static void SwitchToEVsView(u8 taskId) {
+    FillWindowPixelBuffer(AddWindowFromTemplateList(sPageSkillsTemplate, PSS_DATA_WINDOW_SKILLS_STATS_LEFT), PIXEL_FILL(0));
+    FillWindowPixelBuffer(AddWindowFromTemplateList(sPageSkillsTemplate, PSS_DATA_WINDOW_SKILLS_STATS_RIGHT), PIXEL_FILL(0));
+    PrintEVsPageText();
 }
 
 static void SwitchToStatsView(u8 taskId) {
@@ -3475,6 +3516,14 @@ static void PrintIVsPageText(void)
     PrintRightColumnIVs();
 }
 
+static void PrintEVsPageText(void)
+{
+    BufferLeftColumnEVs();
+    PrintLeftColumnEVs();
+    BufferRightColumnEVs();
+    PrintRightColumnEVs();
+}
+
 static void Task_PrintSkillsPage(u8 taskId)
 {
     s16 *data = gTasks[taskId].data;
@@ -3647,6 +3696,42 @@ static void BufferRightColumnIVs(void)
 }
 
 static void PrintRightColumnIVs(void)
+{
+    PrintTextOnWindow(AddWindowFromTemplateList(sPageSkillsTemplate, PSS_DATA_WINDOW_SKILLS_STATS_RIGHT), gStringVar4, 2 ,1 , 0, 0);
+}
+
+static void BufferLeftColumnEVs(void)
+{
+    u8 *HPString = Alloc(20);
+    u8 *attackString = Alloc(20);
+    u8 *defenseString = Alloc(20);
+
+    DynamicPlaceholderTextUtil_Reset();
+    BufferStat(HPString, 0, sMonSummaryScreen->summary.HPEV, 0, 4);
+    BufferStat(attackString, STAT_ATK, sMonSummaryScreen->summary.atkEV, 1, 7);
+    BufferStat(defenseString, STAT_DEF, sMonSummaryScreen->summary.defEV, 2, 7);
+    DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, sStatsLeftColumnLayoutEVs);
+
+    Free(HPString);
+    Free(attackString);
+    Free(defenseString);
+}
+
+static void PrintLeftColumnEVs(void)
+{
+    PrintTextOnWindow(AddWindowFromTemplateList(sPageSkillsTemplate, PSS_DATA_WINDOW_SKILLS_STATS_LEFT), gStringVar4, 4 ,1 , 0, 0);
+}
+
+static void BufferRightColumnEVs(void)
+{
+    DynamicPlaceholderTextUtil_Reset();
+    BufferStat(gStringVar1, STAT_SPATK, sMonSummaryScreen->summary.spatkEV, 0, 3);
+    BufferStat(gStringVar2, STAT_SPDEF, sMonSummaryScreen->summary.spdefEV, 1, 3);
+    BufferStat(gStringVar3, STAT_SPEED, sMonSummaryScreen->summary.speedEV, 2, 3);
+    DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, sStatsRightColumnLayout);
+}
+
+static void PrintRightColumnEVs(void)
 {
     PrintTextOnWindow(AddWindowFromTemplateList(sPageSkillsTemplate, PSS_DATA_WINDOW_SKILLS_STATS_RIGHT), gStringVar4, 2 ,1 , 0, 0);
 }

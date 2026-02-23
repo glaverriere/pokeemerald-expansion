@@ -2177,6 +2177,7 @@ extern const u8 gText_Trade4[];
 extern const u8 gText_Summary5[];
 extern const u8 gText_Switch2[];
 extern const u8 gText_IVs[];
+extern const u8 gText_EVs[];
 extern const u8 gText_Stats[];
 extern const u8 gText_Item[];
 extern const u8 gText_NotPkmnOtherTrainerWants[];
