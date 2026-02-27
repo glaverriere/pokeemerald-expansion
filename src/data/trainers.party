@@ -2349,7 +2349,7 @@ Pic: Beauty
 Gender: Female
 Music: Female
 Double Battle: No
-Check Bad Move / Try To Faint / Check Viability / Smart Switching
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Goldeen
 Level: 40
@@ -4592,7 +4592,7 @@ Gender: Male
 Music: Elite Four
 Items: Full Restore / Full Restore
 Double Battle: No
-AI: Check Check Bad Move / Try To Faint / Check Viability / Smart Switching / Setup First Turn
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Setup First Turn
 Mugshot: Purple
 
 Mightyena
@@ -15667,7 +15667,7 @@ Gender: Male
 Music: Male
 Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Poliwhirl
 Level: 50
@@ -15717,7 +15717,7 @@ Gender: Male
 Music: Male
 Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Lapras
 Level: 56
@@ -15775,7 +15775,7 @@ Gender: Male
 Music: Male
 Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Lapras
 Level: 61
@@ -15832,7 +15832,7 @@ Pic: Bug Maniac
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Illumise
 Level: 17
@@ -15855,7 +15855,7 @@ Pic: Bird Keeper
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Tropius
 Level: 30
@@ -15869,7 +15869,7 @@ Gender: Male
 Music: Male
 Items: Full Restore / Full Restore / Full Restore / Full Restore
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Skarmory
 Level: 77
@@ -15926,7 +15926,7 @@ Pic: Salon Maiden Anabel
 Gender: Female
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Beldum
 Level: 5
@@ -15939,7 +15939,7 @@ Pic: Dome Ace Tucker
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Beldum
 Level: 5
@@ -15952,7 +15952,7 @@ Pic: Palace Maven Spenser
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Beldum
 Level: 5
@@ -15965,7 +15965,7 @@ Pic: Arena Tycoon Greta
 Gender: Female
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Beldum
 Level: 5
@@ -15978,7 +15978,7 @@ Pic: Factory Head Noland
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Beldum
 Level: 5
@@ -15991,7 +15991,7 @@ Pic: Pike Queen Lucy
 Gender: Female
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Beldum
 Level: 5
@@ -16004,7 +16004,7 @@ Pic: Pyramid King Brandon
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Beldum
 Level: 5
@@ -16017,7 +16017,7 @@ Pic: Ruin Maniac
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Sandshrew
 Level: 31
@@ -16034,7 +16034,7 @@ Pic: Ruin Maniac
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Nosepass
 Level: 33
@@ -16055,7 +16055,7 @@ Pic: Ruin Maniac
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Nosepass
 Level: 35
@@ -16076,7 +16076,7 @@ Pic: Ruin Maniac
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Nosepass
 Level: 37
@@ -16097,7 +16097,7 @@ Pic: Sailor
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Wingull
 Level: 30
@@ -16118,7 +16118,7 @@ Pic: Sailor
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Pelipper
 Level: 32
@@ -16139,7 +16139,7 @@ Pic: Sailor
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Pelipper
 Level: 34
@@ -16160,7 +16160,7 @@ Pic: Sailor
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Pelipper
 Level: 36
@@ -16181,7 +16181,7 @@ Pic: Swimming Triathlete M
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Staryu
 Level: 37
@@ -16198,7 +16198,7 @@ Pic: Swimming Triathlete M
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Wingull
 Level: 39
@@ -16219,7 +16219,7 @@ Pic: Swimming Triathlete M
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Pelipper
 Level: 41
@@ -16240,7 +16240,7 @@ Pic: Swimming Triathlete M
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Pelipper
 Level: 43
@@ -16261,7 +16261,7 @@ Pic: Black Belt
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Machoke
 Level: 37
@@ -16278,7 +16278,7 @@ Pic: Black Belt
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Makuhita
 Level: 39
@@ -16299,7 +16299,7 @@ Pic: Black Belt
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Hariyama
 Level: 41
@@ -16320,7 +16320,7 @@ Pic: Black Belt
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Hariyama
 Level: 43
@@ -16342,7 +16342,7 @@ Gender: Female
 Music: Cool
 Items: Hyper Potion
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Loudred
 Level: 35
@@ -16360,7 +16360,7 @@ Gender: Female
 Music: Cool
 Items: Hyper Potion
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Spinda
 Level: 37
@@ -16382,7 +16382,7 @@ Gender: Female
 Music: Cool
 Items: Hyper Potion
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Spinda
 Level: 39
@@ -16404,7 +16404,7 @@ Gender: Female
 Music: Cool
 Items: Hyper Potion
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Spinda
 Level: 41
@@ -16425,7 +16425,7 @@ Pic: Guitarist
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Electrike
 Level: 35
@@ -16446,7 +16446,7 @@ Pic: Guitarist
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Electrike
 Level: 37
@@ -16467,7 +16467,7 @@ Pic: Guitarist
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Manectric
 Level: 39
@@ -16488,7 +16488,7 @@ Pic: Guitarist
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Manectric
 Level: 41
@@ -16509,7 +16509,7 @@ Pic: Hiker
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Geodude
 Level: 26
@@ -16526,7 +16526,7 @@ Pic: Hiker
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Machop
 Level: 28
@@ -16547,7 +16547,7 @@ Pic: Hiker
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Machop
 Level: 30
@@ -16568,7 +16568,7 @@ Pic: Hiker
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Machoke
 Level: 33
@@ -16589,7 +16589,7 @@ Pic: Pokemon Breeder F
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Skitty
 Level: 31
@@ -16622,7 +16622,7 @@ Pic: Pokemon Breeder F
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Skitty
 Level: 33
@@ -16655,7 +16655,7 @@ Pic: Pokemon Breeder F
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Delcatty
 Level: 35
@@ -16688,7 +16688,7 @@ Pic: Pokemon Breeder F
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Delcatty
 Level: 37
@@ -16721,7 +16721,7 @@ Pic: Beauty
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Wailmer
 Level: 34
@@ -16738,7 +16738,7 @@ Pic: Beauty
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Luvdisc
 Level: 36
@@ -16759,7 +16759,7 @@ Pic: Beauty
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Luvdisc
 Level: 38
@@ -16780,7 +16780,7 @@ Pic: Beauty
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Luvdisc
 Level: 40
@@ -16801,6 +16801,7 @@ Pic: Psychic F
 Gender: Female
 Music: Intense
 Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Chimecho
 Level: 41
@@ -16813,6 +16814,7 @@ Pic: Psychic M
 Gender: Male
 Music: Intense
 Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Banette
 Level: 41
@@ -16829,6 +16831,7 @@ Pic: Gentleman
 Gender: Male
 Music: Rich
 Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Wobbuffet
 Level: 41
@@ -16841,6 +16844,7 @@ Pic: Red
 Gender: Male
 Music: Male
 Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Charmander
 Level: 5
@@ -16853,6 +16857,7 @@ Pic: Leaf
 Gender: Female
 Music: Male
 Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Bulbasaur
 Level: 5
@@ -16865,6 +16870,7 @@ Pic: RS Brendan
 Gender: Male
 Music: Male
 Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Groudon
 Level: 5
@@ -16877,6 +16883,7 @@ Pic: RS May
 Gender: Female
 Music: Male
 Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Kyogre
 Level: 5
