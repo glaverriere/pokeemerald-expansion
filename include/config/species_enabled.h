@@ -12,7 +12,7 @@
 #define P_GEN_1_POKEMON                  TRUE // Generation 1 Pokémon (RGBY)
 #define P_GEN_2_POKEMON                  TRUE // Generation 2 Pokémon (GSC)
 #define P_GEN_3_POKEMON                  TRUE // Generation 3 Pokémon (RSE, FRLG)
-#define P_GEN_4_POKEMON                  FALSE // Generation 4 Pokémon (DPPt, HGSS)
+#define P_GEN_4_POKEMON                  TRUE // Generation 4 Pokémon (DPPt, HGSS)
 #define P_GEN_5_POKEMON                  FALSE // Generation 5 Pokémon (BW, B2W2)
 #define P_GEN_6_POKEMON                  FALSE // Generation 6 Pokémon (XY, ORAS)
 #define P_GEN_7_POKEMON                  FALSE // Generation 7 Pokémon (SM, USUM, LGPE)
@@ -20,7 +20,7 @@
 #define P_GEN_9_POKEMON                  FALSE // Generation 9 Pokémon (SV)
 
 // Setting this to TRUE will add the new evolutions to the Regional Dex.
-#define P_NEW_EVOS_IN_REGIONAL_DEX       FALSE
+#define P_NEW_EVOS_IN_REGIONAL_DEX       TRUE
 
 // Battle gimmick specific Forms.
 #define P_MEGA_EVOLUTIONS                TRUE
@@ -48,7 +48,7 @@
 #define P_CROSS_GENERATION_EVOS          TRUE
 #define P_GEN_2_CROSS_EVOS               P_CROSS_GENERATION_EVOS
 #define P_GEN_3_CROSS_EVOS               P_CROSS_GENERATION_EVOS
-#define P_GEN_4_CROSS_EVOS               FALSE
+#define P_GEN_4_CROSS_EVOS               P_CROSS_GENERATION_EVOS
 //#define P_GEN_5_CROSS_EVOS             // Gen 5 didn't introduce any cross-gen evos.
 #define P_GEN_6_CROSS_EVOS               FALSE // Just Sylveon.
 //#define P_GEN_7_CROSS_EVOS             // Alolan evolutions handled by P_ALOLAN_FORMS.
