@@ -5238,7 +5238,7 @@ void MonGainEVs(struct Pokemon *mon, u16 defeatedSpecies)
     }
 
     stat = ItemId_GetSecondaryId(heldItem);
-    bonus = ItemId_GetHoldEffectParam(heldItem);
+    bonus = 0;
 
     for (i = 0; i < NUM_STATS; i++)
     {
@@ -5252,9 +5252,9 @@ void MonGainEVs(struct Pokemon *mon, u16 defeatedSpecies)
             break;
 
         if (CheckPartyHasHadPokerus(mon, 0))
-            multiplier = 2;
+            multiplier = 0;
         else
-            multiplier = 1;
+            multiplier = 0;
 
         switch (i)
         {
