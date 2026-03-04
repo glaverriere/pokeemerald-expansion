@@ -2535,63 +2535,63 @@
             "mons": [
               {
                 "min_level": 40,
-                "max_level": 46,
-                "species": "SPECIES_COMBUSKEN"
-              },
-              {
-                "min_level": 40,
-                "max_level": 46,
-                "species": "SPECIES_MONFERNO"
-              },
-              {
-                "min_level": 40,
-                "max_level": 46,
-                "species": "SPECIES_SLUGMA"
-              },
-              {
-                "min_level": 40,
-                "max_level": 46,
-                "species": "SPECIES_MACHOKE"
-              },
-              {
-                "min_level": 40,
-                "max_level": 46,
+                "max_level": 45,
                 "species": "SPECIES_TORKOAL"
               },
               {
                 "min_level": 40,
-                "max_level": 46,
-                "species": "SPECIES_SLUGMA"
+                "max_level": 45,
+                "species": "SPECIES_CAMERUPT"
               },
               {
                 "min_level": 40,
-                "max_level": 46,
-                "species": "SPECIES_WEEZING"
+                "max_level": 45,
+                "species": "SPECIES_ARBOK"
               },
               {
                 "min_level": 40,
-                "max_level": 46,
-                "species": "SPECIES_WEEZING"
+                "max_level": 45,
+                "species": "SPECIES_ARBOK"
               },
               {
                 "min_level": 40,
-                "max_level": 46,
+                "max_level": 45,
+                "species": "SPECIES_TYPHLOSION"
+              },
+              {
+                "min_level": 40,
+                "max_level": 45,
+                "species": "SPECIES_CHARIZARD"
+              },
+              {
+                "min_level": 40,
+                "max_level": 45,
                 "species": "SPECIES_TORKOAL"
               },
               {
                 "min_level": 40,
-                "max_level": 46,
-                "species": "SPECIES_GRIMER"
+                "max_level": 45,
+                "species": "SPECIES_CAMERUPT"
               },
               {
                 "min_level": 40,
-                "max_level": 46,
-                "species": "SPECIES_GRIMER"
+                "max_level": 45,
+                "species": "SPECIES_CHARIZARD"
               },
               {
                 "min_level": 40,
-                "max_level": 46,
-                "species": "SPECIES_GRIMER"
+                "max_level": 45,
+                "species": "SPECIES_TYPHLOSION"
+              },
+              {
+                "min_level": 40,
+                "max_level": 45,
+                "species": "SPECIES_TYPHLOSION"
+              },
+              {
+                "min_level": 40,
+                "max_level": 45,
+                "species": "SPECIES_CHARIZARD"
               }
             ]
           }
@@ -9710,63 +9710,63 @@
             "mons": [
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 72,
+                "species": "SPECIES_MAGMAR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TORKOAL"
+                "max_level": 72,
+                "species": "SPECIES_HOUNDOUR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
+                "max_level": 72,
+                "species": "SPECIES_MUK"
+              },
+              {
+                "min_level": 67,
+                "max_level": 72,
+                "species": "SPECIES_MUK"
+              },
+              {
+                "min_level": 67,
+                "max_level": 72,
                 "species": "SPECIES_MAGCARGO"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
+                "max_level": 72,
+                "species": "SPECIES_INFERNAPE"
+              },
+              {
+                "min_level": 67,
+                "max_level": 72,
                 "species": "SPECIES_MAGCARGO"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_RIOLU"
+                "max_level": 72,
+                "species": "SPECIES_INFERNAPE"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_DRAPION"
+                "max_level": 72,
+                "species": "SPECIES_MAGMAR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_DRAPION"
+                "max_level": 72,
+                "species": "SPECIES_HOUNDOUR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_NOSEPASS"
+                "max_level": 72,
+                "species": "SPECIES_MAGMAR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TOXICROAK"
-              },
-              {
-                "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TOXICROAK"
-              },
-              {
-                "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TOXICROAK"
-              },
-              {
-                "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TOXICROAK"
+                "max_level": 72,
+                "species": "SPECIES_HOUNDOUR"
               }
             ]
           }
@@ -9779,63 +9779,63 @@
             "mons": [
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 72,
+                "species": "SPECIES_MAGMAR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TORKOAL"
+                "max_level": 72,
+                "species": "SPECIES_HOUNDOUR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
+                "max_level": 72,
+                "species": "SPECIES_MUK"
+              },
+              {
+                "min_level": 67,
+                "max_level": 72,
+                "species": "SPECIES_MUK"
+              },
+              {
+                "min_level": 67,
+                "max_level": 72,
                 "species": "SPECIES_MAGCARGO"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
+                "max_level": 72,
+                "species": "SPECIES_INFERNAPE"
+              },
+              {
+                "min_level": 67,
+                "max_level": 72,
                 "species": "SPECIES_MAGCARGO"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_RIOLU"
+                "max_level": 72,
+                "species": "SPECIES_INFERNAPE"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_DRAPION"
+                "max_level": 72,
+                "species": "SPECIES_MAGMAR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_DRAPION"
+                "max_level": 72,
+                "species": "SPECIES_HOUNDOUR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_NOSEPASS"
+                "max_level": 72,
+                "species": "SPECIES_MAGMAR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TOXICROAK"
-              },
-              {
-                "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TOXICROAK"
-              },
-              {
-                "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TOXICROAK"
-              },
-              {
-                "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TOXICROAK"
+                "max_level": 72,
+                "species": "SPECIES_HOUNDOUR"
               }
             ]
           }
@@ -9848,63 +9848,63 @@
             "mons": [
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 72,
+                "species": "SPECIES_MAGMAR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TORKOAL"
+                "max_level": 72,
+                "species": "SPECIES_HOUNDOUR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
+                "max_level": 72,
+                "species": "SPECIES_MUK"
+              },
+              {
+                "min_level": 67,
+                "max_level": 72,
+                "species": "SPECIES_MUK"
+              },
+              {
+                "min_level": 67,
+                "max_level": 72,
                 "species": "SPECIES_MAGCARGO"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
+                "max_level": 72,
+                "species": "SPECIES_INFERNAPE"
+              },
+              {
+                "min_level": 67,
+                "max_level": 72,
                 "species": "SPECIES_MAGCARGO"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_RIOLU"
+                "max_level": 72,
+                "species": "SPECIES_INFERNAPE"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_DRAPION"
+                "max_level": 72,
+                "species": "SPECIES_MAGMAR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_DRAPION"
+                "max_level": 72,
+                "species": "SPECIES_HOUNDOUR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_NOSEPASS"
+                "max_level": 72,
+                "species": "SPECIES_MAGMAR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TOXICROAK"
-              },
-              {
-                "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TOXICROAK"
-              },
-              {
-                "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TOXICROAK"
-              },
-              {
-                "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TOXICROAK"
+                "max_level": 72,
+                "species": "SPECIES_HOUNDOUR"
               }
             ]
           }
@@ -9917,63 +9917,63 @@
             "mons": [
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 72,
+                "species": "SPECIES_MAGMAR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TORKOAL"
+                "max_level": 72,
+                "species": "SPECIES_HOUNDOUR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
+                "max_level": 72,
+                "species": "SPECIES_MUK"
+              },
+              {
+                "min_level": 67,
+                "max_level": 72,
+                "species": "SPECIES_MUK"
+              },
+              {
+                "min_level": 67,
+                "max_level": 72,
                 "species": "SPECIES_MAGCARGO"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
+                "max_level": 72,
+                "species": "SPECIES_INFERNAPE"
+              },
+              {
+                "min_level": 67,
+                "max_level": 72,
                 "species": "SPECIES_MAGCARGO"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_RIOLU"
+                "max_level": 72,
+                "species": "SPECIES_INFERNAPE"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_DRAPION"
+                "max_level": 72,
+                "species": "SPECIES_MAGMAR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_DRAPION"
+                "max_level": 72,
+                "species": "SPECIES_HOUNDOUR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_NOSEPASS"
+                "max_level": 72,
+                "species": "SPECIES_MAGMAR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TOXICROAK"
-              },
-              {
-                "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TOXICROAK"
-              },
-              {
-                "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TOXICROAK"
-              },
-              {
-                "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TOXICROAK"
+                "max_level": 72,
+                "species": "SPECIES_HOUNDOUR"
               }
             ]
           }
@@ -9986,63 +9986,63 @@
             "mons": [
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 72,
+                "species": "SPECIES_MAGMAR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TORKOAL"
+                "max_level": 72,
+                "species": "SPECIES_HOUNDOUR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
+                "max_level": 72,
+                "species": "SPECIES_MUK"
+              },
+              {
+                "min_level": 67,
+                "max_level": 72,
+                "species": "SPECIES_MUK"
+              },
+              {
+                "min_level": 67,
+                "max_level": 72,
                 "species": "SPECIES_MAGCARGO"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
+                "max_level": 72,
+                "species": "SPECIES_INFERNAPE"
+              },
+              {
+                "min_level": 67,
+                "max_level": 72,
                 "species": "SPECIES_MAGCARGO"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_RIOLU"
+                "max_level": 72,
+                "species": "SPECIES_INFERNAPE"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_DRAPION"
+                "max_level": 72,
+                "species": "SPECIES_MAGMAR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_DRAPION"
+                "max_level": 72,
+                "species": "SPECIES_HOUNDOUR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_NOSEPASS"
+                "max_level": 72,
+                "species": "SPECIES_MAGMAR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TOXICROAK"
-              },
-              {
-                "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TOXICROAK"
-              },
-              {
-                "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TOXICROAK"
-              },
-              {
-                "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TOXICROAK"
+                "max_level": 72,
+                "species": "SPECIES_HOUNDOUR"
               }
             ]
           }
@@ -10055,63 +10055,63 @@
             "mons": [
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 72,
+                "species": "SPECIES_MAGMAR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TORKOAL"
+                "max_level": 72,
+                "species": "SPECIES_HOUNDOUR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
+                "max_level": 72,
+                "species": "SPECIES_MUK"
+              },
+              {
+                "min_level": 67,
+                "max_level": 72,
+                "species": "SPECIES_MUK"
+              },
+              {
+                "min_level": 67,
+                "max_level": 72,
                 "species": "SPECIES_MAGCARGO"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
+                "max_level": 72,
+                "species": "SPECIES_INFERNAPE"
+              },
+              {
+                "min_level": 67,
+                "max_level": 72,
                 "species": "SPECIES_MAGCARGO"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_RIOLU"
+                "max_level": 72,
+                "species": "SPECIES_INFERNAPE"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_DRAPION"
+                "max_level": 72,
+                "species": "SPECIES_MAGMAR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_DRAPION"
+                "max_level": 72,
+                "species": "SPECIES_HOUNDOUR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_NOSEPASS"
+                "max_level": 72,
+                "species": "SPECIES_MAGMAR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TOXICROAK"
-              },
-              {
-                "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TOXICROAK"
-              },
-              {
-                "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TOXICROAK"
-              },
-              {
-                "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TOXICROAK"
+                "max_level": 72,
+                "species": "SPECIES_HOUNDOUR"
               }
             ]
           }
@@ -10124,63 +10124,63 @@
             "mons": [
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 72,
+                "species": "SPECIES_MAGMAR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TORKOAL"
+                "max_level": 72,
+                "species": "SPECIES_HOUNDOUR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
+                "max_level": 72,
+                "species": "SPECIES_MUK"
+              },
+              {
+                "min_level": 67,
+                "max_level": 72,
+                "species": "SPECIES_MUK"
+              },
+              {
+                "min_level": 67,
+                "max_level": 72,
                 "species": "SPECIES_MAGCARGO"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
+                "max_level": 72,
+                "species": "SPECIES_INFERNAPE"
+              },
+              {
+                "min_level": 67,
+                "max_level": 72,
                 "species": "SPECIES_MAGCARGO"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_RIOLU"
+                "max_level": 72,
+                "species": "SPECIES_INFERNAPE"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_DRAPION"
+                "max_level": 72,
+                "species": "SPECIES_MAGMAR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_DRAPION"
+                "max_level": 72,
+                "species": "SPECIES_HOUNDOUR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_NOSEPASS"
+                "max_level": 72,
+                "species": "SPECIES_MAGMAR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TOXICROAK"
-              },
-              {
-                "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TOXICROAK"
-              },
-              {
-                "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TOXICROAK"
-              },
-              {
-                "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TOXICROAK"
+                "max_level": 72,
+                "species": "SPECIES_HOUNDOUR"
               }
             ]
           }
@@ -10193,63 +10193,63 @@
             "mons": [
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_GRAVELER"
+                "max_level": 72,
+                "species": "SPECIES_MAGMAR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TORKOAL"
+                "max_level": 72,
+                "species": "SPECIES_HOUNDOUR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
+                "max_level": 72,
+                "species": "SPECIES_MUK"
+              },
+              {
+                "min_level": 67,
+                "max_level": 72,
+                "species": "SPECIES_MUK"
+              },
+              {
+                "min_level": 67,
+                "max_level": 72,
                 "species": "SPECIES_MAGCARGO"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
+                "max_level": 72,
+                "species": "SPECIES_INFERNAPE"
+              },
+              {
+                "min_level": 67,
+                "max_level": 72,
                 "species": "SPECIES_MAGCARGO"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_RIOLU"
+                "max_level": 72,
+                "species": "SPECIES_INFERNAPE"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_DRAPION"
+                "max_level": 72,
+                "species": "SPECIES_MAGMAR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_DRAPION"
+                "max_level": 72,
+                "species": "SPECIES_HOUNDOUR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_NOSEPASS"
+                "max_level": 72,
+                "species": "SPECIES_MAGMAR"
               },
               {
                 "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TOXICROAK"
-              },
-              {
-                "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TOXICROAK"
-              },
-              {
-                "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TOXICROAK"
-              },
-              {
-                "min_level": 67,
-                "max_level": 74,
-                "species": "SPECIES_TOXICROAK"
+                "max_level": 72,
+                "species": "SPECIES_HOUNDOUR"
               }
             ]
           }
