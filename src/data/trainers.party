@@ -5988,13 +5988,44 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Zigzagoon
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Rattata
+Level: 12
+Lax Nature
+Ability: Guts
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Bite
+- Quick Attack
+- Focus Energy
+- Tail Whip
 
-Seedot
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Budew
+Level: 12
+Modest Nature
+Ability: Natural Cure
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Poison Sting
+- Absorb
+- Poison Powder
+
+SPECIES_NIDORAN_M
+Level: 12
+Jolly Nature
+Ability: Poison Point
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Leer
+- Poison Sting
+- Peck
+- Focus Energy
+
+Pichu
+Level: 12
+Rash Nature
+Ability: Static
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Tail Whip
+- Thunder Shock
+- Play Nice
+- Sweet Kiss
 
 === TRAINER_JOSH ===
 Name: JOSH
@@ -6241,13 +6272,35 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Zigzagoon
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Happiny
+Level: 12
+Modest Nature
+Ability: Shed Skin
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Copycat
+- Defense Curl
+- Sweet Kiss
+- Disarming Voice
 
-Taillow
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Starly
+Level: 12
+Impish Nature
+Ability: Keen Eye
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Wing Attack
+- Quick Attack
+- Tackle
+- Growl
+
+SPECIES_NIDORAN_F
+Level: 12
+Hardy Nature
+Ability: Poison Point
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Growl
+- Poison Sting
+- Scratch
+- Tail Whip
 
 === TRAINER_TIMMY ===
 Name: TIMMY
@@ -11111,13 +11164,34 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Zigzagoon
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Taillow
+Level: 12
+Quirky Nature
+Ability: Guts
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Growl
+- Peck
+- Focus Energy
+- Quick Attack
 
-Shroomish
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ralts
+Level: 12
+Modest Nature
+Ability: Synchronize
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Draining Kiss
+- Hypnosis
+- Confusion
+- Growl
+
+Sentret
+Level: 12
+Relaxed Nature
+Ability: Keen Eye
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Quick Attack
+- Defense Curl
+- Scratch
 
 === TRAINER_HALEY_1 ===
 Name: HALEY
@@ -11315,13 +11389,34 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Wurmple
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Caterpie
+Level: 12
+Jolly Nature
+Ability: Shield Dust
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- String Shot
+- Tackle
+- Bug Bite
 
-Wurmple
-Level: 4
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Metapod
+Level: 12
+Adamant Nature
+Ability: Shed Skin
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- String Shot
+- Tackle
+- Bug Bite
+- Harden
+
+Butterfree
+Level: 12
+Serious Nature
+Ability: Compound Eyes
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Confusion
+- Poison Powder
+- Stun Spore
+- Sleep Powder
 
 === TRAINER_LYLE ===
 Name: LYLE
