@@ -2119,13 +2119,48 @@ Class: Lady
 Pic: Lady
 Gender: Female
 Music: Female
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Zigzagoon @ Nugget
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Buneary
+Level: 12
+Rash Nature
+Ability: Klutz
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Quick Attack
+- Baby-Doll Eyes
+- Swift
+- Protect
+
+Skitty
+Level: 12
+Bashful Nature
+Ability: Cute Charm
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Fake Out
+- Tackle
+- Sing
+- Growl
+
+Igglybuff
+Level: 12
+Jolly Nature
+Ability: Cute Charm
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Copycat
+- Pound
+- Disarming Voice
+- Defense Curl
+
+Cleffa
+Level: 12
+Sassy Nature
+Ability: Magic Guard
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Splash
+- Tackle
+- Disarming Voice
+- Fairy Wind
 
 === TRAINER_DAPHNE ===
 Name: DAPHNE
@@ -2523,13 +2558,58 @@ Class: Rich Boy
 Pic: Rich Boy
 Gender: Male
 Music: Rich
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Zigzagoon @ Nugget
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Vulpix
+Level: 12
+Hasty Nature
+Ability: Flash Fire
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Ember
+- Tail Whip
+- Disable
+- Quick Attack
+
+Torchic
+Level: 12
+Quiet Nature
+Ability: Blaze
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Flame Charge
+- Quick Attack
+- Detect
+- Growl
+
+Togepi
+Level: 12
+Relaxed Nature
+Ability: Serene Grace
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Pound
+- Sweet Kiss
+- Life Dew
+- Charm
+
+Hoppip
+Level: 12
+Docile Nature
+Ability: Leaf Guard
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Bullet Seed
+- Fairy Wind
+- Stun Spore
+- Absorb
+
+Shinx
+Level: 12
+Modest Nature
+Ability: Intimidate
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Leer
+- Thunder Shock
+- Charge
+- Bite
 
 === TRAINER_MOLLIE ===
 Name: MOLLIE
@@ -13130,8 +13210,41 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Magikarp
-Level: 9
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 12
+Relaxed Nature
+Ability: Rattled
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Splash
+- Tackle
+
+Piplup
+Level: 12
+Relaxed Nature
+Ability: Torrent
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Pound
+- Growl
+- Water Gun
+- Charm
+
+Goldeen
+Level: 12
+Bold Nature
+Ability: Swift Swim
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Peck
+- Tail Whip
+- Supersonic
+- Water Pulse
+
+Clamperl
+Level: 12
+Hasty Nature
+Ability: Shell Armor
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Iron Defense
+- Water Gun
+- Whirlpool
 
 === TRAINER_HAILEY ===
 Name: HAILEY
