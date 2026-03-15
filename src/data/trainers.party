@@ -6488,17 +6488,55 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Magikarp
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Poliwag
+Level: 12
+Serious Nature
+Ability: Water Absorb
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Hypnosis
+- Water Gun
+- Pound
+- Mud Shot
 
-Magikarp
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Remoraid
+Level: 12
+Bashful Nature
+Ability: Sniper
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Psybeam
+- Focus Energy
+- Water Pulse
+- Water Gun
 
-Magikarp
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Wingull
+Level: 12
+Docile Nature
+Ability: Hydration
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Growl
+- Water Gun
+- Quick Attack
+- Supersonic
+
+Feebas
+Level: 12
+Hardy Nature
+Ability: Oblivious
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Splash
+- Dragon Breath
+- Haze
+- Tackle
+
+Mudkip
+Level: 12
+Quirky Nature
+Ability: Damp
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Protect
+- Rock Throw
+- Rock Smash
+- Water Gun
 
 === TRAINER_CLAUDE ===
 Name: CLAUDE
@@ -8973,13 +9011,55 @@ Music: Twins
 Double Battle: Yes
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Seedot
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
 Lotad
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 12
+Sassy Nature
+Ability: Rain Dish
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Mega Drain
+- Mist
+- Water Gun
+- Astonish
+
+Seedot
+Level: 12
+Relaxed Nature
+Ability: Pickpocket
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Harden
+- Rollout
+- Tackle
+- Astonish
+
+Bidoof
+Level: 12
+Naughty Nature
+Ability: Moody
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Defense Curl
+- Rollout
+- Tackle
+- Growl
+
+Whismur
+Level: 12
+Quirky Nature
+Ability: Rattled
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Howl
+- Echoed Voice
+- Pound
+- Astonish
+
+Abra
+Level: 12
+Bold Nature
+Ability: Inner Focus
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Teleport
+- Confusion
+- Guard Split
+- Magic Coat
 
 === TRAINER_MIU_AND_YUKI ===
 Name: MIU & YUKI
@@ -11282,13 +11362,54 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Lotad
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Bellsprout
+Level: 12
+Jolly Nature
+Ability: Chlorophyll
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Wrap
+- Growth
+- Vine Whip
 
-Shroomish
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Hoothoot
+Level: 12
+Gentle Nature
+Ability: Keen Eye
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Echoed Voice
+- Confusion
+- Reflect
+- Peck
+
+Azurill
+Level: 12
+Adamant Nature
+Ability: Huge Power
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Slam
+- Charm
+- Bubble Beam
+- Tail Whip
+
+Slakoth
+Level: 12
+Adamant Nature
+Ability: Truant
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Scratch
+- Yawn
+- Encore
+- Slack Off
+
+Gastly
+Level: 12
+Brave Nature
+Ability: Levitate
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Mean Look
+- Payback
+- Confuse Ray
+- Lick
 
 === TRAINER_JANICE ===
 Name: JANICE
@@ -11508,20 +11629,53 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
 Wurmple
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 12
+Adamant Nature
+Ability: Shield Dust
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- String Shot
+- Tackle
+- Poison Sting
 
-Wurmple
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Cascoon
+Level: 12
+Impish Nature
+Ability: Shed Skin
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- String Shot
+- Tackle
+- Poison Sting
+- Harden
 
-Wurmple
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Dustox
+Level: 12
+Sassy Nature
+Ability: Shiel Dust
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Confusion
+- Gust
+- Bug Bite
+- Harden
 
-Wurmple
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Silcoon
+Level: 12
+Impish Nature
+Ability: Shed Skin
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- String Shot
+- Tackle
+- Poison Sting
+- Harden
+
+Beautifly
+Level: 12
+Serious Nature
+Ability: Swarm
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- String Shot
+- Bug Bite
+- Gust
+- Absorb
 
 === TRAINER_JOSE ===
 Name: JOSE
