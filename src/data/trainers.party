@@ -11168,13 +11168,65 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Lotad
-Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Tangela @ Sitrus Berry
+Level: 28
+Bold Nature
+Ability: Regenerator
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Round
+- Growth
+- Mega Drain
+- Stun Spore
 
-Torchic
-Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Qwilfish @ Sitrus Berry
+Level: 28
+Adamant Nature
+Ability: Intimidate
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Aqua Jet
+- Fell Stinger
+- Spikes
+- Brine
+
+Hitmonchan @ Coba Berry
+Level: 28
+Careful Nature
+Ability: Iron Fist
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Mach Punch
+- Thunder Punch
+- Fire Punch
+- Ice Punch
+
+Murkrow @ White Herb
+Level: 28
+Jolly Nature
+Ability: Super Luck
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Assurance
+- Wing Attack
+- Confuse Ray
+- Screech
+
+Kadabra @ Light Clay
+Level: 28
+Modest Nature
+Ability: Synchronize
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Psybeam
+- Disable
+- Reflect
+- Swift
+
+Combusken @ Sitrus Berry
+Level: 28
+Adamant Nature
+Ability: Blaze
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Flame Charge
+- Aerial Ace
+- Slash
+- Bulk Up
 
 === TRAINER_BRENDAN_RUSTBORO_MUDKIP ===
 Name: BRENDAN
@@ -11185,13 +11237,65 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Wingull
-Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Qwilfish @ Sitrus Berry
+Level: 28
+Adamant Nature
+Ability: Intimidate
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Aqua Jet
+- Fell Stinger
+- Spikes
+- Brine
 
-Treecko
-Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ponyta @ Sitrus Berry
+Level: 28
+Jolly Nature
+Ability: Flame Body
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Flame Charge
+- Double Kick
+- Agility
+- Charm
+
+Hitmonchan @ Coba Berry
+Level: 28
+Careful Nature
+Ability: Iron Fist
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Mach Punch
+- Thunder Punch
+- Fire Punch
+- Ice Punch
+
+Murkrow @ White Herb
+Level: 28
+Jolly Nature
+Ability: Super Luck
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Assurance
+- Wing Attack
+- Confuse Ray
+- Screech
+
+Kadabra @ Light Clay
+Level: 28
+Modest Nature
+Ability: Synchronize
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Psybeam
+- Disable
+- Reflect
+- Swift
+
+Grovyle @ Sitrus Berry
+Level: 28
+Timid Nature
+Ability: Overgrow
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Giga Drain
+- X-Scissor
+- Quick Attack
+- Agility
 
 === TRAINER_PAXTON ===
 Name: PAXTON
@@ -11292,13 +11396,65 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Slugma
-Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Ponyta @ Sitrus Berry
+Level: 28
+Jolly Nature
+Ability: Flame Body
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Flame Charge
+- Double Kick
+- Agility
+- Charm
 
-Mudkip
-Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Tangela @ Sitrus Berry
+Level: 28
+Bold Nature
+Ability: Regenerator
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Round
+- Growth
+- Mega Drain
+- Stun Spore
+
+Hitmonchan @ Coba Berry
+Level: 28
+Careful Nature
+Ability: Iron Fist
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Mach Punch
+- Thunder Punch
+- Fire Punch
+- Ice Punch
+
+Murkrow @ White Herb
+Level: 28
+Jolly Nature
+Ability: Super Luck
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Assurance
+- Wing Attack
+- Confuse Ray
+- Screech
+
+Kadabra @ Light Clay
+Level: 28
+Modest Nature
+Ability: Synchronize
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Psybeam
+- Disable
+- Reflect
+- Swift
+
+Marshtomp @ Sitrus Berry
+Level: 28
+Adamant Nature
+Ability: Torrent
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Rock Smash
+- Mud Shot
+- Water Pulse
+- Rock Slide
 
 === TRAINER_MAY_RUSTBORO_MUDKIP ===
 Name: MAY
@@ -11309,13 +11465,65 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Wingull
-Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Qwilfish @ Sitrus Berry
+Level: 28
+Adamant Nature
+Ability: Intimidate
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Aqua Jet
+- Fell Stinger
+- Spikes
+- Brine
 
-Treecko
-Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ponyta @ Sitrus Berry
+Level: 28
+Jolly Nature
+Ability: Flame Body
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Flame Charge
+- Double Kick
+- Agility
+- Charm
+
+Hitmonchan @ Coba Berry
+Level: 28
+Careful Nature
+Ability: Iron Fist
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Mach Punch
+- Thunder Punch
+- Fire Punch
+- Ice Punch
+
+Murkrow @ White Herb
+Level: 28
+Jolly Nature
+Ability: Super Luck
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Assurance
+- Wing Attack
+- Confuse Ray
+- Screech
+
+Kadabra @ Light Clay
+Level: 28
+Modest Nature
+Ability: Synchronize
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Psybeam
+- Disable
+- Reflect
+- Swift
+
+Grovyle @ Sitrus Berry
+Level: 28
+Timid Nature
+Ability: Overgrow
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Giga Drain
+- X-Scissor
+- Quick Attack
+- Agility
 
 === TRAINER_MAXIE_MAGMA_HIDEOUT ===
 Name: MAXIE
@@ -14635,13 +14843,65 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Lotad
-Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Tangela @ Sitrus Berry
+Level: 28
+Bold Nature
+Ability: Regenerator
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Round
+- Growth
+- Mega Drain
+- Stun Spore
 
-Torchic
-Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Qwilfish @ Sitrus Berry
+Level: 28
+Adamant Nature
+Ability: Intimidate
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Aqua Jet
+- Fell Stinger
+- Spikes
+- Brine
+
+Hitmonchan @ Coba Berry
+Level: 28
+Careful Nature
+Ability: Iron Fist
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Mach Punch
+- Thunder Punch
+- Fire Punch
+- Ice Punch
+
+Murkrow @ White Herb
+Level: 28
+Jolly Nature
+Ability: Super Luck
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Assurance
+- Wing Attack
+- Confuse Ray
+- Screech
+
+Kadabra @ Light Clay
+Level: 28
+Modest Nature
+Ability: Synchronize
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Psybeam
+- Disable
+- Reflect
+- Swift
+
+Combusken @ Sitrus Berry
+Level: 28
+Adamant Nature
+Ability: Blaze
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Flame Charge
+- Aerial Ace
+- Slash
+- Bulk Up
 
 === TRAINER_MAY_RUSTBORO_TORCHIC ===
 Name: MAY
@@ -14652,13 +14912,65 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Torkoal
-Level: 13
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Ponyta @ Sitrus Berry
+Level: 28
+Jolly Nature
+Ability: Flame Body
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Flame Charge
+- Double Kick
+- Agility
+- Charm
 
-Mudkip
-Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Tangela @ Sitrus Berry
+Level: 28
+Bold Nature
+Ability: Regenerator
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Round
+- Growth
+- Mega Drain
+- Stun Spore
+
+Hitmonchan @ Coba Berry
+Level: 28
+Careful Nature
+Ability: Iron Fist
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Mach Punch
+- Thunder Punch
+- Fire Punch
+- Ice Punch
+
+Murkrow @ White Herb
+Level: 28
+Jolly Nature
+Ability: Super Luck
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Assurance
+- Wing Attack
+- Confuse Ray
+- Screech
+
+Kadabra @ Light Clay
+Level: 28
+Modest Nature
+Ability: Synchronize
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Psybeam
+- Disable
+- Reflect
+- Swift
+
+Marshtomp @ Sitrus Berry
+Level: 28
+Adamant Nature
+Ability: Torrent
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Rock Smash
+- Mud Shot
+- Water Pulse
+- Rock Slide
 
 === TRAINER_ROXANNE_2 ===
 Name: ROXANNE
