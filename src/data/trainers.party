@@ -281,6 +281,16 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Mud Shot
 - Tail Whip
 
+Stunky
+Level: 13
+Jolly Nature
+Ability: Stench
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Poison Gas
+- Acid Spray
+- Fury Swipes
+- Smokescreen
+
 === TRAINER_MARCEL ===
 Name: MARCEL
 Class: Cooltrainer
@@ -2198,6 +2208,16 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Disarming Voice
 - Defense Curl
 
+Riolu
+Level: 12
+Bashful Nature
+Ability: Steadfast
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Quick Attack
+- Feint
+- Metal Claw
+- Counter
+
 Cleffa
 Level: 12
 Sassy Nature
@@ -2656,6 +2676,16 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Thunder Shock
 - Charge
 - Bite
+
+Shellos
+Level: 12
+Calm Nature
+Ability: Storm Drain
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Mud-Slap
+- Water Gun
+- Recover
+- Clear Smog
 
 === TRAINER_MOLLIE ===
 Name: MOLLIE
@@ -4973,6 +5003,16 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Confuse Ray
 - Mega Drain
 
+Corsola @ Big Root
+Level: 15
+Serious Nature
+Ability: Regenerator
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Aqua Ring
+- Water Gun
+- Rock Tomb
+- Harden
+
 === TRAINER_BRAWLY_1 ===
 Name: BRAWLY
 Class: Leader
@@ -6130,6 +6170,16 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Absorb
 - Mega Drain
 
+Meowth
+Level: 12
+Adamant Nature
+Ability: Technician
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Fake Out
+- Growl
+- Feint
+- Pay Day
+
 === TRAINER_BILLY ===
 Name: BILLY
 Class: Youngster
@@ -6177,6 +6227,16 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Thunder Shock
 - Play Nice
 - Sweet Kiss
+
+Charmander
+Level: 12
+Timid Nature
+Ability: Blaze
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Dragon Breath
+- Smokescreen
+- Ember
+- Growl
 
 === TRAINER_JOSH ===
 Name: JOSH
@@ -6237,6 +6297,16 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Block
 - Defense Curl
 
+Onix @ Hard Stone
+Level: 13
+Impish Nature
+Ability: Sturdy
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Dragon Tail
+- Rollout
+- Rock Polish
+- Flail
+
 === TRAINER_TOMMY ===
 Name: TOMMY
 Class: Youngster
@@ -6265,6 +6335,16 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Metal Sound
 - Headbutt
 - Taunt
+
+Lunatone @ Sitrus Berry
+Level: 13
+Serious Nature
+Ability: Levitate
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Moonlight
+- Hypnosis
+- Rock Polish
+- Confusion
 
 === TRAINER_JOEY ===
 Name: JOEY
@@ -6510,6 +6590,16 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Scratch
 - Tail Whip
 
+Cherubi
+Level: 12
+Adamant Nature
+Ability: Chlorophyll
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Morning Sun
+- Tackle
+- Leafage
+- Growth
+
 === TRAINER_TIMMY ===
 Name: TIMMY
 Class: Youngster
@@ -6664,6 +6754,16 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Protect
 - Rock Throw
 - Rock Smash
+- Water Gun
+
+Totodile
+Level: 12
+Serious Nature
+Ability: Torrent
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Leer
+- Scratch
+- Bite
 - Water Gun
 
 === TRAINER_CLAUDE ===
@@ -9189,6 +9289,16 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Guard Split
 - Magic Coat
 
+Pidgey
+Level: 12
+Hardy Nature
+Ability: Tangled Feet
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Air Cutter
+- Tackle
+- Sand Attack
+- Gust
+
 === TRAINER_MIU_AND_YUKI ===
 Name: MIU & YUKI
 Class: Twins
@@ -11711,6 +11821,16 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Defense Curl
 - Scratch
 
+Phanpy
+Level: 12
+Impish Nature
+Ability: Pickup
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Rollout
+- Flail
+- Growl
+- Defense Curl
+
 === TRAINER_HALEY_1 ===
 Name: HALEY
 Class: Lass
@@ -11768,6 +11888,16 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Payback
 - Confuse Ray
 - Lick
+
+Combee
+Level: 12
+Jolly Nature
+Ability: Hustle
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Bug Bite
+- Gust
+- Struggle Bug
+- Sweet Scent
 
 === TRAINER_JANICE ===
 Name: JANICE
@@ -11977,6 +12107,14 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Stun Spore
 - Sleep Powder
 
+Burmy
+Level: 12
+Hardy Nature
+Ability: Shed Skin
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Protect
+- Tackle
+
 === TRAINER_LYLE ===
 Name: LYLE
 Class: Bug Catcher
@@ -12034,6 +12172,15 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Bug Bite
 - Gust
 - Absorb
+
+Kricketot
+Level: 12
+Bashful Nature
+Ability: Shed Skin
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Growl
+- Tackle
+- Struggle Bug
 
 === TRAINER_JOSE ===
 Name: JOSE
@@ -12156,6 +12303,16 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Scratch
 - Sand Attack
 - Harden
+
+Surskit
+Level: 12
+Timid Nature
+Ability: Rain Dish
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Power Split
+- Water Gun
+- Aqua Jet
+- Psybeam
 
 === TRAINER_JAMES_2 ===
 Name: JAMES
@@ -13798,6 +13955,16 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Iron Defense
 - Water Gun
 - Whirlpool
+
+Buizel
+Level: 12
+Adamant Nature
+Ability: Water Veil
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Quick Attack
+- Soak
+- Growl
+- Tackle
 
 === TRAINER_HAILEY ===
 Name: HAILEY
