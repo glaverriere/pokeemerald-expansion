@@ -5443,9 +5443,65 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Shroomish
-Level: 9
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Smoochum @ Apicot Berry
+Level: 12
+Quirky Nature
+Ability: Forewarn
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Confusion
+- Powder Snow
+- Copycat
+- Fake Out
+
+Spearow @ Loaded Dice
+Level: 12
+Jolly Nature
+Ability: Keen Eye
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Fury Attack
+- Peck
+- Astonish
+- Quick Attack
+
+Treecko @ Sitrus Berry
+Level: 12
+Timid Nature
+Ability: Unburden
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Detect
+- Mega Drain
+- Quick Attack
+- Leech Seed
+
+Makuhita @ Sitrus Berry
+Level: 12
+Adamant Nature
+Ability: Thick Fat
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Fake Out
+- Focus Energy
+- Sand Attack
+- Bullet Punch
+
+Electrike @ Salac Berry
+Level: 12
+Jolly Nature
+Ability: Static
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Quick Attack
+- Shock Wave
+- Thunder Wave
+- Crunch
+
+Glameow @ Chilan Berry
+Level: 12
+Jolly Nature
+Ability: Limber
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Bite
+- Flail
+- Work Up
+- Fake Out
 
 === TRAINER_GEORGIA ===
 Name: GEORGIA
@@ -6355,9 +6411,65 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Machop
-Level: 9
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Bulbasaur @ Leftovers
+Level: 12
+Careful Nature
+Ability: Overgrow
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Leech Seed
+- Razor Leaf
+- Curse
+- Toxic
+
+Mime Jr. @ Eviolite
+Level: 12
+Calm Nature
+Ability: Filter
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Baton Pass
+- Fake Out
+- Nasty Plot
+- Hypnosis
+
+Eevee @ Silk Scarf
+Level: 12
+Impish Nature
+Ability: Adaptability
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Quick Attack
+- Covet
+- Double Kick
+- Mud-Slap
+
+Shroomish @ Toxic Orb
+Level: 12
+Hardy Nature
+Ability: Poison Heal
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Leech Seed
+- Protect
+- Mega Drain
+- Stun Spore
+
+Mareep @ Sitrus Berry
+Level: 12
+Modest Nature
+Ability: Static
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Thunder Shock
+- Cotton Spore
+- Confuse Ray
+- Facade
+
+Snubbull @ Sitrus Berry
+Level: 12
+Adamant Nature
+Ability: Intimidate
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Charm
+- Fire Fang
+- Ice Fang
+- Thunder Fang
 
 === TRAINER_BEN ===
 Name: BEN
@@ -12189,15 +12301,63 @@ Pic: Bug Catcher
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Setup First Turn
 
-Wurmple
-Level: 8
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ledyba @ Light Clay
+Level: 13
+Lax Nature
+Ability: Early Bird
+IVs: 20 HP / 15 Atk / 20 Def / 15 SpA / 20 SpD / 20 Spe
+- Light Screen
+- Reflect
+- Supersonic
+- Counter
 
-Nincada
-Level: 8
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Pineco @ Quick Claw
+Level: 12
+Adamant Nature
+Ability: Sturdy
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Self-Destruct
+
+Spinarak @ Silver Powder
+Level: 12
+Adamant Nature
+Ability: Sniper
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Pounce
+- Poison Sting
+- Night Slash
+
+Yanma @ Coba Berry
+Level: 12
+Quirky Nature
+Ability: Speed Boost
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Double Team
+- Quick Attack
+- Struggle Bug
+- Thief
+
+Skorupi @ Assault Vest
+Level: 12
+Impish Nature
+Ability: Battle Armor
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Fell Stinger
+- Poison Fang
+- Bite
+- Slash
+
+Venonat @ Sitrus Berry
+Level: 12
+Serious Nature
+Ability: Tinted Lens
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Confusion
+- Supersonic
+- Disable
+- Agility
 
 === TRAINER_DOUG ===
 Name: DOUG
@@ -12492,9 +12652,35 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Geodude
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Hippopotas @ Soft Sand
+Level: 12
+Impish Nature
+Ability: Sand Stream
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Sand Tomb
+- Yawn
+- Bite
+- Mud-Slap
+
+Sandshrew @ Bright Powder
+Level: 12
+Impish Nature
+Ability: Sand Veil
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Fury Cutter
+- Sandstorm
+- Defense Curl
+- Dig
+
+Trapinch @ Focus Band
+Level: 12
+Adamant Nature
+Ability: Arena Trap
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Bug Bite
+- Dig
+- Sand Attack
+- Bite
 
 === TRAINER_ERIC ===
 Name: ERIC
@@ -14843,15 +15029,67 @@ Pic: Hiker
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Setup First Turn
 
-Geodude
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Aron @ Terrain Extender
+Level: 12
+Impish Nature
+Ability: Sturdy
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Sandstorm
+- Rock Tomb
+- Roar
+- Metal Claw
 
-Geodude
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Cubone @ Thick Club
+Level: 12
+Adamant Nature
+Ability: Battle Armor
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Sandstorm
+- Double Kick
+- Headbutt
+- Bulldoze
+
+Swinub @ Soft Sand
+Level: 12
+Adamant Nature
+Ability: Oblivious
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Sandstorm
+- Powder Snow
+- Flail
+- Bulldoze
+
+Bronzor @ Leftovers
+Level: 12
+Docile Nature
+Ability: Levitate
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Confuse Ray
+- Protect
+- Confusion
+- Calm Mind
+
+Magnemite @ Air Balloon
+Level: 12
+Quiet Nature
+Ability: Analytic
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Thunder Shock
+- Thunder Wave
+- Swift
+- Confuse Ray
+
+Diglett @ Focus Band
+Level: 12
+Jolly Nature
+Ability: Sand Force
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Sandstorm
+- Astonish
+- Rock Tomb
+- Dig
 
 === TRAINER_JOHNSON ===
 Name: JOHNSON
@@ -14862,13 +15100,35 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Shroomish
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Chikorita @ Apicot Berry
+Level: 12
+Docile Nature
+Ability: Overgrow
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Helping Hand
+- Synthesis
+- Poison Powder
+- Ancient Power
 
-Lotad
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ekans @ Air Balloon
+Level: 12
+Adamant Nature
+Ability: Intimidate
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Wrap
+- Poison Tail
+- Bite
+- Glare
+
+Pikachu @ Light Ball
+Level: 12
+Docile Nature
+Ability: Static
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Electro Ball
+- Double Team
+- Nuzzle
+- Quick Attack
 
 === TRAINER_MELINA ===
 Name: MELINA
