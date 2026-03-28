@@ -363,7 +363,7 @@ Pic: Swimmer M
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Risky
 
 Gyarados
 Level: 34
@@ -378,9 +378,65 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Poochyena
-Level: 11
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Slowpoke @ Sitrus Berry
+Level: 26
+Relaxed Nature
+Ability: Regenerator
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Curse
+- Zen Headbutt
+- Headbutt
+- Water Pulse
+
+Grimer @ Black Sludge
+Level: 26
+Adamant Nature
+Ability: Sticky Hold
+IVs: 25 HP / 25 Atk / 25 Def / 20 SpA / 25 SpD / 20 Spe
+- Disable
+- Protect
+- Shadow Punch
+- Poison Jab
+
+Qwilfish @ Wacan Berry
+Level: 26
+Adamant Nature
+Ability: Intimidate
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Self-Destruct
+- Take Down
+- Waterfall
+- Rain Dance
+
+Sableye @ Spell Tag
+Level: 26
+Brave Nature
+Ability: Prankster
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Fake Out
+- Shadow Sneak
+- Sucker Punch
+- Confuse Ray
+
+Croagunk @ Misty Seed
+Level: 26
+Bashful Nature
+Ability: Dry Skin
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+- Cross Chop
+- Vacuum Wave
+- Headbutt
+- Venoshock
+
+Nuzleaf
+Level: 26
+Adamant Nature
+Ability: Pickpocket
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+- Payback
+- Razor Leaf
+- Torment
+- Low Sweep
 
 === TRAINER_GRUNT_WEATHER_INST_1 ===
 Name: GRUNT
@@ -5324,9 +5380,35 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Ralts
-Level: 9
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Ponyta @ Eject Pack
+Level: 25
+Jolly Nature
+Ability: Flame Body
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Flame Charge
+- Flame Wheel
+- Double Kick
+- Bounce
+
+Doduo @ Metronome
+Level: 25
+Adamant Nature
+Ability: Tangled Feet
+IVs: 20 HP / 15 Atk / 20 Def / 15 SpA / 20 SpD / 20 Spe
+- Pluck
+- Agility
+- Quick Attack
+- Low Kick
+
+Tangela @ Leftovers
+Level: 25
+Bold Nature
+Ability: Leaf Guard
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Mega Drain
+- Poison Powder
+- Protect
+- Leech Seed
 
 === TRAINER_TED ===
 Name: TED
@@ -12020,9 +12102,35 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Marill
-Level: 9
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Aipom @ ITEM_KINGS_ROCK
+Level: 25
+Jolly Nature
+Ability: Skill Link
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Fury Swipes
+- Tickle
+- Fake Out
+- Sand Attack
+
+Natu @ Sitrus Berry
+Level: 25
+Timid Nature
+Ability: Magic Bounce
+IVs: 20 HP / 15 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Night Shade
+- Confuse Ray
+- Calm Mind
+- Stored Power
+
+Teddiursa @ Toxic Orb
+Level: 25
+Adamant Nature
+Ability: Quick Feet
+IVs: 15 HP / 20 Atk / 15 Def / 15 SpA / 15 SpD / 25 Spe
+- Protect
+- Slash
+- Crunch
+- Metal Claw
 
 === TRAINER_VIVI ===
 Name: VIVI
@@ -14070,13 +14178,35 @@ Music: Rich
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Zigzagoon @ Nugget
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Growlithe @ ITEM_KINGS_ROCK
+Level: 25
+Docile Nature
+Ability: Intimidate
+IVs: 20 HP / 20 Atk / 15 Def / 20 SpA / 15 SpD / 20 Spe
+- Flame Wheel
+- Helping Hand
+- Snarl
+- Covet
 
-Poochyena
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Farfetch'd @ Leek
+Level: 25
+Adamant Nature
+Ability: Defiant
+IVs: 15 HP / 15 Atk / 20 Def / 15 SpA / 20 SpD / 15 Spe
+- Aerial Ace
+- Feather Dance
+- Night Slash
+- Steel Wing
+
+Voltorb @ Air Balloon
+Level: 25
+Bashful Nature
+Ability: Aftermath
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Electro Ball
+- Swift
+- Screech
+- Volt Switch
 
 === TRAINER_SARAH ===
 Name: SARAH
@@ -14084,17 +14214,38 @@ Class: Lady
 Pic: Lady
 Gender: Female
 Music: Female
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Lotad
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Gloom @ Big Root
+Level: 25
+Hardy Nature
+Ability: Stench
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Giga Drain
+- Growth
+- Acid
+- Stun Spore
 
-Zigzagoon @ Nugget
-Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Psyduck @ Sitrus Berry
+Level: 25
+Modest Nature
+Ability: Cloud Nine
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Water Pulse
+- Psybeam
+- Clear Smog
+- Hypnosis
+
+Mankey @ Focus Band
+Level: 25
+Adamant Nature
+Ability: Anger Point
+IVs: 20 HP / 20 Atk / 20 Def / 15 SpA / 20 SpD / 20 Spe
+- Night Slash
+- Cross Chop
+- Facade
+- Ice Punch
 
 === TRAINER_DARIAN ===
 Name: DARIAN
