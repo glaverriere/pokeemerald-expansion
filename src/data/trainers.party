@@ -6990,17 +6990,65 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Magikarp
-Level: 10
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Corphish @ Focus Sash
+Level: 25
+Adamant Nature
+Ability: Adaptability
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Aqua Jet
+- Knock Off
+- Metal Claw
+- Slash
 
-Tentacool
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Luvdisc @ Sitrus Berry
+Level: 25
+Modest Nature
+Ability: Swift Swim
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Attract
+- Draining Kiss
+- Water Pulse
+- Rain Dance
 
-Magikarp
-Level: 10
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Finneon @ Eviolite
+Level: 25
+Hardy Nature
+Ability: Swift Swim
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Rain Dance
+- Aqua Tail
+- Aurora Beam
+- Psybeam
+
+Staryu @ Lagging Tail
+Level: 25
+Modest Nature
+Ability: Analytic
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Confuse Ray
+- Ice Beam
+- Rain Dance
+- Scald
+
+Horsea @ Eviolite
+Level: 25
+Modest Nature
+Ability: Swift Swim
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Dragon Breath
+- Weather Ball
+- Smokescreen
+- Clear Smog
+
+Shellder @ Muscle Band
+Level: 25
+Impish Nature
+Ability: Skill Link
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Icicle Spear
+- Spikes
+- Pin Missile
+- Bullet Seed
 
 === TRAINER_NED ===
 Name: NED
@@ -7011,9 +7059,65 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Tentacool
-Level: 11
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Chinchou @ Eviolite
+Level: 25
+Timid Nature
+Ability: Volt Absorb
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Volt Switch
+- Bubble Beam
+- Thunder Wave
+- Dazzling Gleam
+
+Tentacool @ Binding Band
+Level: 25
+Careful Nature
+Ability: Clear Body
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Toxic
+- Wrap
+- Aqua Ring
+- Rain Dance
+
+Seel @ Sitrus Berry
+Level: 25
+Hardy Nature
+Ability: Hydration
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Charm
+- Icy Wind
+- Chilling Water
+- Perish Song
+
+Krabby @ Quick Claw
+Level: 25
+Adamant Nature
+Ability: Sheer Force
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Stomp
+- Metal Claw
+- Rock Tomb
+- Scald
+
+Wailmer @ Leftovers
+Level: 25
+Impish Nature
+Ability: Water Veil
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Brine
+- Rain Dance
+- Heavy Slam
+- Bulldoze
+
+Barboach @ Chesto Berry
+Level: 25
+Impish Nature
+Ability: Hydration
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Aqua Tail
+- Amnesia
+- Spark
+- Rest
 
 === TRAINER_DALE ===
 Name: DALE
