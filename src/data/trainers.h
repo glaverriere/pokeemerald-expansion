@@ -21492,7 +21492,7 @@ F_TRAINER_FEMALE |
 #line 8759
                 MOVE_FAKE_OUT,
                 MOVE_BULK_UP,
-                MOVE_FACE_PALM,
+                MOVE_FORCE_PALM,
                 MOVE_SMACK_DOWN,
             },
             },
