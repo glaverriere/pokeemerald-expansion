@@ -3383,9 +3383,65 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Machop
-Level: 13
+Machop @ Quick Claw
+Level: 26
+Adamant Nature
+Ability: No Guard
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Mega Kick
+- Rock Slide
+- Submission
+- Focus Energy
+
+Riolu @ Sitrus Berry
+Level: 26
+Adamant Nature
+Ability: Prankster
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Bulk Up
+- Circle Throw
+- Bite
+- Bullet Punch
+
+Poliwhirl @ Sitrus Berry
+Level: 26
+Impish Nature
+Ability: Water Absorb
+IVs: 20 HP / 15 Atk / 20 Def / 15 SpA / 20 SpD / 15 Spe
+- Low Sweep
+- Mud Shot
+- Rain Dance
+- Waterfall
+
+Kirlia (M) @ Eviolite
+Level: 26
+Modest Nature
+Ability: Trace
+IVs: 20 HP / 15 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Confuse Ray
+- Mystical Fire
+- Psybeam
+- Draining Kiss
+
+Breloom @ Toxic Orb
+Level: 26
+Modest Nature
+Ability: Poison Heal
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Protect
+- Leech Seed
+- Mega Drain
+- Brick Break
+
+Makuhita @ Flame Orb
+Level: 26
+Adamant Nature
+Ability: Guts
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Protect
+- Cross Chop
+- Bullet Punch
+- Thunder Punch
 
 === TRAINER_HITOSHI ===
 Name: HITOSHI
@@ -5075,33 +5131,68 @@ Class: Leader
 Pic: Leader Brawly
 Gender: Male
 Music: Male
-Items: Super Potion / Super Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Machop
-Level: 16
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Karate Chop
-- Low Kick
-- Seismic Toss
+Hitmontop @ Expert Belt
+Level: 28
+Careful Nature
+Ability: Technician
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Triple Kick
 - Bulk Up
+- Quick Attack
+- Triple Axel
 
-Meditite
-Level: 16
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Focus Punch
-- Light Screen
-- Reflect
-- Bulk Up
+Lucario @ Rocky Helmet
+Level: 28
+Hardy Nature
+Ability: Steadfast
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Aura Sphere
+- Metal Claw
+- Water Pulse
+- Aerial Ace
 
-Makuhita @ Sitrus Berry
-Level: 19
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+Hariyama @ Sitrus Berry
+Level: 28
+Adamant Nature
+Ability: Guts
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Belly Drum
 - Arm Thrust
-- Vital Throw
-- Reversal
+- Knock Off
+- Rock Slide
+
+Breloom @ Shell Bell
+Level: 28
+Adamant Nature
+Ability: Technician
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Spore
+- Mach Punch
+- Headbutt
+- Bullet Seed
+
+Monferno @ Weakness Policy
+Level: 28
+Adamant Nature
+Ability: Iron Fist
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Mach Punch
+- Fire Punch
+- Thunder Punch
 - Bulk Up
+
+Heracross @ Coba Berry
+Level: 28
+Adamant Nature
+Ability: Moxie
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Night Slash
+- Flail
+- Brick Break
+- Lunge
 
 === TRAINER_WATTSON_1 ===
 Name: WATTSON
@@ -8569,11 +8660,67 @@ Pic: Battle Girl
 Gender: Female
 Music: Intense
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Risky
 
-Meditite
-Level: 13
+Hariyama @ Lum Berry
+Level: 26
+Hardy Nature
+Ability: Thick Fat
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Whirlwind
+- Focus Energy
+- Arm Thrust
+- Bulldoze
+
+Combusken @ Charcoal
+Level: 26
+Adamant Nature
+Ability: Blaze
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Flame Charge
+- Quick Attack
+- Low Sweep
+- Swords Dance
+
+Monferno @ Passho Berry
+Level: 26
+Adamant Nature
+Ability: Blaze
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Mach Punch
+- Taunt
+- Flame Wheel
+- U-turn
+
+Croagunk @ Quick Claw
+Level: 26
+Adamant Nature
+Ability: Anticipation
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+- Dynamic Punch
+- Cross Chop
+- Gunk Shot
+- Take Down
+
+Breloom @ Big Root
+Level: 26
+Impish Nature
+Ability: Effect Spore
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Headbutt
+- Fake Tears
+- Charm
+- Drain Punch
+
+Lopunny @ Sitrus Berry
+Level: 26
+Jolly Nature
+Ability: Limber
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Double Kick
+- Double Hit
+- Sweet Kiss
+- Brutal Swing
 
 === TRAINER_LAURA ===
 Name: LAURA
@@ -8584,9 +8731,65 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Meditite
-Level: 13
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Croagunk @ Wise Glasses
+Level: 26
+Modest Nature
+Ability: Poison Touch
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Vacuum Wave
+- Mud-Slap
+- Venoshock
+- Flatter
+
+Mankey @ Razor Fang
+Level: 26
+Adamant Nature
+Ability: Defiant
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Counter
+- Beat Up
+- Bulk Up
+- Brick Break
+
+Makuhita @ Eviolite
+Level: 26
+Adamant Nature
+Ability: Sheer Force
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Fake Out
+- Bulk Up
+- Face Palm
+- Smack Down
+
+Combusken @ Scope Lens
+Level: 26
+Hardy Nature
+Ability: Speed Boost
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Detect
+- Double Kick
+- Flame Charge
+- Slash
+
+Tyrogue @ Focus Sash
+Level: 26
+Jolly Nature
+Ability: Steadfast
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Mach Punch
+- High Jump Kick
+- Bullet Punch
+- Fake Out
+
+Meditite @ Sitrus Berry
+Level: 26
+Bashful Nature
+Ability: Pure Power
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Calm Mind
+- Zen Headbutt
+- Stored Power
+- Force Palm
 
 === TRAINER_CYNDY_1 ===
 Name: CYNDY
@@ -11406,9 +11609,35 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Machop
-Level: 13
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Poliwhirl @ Sitrus Berry
+Level: 26
+Quirky Nature
+Ability: Water Absorb
+IVs: 20 HP / 15 Atk / 20 Def / 15 SpA / 20 SpD / 15 Spe
+- Surf
+- Bulldoze
+- Hypnosis
+- Metronome
+
+Riolu @ Focus Band
+Level: 26
+Adamant Nature
+Ability: Prankster
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Coaching
+- Upper Hand
+- Trailblaze
+- Aerial Ace
+
+Gloom @ Miracle Seed
+Level: 26
+Hardy Nature
+Ability: Stench
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Sludge Wave
+- Petal Blizzard
+- Toxic
+- Growth
 
 === TRAINER_LILITH ===
 Name: LILITH
@@ -11419,9 +11648,35 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Meditite
-Level: 13
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Meditite @ Eviolite
+Level: 26
+Hardy Nature
+Ability: Telepathy
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Work Up
+- Zen Headbutt
+- Brick break
+- Psybeam
+
+Kirlia (M) @ Eviolite
+Level: 26
+Modest Nature
+Ability: Telepathy
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Magical Leaf
+- Life Dew
+- Mean Look
+- Dazzling Gleam
+
+Machop @ Flame Orb
+Level: 26
+Adamant Nature
+Ability: Guts
+IVs: 20 HP / 20 Atk / 20 Def / 15 SpA / 20 SpD / 20 Spe
+- Protect
+- Coaching
+- Retaliate
+- Vital Throw
 
 === TRAINER_CRISTIAN ===
 Name: CRISTIAN
@@ -11432,9 +11687,59 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching
 
-Makuhita
-Level: 13
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+Tyrogue @ Eviolite
+Level: 26
+Adamant Nature
+Ability: Vital Spirit
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Bulk Up
+- Baton Pass
+- Vacuum Wave
+
+Hitmonchan @ Muscle Band
+Level: 26
+Adamant Nature
+Ability: Iron Fist
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Drain Punch
+- Fire Punch
+- Ice Punch
+- Thunder Punch
+
+Hitmonlee @ Sitrus Berry
+Level: 26
+Adamant Nature
+Ability: Unburden
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Blaze Kick
+- Sucker Punch
+- Brick Break
+- Poison Jab
+
+Hitmontop @ Salac Berry
+Level: 26
+Adamant Nature
+Ability: Intimidate
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Fake Out
+- Triple Kick
+- Aerial Ace
+- Facade
+
+Mankey @ Eviolite
+Level: 26
+Hardy Nature
+Ability: Defiant
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+- Metronome
+
+Machop @ Choice Band
+Level: 26
+Adamant Nature
+Ability: Guts
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+- Bullet Punch
+- Mach Punch
 
 === TRAINER_SYLVIA ===
 Name: SYLVIA
