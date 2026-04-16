@@ -426,7 +426,7 @@ F_TRAINER_FEMALE |
             .species = SPECIES_CARVANHA,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 248
-            .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
+            .iv = TRAINER_PARTY_IVS(10, 10, 10, 10, 10, 10),
 #line 247
             .ability = ABILITY_ROUGH_SKIN,
 #line 245
@@ -751,7 +751,7 @@ F_TRAINER_FEMALE |
 #line 381
             .heldItem = ITEM_SITRUS_BERRY,
 #line 385
-            .iv = TRAINER_PARTY_IVS(20, 20, 20, 20, 20, 20),
+            .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
 #line 384
             .ability = ABILITY_REGENERATOR,
 #line 382
@@ -774,7 +774,7 @@ F_TRAINER_FEMALE |
 #line 391
             .heldItem = ITEM_BLACK_SLUDGE,
 #line 395
-            .iv = TRAINER_PARTY_IVS(25, 25, 25, 20, 20, 25),
+            .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
 #line 394
             .ability = ABILITY_STICKY_HOLD,
 #line 392
@@ -797,7 +797,7 @@ F_TRAINER_FEMALE |
 #line 401
             .heldItem = ITEM_WACAN_BERRY,
 #line 405
-            .iv = TRAINER_PARTY_IVS(20, 20, 20, 20, 20, 20),
+            .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
 #line 404
             .ability = ABILITY_INTIMIDATE,
 #line 402
@@ -810,7 +810,7 @@ F_TRAINER_FEMALE |
                 MOVE_SELF_DESTRUCT,
                 MOVE_TAKE_DOWN,
                 MOVE_WATERFALL,
-                MOVE_RAIN_DANCE,
+                MOVE_HARDEN,
             },
             },
             {
@@ -820,7 +820,7 @@ F_TRAINER_FEMALE |
 #line 411
             .heldItem = ITEM_SPELL_TAG,
 #line 415
-            .iv = TRAINER_PARTY_IVS(20, 20, 20, 20, 20, 20),
+            .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
 #line 414
             .ability = ABILITY_PRANKSTER,
 #line 412
@@ -843,7 +843,7 @@ F_TRAINER_FEMALE |
 #line 421
             .heldItem = ITEM_MISTY_SEED,
 #line 425
-            .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
+            .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
 #line 424
             .ability = ABILITY_DRY_SKIN,
 #line 422
@@ -864,7 +864,7 @@ F_TRAINER_FEMALE |
             .species = SPECIES_NUZLEAF,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 435
-            .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
+            .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
 #line 434
             .ability = ABILITY_PICKPOCKET,
 #line 432
@@ -12473,7 +12473,7 @@ F_TRAINER_FEMALE |
 #line 5078
             .heldItem = ITEM_SITRUS_BERRY,
 #line 5082
-            .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
+            .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
 #line 5081
             .ability = ABILITY_GUTS,
 #line 5079
@@ -12496,7 +12496,7 @@ F_TRAINER_FEMALE |
 #line 5088
             .heldItem = ITEM_SITRUS_BERRY,
 #line 5092
-            .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
+            .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
 #line 5091
             .ability = ABILITY_STURDY,
 #line 5089
@@ -12519,7 +12519,7 @@ F_TRAINER_FEMALE |
 #line 5098
             .heldItem = ITEM_HARD_STONE,
 #line 5102
-            .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
+            .iv = TRAINER_PARTY_IVS(8, 8, 8, 8, 8, 8),
 #line 5101
             .ability = ABILITY_BATTLE_ARMOR,
 #line 5099
@@ -12542,7 +12542,7 @@ F_TRAINER_FEMALE |
 #line 5108
             .heldItem = ITEM_SITRUS_BERRY,
 #line 5112
-            .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
+            .iv = TRAINER_PARTY_IVS(8, 8, 8, 8, 8, 8),
 #line 5111
             .ability = ABILITY_STORM_DRAIN,
 #line 5109
@@ -12565,7 +12565,7 @@ F_TRAINER_FEMALE |
 #line 5118
             .heldItem = ITEM_BIG_ROOT,
 #line 5122
-            .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
+            .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
 #line 5121
             .ability = ABILITY_REGENERATOR,
 #line 5119
@@ -29716,7 +29716,7 @@ F_TRAINER_FEMALE |
 #line 12012
             .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
 #line 12011
-            .ability = ABILITY_IRON_FIST,
+            .ability = ABILITY_KEEN_EYE,
 #line 12009
             .lvl = 28,
 #line 12010
@@ -29725,9 +29725,9 @@ F_TRAINER_FEMALE |
             .moves = {
 #line 12013
                 MOVE_MACH_PUNCH,
-                MOVE_THUNDER_PUNCH,
-                MOVE_FIRE_PUNCH,
-                MOVE_ICE_PUNCH,
+                MOVE_DRAIN_PUNCH,
+                MOVE_BULLET_PUNCH,
+                MOVE_FAKE_OUT,
             },
             },
             {
@@ -29780,8 +29780,6 @@ F_TRAINER_FEMALE |
 #line 12038
             .species = SPECIES_COMBUSKEN,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 12038
-            .heldItem = ITEM_SITRUS_BERRY,
 #line 12042
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 12041
@@ -29939,8 +29937,6 @@ F_TRAINER_FEMALE |
 #line 12107
             .species = SPECIES_GROVYLE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 12107
-            .heldItem = ITEM_SITRUS_BERRY,
 #line 12111
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 12110
@@ -29952,7 +29948,7 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 12112
-                MOVE_GIGA_DRAIN,
+                MOVE_MEGA_DRAIN,
                 MOVE_X_SCISSOR,
                 MOVE_QUICK_ATTACK,
                 MOVE_AGILITY,
@@ -30266,7 +30262,7 @@ F_TRAINER_FEMALE |
 #line 12240
             .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
 #line 12239
-            .ability = ABILITY_IRON_FIST,
+            .ability = ABILITY_KEEN_EYE,
 #line 12237
             .lvl = 28,
 #line 12238
@@ -30275,9 +30271,9 @@ F_TRAINER_FEMALE |
             .moves = {
 #line 12241
                 MOVE_MACH_PUNCH,
-                MOVE_THUNDER_PUNCH,
-                MOVE_FIRE_PUNCH,
-                MOVE_ICE_PUNCH,
+                MOVE_DRAIN_PUNCH,
+                MOVE_BULLET_PUNCH,
+                MOVE_FAKE_OUT,
             },
             },
             {
@@ -30330,8 +30326,6 @@ F_TRAINER_FEMALE |
 #line 12266
             .species = SPECIES_MARSHTOMP,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 12266
-            .heldItem = ITEM_SITRUS_BERRY,
 #line 12270
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 12269
@@ -30427,7 +30421,7 @@ F_TRAINER_FEMALE |
 #line 12309
             .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
 #line 12308
-            .ability = ABILITY_IRON_FIST,
+            .ability = ABILITY_KEEN_EYE,
 #line 12306
             .lvl = 28,
 #line 12307
@@ -30436,9 +30430,9 @@ F_TRAINER_FEMALE |
             .moves = {
 #line 12310
                 MOVE_MACH_PUNCH,
-                MOVE_THUNDER_PUNCH,
-                MOVE_FIRE_PUNCH,
-                MOVE_ICE_PUNCH,
+                MOVE_DRAIN_PUNCH,
+                MOVE_BULLET_PUNCH,
+                MOVE_FAKE_OUT,
             },
             },
             {
@@ -30491,8 +30485,6 @@ F_TRAINER_FEMALE |
 #line 12335
             .species = SPECIES_GROVYLE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 12335
-            .heldItem = ITEM_SITRUS_BERRY,
 #line 12339
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 12338
@@ -30504,7 +30496,7 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 12340
-                MOVE_GIGA_DRAIN,
+                MOVE_MEGA_DRAIN,
                 MOVE_X_SCISSOR,
                 MOVE_QUICK_ATTACK,
                 MOVE_AGILITY,
@@ -39422,7 +39414,7 @@ F_TRAINER_FEMALE |
 #line 15961
             .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
 #line 15960
-            .ability = ABILITY_IRON_FIST,
+            .ability = ABILITY_KEEN_EYE,
 #line 15958
             .lvl = 28,
 #line 15959
@@ -39431,9 +39423,9 @@ F_TRAINER_FEMALE |
             .moves = {
 #line 15962
                 MOVE_MACH_PUNCH,
-                MOVE_THUNDER_PUNCH,
-                MOVE_FIRE_PUNCH,
-                MOVE_ICE_PUNCH,
+                MOVE_DRAIN_PUNCH,
+                MOVE_BULLET_PUNCH,
+                MOVE_FAKE_OUT,
             },
             },
             {
@@ -39486,8 +39478,6 @@ F_TRAINER_FEMALE |
 #line 15987
             .species = SPECIES_COMBUSKEN,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 15987
-            .heldItem = ITEM_SITRUS_BERRY,
 #line 15991
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 15990
@@ -39583,7 +39573,7 @@ F_TRAINER_FEMALE |
 #line 16030
             .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
 #line 16029
-            .ability = ABILITY_IRON_FIST,
+            .ability = ABILITY_KEEN_EYE,
 #line 16027
             .lvl = 28,
 #line 16028
@@ -39592,9 +39582,9 @@ F_TRAINER_FEMALE |
             .moves = {
 #line 16031
                 MOVE_MACH_PUNCH,
-                MOVE_THUNDER_PUNCH,
-                MOVE_FIRE_PUNCH,
-                MOVE_ICE_PUNCH,
+                MOVE_DRAIN_PUNCH,
+                MOVE_BULLET_PUNCH,
+                MOVE_FAKE_OUT,
             },
             },
             {
@@ -39647,8 +39637,6 @@ F_TRAINER_FEMALE |
 #line 16056
             .species = SPECIES_MARSHTOMP,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 16056
-            .heldItem = ITEM_SITRUS_BERRY,
 #line 16060
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 16059

@@ -245,7 +245,7 @@ Carvanha
 Level: 13
 Quiet Nature
 Ability: Rough Skin
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Aqua Jet
 - Poison Fang
 - Scary Face
@@ -382,7 +382,7 @@ Slowpoke @ Sitrus Berry
 Level: 26
 Relaxed Nature
 Ability: Regenerator
-IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Curse
 - Zen Headbutt
 - Headbutt
@@ -392,7 +392,7 @@ Grimer @ Black Sludge
 Level: 26
 Adamant Nature
 Ability: Sticky Hold
-IVs: 25 HP / 25 Atk / 25 Def / 20 SpA / 25 SpD / 20 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Disable
 - Protect
 - Shadow Punch
@@ -402,17 +402,17 @@ Qwilfish @ Wacan Berry
 Level: 26
 Adamant Nature
 Ability: Intimidate
-IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Self-Destruct
 - Take Down
 - Waterfall
-- Rain Dance
+- Harden
 
 Sableye @ Spell Tag
 Level: 26
 Brave Nature
 Ability: Prankster
-IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Fake Out
 - Shadow Sneak
 - Sucker Punch
@@ -422,7 +422,7 @@ Croagunk @ Misty Seed
 Level: 26
 Bashful Nature
 Ability: Dry Skin
-IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Cross Chop
 - Vacuum Wave
 - Headbutt
@@ -432,7 +432,7 @@ Nuzleaf
 Level: 26
 Adamant Nature
 Ability: Pickpocket
-IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Payback
 - Razor Leaf
 - Torment
@@ -5079,7 +5079,7 @@ Larvitar @ Sitrus Berry
 Level: 15
 Adamant Nature
 Ability: Guts
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Rock Tomb
 - Rock Slide
 - Bite
@@ -5089,7 +5089,7 @@ Nosepass @ Sitrus Berry
 Level: 15
 Bashful Nature
 Ability: Sturdy
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Rock Tomb
 - Thunder Wave
 - Block
@@ -5099,7 +5099,7 @@ Anorith @ Hard Stone
 Level: 15
 Adamant Nature
 Ability: Battle Armor
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 - Fury Cutter
 - Smack Down
 - Metal Claw
@@ -5109,7 +5109,7 @@ Lileep @ Sitrus Berry
 Level: 15
 Calm Nature
 Ability: Storm Drain
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 - Ancient Power
 - Ingrain
 - Confuse Ray
@@ -5119,7 +5119,7 @@ Corsola @ Big Root
 Level: 15
 Serious Nature
 Ability: Regenerator
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Aqua Ring
 - Water Gun
 - Rock Tomb
@@ -12008,12 +12008,12 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Hitmonchan @ Coba Berry
 Level: 28
 Careful Nature
-Ability: Iron Fist
+Ability: Keen Eye
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Mach Punch
-- Thunder Punch
-- Fire Punch
-- Ice Punch
+- Drain Punch
+- Bullet Punch
+- Fake Out
 
 Murkrow @ White Herb
 Level: 28
@@ -12035,7 +12035,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Reflect
 - Swift
 
-Combusken @ Sitrus Berry
+Combusken
 Level: 28
 Adamant Nature
 Ability: Blaze
@@ -12104,12 +12104,12 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Reflect
 - Swift
 
-Grovyle @ Sitrus Berry
+Grovyle
 Level: 28
 Timid Nature
 Ability: Overgrow
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Giga Drain
+- Mega Drain
 - X-Scissor
 - Quick Attack
 - Agility
@@ -12236,12 +12236,12 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Hitmonchan @ Coba Berry
 Level: 28
 Careful Nature
-Ability: Iron Fist
+Ability: Keen Eye
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Mach Punch
-- Thunder Punch
-- Fire Punch
-- Ice Punch
+- Drain Punch
+- Bullet Punch
+- Fake Out
 
 Murkrow @ White Herb
 Level: 28
@@ -12263,7 +12263,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Reflect
 - Swift
 
-Marshtomp @ Sitrus Berry
+Marshtomp
 Level: 28
 Adamant Nature
 Ability: Torrent
@@ -12305,12 +12305,12 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Hitmonchan @ Coba Berry
 Level: 28
 Careful Nature
-Ability: Iron Fist
+Ability: Keen Eye
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Mach Punch
-- Thunder Punch
-- Fire Punch
-- Ice Punch
+- Drain Punch
+- Bullet Punch
+- Fake Out
 
 Murkrow @ White Herb
 Level: 28
@@ -12332,12 +12332,12 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Reflect
 - Swift
 
-Grovyle @ Sitrus Berry
+Grovyle
 Level: 28
 Timid Nature
 Ability: Overgrow
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Giga Drain
+- Mega Drain
 - X-Scissor
 - Quick Attack
 - Agility
@@ -15957,12 +15957,12 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Hitmonchan @ Coba Berry
 Level: 28
 Careful Nature
-Ability: Iron Fist
+Ability: Keen Eye
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Mach Punch
-- Thunder Punch
-- Fire Punch
-- Ice Punch
+- Drain Punch
+- Bullet Punch
+- Fake Out
 
 Murkrow @ White Herb
 Level: 28
@@ -15984,7 +15984,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Reflect
 - Swift
 
-Combusken @ Sitrus Berry
+Combusken
 Level: 28
 Adamant Nature
 Ability: Blaze
@@ -16026,12 +16026,12 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Hitmonchan @ Coba Berry
 Level: 28
 Careful Nature
-Ability: Iron Fist
+Ability: Keen Eye
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Mach Punch
-- Thunder Punch
-- Fire Punch
-- Ice Punch
+- Drain Punch
+- Bullet Punch
+- Fake Out
 
 Murkrow @ White Herb
 Level: 28
@@ -16053,7 +16053,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Reflect
 - Swift
 
-Marshtomp @ Sitrus Berry
+Marshtomp
 Level: 28
 Adamant Nature
 Ability: Torrent
